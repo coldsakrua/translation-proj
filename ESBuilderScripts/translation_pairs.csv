@@ -1,0 +1,1218 @@
+﻿id,index_id,source_text,target_text,abbreviation,remarks,source_file
+1b27a43fd0e1e8d5,AITD-00007,Accuracy,准确率,,,AI for Science.md
+398238dcbc1e45e1,AITD-00015,Activation Function,激活函数,,机器学习,AI for Science.md
+c85b46dd91e0c691,AITD-00016,Active Learning,主动学习,,机器学习,AI for Science.md
+e48fe510aa40da3a,AITD-00056,Area Under ROC Curve,AUC（ROC曲线下方面积，度量分类模型好坏的标准）,AUC,机器学习,AI for Science.md
+ddb239a0a2a70673,AITD-00059,Artificial Intelligence,人工智能,AI,机器学习,AI for Science.md
+b02d6dc5370be9b0,AITD-00060,Artificial Neural Network,人工神经网络,ANN,机器学习,AI for Science.md
+0e9bb3877543a7ce,AITD-00069,Attention,注意力,,机器学习,AI for Science.md
+b7aed4efcbfff275,AITD-00092,Back Propagation,反向传播,BP,机器学习,AI for Science.md
+36c4dffee1344b76,AITD-00100,Bagging,袋装,,机器学习,AI for Science.md
+37dd6508d2a74f23,AITD-00108,Baseline,基准,,机器学习,AI for Science.md
+b78e19d3ff138586,AITD-00126,Bayesian Inference,贝叶斯推断,,统计，机器学习,AI for Science.md
+0e0104ffbda77c55,AITD-00129,Bayesian Network,贝叶斯网/贝叶斯网络,,Network翻译为网或网络皆可，只要统一翻译成网或者统一翻译成网络即可；统计，机器学习,AI for Science.md
+6d5d61957f842d27,AITD-00139,Bernoulli Distribution,伯努利分布,,统计,AI for Science.md
+22907171fd38c539,AITD-00147,Bias,偏差/偏置,,看上下语境；机器学习,AI for Science.md
+97d41c380293453a,AITD-00153,Biased,有偏,,机器学习,AI for Science.md
+bb0c0245c7061592,AITD-00175,Boosting,Boosting（一种模型训练加速方式）,,,AI for Science.md
+78ff0006f1ea1e25,AITD-00181,Bottom-Up,自下而上,,,AI for Science.md
+9b583ce0b9ef92da,AITD-00218,Classification,分类,,,AI for Science.md
+9b07e541e30e37b0,AITD-00219,Classification And Regression Tree,分类与回归树,CART,,AI for Science.md
+605adbf3f722f335,AITD-00228,Cluster,簇,,,AI for Science.md
+0ecde22fa523e9f0,AITD-00264,Computer Vision,计算机视觉,,,AI for Science.md
+4cfd3f34a02b461d,AITD-00285,Confusion Matrix,混淆矩阵,,机器学习,AI for Science.md
+bc00c92db385dec0,AITD-00289,Conjugate Gradient,共轭梯度,,优化，数学,AI for Science.md
+e0c5eb34a8efd5fd,AITD-00333,Correlation,相关系数,,,AI for Science.md
+39e9bc2cb40cd0a3,AITD-00340,Cost Function,代价函数,,,AI for Science.md
+2832df62f164641a,AITD-00343,Covariance,协方差,,,AI for Science.md
+ea323fceb27255d2,AITD-00344,Covariance Matrix,协方差矩阵,,,AI for Science.md
+b0df03e9c0f8ddb5,AITD-00372,Data Augmentation,数据增强,,,AI for Science.md
+65f1dc5890e62db7,AITD-00376,Data Mining,数据挖掘,,,AI for Science.md
+6229f5626e4c7c1a,AITD-00380,Data Set,数据集,,,AI for Science.md
+fdab6bcb77a6ab6a,AITD-00389,Decision Tree,决策树,DT,,AI for Science.md
+1c3e98f8dc3561e9,AITD-00402,Deep Learning,深度学习,DL,,AI for Science.md
+e4560515305936b3,AITD-00405,Deep Neural Network,深度神经网络,DNN,,AI for Science.md
+59e23f09180d2e07,AITD-00408,Deep Reinforcement Learning,深度强化学习,,,AI for Science.md
+0ec4315487d9d468,AITD-00445,Dimension Reduction,降维,,,AI for Science.md
+8efe3e7778ad503e,AITD-00446,Dimensionality Reduction Algorithm,降维算法,,,AI for Science.md
+4e3daf60dffce495,AITD-00532,Encoder-Decoder,编码器-解码器（模型）,,,AI for Science.md
+411c5b57e72e7100,AITD-00559,Error Function,误差函数,,,AI for Science.md
+bb8b454f37c09a0c,AITD-00565,Estimator,估计/估计量,,,AI for Science.md
+0772afedfa525f2b,AITD-00627,Feature Engineering,特征工程,,,AI for Science.md
+bbc7df355554911d,AITD-00628,Feature Extraction,特征抽取,,,AI for Science.md
+5b57d0e39e674bea,AITD-00633,Feature Selection,特征选择,,,AI for Science.md
+87e6cc825c1d23d1,AITD-00641,Feedforward Neural Network,前馈神经网络,FNN,,AI for Science.md
+568cb8790ea87321,AITD-00706,Gaussian Distribution,高斯分布,,,AI for Science.md
+34d2b8a4fc274432,AITD-00709,Gaussian Kernel Function,高斯核函数,,,AI for Science.md
+191f3b29c6418db9,AITD-00711,Gaussian Mixtures,高斯混合（模型）,,,AI for Science.md
+61aee541f2e77612,AITD-00713,Gaussian Process,高斯过程,GP,,AI for Science.md
+97e6df17291646b3,AITD-00714,Gaussian Process Regression,高斯过程回归,GPR,,AI for Science.md
+5090f199ead0b80b,AITD-00737,Generative Modeling,生成式建模,,机器学习,AI for Science.md
+94ed1e90142dc42c,AITD-00744,Genetic Algorithm,遗传算法,GA,机器学习,AI for Science.md
+6119f9b5ad66e709,AITD-00763,Gradient Descent,梯度下降,,机器学习,AI for Science.md
+a2b84906baea418e,AITD-00788,Grid Search,网格搜索,,,AI for Science.md
+3c289b99d7b9dab0,AITD-00790,Ground Truth,真实值,,,AI for Science.md
+33cb3a7f1421e31b,AITD-00836,Hyperplane,超平面,,数学,AI for Science.md
+82ef430e468b4921,AITD-00869,Inductive Bias,归纳偏好,,,AI for Science.md
+5cf78ee5b3aff290,AITD-00879,Information Gain,信息增益,,统计,AI for Science.md
+34f28fecb559bfa7,AITD-00880,Information Gain Ratio,信息增益比,,统计,AI for Science.md
+76582a7a96f1d7f2,AITD-00916,Iteration,迭代,,数学、机器学习,AI for Science.md
+8ac3440a458ef228,AITD-00926,K-Fold Cross Validation,k 折交叉验证,K-FOLD CV,统计,AI for Science.md
+402a2ae0930bfcf9,AITD-00927,K-Means Clustering,k-均值聚类,,,AI for Science.md
+8ab5fe94b20f048d,AITD-00929,K-Nearest Neighbor Method,k-近邻,K-NN,统计,AI for Science.md
+3a8f48ce6bf4f672,AITD-00937,Kernel Method,核方法,,机器学习,AI for Science.md
+1a24efba81cd2de3,AITD-00939,Kernel Trick,核技巧,,,AI for Science.md
+a9cbb70bd2cac2c3,AITD-00954,Label,标签/标记,,,AI for Science.md
+8e566f1e4b4bb81f,AITD-00984,Lazy Learning,懒惰学习,,,AI for Science.md
+6e7ae3b38abad4cb,AITD-01019,Linear Combination,线性组合,,数学,AI for Science.md
+788403d57f670483,AITD-01021,Linear Discriminant Analysis,线性判别分析,LDA,统计、机器学习,AI for Science.md
+7faf6701e2cda8f1,AITD-01024,Linear Model,线性模型,LR,统计、机器学习,AI for Science.md
+a5cd0ebe8e3c3ddd,AITD-01026,Linear Regression,线性回归,,统计、数学,AI for Science.md
+8af8dac37db93f28,AITD-01071,Logistic Function,对数几率函数,,,AI for Science.md
+00f805267b6401a7,AITD-01073,Logistic Regression,对数几率回归,LR,统计、机器学习,AI for Science.md
+205a465666a43105,AITD-01076,Long Short Term Memory,长短期记忆,LSTM,,AI for Science.md
+456bb97a5104e49d,AITD-01084,Loss Function,损失函数,,机器学习,AI for Science.md
+6d6aff8bb81e083f,AITD-01088,Machine Learning,机器学习,ML,机器学习,AI for Science.md
+4a1c1d9531bdeb03,AITD-01103,Margin,间隔,,统计,AI for Science.md
+bda38d07f3c3cbff,AITD-01172,Meta-Learning,元学习,,,AI for Science.md
+597bff508a4d1545,AITD-01175,Metric,指标,,,AI for Science.md
+c4bc966cda6d86c1,AITD-01209,Model Predictive Control,模型预测控制,MPC,,AI for Science.md
+a4a7eb59734ba66d,AITD-01210,Model Selection,模型选择,,,AI for Science.md
+852ee663a8358de7,AITD-01241,Multi-Layer Perceptron,多层感知机,MLP,,AI for Science.md
+c39aef2d76eb0487,AITD-01253,Multiple Linear Regression,多元线性回归,MLR,统计,AI for Science.md
+bf49891679d50fe1,AITD-01272,Natural Language Processing,自然语言处理,NLP,机器学习,AI for Science.md
+88061974de3be5a4,AITD-01299,Neural Model,神经模型,,,AI for Science.md
+054ab83e43061098,AITD-01300,Neural Network,神经网络,NN,,AI for Science.md
+a72074aa5c50e239,AITD-01308,Noise,噪声,,,AI for Science.md
+07bbee5eaa20f72d,AITD-01321,Non-Parametric,非参数,,,AI for Science.md
+bb3e42f491dc01cd,AITD-01338,Normalization,规范化,,统计、机器学习,AI for Science.md
+b52c9d013e1371ff,AITD-01358,Occam's Razor,奥卡姆剃刀,,机器学习,AI for Science.md
+cb37798dd6940db4,AITD-01365,One-Shot Learning,单试学习,,,AI for Science.md
+fb0fb049b2cdad0b,AITD-01380,Orthogonal,正交,,数学,AI for Science.md
+9aadaa7efabbe29a,AITD-01386,Outlier,异常点,,,AI for Science.md
+89deb4686deea0e6,AITD-01389,Output Layer,输出层,,机器学习,AI for Science.md
+60cec972b59ceba8,AITD-01395,Overfitting,过拟合,,机器学习,AI for Science.md
+c211684e02653f9a,AITD-01412,Parameter Tuning,调参,,机器学习,AI for Science.md
+07394b75ca5f90f0,AITD-01417,Parse Tree,解析树,,,AI for Science.md
+3570ec780d7fdd3c,AITD-01421,Particle Swarm Optimization,粒子群优化算法,PSO,,AI for Science.md
+28e9a186eb83d5c6,AITD-01426,Pattern Recognition,模式识别,PR,,AI for Science.md
+651ec24bf36e7975,AITD-01428,Perceptron,感知机,,机器学习,AI for Science.md
+a78553e50d017ea5,AITD-01482,Precision,查准率/准确率,,数学、HPC,AI for Science.md
+88c875449e7cdee0,AITD-01489,Principal Component Analysis,主成分分析,PCA,,AI for Science.md
+7cdfa8d1fff18a59,AITD-01492,Prior Knowledge,先验知识,,统计,AI for Science.md
+5ed8fa6e0d6b8506,AITD-01509,Probability Distribution,概率分布,,统计,AI for Science.md
+290114c2728acac3,AITD-01535,Quantum Mechanics,量子力学,,物理,AI for Science.md
+04f5664f1ba8ae62,AITD-01541,Radial Basis Function,径向基函数,RBF,,AI for Science.md
+c05d2e07beb3e718,AITD-01545,Random Forest,随机森林,RF、RFS,统计,AI for Science.md
+472a0aaed3d66385,AITD-01547,Random Sampling,随机采样,,统计,AI for Science.md
+cb6a086f06adadb2,AITD-01561,Recall,查全率/召回率,,,AI for Science.md
+5cbfeee4fa3302ba,AITD-01563,Receiver Operating Characteristic,受试者工作特征,ROC,,AI for Science.md
+6cb0267c5b8ed725,AITD-01573,Rectified Linear Unit,修正线性单元/整流线性单元,ReLU,CHAPTER 2,AI for Science.md
+396148af83a0311d,AITD-01579,Recurrent Neural Network,循环神经网络,RNN,机器学习,AI for Science.md
+3252a583b918b5bd,AITD-01585,Regression,回归,,统计,AI for Science.md
+6b4c6b81e5664b40,AITD-01588,Reinforcement Learning,强化学习,RL,机器学习,AI for Science.md
+64730dc8e249415b,AITD-01598,Representation Learning,表示学习,,,AI for Science.md
+2a0cb4183e42d1fe,AITD-01627,Robustness,稳健性,,计算机、机器学习,AI for Science.md
+40b0ed980fad296f,AITD-01689,Sequence-To-Sequence,序列到序列,Seq2Seq,,AI for Science.md
+90066de343c5fb26,AITD-01707,Sigmoid,Sigmoid（一种激活函数）,,统计,AI for Science.md
+17021cef3941f630,AITD-01719,Simulated Annealing,模拟退火,,统计、机器学习,AI for Science.md
+d45413907fa643a4,AITD-01723,Singular,奇异的,,,AI for Science.md
+ef52826027277e9c,AITD-01743,Softmax Function,Softmax函数/软最大化函数,,统计、机器学习,AI for Science.md
+a44dcf3d8186e071,AITD-01763,Speech Recognition,语音识别,,,AI for Science.md
+7ca393b2a8c46f80,AITD-01800,Statistical Learning,统计学习,,,AI for Science.md
+89d2091eb746b172,AITD-01852,Supervised Learning,监督学习,,机器学习,AI for Science.md
+f2a6fea9ce1b24ad,AITD-01856,Support Vector,支持向量,,统计、机器学习,AI for Science.md
+8f88b6ed62ae5d0a,AITD-01858,Support Vector Machine,支持向量机,SVM,统计、机器学习,AI for Science.md
+0c321ea6746bdbf1,AITD-01859,Support Vector Regression,支持向量回归,SVR,统计、机器学习,AI for Science.md
+7213856b897c1a8b,AITD-01896,Test Set,测试集,,机器学习,AI for Science.md
+1200c131b70b1c9b,AITD-01898,Threshold,阈值,,数学,AI for Science.md
+91666ced37dceb57,AITD-01913,Top-Down,自顶向下,,,AI for Science.md
+8c13769d978353e4,AITD-01928,Training Sample,训练样本,,机器学习,AI for Science.md
+a729347d7291132d,AITD-01929,Training Set,训练集,,机器学习,AI for Science.md
+188894caa7a28243,AITD-01930,Trajectory,轨迹,,,AI for Science.md
+0e000efe21bf9591,AITD-01935,Transfer Learning,迁移学习,,,AI for Science.md
+cbed994cd775a135,AITD-01954,True Negative,真负例,TN,统计,AI for Science.md
+d05880777983554d,AITD-01955,True Positive,真正例,TP,统计,AI for Science.md
+3b266d99c2a09016,AITD-01956,True Positive Rate,真正例率,TPR,统计,AI for Science.md
+c04cbdc45b7d05e7,AITD-01971,Underfitting,欠拟合,,机器学习,AI for Science.md
+863f848fb7bb9745,AITD-02012,Unsupervised Learning,无监督学习,UL,,AI for Science.md
+d9442fb8d8ad9b9a,AITD-02020,Validation Set,验证集,,,AI for Science.md
+d885aa4e2af90266,AITD-02030,Variance,方差,,,AI for Science.md
+5d6c87f69ca40425,AITD-02033,Variational Autoencoder,变分自编码器,VAE,,AI for Science.md
+6c36c09d53e2686c,AITD-02063,Weight,权重,,,AI for Science.md
+d99b3a692652a0c0,AITD-02077,Word Embedding,词嵌入,,,AI for Science.md
+5f7b859426d0e587,AITD-02094,2D Qsar Models,二维定量构效关系模型,,化学,AI for Science.md
+7c96593f78445635,AITD-02095,3D Cartesian,三维笛卡尔（坐标）,,数学,AI for Science.md
+bf471dea99b734c2,AITD-02096,3D Conformation,三维构象,,化学、生化,AI for Science.md
+b4228d9f7401db45,AITD-02097,3D Grids,三维（坐标）网格,,,AI for Science.md
+46090aab2d6d5f4a,AITD-02098,3D Qsar Models,三维定量构效关系模型,,化学,AI for Science.md
+1e1d04b9ab26978b,AITD-02099,Aberration-Corrected,像差矫正,,物理,AI for Science.md
+dd422f1e331334fe,AITD-02100,Active Machine Learning,主动机器学习,,机器学习,AI for Science.md
+8ccab58887d3538e,AITD-02101,Adaptive Fuzzy Neural Network,自适应模糊神经网络,,机器学习,AI for Science.md
+9957b74667f31194,AITD-02102,Adaptive Sampling,自适应采样,,机器学习,AI for Science.md
+0e701bb3821dcc86,AITD-02103,Admet Evaluation,毒性评估,,化学,AI for Science.md
+65195c09cffb9397,AITD-02104,Alexnet,AlexNet,,机器学习,AI for Science.md
+994997430d9d716c,AITD-02105,Alphago,阿尔法狗,,机器学习,AI for Science.md
+02a83093cef48ee8,AITD-02106,Adaptive Neuro Fuzzy Inference System,自适应神经模糊推理系统,ANFIS,机器学习,AI for Science.md
+159409dd152b259d,AITD-02107,Approximate Probabilistic Models,近似概率模型,,机器学习,AI for Science.md
+1ddcff291f0806c6,AITD-02108,Artificial Neurons,人工神经元,,机器学习,AI for Science.md
+7305d56f793d35aa,AITD-02109,Artificial Synapses,人工突触,,机器学习,AI for Science.md
+2444a48edc77f734,AITD-02110,Attention-Based,基于注意力（机制）的,,机器学习,AI for Science.md
+07793ea019e4ef8f,AITD-02111,Automating Synthetic Planning,自动化综合规划,,机器学习,AI for Science.md
+8477840a33c363d1,AITD-02112,Automation,自动化,,机器学习,AI for Science.md
+1992535d2720e463,AITD-02113,Autonomous Decision-Making,自主决策,,机器学习,AI for Science.md
+32b1085a02704ea2,AITD-02114,B-Clustering Algorithms,B树聚类算法,,机器学习,AI for Science.md
+9a752a054d942922,AITD-02115,Balanced Accuracy,平衡精度,,机器学习,AI for Science.md
+99acf4246c783870,AITD-02116,Bandgap Energy,带隙能量,,物理,AI for Science.md
+7b185350ca02c697,AITD-02117,Baseline Test,基准测试,,机器学习,AI for Science.md
+208276a792e254c0,AITD-02118,Basin Hopping,盆地跳跃（算法）,,机器学习,AI for Science.md
+58b55222e4bcdcad,AITD-02119,Bayesian Approach,贝叶斯方法,,统计，机器学习,AI for Science.md
+f32726f130b231a5,AITD-02120,Bayesian Induction,贝叶斯归纳,,统计，机器学习,AI for Science.md
+28d545a70a3b379b,AITD-02121,Bayesian Mcmc Methods,贝叶斯马尔可夫链蒙特卡洛方法,,统计，机器学习,AI for Science.md
+1dfa4106bdb39ace,AITD-02122,Bayesian Methods,贝叶斯方法,,统计，机器学习,AI for Science.md
+833b1a6da5c0d62c,AITD-02123,Bayesian Molecular,贝叶斯分子（设计方法）,,统计，机器学习，化学,AI for Science.md
+30c2972746557d39,AITD-02124,Bayesian Prior,贝叶斯先验,,统计，机器学习,AI for Science.md
+a8e61c2e6e14d6ad,AITD-02125,Bayesian Program Learning,贝叶斯程序学习,BPL,统计，机器学习,AI for Science.md
+5715e9e0ef0d3cb8,AITD-02126,Bayesian Regularized Neural Network,贝叶斯正则化神经网络,,统计，机器学习,AI for Science.md
+d39fe02b493e80f9,AITD-02127,Beam-Scanning,波束扫描,,物理,AI for Science.md
+42da5ed52fd7bcf6,AITD-02128,Best Separates,最优分离,,机器学习,AI for Science.md
+f0368d448f60dbfa,AITD-02129,Biased Dataset,有偏数据集,,机器学习,AI for Science.md
+a944756f5c3462f1,AITD-02130,Bit Collisions,字节碰撞/冲突,,数据库,AI for Science.md
+3dab55ccf0b177d1,AITD-02131,Black Box,黑盒子,,,AI for Science.md
+674889fa99930bdf,AITD-02132,Black-Box Attack,黑盒攻击,,,AI for Science.md
+8359ceeba04fccc7,AITD-02133,Bonding Environments,成键环境,,,AI for Science.md
+be13cd67e150a8cd,AITD-02134,Bonferroni Correction,邦弗朗尼校正,,统计,AI for Science.md
+3b5bb080125afdd0,AITD-02135,Bootstrap Aggregation,引导聚合,bagging,机器学习,AI for Science.md
+fd66d04666e66eab,AITD-02136,Broyden–Fletcher–Goldfarb–Shanno,BFGS（算法）,BFGS,一种拟牛顿法，数学计算,AI for Science.md
+6db59bc87efd83a8,AITD-02137,Buchwald−Hartwig Cross-Coupling,Buchwald–Hartwig 偶联（反应）,,化学,AI for Science.md
+8b497e2d8d70d63e,AITD-02138,C4.5 Algorithm,C4.5 算法,,一种决策树算法，数据挖掘,AI for Science.md
+d1d07e4ef8f61857,AITD-02139,Calculation Uncertainties,计算不确定性,,,AI for Science.md
+bc408b5682838e75,AITD-02140,Canonical Ml Methods,经典机器学习方法,,,AI for Science.md
+feb2c4a4fc9fefa8,AITD-02141,Cartesian Distance Vector,笛卡尔距离向量,,,AI for Science.md
+b3cb3d0c71162469,AITD-02142,CASP,国际蛋白质结构预测竞赛,,生物,AI for Science.md
+e37e24926784db0d,AITD-02143,Categorical Data,分类数据,,,AI for Science.md
+e8fdea57fda7e6af,AITD-02144,Categorization Algorithms,分类算法,,,AI for Science.md
+cf9b0f08c653c7d7,AITD-02145,ChemDataExtractor,化学数据提取器,CDE,,AI for Science.md
+8c935ebac2283f83,AITD-02146,Chi-Squared,卡方（分布）,,,AI for Science.md
+721c6fa8488c4845,AITD-02147,Classification Model,分类模型,,,AI for Science.md
+9a2d01c9cecf31d5,AITD-02148,Cluster Resolution Feature Selection,聚类分辨率特征选择,CR-FS,,AI for Science.md
+d8443b4977c36c60,AITD-02149,Cluster-Based Splitting,基于聚类的分离方法,,,AI for Science.md
+101318e54e6f6e25,AITD-02150,Clustering Methods,聚类方法,,,AI for Science.md
+1d765ccb29bb7869,AITD-02151,Code Pipeline,代码流水线,,,AI for Science.md
+ea7573965d990713,AITD-02152,Coefficient of Determination,决定系数,r^2 or R^2,统计,AI for Science.md
+6d9eba7e45072b72,AITD-02153,Combined Gradient,组合梯度（算法）,,机器学习,AI for Science.md
+0b887de723ecc440,AITD-02154,Complex Data,复合数据,,,AI for Science.md
+641033c91e77d290,AITD-02155,Computational Cost,计算成本,,,AI for Science.md
+b6ef8c0293647a29,AITD-02156,Computational Optimisation,计算优化,,,AI for Science.md
+839d087aded2abb7,AITD-02157,Computational Science,计算科学,,,AI for Science.md
+340bf2db44e0f5e3,AITD-02158,Computational Toxicology,计算毒理学,,,AI for Science.md
+6a4a835ee43365c7,AITD-02159,Computer Science,计算机科学,,,AI for Science.md
+35be77c024b1da54,AITD-02160,Computer Simulations,计算机模拟,,,AI for Science.md
+42a08514714ad184,AITD-02161,Computer-Aided,计算机辅助,,,AI for Science.md
+526fb699efc6517a,AITD-02162,Constraint,约束,,,AI for Science.md
+80a7aeba6217009d,AITD-02163,Core-Loss Spectrum,（电子能量损失谱中的）高能区域,,,AI for Science.md
+3cfc7a76e784aa48,AITD-02164,Coulomb Matrix,库仑矩阵,,,AI for Science.md
+8588e5bac311604f,AITD-02165,Coupled-Cluster Predictions,耦合簇预测,,,AI for Science.md
+619aed77bb4443ad,AITD-02166,Cross-Validated Coefficient of Determination,交叉验证的决定系数,q^2 or Q^2,,AI for Science.md
+92f8a7d91e78e181,AITD-02167,Cross-Validation,交叉验证,CV,,AI for Science.md
+6bf4177fe10debe2,AITD-02168,Crowd-Sourcing,众包,,商业模式,AI for Science.md
+4f8b5788f4149c70,AITD-02169,Cut-Points,切点,,,AI for Science.md
+5b2969439720e410,AITD-02170,Cutoff Radial Function,截断径向函数,,,AI for Science.md
+c9632bd80c336de8,AITD-02171,Data Availability,数据可用性,,,AI for Science.md
+d256ca284f9ff17e,AITD-02172,Data Cleaning,数据清洗,,,AI for Science.md
+c900b774dacc0648,AITD-02173,Data Collection,数据采集,,,AI for Science.md
+50a93bbbf85fc5cf,AITD-02174,Data Considerations,数据注意事项,,,AI for Science.md
+9fce8a6051059f33,AITD-02175,Data Curation,数据监管,,,AI for Science.md
+1feac0d554238c95,AITD-02176,Data Disparity,数据差异,,,AI for Science.md
+14959d37e702579e,AITD-02177,Data Dredging,数据挖掘,,,AI for Science.md
+accb696d2edf1c22,AITD-02178,Data Imputation,数据填补,,,AI for Science.md
+5d6f9f420dc5df52,AITD-02179,Data Labels,数据标签,,,AI for Science.md
+8bb175b7f28c5a99,AITD-02180,Data Leakage,数据泄露,,,AI for Science.md
+a5820934b825f395,AITD-02181,Data Pre-Processing,数据预处理,,,AI for Science.md
+fecebda44125b4d6,AITD-02182,Data Processing,数据处理,,,AI for Science.md
+d9aca138da3c25a1,AITD-02183,Data Quality,数据质量,,,AI for Science.md
+187a0e6dd421dbea,AITD-02184,Data Reduction,数据缩减,,,AI for Science.md
+a852062e1ee481e1,AITD-02185,Data Representation,数据表示,,,AI for Science.md
+415c7ba200a02524,AITD-02186,Data Selection,数据选择,,,AI for Science.md
+9cdfc26734333cd2,AITD-02187,Data Sources,数据源,,,AI for Science.md
+17d5a28e672c4f77,AITD-02188,Data Splitting,数据拆分,,,AI for Science.md
+fc8323e37c04d437,AITD-02189,Data Transformation,数据转换,,,AI for Science.md
+f0f6b04000784e7a,AITD-02190,Data-Driven,数据驱动,,,AI for Science.md
+5ba1fd7a35790553,AITD-02191,Data-Driven Decision-Making,数据驱动的决策,,,AI for Science.md
+27f8de5d5de593f4,AITD-02192,Data-Driven Methods,数据驱动的方法,,,AI for Science.md
+997d7146060d5fb7,AITD-02193,Data-Driven Spectral Analysis,数据驱动的光谱分析,,,AI for Science.md
+af0b9504816a6553,AITD-02194,Data-Mining,数据挖掘,,,AI for Science.md
+38a841252860889e,AITD-02195,Database,数据库,,,AI for Science.md
+9a08fa2cf8f7e2f4,AITD-02196,DE Algorithm,差分进化算法,,,AI for Science.md
+9bfbdcb987a08825,AITD-02197,Deeplift,DeepLift模型,,,AI for Science.md
+21075d8840b30043,AITD-02198,Dendrogram,树状图,,,AI for Science.md
+b89f1fdee32286cf,AITD-02199,Density Functional Theory,密度泛函理论,DFT,,AI for Science.md
+2dc9b5002e89529c,AITD-02200,Density-Based Spatial Clustering Of Applications With Noise,DBSCAN密度聚类,DBSCAN,,AI for Science.md
+e75298246be842e4,AITD-02201,Descriptor,描述符,,,AI for Science.md
+9061a098a79d94a8,AITD-02202,DFT Calculations,DFT计算,,,AI for Science.md
+854d9312d3fec3ed,AITD-02203,Dice Similarity,戴斯相似度,,,AI for Science.md
+0fee0586d1c53a52,AITD-02204,Differential Evolution,差分进化,DE,,AI for Science.md
+96c1db9b03516104,AITD-02205,Dimensionality Reduction,降维,,,AI for Science.md
+04ba0283238c72c7,AITD-02206,Direct Neural Network Modeling,正向神经网络建模,,,AI for Science.md
+8ba6238185f8e014,AITD-02207,Discrete Manner,离散方式,,,AI for Science.md
+eb8d630159f53cc1,AITD-02208,Discrete Quanta,离散量子,,,AI for Science.md
+acd3ecd3c211dd66,AITD-02209,Discretization,离散化,,,AI for Science.md
+7a129b4ce93e142c,AITD-02210,Distillation,蒸馏,,,AI for Science.md
+1607bde0e08e1c33,AITD-02211,Dynamic Datasets,动态数据集,,,AI for Science.md
+0c92a6e0261bc311,AITD-02212,Dynamic Filter Networks,动态过滤网络,,,AI for Science.md
+13c8e0782e92c8e9,AITD-02213,Dynamic Sampling,动态采样,,,AI for Science.md
+d7f3c7413b5f637a,AITD-02214,Dynamics Simulations,动力学模拟,,,AI for Science.md
+c641b89c156949d9,AITD-02215,Eigenfunction,特征函数,,,AI for Science.md
+1a797a81120fc2f2,AITD-02216,Electronegativity,电负性,,,AI for Science.md
+066b3d2573d847a7,AITD-02217,Elman,埃尔曼,,,AI for Science.md
+55fb20217524976c,AITD-02218,Empirical Models,经验模型,,,AI for Science.md
+d54a12d3a203e4ec,AITD-02219,Energy Derivatives,能源衍生品,,在DP模型中：能量的导数,AI for Science.md
+a045c1f4935bddf0,AITD-02220,Energy Potentials,能量潜力,,,AI for Science.md
+dad77e5d0cc1eaa8,AITD-02221,Ensemble Methods,集成方法,,,AI for Science.md
+77220042994d9b71,AITD-02222,Entity Normalisation,实体规范化,,,AI for Science.md
+6f802749c3824ff7,AITD-02223,Ethical Considerations,道德考虑,,,AI for Science.md
+69d0b0675336767c,AITD-02224,Euclidean Distances,欧几里得距离,,,AI for Science.md
+d7eee8cda054bb30,AITD-02225,Evolutionary Algorithms,进化算法,EA,,AI for Science.md
+ae1b2ab5fac7f550,AITD-02226,Evolutionary Method,进化方法,,,AI for Science.md
+fc1fa484468bccec,AITD-02227,Exchange–Correlation,交换关联（的能量/泛函）,,,AI for Science.md
+b370e7f6d3682db0,AITD-02228,Excited-State Potentials,激发态能量,,,AI for Science.md
+e6e0068554f7d219,AITD-02229,Expected Reduction In Distortion,符合预期的失真减少,ERD,,AI for Science.md
+3a8f8fa1de4231b9,AITD-02230,Experimental Validation Data,实验验证数据,,,AI for Science.md
+9aa308b3050071dc,AITD-02231,Expert Systems,专家系统,ESS,,AI for Science.md
+5c50f6ae3e03ce88,AITD-02232,Extended-Connectivity Circular Fingerprint,扩展连接环形指纹,ECFP,,AI for Science.md
+b4aae3df52ab0ba0,AITD-02233,Extraction Techniques,提取技术,,,AI for Science.md
+33fd505306cddbd1,AITD-02234,Faber-Christensen-Huang-Lilienfeld,Faber-Christensen-Huang-Lilienfeld,FCHL,四个人提出的化学结构量子机器学习方法,AI for Science.md
+1c513ddacaae933b,AITD-02235,Facial Recognition,面部识别,,,AI for Science.md
+faa5b1b57d4f6034,AITD-02236,FAIR Data Principles,FAIR数据原则,,Findability可找寻 Accessibility可访问 Interoperability可交互 Reuse可再用,AI for Science.md
+c242dc2add9c7b7f,AITD-02237,False Negatives,假阴性,FNs,,AI for Science.md
+35a1041d5cb89f7a,AITD-02238,False Positives,假阳性,FPs,,AI for Science.md
+fafe1b3911a8c850,AITD-02239,Fchl Representation,Fchl 表示,,,AI for Science.md
+176d663177c19218,AITD-02240,Feature Binarization,特征二值化,,,AI for Science.md
+98f7dcf0c9d1fd5f,AITD-02241,Feature Transform,特征变换,,,AI for Science.md
+cd9b982a32d69ace,AITD-02242,Feature Vectors,特征向量,,,AI for Science.md
+95840e31185e9673,AITD-02243,Features,特征,,,AI for Science.md
+c670d57b01eb6d83,AITD-02244,Feed Back,反馈,,,AI for Science.md
+eb20f4ded76299c8,AITD-02245,Feed-Forward Neural Networks,前馈神经网络,FFNN,,AI for Science.md
+f122a79b2374d755,AITD-02246,Feedback Structure,反馈结构,,,AI for Science.md
+27b272affd071ffd,AITD-02247,Final Evaluation,最终评估,,,AI for Science.md
+7edba37cde0a6203,AITD-02248,"Findable, Accessible, Interoperable, Reusable",可查找、可访问、可互操作、可重用,FAIR,,AI for Science.md
+8af27ab7afc95c13,AITD-02249,First-Principles,第一性原理,,,AI for Science.md
+5f58d445e682edbb,AITD-02250,Flow Rate,流速,,,AI for Science.md
+48dc97baa2d91412,AITD-02251,Forward Cross-Validation,前向交叉验证,,,AI for Science.md
+6a100b9eb2a062f3,AITD-02252,Forward Prediction,前向预测,,,AI for Science.md
+a8abc24bb452302c,AITD-02253,Forward Reaction Prediction,前向反应预测,,,AI for Science.md
+795a79fe022efea2,AITD-02254,Fuzzy Logic,模糊逻辑,FL,,AI for Science.md
+629294455552a43b,AITD-02255,Fuzzy Neural Networks,模糊神经网络,FNN,,AI for Science.md
+6b71adfb9e73a99f,AITD-02256,Ga-Based Approaches,基于遗传算法的方法,,,AI for Science.md
+8e414ac754c43c57,AITD-02257,"Garbage In, Garbage Out",无用数据入、无用数据出,GIGO,,AI for Science.md
+045339bc95fb2e45,AITD-02258,Gas-Phase Networks,气相网络,,,AI for Science.md
+310211312cd4a84c,AITD-02259,Gaussian Kernels,高斯核,,,AI for Science.md
+ec0f6d053ddc016c,AITD-02260,Gaussian-Type Structure Descriptors,高斯型结构描述符,GTSD,,AI for Science.md
+20d5c2b5211e5723,AITD-02261,General Intelligence,通用智能,GI,,AI for Science.md
+f0a70d4bd63fa0a7,AITD-02262,Generalized Gradient Approximation,广义梯度近似,GGA,,AI for Science.md
+d3dd8ee856b742f3,AITD-02263,Generative Adversarial Networks,生成对抗网络,GAN,机器学习,AI for Science.md
+6999b23774a890e1,AITD-02264,Gradient Boosting Decision Tree,梯度提升决策树,GBDT,,AI for Science.md
+e65abd36eb3dfc2f,AITD-02265,Gradient-Based,基于梯度的,,,AI for Science.md
+195a16db13e054ed,AITD-02266,Grain-Surface Networks,粒面网络,,,AI for Science.md
+ea6a70c8031fd76f,AITD-02267,Graph Convolutional,图卷积,GC,,AI for Science.md
+a17a211342edb16b,AITD-02268,Graph Models,图模型,,,AI for Science.md
+4998c6d62315b624,AITD-02269,Graph Neural Networks,图神经网络,GNNS,,AI for Science.md
+bd50a3023b6b363b,AITD-02270,Graph-Based,基于图形,,,AI for Science.md
+ffe73859d22ecfca,AITD-02271,Graph-Based Models,基于图的模型,,,AI for Science.md
+32f70b61b295063a,AITD-02272,Graph-Based Neural Networks,基于图的神经网络,,,AI for Science.md
+ce5f069771c7072d,AITD-02273,Graph-Based Representation,基于图的表示,GB-GA,,AI for Science.md
+28234e72629e80fc,AITD-02274,Graph-Convolutional Neural Network,图卷积神经网络,,,AI for Science.md
+b631c131258995d8,AITD-02275,Graphics Processing Units,图形处理器,,,AI for Science.md
+4899964371afd141,AITD-02276,Gravimetric Polymerization Degree,比重聚合度,,,AI for Science.md
+2018296dcf9227a4,AITD-02277,Hamiltonian Matrix,哈密顿矩阵,,物理,AI for Science.md
+5f3021374555e6c8,AITD-02278,Hamiltonian Operator,哈密顿算符,,物理,AI for Science.md
+1693b506105ba37d,AITD-02279,Heterogeneous Data,异构数据,,,AI for Science.md
+e6cf2fc52b944ec4,AITD-02280,Hidden Layers,隐藏层,,,AI for Science.md
+5451f09b38f3d1e8,AITD-02281,High Data Throughput,高数据吞吐量,,,AI for Science.md
+814076f42dcb2062,AITD-02282,High Throughput,高通量,HT,,AI for Science.md
+b9e2f36b4399cd36,AITD-02283,High Throughput Screening,高通量筛选,HTS,,AI for Science.md
+a110d98a51d97dda,AITD-02284,High Variance Models,高方差模型,,,AI for Science.md
+ef000fd3dc71a248,AITD-02285,High-Dimensional Data,高维数据,,,AI for Science.md
+c6f90b38dc240e38,AITD-02286,High-Dimensional NN,高维神经网络,HDNN,,AI for Science.md
+872f521f77644c39,AITD-02287,High-Dimensional Objects,高维对象,,,AI for Science.md
+0dc3dab8fb76f507,AITD-02288,High-Throughput,高通量,,,AI for Science.md
+4e96343a7b450c77,AITD-02289,Higher-Dimensional Space,高维空间,,数学,AI for Science.md
+5bde2b5a7ea4598e,AITD-02290,Higher-Dimensional Spectral Space,高维光谱空间,,,AI for Science.md
+53a15365a090b81c,AITD-02291,Homogenization,同质化,,,AI for Science.md
+d46e725b4eba44b9,AITD-02292,Homomorphic Encryption,同态加密,,,AI for Science.md
+c71ef4aeae9cfbbd,AITD-02293,Human Face Recognition,人脸识别,,机器学习,AI for Science.md
+7f1168324c75dd0f,AITD-02294,Human-Encoded,人工编码的,,,AI for Science.md
+b7f054889b07ab9f,AITD-02295,Hybrid Model,混合模型,,,AI for Science.md
+a2f4e67307373519,AITD-02296,Hybrid Technique,混合技术,HM,,AI for Science.md
+bd5a71dedcad489a,AITD-02297,Hybrid-Neural Model,混合神经模型,,,AI for Science.md
+cdefad30d3778cee,AITD-02298,Hyperparameter Opimization,超参数优化,,,AI for Science.md
+bd7fde360e955b0e,AITD-02299,Hyperparameters,超参数,,机器学习,AI for Science.md
+a33fef986d9debf5,AITD-02300,Hyperplanes Separate,超平面分离,,,AI for Science.md
+dfad23c6252ee55f,AITD-02301,Id3 Algorithm,Id3 算法,,,AI for Science.md
+73b9bcc3f837d73e,AITD-02302,Image And Speech Recognition,图像和语音识别,,,AI for Science.md
+ef0c673e748f52fe,AITD-02303,Image Classification,图像分类,,,AI for Science.md
+9b5093735666f40c,AITD-02304,Image Classifier,图像分类器,,,AI for Science.md
+340fb96c70f8cda9,AITD-02305,Image Recognition,图像识别,,机器学习,AI for Science.md
+d75fb14408c5f1f0,AITD-02306,Informative Priors,信息先验,,,AI for Science.md
+1c58c7825e3ed976,AITD-02307,Input-Output Pairs,输入输出对,,,AI for Science.md
+922c486583704c35,AITD-02308,Instance-Based,基于实例的,,,AI for Science.md
+60c117ea74e5bd84,AITD-02309,Intelligent Machine,智能机器,,,AI for Science.md
+bf0b7a3dfb2d11bf,AITD-02310,Intermediate Neurons,中间神经元,,机器学习,AI for Science.md
+252cb7cd4074d912,AITD-02311,Internet Of Things,物联网,IoT,,AI for Science.md
+6405e9f2e3506435,AITD-02312,Interpolation Coordinate,插值坐标,,,AI for Science.md
+aba24789dbf56a10,AITD-02313,Interpretability,可解释性,,,AI for Science.md
+46717fbe7671ee8e,AITD-02314,Inverse Neural Modeling,逆神经建模,INN,,AI for Science.md
+5c3c3bb574cca616,AITD-02315,Inverse Neural Network Modeling,逆神经网络建模,,,AI for Science.md
+4d87822440bdb71d,AITD-02316,Iterative Learning,迭代学习,,,AI for Science.md
+f9fec81be05c6df6,AITD-02317,Joint Distribution,联合分布,,,AI for Science.md
+331c3361aac0b87d,AITD-02318,Jordan-Elman Neural Networks,Jordan-Elman 神经网络,,,AI for Science.md
+7889bd5fe41e688d,AITD-02319,K Clusters,K聚类,,,AI for Science.md
+e4a9be55bbd3a046,AITD-02320,K Nearest Points,K 最近点,,统计,AI for Science.md
+7b77d293332823f6,AITD-02321,K-1 Folds,K-1 折,,,AI for Science.md
+705295f73a964e12,AITD-02322,K-Edge (O-K Edge),K-边缘（O-K 边缘）,,,AI for Science.md
+60f6fad400e689a9,AITD-02323,K-Means,K-均值,,统计,AI for Science.md
+0f164bae9fd2f162,AITD-02324,Kendall’S Tau,肯德尔等级相关系数,,,AI for Science.md
+62ce01164a37f935,AITD-02325,Kernel Ridge Regression,核岭回归,KRR,,AI for Science.md
+3264cc8bb424c68c,AITD-02326,Kernels,内核,,,AI for Science.md
+d3bc46eb3daf4751,AITD-02327,Kinetic Curve,动力学曲线,,,AI for Science.md
+1383b87ce37e8d01,AITD-02328,KNN Model,K 近邻模型,,,AI for Science.md
+8ba17a0f656bda39,AITD-02329,Knowledge Extraction,知识提取,,,AI for Science.md
+c97070f6ab03c2be,AITD-02330,Knowledge Gradient,知识梯度,KG,,AI for Science.md
+4f4b9d0eee6e0ade,AITD-02331,L1 And L2 Regularization,L1与L2正则化,,,AI for Science.md
+34a92124d4ba7d3a,AITD-02332,Laboratory Level,实验室级别,,,AI for Science.md
+9e9cf7f63b3aa854,AITD-02333,Language Processing,语言处理,,,AI for Science.md
+a78313365a03eace,AITD-02334,Laplacian Prior,拉普拉斯先验,,,AI for Science.md
+4539a72b5a7179c5,AITD-02335,Large-Scale Data Storage,大规模数据存储,,,AI for Science.md
+38cdc4793d569ddd,AITD-02336,Lasers,激光器,,,AI for Science.md
+94b236814b5a5117,AITD-02337,Lasso Regression,拉索回归,,,AI for Science.md
+f5382d006a383c1c,AITD-02338,LBP,局部二值模式,,,AI for Science.md
+5de3027086b89362,AITD-02339,Least Absolute Shrinkage And Selection Operator,Lasso回归,LASSO,,AI for Science.md
+aa3be229961f9c89,AITD-02340,Least Square Support Vector Machine,最小二乘支持向量机,LSSVM,,AI for Science.md
+42d5e691cd0a97c1,AITD-02341,Ligand-Field,配位场,,,AI for Science.md
+c01cdb7ca3fb577b,AITD-02342,Linear,线性的,,数学,AI for Science.md
+de34ba652482e076,AITD-02343,Linear Dimension Reduction Methods,线性降维方法,,,AI for Science.md
+7446e7886d8fd5ba,AITD-02344,Linear Vibronic Coupling Model,线性振子耦合模型,,,AI for Science.md
+96287c8c818d5113,AITD-02345,Local Recurrent,本地卷积,,,AI for Science.md
+cd3139f0b637d254,AITD-02346,Logic And Heuristics Applied To Synthetic Analysis,LHASA 程序,LHASA,,AI for Science.md
+6852e1699cec6879,AITD-02347,Long-Range Prediction,长期预测,,,AI for Science.md
+723d8b4132ca723a,AITD-02348,Long-Range Prediction Models,长期预测模型,,,AI for Science.md
+38f3a3f79dd4374b,AITD-02349,Long-Term Planning,长期规划,,,AI for Science.md
+8913c6fb920e2511,AITD-02350,Long-Term Reward,长期回报,,,AI for Science.md
+e4381008a0c45bc2,AITD-02351,Machine-Readable Data,机器可读的数据,,,AI for Science.md
+630b252196dd5fb8,AITD-02352,Mae,平均绝对误差,MAE,,AI for Science.md
+e3100b8be54e2b75,AITD-02353,Mahalanobis Distances,马氏距离,,统计,AI for Science.md
+e01892ff184b4305,AITD-02354,Matrices,矩阵,,数学,AI for Science.md
+2083c960869ba72e,AITD-02355,Matthews Correlation Coefficient,马修斯相关系数,MCC,,AI for Science.md
+2329789c2e7e59d8,AITD-02356,Maximum Likelihood Methods,最大似然法,,统计,AI for Science.md
+20841dcb6d733ac8,AITD-02357,Maximum Likelihood Procedures,最大似然估计法,,统计,AI for Science.md
+9bdb878477c8d097,AITD-02358,MCTS Method,蒙特卡洛树搜索方法,,,AI for Science.md
+4ee2e63084125528,AITD-02359,Mean-Squared Error,均方误差,,统计、机器学习,AI for Science.md
+458bf13f5fc1b2e8,AITD-02360,Mechanical Sympathy,机械同感，软硬件协同编程,,,AI for Science.md
+37f5655871dbf544,AITD-02361,Merging,合并,,,AI for Science.md
+b159f62a1b2a0d96,AITD-02362,Message Passing Neural Networks,消息传递神经网络,MPNNS,,AI for Science.md
+441a55235343cceb,AITD-02363,Microarray Data,微阵列数据,,,AI for Science.md
+69082e8fb2742ff5,AITD-02364,Mini Batch,小批次,,,AI for Science.md
+57112cc936569616,AITD-02365,Mining,挖掘,,,AI for Science.md
+0c35be0744f5eda8,AITD-02366,Mining Out,挖掘,,,AI for Science.md
+fbc2a072135f89a0,AITD-02367,Missing Values,缺失值,,统计,AI for Science.md
+0fee3666d4fad1b0,AITD-02368,ML Algorithm,机器学习算法,,,AI for Science.md
+569fc3884f52a862,AITD-02369,ML Modelling,机器学习建模,,,AI for Science.md
+2898d8c887bc9fd4,AITD-02370,ML Potentials,机器学习势能,,,AI for Science.md
+eed15035a914335b,AITD-02371,ML-Driven,机器学习驱动的,,,AI for Science.md
+726ac0e87913bf66,AITD-02372,ML-Driven Optimization,机器学习驱动的最优化,,,AI for Science.md
+8f0ff23e7ae82399,AITD-02373,MLP Neural Model,多层感知机神经模型,,,AI for Science.md
+3de6c93100140bd6,AITD-02374,Model Construction,模型构建,,,AI for Science.md
+121a226f97dddbd1,AITD-02375,Model Evaluation,模型评估,,,AI for Science.md
+1bd97781f2896a0e,AITD-02376,Model Performance,模型性能,,,AI for Science.md
+615b94c6bb480d4f,AITD-02377,Model Statistics,模型统计,,,AI for Science.md
+bfa15522ef4ddd9c,AITD-02378,Model Training,模型训练,,机器学习,AI for Science.md
+6e0418880ffdcb92,AITD-02379,Model Validation,模型验证,,,AI for Science.md
+405ef041cea1f4a5,AITD-02380,Model-Based Iterative Reconstruction,基于模型的迭代重建,MBIR,,AI for Science.md
+9546a2ebc2e0affc,AITD-02381,Model-Construction,模型构建,,,AI for Science.md
+aa5c09a29a1d3ba9,AITD-02382,Modelling Scenario,建模场景,,,AI for Science.md
+4d89506c37cbbe0d,AITD-02383,Molecular Graph Theory,分子图论,,,AI for Science.md
+f2c1047240bff57d,AITD-02384,Molecular Modelling,分子建模,,,AI for Science.md
+648eb9a417c5844c,AITD-02385,Monte Carlo Tree Search,蒙特卡洛树搜索,MCTS,数学,AI for Science.md
+051d5946b78cc210,AITD-02386,Moore’S Law,摩尔定律,,计算机,AI for Science.md
+6410f778d3e799dc,AITD-02387,ms-QSBER-EL Model,基于人工神经网络组合的结构生物学效应定量关系多尺度模型,,,AI for Science.md
+dceed1f4499db6c0,AITD-02388,Multi-Agent Control System,多智能体控制系统,,,AI for Science.md
+28e13662d821fd0b,AITD-02389,Multi-Core Desktop Computer,多核台式计算机,,计算机,AI for Science.md
+84fe3477a902eb84,AITD-02390,Multi-Dimensional Big Data Analysis,多维度大数据分析,,,AI for Science.md
+9eeeaeded4a63976,AITD-02391,Multi-Layer Feed-Forward,多层前馈,MLFF,,AI for Science.md
+2fb98ac706938791,AITD-02392,Multi-Objective Genetic Algorithm,多目标遗传算法,MOGA,,AI for Science.md
+75f98cec3a8e6bc4,AITD-02393,Multi-Objective Optimization,多目标优化,,机器学习,AI for Science.md
+5be78c77c07d11af,AITD-02394,Multi-Reaction Synthesis,多反应合成,,,AI for Science.md
+077b19a13ccd7675,AITD-02395,Multilayer Perceptron,多层感知机,,,AI for Science.md
+c27678ae54e8e3f4,AITD-02396,Multivariate Regression,多变量回归,,,AI for Science.md
+787005137968b12d,AITD-02397,N-Dimensional Space,N维空间,,,AI for Science.md
+d76c783834fb9a39,AITD-02398,Naive Bayesian,朴素贝叶斯,,统计,AI for Science.md
+2c8e94e4c16c77f0,AITD-02399,Naive Bayesian Methods,朴素贝叶斯方法,,统计,AI for Science.md
+52970b97d27e7386,AITD-02400,Named Entity Recognition，NER,命名实体识别,NER,,AI for Science.md
+1848c1a4450c852d,AITD-02401,Nearest Neighbors,近邻,,,AI for Science.md
+52f4ce6dc726ae73,AITD-02402,Nearest Neighbour Model,近邻模型,,,AI for Science.md
+82ee2dea2cf3f844,AITD-02403,Negative Predictive Value,阴性预测值,NPV,,AI for Science.md
+b54c2f3c13a89f21,AITD-02404,Network Architecture,网络结构,,机器学习,AI for Science.md
+ef91594fb505441e,AITD-02405,Network Geometry,网络几何,,,AI for Science.md
+cf8f30e11b9eb01c,AITD-02406,Neural Turing Machines,神经图灵机,NTM,,AI for Science.md
+65b010a93fea0b41,AITD-02407,Neural-Network-Based Function,基于神经网络的函数,,,AI for Science.md
+9fc03c32b3e4f077,AITD-02408,Neurons,神经元,,机器学习,AI for Science.md
+16c0188a6c748834,AITD-02409,Nuclear Magnetic Resonance,核磁共振,NMR,,AI for Science.md
+3e33310ccd7ca8bc,AITD-02410,Noise Filters,噪声过滤器,,,AI for Science.md
+2203ffff4d1467f4,AITD-02411,Noise-Free,无噪的,,,AI for Science.md
+7a142ae18a866801,AITD-02412,Non-Linear,非线性,,数学、统计,AI for Science.md
+8b3e20ce505eaa14,AITD-02413,Non-Linear Correlation,非线性相关,,统计,AI for Science.md
+a925080838be2549,AITD-02414,Non-Linearity,非线性,,,AI for Science.md
+fbab8822d4162992,AITD-02415,Non-Parametric Algorithm,非参数化学习算法,,,AI for Science.md
+33c31ea099330c6b,AITD-02416,Non-Safety-Critical Applications,非安全关键型应用,,,AI for Science.md
+50fd6ee2f1eeddb2,AITD-02417,Non-Steady-State,非稳态,,,AI for Science.md
+022fb5dfd4932ae4,AITD-02418,Non-Stochastic,非随机的,,,AI for Science.md
+b27f7b91abc71da8,AITD-02419,Non-Template,非模板,,,AI for Science.md
+1bc612e3ded0d1fa,AITD-02420,Non-Template Methods,非模板方法,,,AI for Science.md
+2d54c0b5f7f13151,AITD-02421,Non-Zero Weight,非零权重,,,AI for Science.md
+66195eccd7f17e44,AITD-02422,On-The-Fly Optimization,运行中优化,,计算机,AI for Science.md
+be7e1e49ae51badf,AITD-02423,One-Hot Vector,独热向量,,整个矢量中之后一个数为1 其余为0,AI for Science.md
+712cfae626eabfd7,AITD-02424,Open-Source,开源,,软件工程,AI for Science.md
+0eec16540c6da6cd,AITD-02425,Open-Source Dataset,开源数据集,,机器学习,AI for Science.md
+57b6947ab21e846a,AITD-02426,Predicted Label,预测值,,机器学习,AI for Science.md
+0a886a06c14d2d4e,AITD-02427,Prediction,预测,,机器学习,AI for Science.md
+0f07d1531d337990,AITD-02428,Prediction Accuracy,预测准确率,,机器学习,AI for Science.md
+0299576567f77a10,AITD-02429,Predictor,预测器/决策函数,,机器学习,AI for Science.md
+89d846989caee9f2,AITD-02430,Protein Folding,蛋白折叠,,生物,AI for Science.md
+1066d37c4eaec469,AITD-02431,Quantum Chemistry,量子化学,,化学,AI for Science.md
+b90da04d4e63faa4,AITD-02432,Quantum Theory,量子理论,,物理,AI for Science.md
+558da6d7c1279fe1,AITD-02433,Random Selection,随机选择,,统计,AI for Science.md
+a36b46342707b99e,AITD-02434,Raw Datasets,原始数据集,,机器学习,AI for Science.md
+67e3337355ae598c,AITD-02435,Root Mean Square Errors,均方根,RMSE,统计,AI for Science.md
+2e3ef2959fe9cbc2,AITD-02436,Scaling,缩放,,图像处理,AI for Science.md
+e1934543a28a4bfa,AITD-02437,Simulation,仿真,,,AI for Science.md
+7ead0ff5e3efa241,AITD-02438,The Global Minimum,全局最小值,,机器学习,AI for Science.md
+ffa821a2f1300a39,AITD-02439,Turing Test,图灵测试,,AI，CS,AI for Science.md
+64d6cbe1323405ac,AITD-02440,Version Control,版本控制,,,AI for Science.md
+b53e6db2520afb29,AITD-02441,Workflow,工作流,,,AI for Science.md
+a682fd21a07ee475,AITD-02442,Sequence-Function,序列-功能,,,AI for Science.md
+b818102ad5eb1733,AITD-00000,0-1 Loss Function,0-1损失函数,,,Machine Learning.md
+7eb11aa165e90552,AITD-00003,Accept-Reject Sampling Method,接受-拒绝抽样法/接受-拒绝采样法,,,Machine Learning.md
+a42a95a30d79bb2b,AITD-00006,Accumulated Error Backpropagation,累积误差反向传播,,,Machine Learning.md
+1b27a43fd0e1e8d5,AITD-00007,Accuracy,准确率,,,Machine Learning.md
+59b6ef8925470cc3,AITD-00010,Acquisition Function,采集函数,,,Machine Learning.md
+21a04b3bfec46f7f,AITD-00011,Action,动作,,,Machine Learning.md
+398238dcbc1e45e1,AITD-00015,Activation Function,激活函数,,机器学习,Machine Learning.md
+c85b46dd91e0c691,AITD-00016,Active Learning,主动学习,,机器学习,Machine Learning.md
+9f03ba73516abea7,AITD-00020,Adaptive Bitrate Algorithm,自适应比特率算法,ABR,,Machine Learning.md
+94ffcd44b69b2631,AITD-00021,Adaptive Boosting,AdaBoost,,,Machine Learning.md
+02c6718af6a01d18,AITD-00022,Adaptive Gradient Algorithm,AdaGrad,,,Machine Learning.md
+cf2701804ba30dc5,AITD-00023,Adaptive Moment Estimation Algorithm,Adam算法,Adam,,Machine Learning.md
+00473b1ae76ee67b,AITD-00024,Adaptive Resonance Theory,自适应谐振理论,ART,,Machine Learning.md
+3a1dd71eae007d26,AITD-00025,Additive Model,加性模型,,,Machine Learning.md
+34c08ea4b4c24b55,AITD-00032,Affinity Matrix,亲和矩阵,,,Machine Learning.md
+71b20f94dce01556,AITD-00033,Agent,智能体,,,Machine Learning.md
+1d906d55547119bf,AITD-00036,Algorithm,算法,,,Machine Learning.md
+18cc7cf6a48ab394,AITD-00040,Alpha-Beta Pruning,α-β修剪法,,,Machine Learning.md
+ad0a0745057e83b7,AITD-00046,Anomaly Detection,异常检测,,,Machine Learning.md
+38e1417070b479a9,AITD-00052,Approximate Inference,近似推断,,,Machine Learning.md
+e48fe510aa40da3a,AITD-00056,Area Under ROC Curve,AUC（ROC曲线下方面积，度量分类模型好坏的标准）,AUC,机器学习,Machine Learning.md
+ddb239a0a2a70673,AITD-00059,Artificial Intelligence,人工智能,AI,机器学习,Machine Learning.md
+b02d6dc5370be9b0,AITD-00060,Artificial Neural Network,人工神经网络,ANN,机器学习,Machine Learning.md
+10f9bafdecc042ff,AITD-00061,Artificial Neuron,人工神经元,,,Machine Learning.md
+0e9bb3877543a7ce,AITD-00069,Attention,注意力,,机器学习,Machine Learning.md
+6d2b7ba23edd0955,AITD-00072,Attention Mechanism,注意力机制,,,Machine Learning.md
+dfe2be7e2937ecdd,AITD-00075,Attribute,属性,,,Machine Learning.md
+8b535420fc086b91,AITD-00077,Attribute Space,属性空间,,,Machine Learning.md
+edd6eff3cbbaf5cf,AITD-00081,Autoencoder,自编码器,AE,,Machine Learning.md
+45a234344dd43062,AITD-00082,Automatic Differentiation,自动微分,AD,,Machine Learning.md
+f5baf6d4915e9da6,AITD-00086,Autoregressive Model,自回归模型,AR,,Machine Learning.md
+b7aed4efcbfff275,AITD-00092,Back Propagation,反向传播,BP,机器学习,Machine Learning.md
+17ce0b00a60d6557,AITD-00093,Back Propagation Algorithm,反向传播算法,,,Machine Learning.md
+f400a276327066b3,AITD-00094,Back Propagation Through Time,随时间反向传播,BPTT,,Machine Learning.md
+a1a2f0d898a60a6c,AITD-00097,Backward Induction,反向归纳,,,Machine Learning.md
+1dfb04c0ac5cf7ad,AITD-00098,Backward Search,反向搜索,,,Machine Learning.md
+f56bbb921ef8bbe6,AITD-00099,Bag of Words,词袋,BOW,,Machine Learning.md
+57ad102ea07c3a11,AITD-00101,Bandit,赌博机/老虎机,,,Machine Learning.md
+6ddb46d32088ea72,AITD-00105,Base Learner,基学习器,,,Machine Learning.md
+21f2cc5dfe1e2b44,AITD-00106,Base Learning Algorithm,基学习算法,,,Machine Learning.md
+37dd6508d2a74f23,AITD-00108,Baseline,基准,,机器学习,Machine Learning.md
+3a28bd3972712b15,AITD-00110,Batch,批量,,,Machine Learning.md
+845c0ee97efcc91c,AITD-00113,Batch Normalization,批量规范化,BN,,Machine Learning.md
+517e1613ed9909f0,AITD-00117,Bayes Decision Rule,贝叶斯决策准则,,,Machine Learning.md
+cb02724933e0ed22,AITD-00119,Bayes Model Averaging,贝叶斯模型平均,BMA,,Machine Learning.md
+571cb9dfc42d404f,AITD-00120,Bayes Optimal Classifier,贝叶斯最优分类器,,,Machine Learning.md
+13ffd70a792c40b3,AITD-00123,Bayes' Theorem,贝叶斯定理,,,Machine Learning.md
+d9740ef3c9771788,AITD-00124,Bayesian Decision Theory,贝叶斯决策理论,,,Machine Learning.md
+b78e19d3ff138586,AITD-00126,Bayesian Inference,贝叶斯推断,,统计，机器学习,Machine Learning.md
+411d7cf47fa80be3,AITD-00127,Bayesian Learning,贝叶斯学习,,,Machine Learning.md
+0e0104ffbda77c55,AITD-00129,Bayesian Network,贝叶斯网/贝叶斯网络,,Network翻译为网或网络皆可，只要统一翻译成网或者统一翻译成网络即可；统计，机器学习,Machine Learning.md
+d28d09f7580aa07e,AITD-00130,Bayesian Optimization,贝叶斯优化,,,Machine Learning.md
+a1495ca8506d9233,AITD-00133,Beam Search,束搜索,,,Machine Learning.md
+a5a249c48dcfda4c,AITD-00134,Benchmark,基准,,,Machine Learning.md
+c9b59139cca2a719,AITD-00135,Belief Network,信念网/信念网络,BN,Network翻译为网或网络皆可，只要统一翻译成网或者统一翻译成网络即可,Machine Learning.md
+4be0693760c07fcf,AITD-00136,Belief Propagation,信念传播,BP,,Machine Learning.md
+46011f53b57f0e5d,AITD-00137,Bellman Equation,贝尔曼方程,,,Machine Learning.md
+6d5d61957f842d27,AITD-00139,Bernoulli Distribution,伯努利分布,,统计,Machine Learning.md
+cb6af89f74c65b25,AITD-00142,Beta Distribution,贝塔分布,,,Machine Learning.md
+9f856c25dd88e584,AITD-00143,Between-Class Scatter Matrix,类间散度矩阵,,,Machine Learning.md
+c0cbd8dc91a092b0,AITD-00144,BFGS,BFGS,,,Machine Learning.md
+22907171fd38c539,AITD-00147,Bias,偏差/偏置,,看上下语境；机器学习,Machine Learning.md
+27e3ff64a2043a00,AITD-00148,Bias In Affine Function,偏置,,看上下语境,Machine Learning.md
+11e9bc0c04183550,AITD-00149,Bias In Statistics,偏差,,看上下语境,Machine Learning.md
+09698830a939ce05,AITD-00150,Bias Shift,偏置偏移,,,Machine Learning.md
+a83a775949a868dc,AITD-00151,Bias-Variance Decomposition,偏差 - 方差分解,,,Machine Learning.md
+83e61ad5b24ea89d,AITD-00152,Bias-Variance Dilemma,偏差 - 方差困境,,,Machine Learning.md
+6be301457aea6ec1,AITD-00156,Bidirectional Recurrent Neural Network,双向循环神经网络,Bi-RNN,,Machine Learning.md
+57c0e8c543133ba5,AITD-00157,Bigram,二元语法,,,Machine Learning.md
+f377d8ebeb64ebcc,AITD-00158,Bilingual Evaluation Understudy,BLEU,,,Machine Learning.md
+a3a381cb02f412f7,AITD-00159,Binary Classification,二分类,,,Machine Learning.md
+695bf70c21ee8aa5,AITD-00162,Binomial Distribution,二项分布,,,Machine Learning.md
+06a846ad9cc17862,AITD-00164,Binomial Test,二项检验,,,Machine Learning.md
+f3ba86b2c4192f17,AITD-00172,Boltzmann Distribution,玻尔兹曼分布,,,Machine Learning.md
+ef44b27f21d7c429,AITD-00174,Boltzmann Machine,玻尔兹曼机,,,Machine Learning.md
+bb0c0245c7061592,AITD-00175,Boosting,Boosting（一种模型训练加速方式）,,,Machine Learning.md
+911a3aad94ba7324,AITD-00177,Bootstrap Aggregating,Bagging,,,Machine Learning.md
+767bba2f5c85b65f,AITD-00178,Bootstrap Sampling,自助采样法,,,Machine Learning.md
+b99921bdb41ad332,AITD-00179,Bootstrapping,自助法/自举法,,,Machine Learning.md
+e2e0a5c795e2b736,AITD-00183,Break-Event Point,平衡点,BEP,,Machine Learning.md
+0338e62d7a7738e9,AITD-00187,Bucketing,分桶,,,Machine Learning.md
+9a9f134ded878e08,AITD-00191,Calculus of Variations,变分法,,,Machine Learning.md
+c32c3c16c66d99a9,AITD-00198,Cascade-Correlation,级联相关,,,Machine Learning.md
+94e2cbcb2ec00fb3,AITD-00199,Catastrophic Forgetting,灾难性遗忘,,,Machine Learning.md
+3f997d0cd0c9a57f,AITD-00201,Categorical Distribution,类别分布,,,Machine Learning.md
+a4e5797dcf0e8fcf,AITD-00204,Cell,单元,,,Machine Learning.md
+6277c8e6ee15e2bf,AITD-00207,Chain Rule,链式法则,,,Machine Learning.md
+7f88679c91ee2ec1,AITD-00210,Chebyshev Distance,切比雪夫距离,,,Machine Learning.md
+597a15150f790890,AITD-00214,Class,类别,,,Machine Learning.md
+612d5d6b2d536595,AITD-00217,Class-Imbalance,类别不平衡,,,Machine Learning.md
+9b583ce0b9ef92da,AITD-00218,Classification,分类,,,Machine Learning.md
+9b07e541e30e37b0,AITD-00219,Classification And Regression Tree,分类与回归树,CART,,Machine Learning.md
+00d03f2377f082d1,AITD-00220,Classifier,分类器,,,Machine Learning.md
+6b6728048b406362,AITD-00223,Clique,团,,,Machine Learning.md
+605adbf3f722f335,AITD-00228,Cluster,簇,,,Machine Learning.md
+2a0a15f005bf4713,AITD-00230,Cluster Assumption,聚类假设,,,Machine Learning.md
+c923ae084068c034,AITD-00231,Clustering,聚类,,,Machine Learning.md
+5c037091007154a9,AITD-00232,Clustering Ensemble,聚类集成,,,Machine Learning.md
+453be6ce1d6e97ea,AITD-00236,Co-Training,协同训练,,,Machine Learning.md
+0f152e9e97799d94,AITD-00239,Coding Matrix,编码矩阵,,,Machine Learning.md
+59afe1f28d1c402b,AITD-00240,Collaborative Filtering,协同过滤,,,Machine Learning.md
+65f82a1fec880114,AITD-00251,Competitive Learning,竞争型学习,,,Machine Learning.md
+7a00112a891d6965,AITD-00259,Comprehensibility,可解释性,,,Machine Learning.md
+e42aabf83e21a5d9,AITD-00261,Computation Graph,计算图,,,Machine Learning.md
+93b149830cfe4009,AITD-00262,Computational Learning Theory,计算学习理论,,,Machine Learning.md
+05222217866855f1,AITD-00271,Conditional Entropy,条件熵,,,Machine Learning.md
+983f81ff605f7db6,AITD-00275,Conditional Probability,条件概率,,,Machine Learning.md
+221f0b697e3934c4,AITD-00277,Conditional Probability Distribution,条件概率分布,,,Machine Learning.md
+8544d079e97b7bff,AITD-00279,Conditional Random Field,条件随机场,CRF,,Machine Learning.md
+98d0c881e0c5a9dc,AITD-00280,Conditional Risk,条件风险,,,Machine Learning.md
+11c8323a96e97203,AITD-00283,Confidence,置信度,,,Machine Learning.md
+4cfd3f34a02b461d,AITD-00285,Confusion Matrix,混淆矩阵,,机器学习,Machine Learning.md
+c7fa3f23821870e4,AITD-00288,Conjugate Distribution,共轭分布,,,Machine Learning.md
+553bd7b86d5a0dba,AITD-00291,Connection Weight,连接权,,,Machine Learning.md
+75f98580bc58e16f,AITD-00292,Connectionism,连接主义,,,Machine Learning.md
+0bb2694bc6914a26,AITD-00293,Consistency,一致性,,,Machine Learning.md
+4443dd18c0678a3c,AITD-00295,Constrained Optimization,约束优化,,,Machine Learning.md
+ae710b62b033532c,AITD-00297,Context Variable,上下文变量,,,Machine Learning.md
+e59674a645c2613f,AITD-00298,Context Vector,上下文向量,,,Machine Learning.md
+ee94abf9ecb67dfd,AITD-00299,Context Window,上下文窗口,,,Machine Learning.md
+82ce86390fc9a44b,AITD-00300,Context Word,上下文词,,,Machine Learning.md
+9ed0ff887ff1b0ee,AITD-00302,Contextual Bandit,上下文赌博机/上下文老虎机,,,Machine Learning.md
+4ee980b35e82029f,AITD-00304,Contingency Table,列联表,,,Machine Learning.md
+8865f89f5847621e,AITD-00308,Continuous Attribute,连续属性,,,Machine Learning.md
+4645adc809614d5e,AITD-00314,Contrastive Divergence,对比散度,,,Machine Learning.md
+76d656dc8daec259,AITD-00316,Convergence,收敛,,,Machine Learning.md
+fee527f006dcbee5,AITD-00318,Convex Optimization,凸优化,,,Machine Learning.md
+7f6f72134439389f,AITD-00319,Convex Quadratic Programming,凸二次规划,,,Machine Learning.md
+8008d0610c60e38b,AITD-00322,Convolution,卷积,,,Machine Learning.md
+f35db806af2ec513,AITD-00325,Convolutional Kernel,卷积核,,,Machine Learning.md
+0ff6f37baa1010b5,AITD-00327,Convolutional Neural Network,卷积神经网络,CNN,,Machine Learning.md
+019545175cd0582a,AITD-00330,Coordinate Descent,坐标下降,,,Machine Learning.md
+99ab010608650aef,AITD-00332,Corpus,语料库,,,Machine Learning.md
+638d48d6a1c63932,AITD-00334,Correlation Coefficient,相关系数,,,Machine Learning.md
+8054781c876c1c86,AITD-00337,Cosine Similarity,余弦相似度,,,Machine Learning.md
+72d62b1e0a848338,AITD-00338,Cost,代价,,,Machine Learning.md
+8fe73d0f27676f3c,AITD-00339,Cost Curve,代价曲线,,,Machine Learning.md
+39e9bc2cb40cd0a3,AITD-00340,Cost Function,代价函数,,,Machine Learning.md
+0c65200ffb89b705,AITD-00341,Cost Matrix,代价矩阵,,,Machine Learning.md
+a73e9a2cc4f6dcf5,AITD-00342,Cost-Sensitive,代价敏感,,,Machine Learning.md
+2832df62f164641a,AITD-00343,Covariance,协方差,,,Machine Learning.md
+ea323fceb27255d2,AITD-00344,Covariance Matrix,协方差矩阵,,,Machine Learning.md
+12879e9a5c9790be,AITD-00352,Critical Point,临界点,,,Machine Learning.md
+c90b095867546cc8,AITD-00355,Cross Entropy,交叉熵,,,Machine Learning.md
+211c5eb4bcd38122,AITD-00356,Cross Validation,交叉验证,,,Machine Learning.md
+dabbfca574f66830,AITD-00362,Curse of Dimensionality,维数灾难,,,Machine Learning.md
+8857a7f824b6a71d,AITD-00366,Cutting Plane Algorithm,割平面法,,,Machine Learning.md
+65f1dc5890e62db7,AITD-00376,Data Mining,数据挖掘,,,Machine Learning.md
+6229f5626e4c7c1a,AITD-00380,Data Set,数据集,,,Machine Learning.md
+b4caa2befcfb64c5,AITD-00383,Davidon-Fletcher-Powell,DFP,,,Machine Learning.md
+67763205e29e968d,AITD-00385,Decision Boundary,决策边界,,,Machine Learning.md
+5d39154f29f3ab5a,AITD-00386,Decision Function,决策函数,,,Machine Learning.md
+dabb964aa16579c1,AITD-00387,Decision Stump,决策树桩,,,Machine Learning.md
+fdab6bcb77a6ab6a,AITD-00389,Decision Tree,决策树,DT,,Machine Learning.md
+5052e30f1e3dc28a,AITD-00390,Decoder,解码器,,,Machine Learning.md
+42a0b3b014cd81e3,AITD-00391,Decoding,解码,,,Machine Learning.md
+60e7592c30054d97,AITD-00393,Deconvolution,反卷积,,,Machine Learning.md
+46709df4f349d465,AITD-00394,Deconvolutional Network,反卷积网络,,,Machine Learning.md
+385ddc47bc180809,AITD-00395,Deduction,演绎,,,Machine Learning.md
+63eb2f7db228da5e,AITD-00396,Deep Belief Network,深度信念网络,DBN,,Machine Learning.md
+7aa8f794ea1e3469,AITD-00397,Deep Boltzmann Machine,深度玻尔兹曼机,DBM,,Machine Learning.md
+3289d083eaaeaed1,AITD-00399,Deep Convolutional Generative Adversarial Network,深度卷积生成对抗网络,DCGAN,,Machine Learning.md
+1c3e98f8dc3561e9,AITD-00402,Deep Learning,深度学习,DL,,Machine Learning.md
+e4560515305936b3,AITD-00405,Deep Neural Network,深度神经网络,DNN,,Machine Learning.md
+6b8b5f2f19ca5367,AITD-00407,Deep Q-Network,深度Q网络,DQN,,Machine Learning.md
+bf3f47539ecfc086,AITD-00413,Delta-Bar-Delta,Delta-Bar-Delta,,,Machine Learning.md
+26c43cc82e1604e5,AITD-00414,Denoising,去噪,,,Machine Learning.md
+47215929e7500ce7,AITD-00415,Denoising Autoencoder,去噪自编码器,,,Machine Learning.md
+64c3eef342fc96b7,AITD-00416,Denoising Score Matching,去躁分数匹配,,,Machine Learning.md
+64e5d3bf37e6f9b7,AITD-00419,Density Estimation,密度估计,,,Machine Learning.md
+8d7c2bdab0a16254,AITD-00420,Density-Based Clustering,密度聚类,,,Machine Learning.md
+3be07d127e26cdc2,AITD-00423,Derivative,导数,,,Machine Learning.md
+fa7587391690f220,AITD-00429,Determinant,行列式,,,Machine Learning.md
+051f1c08874bdb89,AITD-00434,Diagonal Matrix,对角矩阵,,,Machine Learning.md
+608c6c651940c988,AITD-00437,Dictionary Learning,字典学习,,,Machine Learning.md
+0ec4315487d9d468,AITD-00445,Dimension Reduction,降维,,,Machine Learning.md
+198963ac16d2bd76,AITD-00451,Directed Edge,有向边,,,Machine Learning.md
+6d8f5c2b4e7ef446,AITD-00453,Directed Graphical Model,有向图模型,,,Machine Learning.md
+399e1cb18f8a13b0,AITD-00455,Directed Separation,有向分离,,,Machine Learning.md
+a8d899e6d425692c,AITD-00457,Dirichlet Distribution,狄利克雷分布,,,Machine Learning.md
+e6130c69bcada3fe,AITD-00465,Discriminative Model,判别式模型,,,Machine Learning.md
+0a59d8d3073b2acc,AITD-00467,Discriminator,判别器,,,Machine Learning.md
+682e524d0962bd0d,AITD-00468,Discriminator Network,判别网络,,,Machine Learning.md
+6f20dcb401de58c6,AITD-00470,Distance Measure,距离度量,,,Machine Learning.md
+2121845a8d8067a5,AITD-00471,Distance Metric Learning,距离度量学习,,,Machine Learning.md
+973fd3ad63d3d5c2,AITD-00472,Distributed Representation,分布式表示,,,Machine Learning.md
+12ff7f7a6f63f817,AITD-00474,Diverge,发散,,,Machine Learning.md
+e854d6547f52da39,AITD-00475,Divergence,散度,,,Machine Learning.md
+abd881bc4d061d69,AITD-00476,Diversity,多样性,,,Machine Learning.md
+b83b7148b8c1099b,AITD-00477,Diversity Measure,多样性度量/差异性度量,,,Machine Learning.md
+4425aedd091a6602,AITD-00481,Domain Adaptation,领域自适应,,,Machine Learning.md
+d0f4cd8c788323af,AITD-00482,Dominant Eigenvalue,主特征值,,,Machine Learning.md
+0d5473bfeac28fc3,AITD-00485,Dominant Strategy,占优策略,,,Machine Learning.md
+36d2135fd398bb97,AITD-00489,Down Sampling,下采样,,,Machine Learning.md
+5896259dcb45d606,AITD-00491,Dropout,暂退法,,,Machine Learning.md
+22d7e419203ce117,AITD-00492,Dropout Boosting,暂退Boosting,,,Machine Learning.md
+cb500af71e137d46,AITD-00494,Dropout Method,暂退法,,,Machine Learning.md
+7f2fc6e925c21fff,AITD-00496,Dual Problem,对偶问题,,,Machine Learning.md
+d13b80dc9ea67828,AITD-00497,Dummy Node,哑结点,,,Machine Learning.md
+b6a29a1ae633f81d,AITD-00499,Dynamic Bayesian Network,动态贝叶斯网络,,,Machine Learning.md
+9d91a16337a5ba4c,AITD-00502,Dynamic Programming,动态规划,,,Machine Learning.md
+b6cb3e77e4f8dfd6,AITD-00506,Early Stopping,早停,,,Machine Learning.md
+48aaba29ce183bfd,AITD-00512,Eigendecomposition,特征分解,,,Machine Learning.md
+7594055f18cf3f58,AITD-00513,Eigenvalue,特征值,,,Machine Learning.md
+89fb6722620324e2,AITD-00517,Element-Wise Product,逐元素积,,,Machine Learning.md
+77c8f952c539816c,AITD-00520,Embedding,嵌入,,,Machine Learning.md
+2be3f565a096a1db,AITD-00523,Empirical Conditional Entropy,经验条件熵,,,Machine Learning.md
+6c9ddccc1f469e43,AITD-00524,Empirical Distribution,经验分布,,,Machine Learning.md
+4b2e56d8378fe838,AITD-00525,Empirical Entropy,经验熵,,,Machine Learning.md
+18e3a7cc890859ff,AITD-00526,Empirical Error,经验误差,,,Machine Learning.md
+844f14373d38a772,AITD-00529,Empirical Risk,经验风险,,,Machine Learning.md
+2a10f97c59efbbf0,AITD-00530,Empirical Risk Minimization,经验风险最小化,ERM,,Machine Learning.md
+75c0a8862c54f4b4,AITD-00531,Encoder,编码器,,,Machine Learning.md
+716410f597065915,AITD-00533,Encoding,编码,,,Machine Learning.md
+6036effefc22af9c,AITD-00534,End-To-End,端到端,,,Machine Learning.md
+e92bcfaba3eeced9,AITD-00537,Energy Function,能量函数,,,Machine Learning.md
+7b6edd57f052139b,AITD-00539,Energy-Based Model,基于能量的模型,,,Machine Learning.md
+0516e0e4c55a3c99,AITD-00541,Ensemble Learning,集成学习,,,Machine Learning.md
+359305ba74d60e99,AITD-00542,Ensemble Pruning,集成修剪,,,Machine Learning.md
+691ab7f9ca0b8eaa,AITD-00543,Entropy,熵,,,Machine Learning.md
+c1d8387d76af01e6,AITD-00546,Episode,回合,,,Machine Learning.md
+b016d013026deb5a,AITD-00548,Epoch,轮,,,Machine Learning.md
+608bb47043f2fda1,AITD-00554,Error,误差,,,Machine Learning.md
+c15fd891c6bec735,AITD-00555,Error Backpropagation Algorithm,误差反向传播算法,,,Machine Learning.md
+834495861f3cafd7,AITD-00556,Error Backpropagation,误差反向传播,,,Machine Learning.md
+5fdeb4ab6658380a,AITD-00558,Error Correcting Output Codes,纠错输出编码,ECOC,,Machine Learning.md
+4ff5da7169ebc334,AITD-00561,Error Rate,错误率,,,Machine Learning.md
+9a78dfcb1a660d5d,AITD-00562,Error-Ambiguity Decomposition,误差－分歧分解,,,Machine Learning.md
+bb8b454f37c09a0c,AITD-00565,Estimator,估计/估计量,,,Machine Learning.md
+58ff4c2069394856,AITD-00566,Euclidean Distance,欧氏距离,,,Machine Learning.md
+7e075a920160bb44,AITD-00571,Evidence,证据,,,Machine Learning.md
+f9403da8d699228e,AITD-00572,Evidence Lower Bound,证据下界,ELBO,,Machine Learning.md
+982e52ccdf027ed1,AITD-00576,Exact Inference,精确推断,,,Machine Learning.md
+9ea227a092969ecf,AITD-00577,Example,样例,,,Machine Learning.md
+98fd70593e800e47,AITD-00580,Expectation,期望,,,Machine Learning.md
+800fa6395a68b51b,AITD-00582,Expectation Maximization,期望最大化,EM,,Machine Learning.md
+7eb32f802e1732af,AITD-00585,Expected Loss,期望损失,,,Machine Learning.md
+435c483e9b2eb119,AITD-00592,Expert System,专家系统,,,Machine Learning.md
+288f77165fa30a08,AITD-00597,Exploding Gradient,梯度爆炸,,,Machine Learning.md
+c47f2434a47a4856,AITD-00605,Exponential Loss Function,指数损失函数,,,Machine Learning.md
+6dabeaa253d0e44f,AITD-00612,Factor,因子,,,Machine Learning.md
+93d60d66bcaa4ecc,AITD-00616,Factorization,因子分解,,,Machine Learning.md
+823aa9c04b5f4a0c,AITD-00626,Feature,特征,,,Machine Learning.md
+0772afedfa525f2b,AITD-00627,Feature Engineering,特征工程,,,Machine Learning.md
+e24a7a9c0f540fbf,AITD-00631,Feature Map,特征图,,,Machine Learning.md
+5b57d0e39e674bea,AITD-00633,Feature Selection,特征选择,,,Machine Learning.md
+10593c8c2d1fb575,AITD-00635,Feature Vector,特征向量,,,Machine Learning.md
+1450679e56cb4c81,AITD-00636,Featured Learning,特征学习,,,Machine Learning.md
+43f22ef9bc013b25,AITD-00638,Feedforward,前馈,,,Machine Learning.md
+87e6cc825c1d23d1,AITD-00641,Feedforward Neural Network,前馈神经网络,FNN,,Machine Learning.md
+46ac1b7cf4cd1a1c,AITD-00642,Few-Shot Learning,少试学习,,,Machine Learning.md
+4428987c63984d7c,AITD-00645,Filter,滤波器,,,Machine Learning.md
+f1e5ff64c761c52a,AITD-00647,Fine-Tuning,微调,,,Machine Learning.md
+20c134d6152fc038,AITD-00659,Fluctuation,振荡,,,Machine Learning.md
+87e2dd1e32bd708c,AITD-00662,Forget Gate,遗忘门,,,Machine Learning.md
+253526af277b86b1,AITD-00666,Forward Propagation,前向传播/正向传播,,,Machine Learning.md
+eaf532c3efab6879,AITD-00668,Forward Stagewise Algorithm,前向分步算法,,,Machine Learning.md
+4f94e53a9497445f,AITD-00672,Fractionally Strided Convolution,微步卷积,,,Machine Learning.md
+f9fe3b75314180ae,AITD-00677,Frobenius Norm,Frobenius 范数,,,Machine Learning.md
+7fac28565e544ca4,AITD-00681,Full Padding,全填充,,,Machine Learning.md
+2751ca486c175dba,AITD-00688,Functional,泛函,,,Machine Learning.md
+509e034d48730f40,AITD-00691,Functional Neuron,功能神经元,,,Machine Learning.md
+bf57fcddb463541f,AITD-00702,Gated Recurrent Unit,门控循环单元,GRU,,Machine Learning.md
+ee9e7df3bb83d6d9,AITD-00703,Gated RNN,门控RNN,,,Machine Learning.md
+568cb8790ea87321,AITD-00706,Gaussian Distribution,高斯分布,,,Machine Learning.md
+75f6e1672c62fe1a,AITD-00708,Gaussian Kernel,高斯核,,,Machine Learning.md
+34d2b8a4fc274432,AITD-00709,Gaussian Kernel Function,高斯核函数,,,Machine Learning.md
+50bbd6e468e3ec73,AITD-00710,Gaussian Mixture Model,高斯混合模型,GMM,,Machine Learning.md
+61aee541f2e77612,AITD-00713,Gaussian Process,高斯过程,GP,,Machine Learning.md
+867a3201fd270649,AITD-00719,Generalization Ability,泛化能力,,,Machine Learning.md
+12b51b7d3fe3f5b1,AITD-00720,Generalization Error,泛化误差,,,Machine Learning.md
+8eaa23a70d7edda0,AITD-00721,Generalization Error Bound,泛化误差上界,,,Machine Learning.md
+a277e73018642002,AITD-00722,Generalize,泛化,,,Machine Learning.md
+b68ea21f072dd68d,AITD-00726,Generalized Lagrange Function,广义拉格朗日函数,,,Machine Learning.md
+2077f8202330b857,AITD-00728,Generalized Linear Model,广义线性模型,,,Machine Learning.md
+455849c1a5b21f9e,AITD-00731,Generalized Rayleigh Quotient,广义瑞利商,,,Machine Learning.md
+4668b19970d17c3b,AITD-00734,Generative Adversarial Network,生成对抗网络,,,Machine Learning.md
+ff1a9f8c9eb905ea,AITD-00736,Generative Model,生成式模型,,,Machine Learning.md
+0215ce45f368a1ca,AITD-00742,Generator,生成器,,,Machine Learning.md
+d9951e21efd35ea7,AITD-00743,Generator Network,生成器网络,,,Machine Learning.md
+94ed1e90142dc42c,AITD-00744,Genetic Algorithm,遗传算法,GA,机器学习,Machine Learning.md
+d7204bb6a4cde55c,AITD-00747,Gibbs Distribution,吉布斯分布,,,Machine Learning.md
+50846e10f70df93a,AITD-00748,Gibbs Sampling,吉布斯采样/吉布斯抽样,,,Machine Learning.md
+9f7d405e542e7f2e,AITD-00750,Gini Index,基尼指数,,,Machine Learning.md
+8549b9de5b817e02,AITD-00752,Global Markov Property,全局马尔可夫性,,,Machine Learning.md
+d810e63425c8413f,AITD-00755,Global Minimum,全局最小,,,Machine Learning.md
+0a02283673c18250,AITD-00757,Gradient,梯度,,,Machine Learning.md
+3adaa5630c35e7be,AITD-00762,Gradient Clipping,梯度截断,,,Machine Learning.md
+6119f9b5ad66e709,AITD-00763,Gradient Descent,梯度下降,,机器学习,Machine Learning.md
+a57058fbf3181ad4,AITD-00765,Gradient Descent Method,梯度下降法,,,Machine Learning.md
+eba20c031b9700a7,AITD-00768,Gradient Exploding Problem,梯度爆炸问题,,,Machine Learning.md
+1a36e8af80b639f4,AITD-00771,Gram Matrix,Gram 矩阵,,,Machine Learning.md
+ccffdecf45fd03ff,AITD-00775,Graph Convolutional Network,图卷积神经网络/图卷积网络,GCN,,Machine Learning.md
+57d1812a67fb4188,AITD-00776,Graph Neural Network,图神经网络,GNN,,Machine Learning.md
+aab45b8e73f674f6,AITD-00778,Graphical Model,图模型,GM,,Machine Learning.md
+a2b84906baea418e,AITD-00788,Grid Search,网格搜索,,,Machine Learning.md
+3c289b99d7b9dab0,AITD-00790,Ground Truth,真实值,,,Machine Learning.md
+a51b70d23d35f7d3,AITD-00792,Hadamard Product,Hadamard积,,,Machine Learning.md
+f2d6cdb70102b605,AITD-00793,Hamming Distance,汉明距离,,,Machine Learning.md
+e2f3d7f8ad7df336,AITD-00796,Hard Margin,硬间隔,,,Machine Learning.md
+294a1ef9fc9ee918,AITD-00807,Hebbian Rule,赫布法则,,,Machine Learning.md
+eedccc9bcc2de50e,AITD-00816,Hidden Layer,隐藏层,,,Machine Learning.md
+59a794370ebe27b1,AITD-00817,Hidden Markov Model,隐马尔可夫模型,HMM,,Machine Learning.md
+85dd8be0f9bba79f,AITD-00820,Hidden Variable,隐变量,,,Machine Learning.md
+781ca4381e5cdb58,AITD-00821,Hierarchical Clustering,层次聚类,,,Machine Learning.md
+b3cb01b0a11afb89,AITD-00824,Hilbert Space,希尔伯特空间,,,Machine Learning.md
+8848550250551fcc,AITD-00826,Hinge Loss Function,合页损失函数/Hinge损失函数,,,Machine Learning.md
+cbb0be93189978a6,AITD-00828,Hold-Out,留出法,,,Machine Learning.md
+89661183c7f989b7,AITD-00834,Hyperparameter,超参数,,,Machine Learning.md
+efb1264dc0622eb4,AITD-00835,Hyperparameter Optimization,超参数优化,,,Machine Learning.md
+0c4bf3b302143efd,AITD-00837,Hypothesis,假设,,,Machine Learning.md
+d1c2e892e810d226,AITD-00838,Hypothesis Space,假设空间,,,Machine Learning.md
+8a7d6b830c7f69a7,AITD-00839,Hypothesis Test,假设检验,,,Machine Learning.md
+634e7b093b71ce2c,AITD-00845,Identity Matrix,单位矩阵,,,Machine Learning.md
+07d03761f42803cd,AITD-00850,Imitation Learning,模仿学习,,,Machine Learning.md
+d18bd59aa172985d,AITD-00855,Importance Sampling,重要性采样,,,Machine Learning.md
+a9a7536929d11fe9,AITD-00856,Improved Iterative Scaling,改进的迭代尺度法,IIS,,Machine Learning.md
+0de895abacd74505,AITD-00858,Incremental Learning,增量学习,,,Machine Learning.md
+bf5714a63283d9b6,AITD-00862,Independent and Identically Distributed,独立同分布,I.I.D.,,Machine Learning.md
+465a2b6caf115480,AITD-00866,Indicator Function,指示函数,,,Machine Learning.md
+1232cc5350dd189e,AITD-00867,Individual Learner,个体学习器,,,Machine Learning.md
+5e89cd228f5c9c4b,AITD-00868,Induction,归纳,,,Machine Learning.md
+82ef430e468b4921,AITD-00869,Inductive Bias,归纳偏好,,,Machine Learning.md
+cbc69f726d60cc49,AITD-00870,Inductive Learning,归纳学习,,,Machine Learning.md
+34dc43492d4d541f,AITD-00871,Inductive Logic Programming,归纳逻辑程序设计,ILP,,Machine Learning.md
+57ba47fc69389e83,AITD-00874,Inference,推断,,,Machine Learning.md
+1799a2387a59cee8,AITD-00878,Information Entropy,信息熵,,,Machine Learning.md
+5cf78ee5b3aff290,AITD-00879,Information Gain,信息增益,,统计,Machine Learning.md
+9defeefdd08036b0,AITD-00883,Inner Product,内积,,,Machine Learning.md
+5ee53d600e2650ce,AITD-00890,Instance,示例,,,Machine Learning.md
+8adfb3ce04a2ec57,AITD-00896,Internal Covariate Shift,内部协变量偏移,,,Machine Learning.md
+44683572011ea6f1,AITD-00905,Inverse Matrix,逆矩阵,,,Machine Learning.md
+96a87b789da9abce,AITD-00907,Inverse Resolution,逆归结,,,Machine Learning.md
+fc4f56d618eedd40,AITD-00912,Isometric Mapping,等度量映射,Isomap,,Machine Learning.md
+cc8d449925cc23a9,AITD-00919,Jacobian Matrix,雅可比矩阵,,,Machine Learning.md
+61744ee3772cc50e,AITD-00920,Jensen Inequality,Jensen不等式,,,Machine Learning.md
+ec089641f57b4b23,AITD-00923,Joint Probability Distribution,联合概率分布,,,Machine Learning.md
+4c2f824c41c7d6fc,AITD-00925,K-Armed Bandit Problem,k-摇臂老虎机,,,Machine Learning.md
+8ac3440a458ef228,AITD-00926,K-Fold Cross Validation,k 折交叉验证,K-FOLD CV,统计,Machine Learning.md
+4a3e32aff81ad0c4,AITD-00930,Karush-Kuhn-Tucker Condition,KKT条件,,,Machine Learning.md
+a4bd0f635344d77c,AITD-00931,Karush–Kuhn–Tucker,Karush–Kuhn–Tucker,,,Machine Learning.md
+e715df8586ed5609,AITD-00934,Kernel Function,核函数,,,Machine Learning.md
+3a8f48ce6bf4f672,AITD-00937,Kernel Method,核方法,,机器学习,Machine Learning.md
+1a24efba81cd2de3,AITD-00939,Kernel Trick,核技巧,,,Machine Learning.md
+abe3985b602eab92,AITD-00941,Kernelized Linear Discriminant Analysis,核线性判别分析,KLDA,,Machine Learning.md
+d30400ff986dde4b,AITD-00944,KL Divergence,KL散度,,,Machine Learning.md
+296a82da93ccfb4e,AITD-00953,L-BFGS,L-BFGS,,,Machine Learning.md
+a9cbb70bd2cac2c3,AITD-00954,Label,标签/标记,,,Machine Learning.md
+e7d91bc425236f09,AITD-00957,Label Space,标记空间,,,Machine Learning.md
+7167cd86b56bc8aa,AITD-00960,Lagrange Duality,拉格朗日对偶性,,,Machine Learning.md
+d08a28a331ce43b7,AITD-00962,Lagrange Multiplier,拉格朗日乘子,,,Machine Learning.md
+706b265ef6b37065,AITD-00963,Language Model,语言模型,,,Machine Learning.md
+fb5f7b40915892e5,AITD-00966,Laplace Smoothing,拉普拉斯平滑,,,Machine Learning.md
+84135ff889ba50b9,AITD-00967,Laplacian Correction,拉普拉斯修正,,,Machine Learning.md
+6b90b8abe56ce420,AITD-00971,Latent Dirichlet Allocation,潜在狄利克雷分配,LDA,,Machine Learning.md
+55d304acb391a527,AITD-00973,Latent Semantic Analysis,潜在语义分析,LSA,,Machine Learning.md
+f465fc515176803c,AITD-00975,Latent Variable,潜变量/隐变量,,,Machine Learning.md
+8bd040a220bb99de,AITD-00976,Law of Large Numbers,大数定律,,,Machine Learning.md
+3b37966c59f0ff5e,AITD-00978,Layer Normalization,层规范化,,,Machine Learning.md
+8e566f1e4b4bb81f,AITD-00984,Lazy Learning,懒惰学习,,,Machine Learning.md
+9223f5473b851871,AITD-00987,Leaky Relu,泄漏修正线性单元/泄漏整流线性单元,,,Machine Learning.md
+305d954d68de66f2,AITD-00991,Learner,学习器,,,Machine Learning.md
+1d42968c91b25a75,AITD-00992,Learning,学习,,,Machine Learning.md
+75af2bd905dc4156,AITD-00994,Learning By Analogy,类比学习,,,Machine Learning.md
+5914dc290d1cce5d,AITD-00995,Learning Rate,学习率,,,Machine Learning.md
+dd9dc06f92aa608c,AITD-01000,Learning Vector Quantization,学习向量量化,LVQ,,Machine Learning.md
+39f8e00bac3518c4,AITD-01003,Least Square Method,最小二乘法,LSM,,Machine Learning.md
+8b116fa65d6d5896,AITD-01004,Least Squares Regression Tree,最小二乘回归树,,,Machine Learning.md
+62116f4e86065d87,AITD-01009,Left Singular Vector,左奇异向量,,,Machine Learning.md
+4a2c4f8849ac5400,AITD-01012,Likelihood,似然,,,Machine Learning.md
+e8e0a117591829da,AITD-01016,Linear Chain Conditional Random Field,线性链条件随机场,,,Machine Learning.md
+69f8c525f0bd9eba,AITD-01017,Linear Classification Model,线性分类模型,,,Machine Learning.md
+0d3b59f81e911472,AITD-01018,Linear Classifier,线性分类器,,,Machine Learning.md
+74ddc1874755e6fe,AITD-01020,Linear Dependence,线性相关,,,Machine Learning.md
+788403d57f670483,AITD-01021,Linear Discriminant Analysis,线性判别分析,LDA,统计、机器学习,Machine Learning.md
+7faf6701e2cda8f1,AITD-01024,Linear Model,线性模型,LR,统计、机器学习,Machine Learning.md
+a5cd0ebe8e3c3ddd,AITD-01026,Linear Regression,线性回归,,统计、数学,Machine Learning.md
+099a0786d1901872,AITD-01038,Link Function,联系函数,,,Machine Learning.md
+7c53242b1c13aa23,AITD-01054,Local Markov Property,局部马尔可夫性,,,Machine Learning.md
+a42c2d32188387b5,AITD-01057,Local Minima,局部极小,,,Machine Learning.md
+7b40cdcd369b886b,AITD-01059,Local Minimum,局部极小,,,Machine Learning.md
+083c8060d9531086,AITD-01060,Local Representation,局部式表示/局部式表征,,,Machine Learning.md
+e692aa85b25f9572,AITD-01063,Log Likelihood,对数似然函数,,,Machine Learning.md
+8feb0d056f203a50,AITD-01064,Log Linear Model,对数线性模型,,,Machine Learning.md
+01aea485ddf9c7f4,AITD-01065,Log-Likelihood,对数似然,,,Machine Learning.md
+84fb95a8d0a78c74,AITD-01067,Log-Linear Regression,对数线性回归,,,Machine Learning.md
+8af8dac37db93f28,AITD-01071,Logistic Function,对数几率函数,,,Machine Learning.md
+00f805267b6401a7,AITD-01073,Logistic Regression,对数几率回归,LR,统计、机器学习,Machine Learning.md
+5abaa9b60e7111ae,AITD-01075,Logit,对数几率,,,Machine Learning.md
+205a465666a43105,AITD-01076,Long Short Term Memory,长短期记忆,LSTM,,Machine Learning.md
+f79a540897d51578,AITD-01077,Long Short-Term Memory Network,长短期记忆网络,LSTM,,Machine Learning.md
+d48d0d0cfc848b15,AITD-01082,Loopy Belief Propagation,环状信念传播,LBP,,Machine Learning.md
+456bb97a5104e49d,AITD-01084,Loss Function,损失函数,,机器学习,Machine Learning.md
+e2ac972e620cebfa,AITD-01085,Low Rank Matrix Approximation,低秩矩阵近似,,,Machine Learning.md
+6d6aff8bb81e083f,AITD-01088,Machine Learning,机器学习,ML,机器学习,Machine Learning.md
+e715c095d476e679,AITD-01093,Macron-R,宏查全率,,,Machine Learning.md
+5e6f72a6aa1e8da2,AITD-01098,Manhattan Distance,曼哈顿距离,,,Machine Learning.md
+1b41c81fa55a586e,AITD-01099,Manifold,流形,,,Machine Learning.md
+c851cd6d13d2c631,AITD-01100,Manifold Assumption,流形假设,,,Machine Learning.md
+64773cadc2cec878,AITD-01101,Manifold Learning,流形学习,,,Machine Learning.md
+4a1c1d9531bdeb03,AITD-01103,Margin,间隔,,统计,Machine Learning.md
+ad3d8c0c50982726,AITD-01105,Marginal Distribution,边缘分布,,,Machine Learning.md
+a416da009790f223,AITD-01106,Marginal Independence,边缘独立性,,,Machine Learning.md
+4ff2685616fdcbe3,AITD-01109,Marginalization,边缘化,,,Machine Learning.md
+1c52229900237f63,AITD-01111,Markov Chain,马尔可夫链,,,Machine Learning.md
+05d04f9b0536fb71,AITD-01112,Markov Chain Monte Carlo,马尔可夫链蒙特卡罗,MCMC,,Machine Learning.md
+7640eee6dca5d7b7,AITD-01113,Markov Decision Process,马尔可夫决策过程,MDP,,Machine Learning.md
+dd214c07c7091776,AITD-01114,Markov Network,马尔可夫网络,,,Machine Learning.md
+90f72a0e81c6eef6,AITD-01115,Markov Process,马尔可夫过程,,,Machine Learning.md
+b98ab8eb304f5aef,AITD-01117,Markov Random Field,马尔可夫随机场,MRF,,Machine Learning.md
+9942ec3d0a11e495,AITD-01118,Mask,掩码,,,Machine Learning.md
+0a88c7728a5c8676,AITD-01122,Matrix,矩阵,,,Machine Learning.md
+1f55c225fde938cf,AITD-01126,Matrix Inversion,逆矩阵,,,Machine Learning.md
+2035f29f6667c7c9,AITD-01129,Max Pooling,最大汇聚,,,Machine Learning.md
+b6afca27ddd9b0ac,AITD-01131,Maximal Clique,最大团,,,Machine Learning.md
+af0ab404af2cac87,AITD-01137,Maximum Entropy Model,最大熵模型,,,Machine Learning.md
+8430dc4b83a3b736,AITD-01139,Maximum Likelihood Estimation,极大似然估计,MLE,,Machine Learning.md
+22b0950e33380f56,AITD-01141,Maximum Margin,最大间隔,,,Machine Learning.md
+238cc1a5a5eb9bc5,AITD-01150,Mean Filed,平均场,,,Machine Learning.md
+3baf3be8c7f4ef7f,AITD-01152,Mean Pooling,平均汇聚,,,Machine Learning.md
+dedad69f5c7b351e,AITD-01154,Mean Squared Error,均方误差,,,Machine Learning.md
+94737c5559878420,AITD-01156,Mean-Field,平均场,,,Machine Learning.md
+8758904bba2dd79c,AITD-01165,Memory Network,记忆网络,MN,,Machine Learning.md
+3967d469a565ef08,AITD-01169,Message Passing,消息传递,,,Machine Learning.md
+b9eb49659c62ce3a,AITD-01176,Metric Learning,度量学习,,,Machine Learning.md
+2c376b8139ecea5f,AITD-01180,Micro-R,微查全率,,,Machine Learning.md
+49c1493e124b5f7a,AITD-01185,Minibatch,小批量,,,Machine Learning.md
+286fb58dd13403c3,AITD-01188,Minimal Description Length,最小描述长度,MDL,,Machine Learning.md
+af3fb1455ce4c9fc,AITD-01189,Minimax Game,极小极大博弈,,,Machine Learning.md
+224915376ce28b56,AITD-01191,Minkowski Distance,闵可夫斯基距离,,,Machine Learning.md
+58ee3692ff19baa5,AITD-01197,Mixture of Experts,混合专家模型,,,Machine Learning.md
+7be72e02c445a1ba,AITD-01198,Mixture-of-Gaussian,高斯混合,,,Machine Learning.md
+caf15aab13f30f6d,AITD-01201,Model,模型,,,Machine Learning.md
+a4a7eb59734ba66d,AITD-01210,Model Selection,模型选择,,,Machine Learning.md
+e3fef18681298d3d,AITD-01219,Momentum Method,动量法,,,Machine Learning.md
+8502e2c60254f227,AITD-01223,Monte Carlo Method,蒙特卡罗方法,,,Machine Learning.md
+3b4b6133ec5a4510,AITD-01226,Moral Graph,端正图/道德图,,,Machine Learning.md
+50b4fd040469af15,AITD-01227,Moralization,道德化,,,Machine Learning.md
+bb9ccf3afd082833,AITD-01231,Multi-Class Classification,多分类,,,Machine Learning.md
+c212f67713837e2a,AITD-01234,Multi-Head Attention,多头注意力,,,Machine Learning.md
+aa6a5b569588bc2c,AITD-01235,Multi-Head Self-Attention,多头自注意力,,,Machine Learning.md
+02f20a58062ffb7a,AITD-01237,Multi-Kernel Learning,多核学习,,,Machine Learning.md
+888d13f6445d1340,AITD-01239,Multi-Label Learning,多标记学习,,,Machine Learning.md
+93517b15602bf48e,AITD-01240,Multi-Layer Feedforward Neural Networks,多层前馈神经网络,,,Machine Learning.md
+852ee663a8358de7,AITD-01241,Multi-Layer Perceptron,多层感知机,MLP,,Machine Learning.md
+b916d1be8ff6671a,AITD-01249,Multinomial Distribution,多项分布,,,Machine Learning.md
+c58344baf53dbb47,AITD-01252,Multiple Dimensional Scaling,多维缩放,,,Machine Learning.md
+c39aef2d76eb0487,AITD-01253,Multiple Linear Regression,多元线性回归,MLR,统计,Machine Learning.md
+07dad58407dcde13,AITD-01254,Multitask Learning,多任务学习,,,Machine Learning.md
+92e5aa587a5908f8,AITD-01257,Multivariate Normal Distribution,多元正态分布,,,Machine Learning.md
+ea26a269df544e8e,AITD-01258,Mutual Information,互信息,,,Machine Learning.md
+ae1d79570e6ae8ca,AITD-01261,N-Gram Model,N元模型,,,Machine Learning.md
+b593faf4084e4a9c,AITD-01263,Naive Bayes Classifier,朴素贝叶斯分类器,,,Machine Learning.md
+387a656ddf59aca9,AITD-01264,Naive Bayes,朴素贝叶斯,NB,,Machine Learning.md
+9a8db24dd716b288,AITD-01274,Nearest Neighbor Classifier,最近邻分类器,,,Machine Learning.md
+0548ae154bd6cbb4,AITD-01281,Negative Log Likelihood,负对数似然函数,,,Machine Learning.md
+8ea5ed540b2cf91e,AITD-01287,Neighbourhood Component Analysis,近邻成分分析,NCA,,Machine Learning.md
+ed0d657f3d9e73ce,AITD-01291,Net Input,净输入,,,Machine Learning.md
+054ab83e43061098,AITD-01300,Neural Network,神经网络,NN,,Machine Learning.md
+4e445c1736c1e590,AITD-01301,Neural Turing Machine,神经图灵机,NTM,,Machine Learning.md
+127818481834a520,AITD-01304,Neuron,神经元,,,Machine Learning.md
+f821e6f4b94cea66,AITD-01305,Newton Method,牛顿法,,,Machine Learning.md
+b2b77e069bcbba92,AITD-01306,No Free Lunch Theorem,没有免费午餐定理,NFL,,Machine Learning.md
+8c480e50e2ec0801,AITD-01310,Noise-Contrastive Estimation,噪声对比估计,NCE,,Machine Learning.md
+27a20ed30ac626a5,AITD-01311,Nominal Attribute,列名属性,,,Machine Learning.md
+ede862eb3a5d4ef3,AITD-01313,Non-Convex Optimization,非凸优化,,,Machine Learning.md
+eb58d051709d72c1,AITD-01318,Non-Metric Distance,非度量距离,,,Machine Learning.md
+09d3ebc96781062a,AITD-01319,Non-Negative Matrix Factorization,非负矩阵分解,NMF,,Machine Learning.md
+bb635e722c051cf6,AITD-01320,Non-Ordinal Attribute,无序属性,,,Machine Learning.md
+260fd1519789bac7,AITD-01334,Norm,范数,,,Machine Learning.md
+1a80f75d05aa18e8,AITD-01336,Normal Distribution,正态分布,,,Machine Learning.md
+bb3e42f491dc01cd,AITD-01338,Normalization,规范化,,统计、机器学习,Machine Learning.md
+a20217ad93074c6c,AITD-01342,Nuclear Norm,核范数,,,Machine Learning.md
+028fb529662a726e,AITD-01344,Number of Epochs,轮数,,,Machine Learning.md
+2446b085272daef1,AITD-01347,Numerical Attribute,数值属性,,,Machine Learning.md
+00e41a5428e8fc03,AITD-01351,Object Detection,目标检测,,,Machine Learning.md
+deea69dafbdef7b2,AITD-01355,Oblique Decision Tree,斜决策树,,,Machine Learning.md
+b52c9d013e1371ff,AITD-01358,Occam's Razor,奥卡姆剃刀,,机器学习,Machine Learning.md
+d3a0b0d77373a520,AITD-01359,Odds,几率,,,Machine Learning.md
+20ceb52359616f11,AITD-01360,Off-Policy,异策略,,,Machine Learning.md
+84c3686f17bf1669,AITD-01364,On-Policy,同策略,,,Machine Learning.md
+cb37798dd6940db4,AITD-01365,One-Shot Learning,单试学习,,,Machine Learning.md
+bbfc9a5f70514e76,AITD-01366,One-Dependent Estimator,独依赖估计,ODE,,Machine Learning.md
+0da86139a527478a,AITD-01367,One-Hot,独热,,,Machine Learning.md
+321098937b1d5687,AITD-01370,Online Learning,在线学习,,,Machine Learning.md
+fbb35c56b2b87946,AITD-01376,Optimizer,优化器,,,Machine Learning.md
+268e473641f58ea0,AITD-01378,Ordinal Attribute,有序属性,,,Machine Learning.md
+fb0fb049b2cdad0b,AITD-01380,Orthogonal,正交,,数学,Machine Learning.md
+05c039ee4e91320b,AITD-01382,Orthogonal Matrix,正交矩阵,,,Machine Learning.md
+1cf9b5d01640b6b4,AITD-01384,Out-Of-Bag Estimate,包外估计,,,Machine Learning.md
+9aadaa7efabbe29a,AITD-01386,Outlier,异常点,,,Machine Learning.md
+1a53c6f84245fa1c,AITD-01392,Over-Parameterized,过度参数化,,,Machine Learning.md
+60cec972b59ceba8,AITD-01395,Overfitting,过拟合,,机器学习,Machine Learning.md
+7cf60ecbb860182d,AITD-01398,Oversampling,过采样,,,Machine Learning.md
+078336cbdb8aef1c,AITD-01400,Pac-Learnable,PAC可学习,,,Machine Learning.md
+9eb57926c7defbc6,AITD-01401,Padding,填充,,,Machine Learning.md
+1568cee6c3078709,AITD-01404,Pairwise Markov Property,成对马尔可夫性,,,Machine Learning.md
+218acbe2c19a807e,AITD-01405,Parallel Distributed Processing,分布式并行处理,PDP,,Machine Learning.md
+d68a49972aa99f72,AITD-01407,Parameter,参数,,,Machine Learning.md
+f682992264100d40,AITD-01408,Parameter Estimation,参数估计,,,Machine Learning.md
+07d1ba09a7e9df41,AITD-01411,Parameter Space,参数空间,,,Machine Learning.md
+c211684e02653f9a,AITD-01412,Parameter Tuning,调参,,机器学习,Machine Learning.md
+bc8f5149960d8bc0,AITD-01416,Parametric ReLU,参数化修正线性单元/参数化整流线性单元,PReLU,,Machine Learning.md
+c92513a633e67397,AITD-01418,Part-Of-Speech Tagging,词性标注,,,Machine Learning.md
+626acbb5acce7ab2,AITD-01419,Partial Derivative,偏导数,,,Machine Learning.md
+5a86ce7bd719b6df,AITD-01420,Partially Observable Markov Decision Processes,部分可观测马尔可夫决策过程,POMDP,,Machine Learning.md
+50ba5a8ae7502cc3,AITD-01423,Partition Function,配分函数,,,Machine Learning.md
+651ec24bf36e7975,AITD-01428,Perceptron,感知机,,机器学习,Machine Learning.md
+26c97e5ff3e3b620,AITD-01429,Performance Measure,性能度量,,,Machine Learning.md
+6d6391bf0047efc4,AITD-01432,Perplexity,困惑度,,,Machine Learning.md
+086c1c71529de4d4,AITD-01444,Pointer Network,指针网络,,,Machine Learning.md
+f2cab8c37e975a15,AITD-01446,Policy,策略,,,Machine Learning.md
+f23ed720502ea292,AITD-01448,Policy Gradient,策略梯度,,,Machine Learning.md
+7f6561eef434f0c3,AITD-01450,Policy Iteration,策略迭代,,,Machine Learning.md
+76a64b21b23f4a5d,AITD-01453,Polynomial Kernel Function,多项式核函数,,,Machine Learning.md
+e34587dfd9385a21,AITD-01456,Pooling,汇聚,,,Machine Learning.md
+37a03e9d4f2544b8,AITD-01458,Pooling Layer,汇聚层,,,Machine Learning.md
+d2bcdd317cbd38d0,AITD-01465,Positive Definite Matrix,正定矩阵,,,Machine Learning.md
+1a3a15e38c79f600,AITD-01473,Post-Pruning,后剪枝,,,Machine Learning.md
+9216ef08ca419178,AITD-01477,Potential Function,势函数,,,Machine Learning.md
+7a628a9215ae9943,AITD-01478,Power Method,幂法,,,Machine Learning.md
+8817f737ac167543,AITD-01481,Pre-Training,预训练,,,Machine Learning.md
+a78553e50d017ea5,AITD-01482,Precision,查准率/准确率,,数学、HPC,Machine Learning.md
+7959bed7e47656f9,AITD-01485,Prepruning,预剪枝,,,Machine Learning.md
+47b829cb0e864573,AITD-01487,Primal Problem,主问题,,,Machine Learning.md
+c960b658154da3e6,AITD-01488,Primary Visual Cortex,初级视觉皮层,,,Machine Learning.md
+88c875449e7cdee0,AITD-01489,Principal Component Analysis,主成分分析,PCA,,Machine Learning.md
+f692fad71ac6435c,AITD-01491,Prior,先验,,,Machine Learning.md
+f62a91f82112bcaa,AITD-01498,Probabilistic Context-Free Grammar,概率上下文无关文法,,,Machine Learning.md
+8206e2dfae255b01,AITD-01501,Probabilistic Graphical Model,概率图模型,PGM,,Machine Learning.md
+119c19cbccfc840b,AITD-01504,Probabilistic Model,概率模型,,,Machine Learning.md
+8612b575ffbda1c4,AITD-01508,Probability Density Function,概率密度函数,PDF,,Machine Learning.md
+5ed8fa6e0d6b8506,AITD-01509,Probability Distribution,概率分布,,统计,Machine Learning.md
+bc194585dc5ecb24,AITD-01512,Probably Approximately Correct,概率近似正确,PAC,,Machine Learning.md
+a83aa125bf547d06,AITD-01517,Proposal Distribution,提议分布,,,Machine Learning.md
+cf5969dee8b9ff9e,AITD-01520,Prototype-Based Clustering,原型聚类,,,Machine Learning.md
+7f21eacde4421789,AITD-01521,Proximal Gradient Descent,近端梯度下降,PGD,,Machine Learning.md
+8a5f2ae2a2929799,AITD-01522,Pruning,剪枝,,,Machine Learning.md
+0a673877fdb67740,AITD-01528,Quadratic Loss Function,平方损失函数,,,Machine Learning.md
+e2fb9d5c8dd9b461,AITD-01529,Quadratic Programming,二次规划,,,Machine Learning.md
+0d83e1affd8c9477,AITD-01536,Quasi Newton Method,拟牛顿法,,,Machine Learning.md
+04f5664f1ba8ae62,AITD-01541,Radial Basis Function,径向基函数,RBF,,Machine Learning.md
+c05d2e07beb3e718,AITD-01545,Random Forest,随机森林,RF、RFS,统计,Machine Learning.md
+472a0aaed3d66385,AITD-01547,Random Sampling,随机采样,,统计,Machine Learning.md
+168a77dd729d6d7f,AITD-01548,Random Search,随机搜索,,,Machine Learning.md
+427dea844a42d8e6,AITD-01550,Random Variable,随机变量,,,Machine Learning.md
+b2215bf429b8b8fd,AITD-01551,Random Walk,随机游走,,,Machine Learning.md
+cb6a086f06adadb2,AITD-01561,Recall,查全率/召回率,,,Machine Learning.md
+4cb0bb06c1eecbae,AITD-01564,Receptive Field,感受野,,,Machine Learning.md
+5ac45b38e44717bf,AITD-01569,Reconstruction Error,重构误差,,,Machine Learning.md
+6cb0267c5b8ed725,AITD-01573,Rectified Linear Unit,修正线性单元/整流线性单元,ReLU,CHAPTER 2,Machine Learning.md
+396148af83a0311d,AITD-01579,Recurrent Neural Network,循环神经网络,RNN,机器学习,Machine Learning.md
+03defd5cc1a77b4e,AITD-01580,Recursive Neural Network,递归神经网络,RecNN,,Machine Learning.md
+3252a583b918b5bd,AITD-01585,Regression,回归,,统计,Machine Learning.md
+869cf3ca1e7a3990,AITD-01586,Regularization,正则化,,,Machine Learning.md
+97dccab35c205401,AITD-01587,Regularizer,正则化项,,,Machine Learning.md
+6b4c6b81e5664b40,AITD-01588,Reinforcement Learning,强化学习,RL,机器学习,Machine Learning.md
+8e650a5ce63630e0,AITD-01592,Relative Entropy,相对熵,,,Machine Learning.md
+3ed3e7557f81be9d,AITD-01594,Reparameterization,再参数化/重参数化,,,Machine Learning.md
+3400e228c65a1552,AITD-01597,Representation,表示,,,Machine Learning.md
+64730dc8e249415b,AITD-01598,Representation Learning,表示学习,,,Machine Learning.md
+17acf694bc733f1b,AITD-01600,Representer Theorem,表示定理,,,Machine Learning.md
+64b06a1fbfc7e58c,AITD-01601,Reproducing Kernel Hilbert Space,再生核希尔伯特空间,RKHS,,Machine Learning.md
+d671cd2aaffc7d9d,AITD-01602,Rescaling,再缩放,,,Machine Learning.md
+c99d41d53ebd30fb,AITD-01604,Reset Gate,重置门,,,Machine Learning.md
+dc8392c590a50a32,AITD-01606,Residual Connection,残差连接,,,Machine Learning.md
+ef92330c121152ec,AITD-01608,Residual Network,残差网络,ResNet,,Machine Learning.md
+c22bd5ea34e2b233,AITD-01612,Restricted Boltzmann Machine,受限玻尔兹曼机,RBM,,Machine Learning.md
+0c8e81e03df834d0,AITD-01619,Reward,奖励,,,Machine Learning.md
+66edb38c6a6cd149,AITD-01621,Ridge Regression,岭回归,,,Machine Learning.md
+ba4ec45a3209cba4,AITD-01624,Right Singular Vector,右奇异向量,,,Machine Learning.md
+f2190786977b2e56,AITD-01625,Risk,风险,,,Machine Learning.md
+2a0cb4183e42d1fe,AITD-01627,Robustness,稳健性,,计算机、机器学习,Machine Learning.md
+154400c4c4a9d61b,AITD-01628,Root Node,根结点,,,Machine Learning.md
+551d6a52bc5b33c7,AITD-01632,Rule Learning,规则学习,,,Machine Learning.md
+9f19c636636ed5d4,AITD-01635,Saddle Point,鞍点,,,Machine Learning.md
+ebeec025ba2a755e,AITD-01640,Sample,样本,,,Machine Learning.md
+41141eef3fd90ad3,AITD-01641,Sample Complexity,样本复杂度,,,Machine Learning.md
+f8212b683a215883,AITD-01643,Sample Space,样本空间,,,Machine Learning.md
+2ef28bcc1ac0147a,AITD-01649,Scalar,标量,,,Machine Learning.md
+2a8c8a7e23c1aeb8,AITD-01661,Selective Ensemble,选择性集成,,,Machine Learning.md
+0d172e14f0aa479b,AITD-01662,Self Information,自信息,,,Machine Learning.md
+c89d79aa772cd1f9,AITD-01663,Self-Attention,自注意力,,,Machine Learning.md
+ab6b555979ea9bbb,AITD-01668,Self-Organizing Map,自组织映射网,SOM,,Machine Learning.md
+1803340340c9a0e6,AITD-01670,Self-Training,自训练,,,Machine Learning.md
+e9a582d464915c1e,AITD-01675,Semi-Definite Programming,半正定规划,,,Machine Learning.md
+a10b4cc1dbd4c9f2,AITD-01676,Semi-Naive Bayes Classifiers,半朴素贝叶斯分类器,,,Machine Learning.md
+80aad1b0f36bc070,AITD-01677,Semi-Restricted Boltzmann Machine,半受限玻尔兹曼机,,,Machine Learning.md
+8e379e7380b21dce,AITD-01679,Semi-Supervised Clustering,半监督聚类,,,Machine Learning.md
+cdb3b49f73cec15b,AITD-01680,Semi-Supervised Learning,半监督学习,,,Machine Learning.md
+fa41cd33b053b1a3,AITD-01681,Semi-Supervised Support Vector Machine,半监督支持向量机,S3VM,,Machine Learning.md
+e781e171cd5857d0,AITD-01682,Sentiment Analysis,情感分析,,,Machine Learning.md
+94866333f2208180,AITD-01685,Separating Hyperplane,分离超平面,,,Machine Learning.md
+c0573eedd878f52f,AITD-01690,Sequential Covering,序贯覆盖,,,Machine Learning.md
+87176f90030c4570,AITD-01708,Sigmoid Belief Network,Sigmoid信念网络,SBN,,Machine Learning.md
+7ec1aadc8cf8912c,AITD-01710,Sigmoid Function,Sigmoid函数,,,Machine Learning.md
+384d8f3e08f27be1,AITD-01712,Signed Distance,带符号距离,,,Machine Learning.md
+74479885817a6d03,AITD-01714,Similarity Measure,相似度度量,,,Machine Learning.md
+17021cef3941f630,AITD-01719,Simulated Annealing,模拟退火,,统计、机器学习,Machine Learning.md
+744e4a854979c9c1,AITD-01720,Simultaneous Localization And Mapping,即时定位与地图构建,SLAM,,Machine Learning.md
+76441926f67815a6,AITD-01724,Singular Value,奇异值,,,Machine Learning.md
+be9f434c22c10333,AITD-01725,Singular Value Decomposition,奇异值分解,SVD,,Machine Learning.md
+e7152bd6ed01cef2,AITD-01729,Skip-Gram Model,跳元模型,,,Machine Learning.md
+2a845fee5f975a9b,AITD-01734,Smoothing,平滑,,,Machine Learning.md
+3b644013bb00f462,AITD-01738,Soft Margin,软间隔,,,Machine Learning.md
+1b99948edda86f1c,AITD-01739,Soft Margin Maximization,软间隔最大化,,,Machine Learning.md
+f2087d1ce84c72ab,AITD-01742,Softmax,Softmax/软最大化,,,Machine Learning.md
+ef52826027277e9c,AITD-01743,Softmax Function,Softmax函数/软最大化函数,,统计、机器学习,Machine Learning.md
+f7a0dacbf133e0de,AITD-01744,Softmax Regression,Softmax回归/软最大化回归,,,Machine Learning.md
+c6cec5b3597a8c01,AITD-01747,Softplus Function,Softplus函数,,,Machine Learning.md
+538be573d1e0b654,AITD-01749,Span,张成子空间,,,Machine Learning.md
+3e018952e01a8664,AITD-01753,Sparse Coding,稀疏编码,,,Machine Learning.md
+50d737564bea9283,AITD-01757,Sparse Representation,稀疏表示,,,Machine Learning.md
+b7f61fb8432a6fe8,AITD-01759,Sparsity,稀疏性,,,Machine Learning.md
+c832bd1b9116f3b5,AITD-01760,Specialization,特化,,,Machine Learning.md
+5e2915fbb1b09375,AITD-01769,Splitting Variable,切分变量,,,Machine Learning.md
+daedebc55600685a,AITD-01775,Squashing Function,挤压函数,,,Machine Learning.md
+0a81cd8fa17aced4,AITD-01785,Standard Normal Distribution,标准正态分布,,,Machine Learning.md
+88f09d05f0a29936,AITD-01787,State,状态,,,Machine Learning.md
+29600232f63ff93b,AITD-01791,State Value Function,状态值函数,,,Machine Learning.md
+896119b49daa3c8a,AITD-01792,State-Action Value Function,状态-动作值函数,,,Machine Learning.md
+a7ea4e257cec54ff,AITD-01797,Stationary Distribution,平稳分布,,,Machine Learning.md
+b4e77e680db3d314,AITD-01798,Stationary Point,驻点,,,Machine Learning.md
+7ca393b2a8c46f80,AITD-01800,Statistical Learning,统计学习,,,Machine Learning.md
+a8a67402b2abb7ef,AITD-01807,Steepest Descent,最速下降法,,,Machine Learning.md
+25c24ed51231ee4d,AITD-01813,Stochastic Gradient Descent,随机梯度下降,,,Machine Learning.md
+a1aaa4c051396c2f,AITD-01815,Stochastic Matrix,随机矩阵,,,Machine Learning.md
+0bbb043ce5c9bc53,AITD-01820,Stochastic Process,随机过程,,,Machine Learning.md
+4bf02dd87664d841,AITD-01822,Stratified Sampling,分层采样,,,Machine Learning.md
+9d61c6577cad44c5,AITD-01824,Stride,步幅,,,Machine Learning.md
+579376ecf3ed4059,AITD-01830,Structural Risk,结构风险,,,Machine Learning.md
+687374de46fef3ce,AITD-01831,Structural Risk Minimization,结构风险最小化,SRM,,Machine Learning.md
+572743fcc1faaf66,AITD-01839,Subsample,子采样,,,Machine Learning.md
+ab3154117de173d1,AITD-01840,Subsampling,下采样,,,Machine Learning.md
+7be57a99aec9ebf2,AITD-01843,Subset Search,子集搜索,,,Machine Learning.md
+e367a83bf234c920,AITD-01844,Subspace,子空间,,,Machine Learning.md
+89d2091eb746b172,AITD-01852,Supervised Learning,监督学习,,机器学习,Machine Learning.md
+f2a6fea9ce1b24ad,AITD-01856,Support Vector,支持向量,,统计、机器学习,Machine Learning.md
+75dc34ee77ef8d4d,AITD-01857,Support Vector Expansion,支持向量展式,,,Machine Learning.md
+8f88b6ed62ae5d0a,AITD-01858,Support Vector Machine,支持向量机,SVM,统计、机器学习,Machine Learning.md
+52431ac4996fb3f9,AITD-01860,Surrogat Loss,替代损失,,,Machine Learning.md
+d06ff2e29be77c49,AITD-01861,Surrogate Function,替代函数,,,Machine Learning.md
+33bd5bda6dfaa704,AITD-01862,Surrogate Loss Function,代理损失函数,,,Machine Learning.md
+120f37a24d499a29,AITD-01867,Symbolism,符号主义,,,Machine Learning.md
+3eb49005afb4dbda,AITD-01878,Tangent Propagation,正切传播,,,Machine Learning.md
+6de9318f6e78aa33,AITD-01883,Teacher Forcing,强制教学,,,Machine Learning.md
+d2009841bfa20e3d,AITD-01888,Temporal-Difference Learning,时序差分学习,,,Machine Learning.md
+1bc468eeec591159,AITD-01889,Tensor,张量,,,Machine Learning.md
+ec3355c0e0a76e99,AITD-01894,Test Error,测试误差,,,Machine Learning.md
+6f93601bd1086210,AITD-01895,Test Sample,测试样本,,,Machine Learning.md
+7213856b897c1a8b,AITD-01896,Test Set,测试集,,机器学习,Machine Learning.md
+1200c131b70b1c9b,AITD-01898,Threshold,阈值,,数学,Machine Learning.md
+5e842cfc891a4ce3,AITD-01899,Threshold Logic Unit,阈值逻辑单元,,,Machine Learning.md
+7d58af14f681fd25,AITD-01900,Threshold-Moving,阈值移动,,,Machine Learning.md
+242ef2455c73ad47,AITD-01901,Tied Weight,捆绑权重,,,Machine Learning.md
+f2fbe1f4d3fae975,AITD-01902,Tikhonov Regularization,Tikhonov正则化,,,Machine Learning.md
+8de1baf995854bd6,AITD-01904,Time Delay Neural Network,时延神经网络,TDNN,,Machine Learning.md
+d414b394a6141fdd,AITD-01905,Time Homogenous Markov Chain,时间齐次马尔可夫链,,,Machine Learning.md
+6010a3adc5e1da38,AITD-01906,Time Step,时间步,,,Machine Learning.md
+f82fdf2578a89564,AITD-01908,Token,词元,,,Machine Learning.md
+3b7ddbc3289b75cb,AITD-01909,Tokenize,词元化,,,Machine Learning.md
+4acca47bb07962ec,AITD-01910,Tokenization,词元化,,,Machine Learning.md
+4b51fabf43f7f3db,AITD-01911,Tokenizer,词元分析器,,,Machine Learning.md
+2a8476612f47cb5b,AITD-01915,Topic Model,话题模型,,,Machine Learning.md
+5db089b2d7981bcc,AITD-01916,Topic Modeling,话题分析,,,Machine Learning.md
+d6b03b0b02ce7b2e,AITD-01922,Trace,迹,,,Machine Learning.md
+eae8910d230f512f,AITD-01924,Training,训练,,,Machine Learning.md
+016a2d1377b66b3e,AITD-01926,Training Error,训练误差,,,Machine Learning.md
+8c13769d978353e4,AITD-01928,Training Sample,训练样本,,机器学习,Machine Learning.md
+a729347d7291132d,AITD-01929,Training Set,训练集,,机器学习,Machine Learning.md
+957e0ee6afebc311,AITD-01933,Transductive Learning,直推学习,,,Machine Learning.md
+064617572b3a8eea,AITD-01934,Transductive Transfer Learning,直推迁移学习,,,Machine Learning.md
+0e000efe21bf9591,AITD-01935,Transfer Learning,迁移学习,,,Machine Learning.md
+d776859e43a8bfc2,AITD-01937,Transformer,Transformer,,,Machine Learning.md
+65a922430451f5af,AITD-01938,Transformer Model,Transformer模型,,,Machine Learning.md
+94cfbd502ee41cf9,AITD-01943,Transpose,转置,,,Machine Learning.md
+30a9a3b454195c66,AITD-01944,Transposed Convolution,转置卷积,,,Machine Learning.md
+cc73829300e5ade9,AITD-01948,Trial And Error,试错,,,Machine Learning.md
+24669a28f6f7edf4,AITD-01953,Trigram,三元语法,,,Machine Learning.md
+bf5ba1219864bef4,AITD-01960,Turing Machine,图灵机,,,Machine Learning.md
+c04cbdc45b7d05e7,AITD-01971,Underfitting,欠拟合,,机器学习,Machine Learning.md
+a23f430dddcb90d4,AITD-01976,Undersampling,欠采样,,,Machine Learning.md
+99100773ccf7259b,AITD-01980,Undirected Graphical Model,无向图模型,,,Machine Learning.md
+bc4b136e7dc1c98d,AITD-01987,Uniform Distribution,均匀分布,,,Machine Learning.md
+d47f5cf367a7652a,AITD-01990,Unigram,一元语法,,,Machine Learning.md
+5240a61529a2bcc3,AITD-01992,Unit,单元,,,Machine Learning.md
+1575aca631bb9b7b,AITD-02000,Universal Approximation Theorem,通用近似定理,,,Machine Learning.md
+5c1afb5dad154919,AITD-02001,Universal Approximator,通用近似器,,,Machine Learning.md
+99ea4966b8a5c5b8,AITD-02002,Universal Function Approximator,通用函数近似器,,,Machine Learning.md
+6d283d11370fbae4,AITD-02003,Unknown Token,未知词元,,,Machine Learning.md
+61a9697d227f7f10,AITD-02010,Unsupervised Layer-Wise Training,无监督逐层训练,,,Machine Learning.md
+863f848fb7bb9745,AITD-02012,Unsupervised Learning,无监督学习,UL,,Machine Learning.md
+7a1d835ec30e3ca6,AITD-02014,Update Gate,更新门,,,Machine Learning.md
+c2871c99494c2601,AITD-02017,Upsampling,上采样,,,Machine Learning.md
+30a95727622074d6,AITD-02018,V-Structure,V型结构,,,Machine Learning.md
+d9442fb8d8ad9b9a,AITD-02020,Validation Set,验证集,,,Machine Learning.md
+ad9eca67625470ca,AITD-02021,Validity Index,有效性指标,,,Machine Learning.md
+c3ac0638f07ab093,AITD-02023,Value Function Approximation,值函数近似,,,Machine Learning.md
+9c3389ee85bac0f3,AITD-02024,Value Iteration,值迭代,,,Machine Learning.md
+89d96da51569ba2e,AITD-02027,Vanishing Gradient Problem,梯度消失问题,,,Machine Learning.md
+1bb0d73534893c55,AITD-02028,Vapnik-Chervonenkis Dimension,VC维,,,Machine Learning.md
+9281fff50a6c29ea,AITD-02029,Variable Elimination,变量消去,,,Machine Learning.md
+d885aa4e2af90266,AITD-02030,Variance,方差,,,Machine Learning.md
+5d6c87f69ca40425,AITD-02033,Variational Autoencoder,变分自编码器,VAE,,Machine Learning.md
+694f5b8ba075af94,AITD-02040,Variational Inference,变分推断,,,Machine Learning.md
+19db6cad424633ad,AITD-02041,Vector,向量,,,Machine Learning.md
+7c363b74dd6da0df,AITD-02043,Vector Space Model,向量空间模型,VSM,,Machine Learning.md
+05eedc0ff5cb4974,AITD-02045,Version Space,版本空间,,,Machine Learning.md
+b5405074da216c0d,AITD-02050,Viterbi Algorithm,维特比算法,,,Machine Learning.md
+4adf842f19e24203,AITD-02051,Vocabulary,词表,,,Machine Learning.md
+f4dc0b30b77e7794,AITD-02055,Warp,线程束,,,Machine Learning.md
+eb3d2522cc3e0ec7,AITD-02060,Weak Learner,弱学习器,,,Machine Learning.md
+da830399087d090c,AITD-02062,Weakly Supervised Learning,弱监督学习,,,Machine Learning.md
+6c36c09d53e2686c,AITD-02063,Weight,权重,,,Machine Learning.md
+902a74cb8bb627d5,AITD-02064,Weight Decay,权重衰减,,,Machine Learning.md
+489238384e56fc2f,AITD-02067,Weight Sharing,权共享,,,Machine Learning.md
+50d29991e16eb2e3,AITD-02071,Weighted Voting,加权投票,,,Machine Learning.md
+9691cd7db3607bcd,AITD-02072,Whitening,白化,,,Machine Learning.md
+4db020716347bbcf,AITD-02075,Winner-Take-All,胜者通吃,,,Machine Learning.md
+7711bf7f238c67ed,AITD-02076,Within-Class Scatter Matrix,类内散度矩阵,,,Machine Learning.md
+d99b3a692652a0c0,AITD-02077,Word Embedding,词嵌入,,,Machine Learning.md
+4ce9e087642b9bda,AITD-02078,Word Sense Disambiguation,词义消歧,,,Machine Learning.md
+6492ee0d04fcfa54,AITD-02079,Word Vector,词向量,,,Machine Learning.md
+a2f849c9d6e84f37,AITD-02087,Zero Padding,零填充,,,Machine Learning.md
+b1d30eec709ed8f3,AITD-02091,Zero-Shot Learning,零样本学习,,,Machine Learning.md
+07cfc5992b1d3800,AITD-02092,Zipf's Law,齐普夫定律,,,Machine Learning.md
