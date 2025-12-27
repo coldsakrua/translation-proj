@@ -1,0 +1,2596 @@
+实体原文,实体类型,出现次数,建议译法（人工填写）,校验结果（通过/修改）,上下文
+AI,GPE,129,,,"itself. The field of
+artificial intelligence
+, or AI, is concerned with not just understanding but als"
+Kai-Fu Lee,PERSON,2,,,r a trillion dollars a year in revenue. AI expert Kai-Fu Lee predicts that its impact will be “more than anyth
+Galileo,PRODUCT,2,,,"at the best ideas have already been discovered by Galileo, Newton, Curie, Einstein, and the rest, AI still "
+Newton,GPE,9,,,"st ideas have already been discovered by Galileo, Newton, Curie, Einstein, and the rest, AI still has many"
+"Curie, Einstein",PERSON,1,,," have already been discovered by Galileo, Newton, Curie, Einstein, and the rest, AI still has many openings for ful"
+AI,ORG,40,,,"y Galileo, Newton, Curie, Einstein, and the rest, AI still has many openings for full-time masterminds"
+Alan Turing,PERSON,3,,,"uring test approach
+The
+Turing test
+, proposed by Alan Turing (1950), was designed as a thought experiment that"
+Turing,ORG,12,,,"s and people in the real world. To pass the total Turing test, a robot will need
+•
+computer vision
+and spe"
+Aeronautical,ORG,1,,,ing wind tunnels and learning about aerodynamics. Aeronautical engineering texts do not define the goal of their
+Allen Newell,PERSON,4,,,"For example, Allen Newell and Herbert Simon, who developed GPS, the “Genera"
+Herbert Simon,PERSON,7,,,"For example, Allen Newell and Herbert Simon, who developed GPS, the “General Problem Solver” "
+Newell,ORG,9,,," who developed GPS, the “General Problem Solver” (Newell and Simon, 1961), were not content merely to have"
+Simon,PERSON,16,,,"ped GPS, the “General Problem Solver” (Newell and Simon, 1961), were not content merely to have their pro"
+Wilson,ORG,2,,," several textbooks and at least one encyclopedia (Wilson and Keil, 1999). We will occasionally comment on "
+Keil,GPE,1,,,"xtbooks and at least one encyclopedia (Wilson and Keil, 1999). We will occasionally comment on similarit"
+Aristotle,PERSON,2,,," “laws of thought” approach
+The Greek philosopher Aristotle was one of the first to attempt to codify “right "
+Socrates,PRODUCT,2,,,"rrect premises. The canonical example starts with
+Socrates is a man
+and
+all men are mortal
+and concludes tha"
+Sextus Empiricus,ORG,1,,,(This example is probably due to Sextus Empiricus rather than Aristotle.) These laws of thought wer
+Aristotle,ORG,6,,,e is probably due to Sextus Empiricus rather than Aristotle.) These laws of thought were supposed to govern t
+Foundations of Artificial Intelligence,ORG,1,,,"1.2The Foundations of Artificial Intelligence
+1.2
+The Foundations of Artificial Intelligence
+In"
+The Foundations of Artificial Intelligence,ORG,1,,,"1.2The Foundations of Artificial Intelligence
+1.2
+The Foundations of Artificial Intelligence
+In this section, we provide a brief history of th"
+Ramon Llull,PERSON,1,,,Ramon Llull (c. 1232–1315) devised a system of reasoning publ
+The Great Art,WORK_OF_ART,1,,,"d a system of reasoning published as
+Ars Magna
+or
+The Great Art
+(1305). Llull tried to implement his system using"
+Llull,PERSON,1,,,"g published as
+Ars Magna
+or
+The Great Art
+(1305). Llull tried to implement his system using an actual mec"
+Leonardo da Vinci,PERSON,1,,,"Around 1500, Leonardo da Vinci (1452–1519) designed but did not build a mechanic"
+Wilhelm Schickard,PERSON,1,,,s constructed around 1623 by the German scientist Wilhelm Schickard (1592–1635). Blaise Pascal (1623–1662) built the 
+Pascaline,ORG,1,,, (1592–1635). Blaise Pascal (1623–1662) built the Pascaline in 1642 and wrote that it “produces effects which
+Gottfried Wilhelm Leibniz,PERSON,1,,,arer to thought than all the actions of animals.” Gottfried Wilhelm Leibniz (1646–1716) built a mechanical device intended to
+Leviathan,GPE,1,,,"ut its scope was rather limited. In his 1651 book
+Leviathan,
+Thomas Hobbes (1588–1679) suggested the idea of "
+Thomas Hobbes,PERSON,1,,,"e was rather limited. In his 1651 book
+Leviathan,
+Thomas Hobbes (1588–1679) suggested the idea of a thinking mach"
+Francis Bacon’s,PERSON,1,,,"knowledge. The
+empiricism
+movement, starting with Francis Bacon’s (1561–1626)
+Novum Organum
+,
+4
+is characterized by"
+Novum Organum,PERSON,1,,,"vement, starting with Francis Bacon’s (1561–1626)
+Novum Organum
+,
+4
+is characterized by a dictum of John Locke (1"
+John Locke,PERSON,1,,,"Novum Organum
+,
+4
+is characterized by a dictum of John Locke (1632–1704): “Nothing is in the understanding, wh"
+David Hume’s,PERSON,1,,,"nderstanding, which was not first in the senses.”
+David Hume’s (1711–1776)
+A Treatise of Human Nature
+(Hume, 173"
+A Treatise of Human Nature,ORG,1,,,"ot first in the senses.”
+David Hume’s (1711–1776)
+A Treatise of Human Nature
+(Hume, 1739) proposed what is now known as the pr"
+Ludwig Wittgenstein,ORG,1,,,"Building on the work of Ludwig Wittgenstein (1889–1951) and Bertrand Russell (1872–1970), the"
+Bertrand Russell,PERSON,2,,,"n the work of Ludwig Wittgenstein (1889–1951) and Bertrand Russell (1872–1970), the famous Vienna Circle (Sigmund, 2"
+Vienna Circle,ORG,1,,,"951) and Bertrand Russell (1872–1970), the famous Vienna Circle (Sigmund, 2017), a group of philosophers and math"
+Vienna,GPE,1,,,"oup of philosophers and mathematicians meeting in Vienna in the 1920s and 1930s, developed the doctrine of"
+Rudolf Carnap,PERSON,1,,,"The
+confirmation theory
+of Rudolf Carnap (1891–1970) and Carl Hempel (1905–1997) attempted"
+Carl Hempel,PERSON,1,,,"firmation theory
+of Rudolf Carnap (1891–1970) and Carl Hempel (1905–1997) attempted to analyze the acquisition "
+Carnap,ORG,1,,," to observations that confirm or disconfirm them. Carnap’s book
+The Logical Structure of the World
+(1928) "
+The Logical Structure of the World,WORK_OF_ART,1,,,"ns that confirm or disconfirm them. Carnap’s book
+The Logical Structure of the World
+(1928) was perhaps the first theory of mind as a "
+De Motu Animalium,PERSON,1,,,"Aristotle argued (in
+De Motu Animalium
+) that actions are justified by a logical connect"
+Nicomachean Ethics,ORG,1,,,"In the
+Nicomachean Ethics
+(Book III. 3, 1112b), Aristotle further elaborate"
+Antoine Arnauld,ORG,1,,," must still be taken. How then should one decide? Antoine Arnauld (1662), analyzing the notion of rational decision"
+Daniel Bernoulli,PERSON,2,,,"he expected monetary value of the outcome. Later, Daniel Bernoulli (1738) introduced the more general notion of
+util"
+Jeremy Bentham,PERSON,1,,,t consider the interests of multiple individuals. Jeremy Bentham (1823) and John Stuart Mill (1863) promoted the i
+John Stuart Mill,PERSON,1,,,"f multiple individuals. Jeremy Bentham (1823) and John Stuart Mill (1863) promoted the idea of
+utilitarianism
+: that"
+Immanuel Kant,PERSON,1,,,"In contrast, Immanuel Kant, in 1785, proposed a theory of rule-based or
+deon"
+n’t,GPE,2,,,"al laws that govern allowable actions, such as “don’t lie” or “don’t kill.” Thus, a utilitarian could t"
+Mill,PERSON,1,,," bound not to, because lying is inherently wrong. Mill acknowledged the value of rules, but understood t"
+Greece,GPE,1,,,"can be traced back to the philosophers of ancient Greece, India, and China, but its mathematical developme"
+India,GPE,2,,,"raced back to the philosophers of ancient Greece, India, and China, but its mathematical development real"
+China,GPE,2,,,"to the philosophers of ancient Greece, India, and China, but its mathematical development really began wi"
+George Boole,PERSON,1,,,"matical development really began with the work of George Boole (1815–1864), who worked out the details of propos"
+Boole,GPE,1,,," the details of propositional, or Boolean, logic (Boole, 1847). In 1879, Gottlob Frege (1848–1925) extend"
+Gottlob Frege,PERSON,1,,,"tional, or Boolean, logic (Boole, 1847). In 1879, Gottlob Frege (1848–1925) extended Boole’s logic to include obj"
+Boole,ORG,1,,,"847). In 1879, Gottlob Frege (1848–1925) extended Boole’s logic to include objects and relations, creatin"
+Gödel,ORG,1,,,"research, first-order logic motivated the work of Gödel and Turing that underpinned computation itself, a"
+Gerolamo Cardano,PERSON,1,,,"ation—a consideration of great importance for AI. Gerolamo Cardano (1501–1576) first framed the idea of probability,"
+Pierre Fermat,PERSON,1,,,"n 1654, Blaise Pascal (1623–1662), in a letter to Pierre Fermat (1601–1665), showed how to predict the future of "
+Jacob Bernoulli,PERSON,1,,,"h uncertain measurements and incomplete theories. Jacob Bernoulli (1654–1705, uncle of Daniel), Pierre Laplace (174"
+Daniel,PERSON,1,,,"te theories. Jacob Bernoulli (1654–1705, uncle of Daniel), Pierre Laplace (1749–1827), and others advanced"
+Pierre Laplace,PERSON,1,,,"es. Jacob Bernoulli (1654–1705, uncle of Daniel), Pierre Laplace (1749–1827), and others advanced the theory and i"
+Thomas Bayes,PERSON,1,,,he theory and introduced new statistical methods. Thomas Bayes (1702–1761) proposed a rule for updating probabil
+Bayes,ORG,1,,,ating probabilities in the light of new evidence; Bayes’ rule is a crucial tool for AI systems.
+John Graunt’s,PERSON,1,,,"
+statistics
+as a field. One of the first uses was John Graunt’s analysis of London
+census data in 1662. Ronald Fi"
+London,GPE,1,,,"e of the first uses was John Graunt’s analysis of London
+census data in 1662. Ronald Fisher is considered "
+Ronald Fisher,PERSON,1,,," Graunt’s analysis of London
+census data in 1662. Ronald Fisher is considered the first modern statistician (Fish"
+Fisher,GPE,1,,,"sher is considered the first modern statistician (Fisher, 1922). He brought together the ideas of probabil"
+Ross,PERSON,1,,,"f the calculator was more than his annual salary (Ross, 2012)."
+Euclid’s,ORG,1,,,"t the first nontrivial
+algorithm
+is thought to be Euclid’s algorithm for computing greatest common divisors."
+Muhammad,PERSON,1,,,"st common divisors. The word
+algorithm
+comes from Muhammad ibn Musa al-Khwarizmi, a 9th century mathematicia"
+Kurt Gӧdel,PERSON,1,,,Kurt Gӧdel (1906–1978) showed that there exists an effective
+Frege,ORG,1,,,"ve any true statement in the first-order logic of Frege and Russell, but that first-order logic could not"
+Russell,PERSON,6,,,"e statement in the first-order logic of Frege and Russell, but that first-order logic could not capture the"
+Gӧdel,PERSON,1,,,"ded to characterize the natural numbers. In 1931, Gӧdel showed that limits on deduction do exist. His
+inc"
+Peano,ORG,1,,,"rem
+showed that in any formal theory as strong as Peano arithmetic (the elementary theory of natural numb"
+Church,ORG,1,,, of being computed by an effective procedure. The Church–Turing thesis proposes to identify the general no
+Cobham,ORG,1,,,"complexity was first emphasized in the mid-1960s (Cobham, 1964; Edmonds, 1965). It is important because ex"
+Edmonds,PERSON,1,,," first emphasized in the mid-1960s (Cobham, 1964; Edmonds, 1965). It is important because exponential growt"
+NP,ORG,12,,,"The theory of
+NP-completeness
+, pioneered by Cook (1971) and Karp "
+Cook,PERSON,1,,,"The theory of
+NP-completeness
+, pioneered by Cook (1971) and Karp (1972), provides a basis for anal"
+Karp,PERSON,3,,,"of
+NP-completeness
+, pioneered by Cook (1971) and Karp (1972), provides a basis for analyzing the tracta"
+Adam Smith,PERSON,1,,,"The science of economics originated in 1776, when Adam Smith (1723–1790) published
+An Inquiry into the Nature "
+An Inquiry,WORK_OF_ART,1,,,"ed in 1776, when Adam Smith (1723–1790) published
+An Inquiry into the Nature and Causes of the Wealth of Natio"
+Smith,PERSON,4,,,Smith proposed to analyze economies as consisting of ma
+The Theory of Moral Sentiments,WORK_OF_ART,1,,,"reed as a moral position: his earlier (1759) book
+The Theory of Moral Sentiments
+begins by pointing out that concern for the well-"
+Arnauld,PERSON,1,,,"ncertainty, the maximum-expected-value formula of Arnauld (1662), dealt with the monetary value of bets. Da"
+Léon Walras,PERSON,1,,,Léon Walras (pronounced “Valrasse”) (1834–1910) gave utility 
+Ramsey,PERSON,1,,,st monetary outcomes). The theory was improved by Ramsey (1931) and later by John von Neumann and Oskar Mo
+John von Neumann,PERSON,2,,,"theory was improved by Ramsey (1931) and later by John von Neumann and Oskar Morgenstern in their book
+The Theory of"
+Oskar Morgenstern,PERSON,1,,,"y Ramsey (1931) and later by John von Neumann and Oskar Morgenstern in their book
+The Theory of Games and Economic Be"
+The Theory of Games and Economic Behavior,WORK_OF_ART,1,,,"n von Neumann and Oskar Morgenstern in their book
+The Theory of Games and Economic Behavior
+(1944). Economics is no longer the study of money"
+Von Neumann,PERSON,1,,,"ity of another (either positively or negatively). Von Neumann and Morgenstern’s development of
+game theory
+(see"
+Morgenstern’s,ORG,1,,,"either positively or negatively). Von Neumann and Morgenstern’s development of
+game theory
+(see also Luce and Rai"
+Luce,PRODUCT,1,,,"orgenstern’s development of
+game theory
+(see also Luce and Raiffa, 1957) included the surprising result "
+Raiffa,PERSON,1,,,"n’s development of
+game theory
+(see also Luce and Raiffa, 1957) included the surprising result that, for s"
+World War II,EVENT,2,,,"e field of
+operations research
+, which emerged in World War II from efforts in Britain to optimize radar install"
+Britain,GPE,4,,,"h
+, which emerged in World War II from efforts in Britain to optimize radar installations, and later found "
+Richard Bellman,PERSON,2,,,nd innumerable civilian applications. The work of Richard Bellman (1957) formalized a class of sequential decision 
+Markov,PERSON,5,,,"ed a class of sequential decision problems called
+Markov decision processes
+, which we study in
+Chapter 16"
+the Nobel Prize,WORK_OF_ART,2,,,ering AI researcher Herbert Simon (1916–2001) won the Nobel Prize in economics in 1978 for his early work showing t
+Paul Broca’s,PERSON,1,,,Paul Broca’s (1824–1880) investigation of aphasia (speech defi
+aphasia,ORG,1,,,Paul Broca’s (1824–1880) investigation of aphasia (speech deficit) in brain-damaged patients in 186
+Broca’s,ORG,1,,, localized area in the left hemisphere—now called Broca’s area—that is responsible for speech production.
+Camillo Golgi,ORG,1,,,"ells, or
+neurons
+, but it was not until 1873 that Camillo Golgi (1843–1926) developed a staining technique allowi"
+Santiago Ramon y Cajal,PERSON,1,,,"ons (see
+Figure 1.1
+). This technique was used by Santiago Ramon y Cajal (1852–1934) in his pioneering studies of neuronal"
+John Searle,PERSON,1,,,"In the pithy words of John Searle (1992),
+brains cause minds."
+Soma,ORG,1,,,"on consists of a cell body, which is also labeled Soma. The nucleus is present at the center of the cell"
+Axonal,ORG,1,,,branches further as tree-like projections labeled Axonal arborization. An axon from another neuron cell is
+neuron,GPE,1,,,ions called synapses. Signals are propagated from neuron to neuron by a complicated electrochemical reacti
+Hans Berger,PERSON,1,,,rain activity began in 1929 with the invention by Hans Berger of the electroencephalograph (EEG). The developme
+Ogawa,PERSON,1,,," of functional magnetic resonance imaging (fMRI) (Ogawa
+et al.,
+1990; Cabeza and Nyberg, 2001) is giving "
+al.,PERSON,57,,,"ional magnetic resonance imaging (fMRI) (Ogawa
+et al.,
+1990; Cabeza and Nyberg, 2001) is giving neurosc"
+Cabeza,ORG,1,,,"tic resonance imaging (fMRI) (Ogawa
+et al.,
+1990; Cabeza and Nyberg, 2001) is giving neuroscientists unpre"
+Nyberg,ORG,1,,,"ce imaging (fMRI) (Ogawa
+et al.,
+1990; Cabeza and Nyberg, 2001) is giving neuroscientists unprecedentedly "
+Crick,ORG,1,,,"uron activity and by the methods of
+optogenetics
+(Crick, 1999; Zemelman
+et al.,
+2002; Han and Boyden, 200"
+Zemelman,ORG,1,,," and by the methods of
+optogenetics
+(Crick, 1999; Zemelman
+et al.,
+2002; Han and Boyden, 2007), which allow "
+Boyden,GPE,1,,,"tics
+(Crick, 1999; Zemelman
+et al.,
+2002; Han and Boyden, 2007), which allow both measurement and control "
+Lebedev,PERSON,1,,,"The development of
+brain-machine interfaces
+(Lebedev and Nicolelis, 2006) for both sensing and motor c"
+Nicolelis,GPE,1,,,"elopment of
+brain-machine interfaces
+(Lebedev and Nicolelis, 2006) for both sensing and motor control not onl"
+Vinge,ORG,1,,,"omputers reach a superhuman level of performance (Vinge, 1993; Kurzweil, 2005; Doctorow and Stross, 2012)"
+Kurzweil,GPE,1,,,"h a superhuman level of performance (Vinge, 1993; Kurzweil, 2005; Doctorow and Stross, 2012), and then rapid"
+Summit,ORG,1,,,".2
+A crude comparison of a leading supercomputer, Summit (Feldman, 2017); a typical personal computer of 2"
+Hermann von Helmholtz,PERSON,1,,,sually traced to the work of the German physicist Hermann von Helmholtz (1821–1894) and his student Wilhelm Wundt (1832–1
+Wilhelm Wundt,PERSON,1,,,Hermann von Helmholtz (1821–1894) and his student Wilhelm Wundt (1832–1920). Helmholtz applied the scientific met
+Handbook of Physiological Optics,WORK_OF_ART,1,,,"ific method to the study of human vision, and his
+Handbook of Physiological Optics
+has been described as “the single most important "
+Nalwa,PERSON,1,,,"e on the physics and physiology of human vision” (Nalwa, 1993, p.15). In 1879, Wundt opened the first lab"
+p.15,PERSON,1,,,"ics and physiology of human vision” (Nalwa, 1993, p.15). In 1879, Wundt opened the first laboratory of e"
+Wundt,PERSON,1,,,"gy of human vision” (Nalwa, 1993, p.15). In 1879, Wundt opened the first laboratory of experimental psych"
+the University of Leipzig,ORG,1,,,"e first laboratory of experimental psychology, at the University of Leipzig. Wundt insisted on carefully
+controlled experimen"
+H. S. Jennings,PERSON,1,,,"veloped an objective methodology, as described by H. S. Jennings (1906) in his influential work
+Behavior of the Lo"
+John Watson,PERSON,1,,,"point to humans, the
+behaviorism
+movement, led by John Watson (1878–1958), rejected
+any
+theory involving mental"
+William James,PERSON,1,,,"vice, can be traced back at least to the works of William James (1842–1910). Helmholtz also insisted that percept"
+the United States,GPE,5,,," viewpoint was largely eclipsed by behaviorism in the United States, but at Cambridge’s Applied Psychology Unit, dire"
+Cambridge’s Applied Psychology Unit,ORG,1,,,"ipsed by behaviorism in the United States, but at Cambridge’s Applied Psychology Unit, directed by Frederic Bartlett (1886–1969), cogni"
+Frederic Bartlett,PERSON,1,,," Cambridge’s Applied Psychology Unit, directed by Frederic Bartlett (1886–1969), cognitive modeling was able to flour"
+The Nature of Explanation,WORK_OF_ART,1,,,"The Nature of Explanation,
+by Bartlett’s student and successor Kenneth Crai"
+Bartlett,PERSON,1,,,"The Nature of Explanation,
+by Bartlett’s student and successor Kenneth Craik (1943), for"
+Kenneth Craik,PERSON,1,,," Explanation,
+by Bartlett’s student and successor Kenneth Craik (1943), forcefully reestablished the legitimacy o"
+Craik,ORG,3,,,Craik specified the three key steps of a knowledge-base
+Donald Broadbent,PERSON,1,,,"cycle accident in 1945, his work was continued by Donald Broadbent, whose book
+Perception and Communication
+(1958) w"
+Perception and Communication,WORK_OF_ART,1,,,"ork was continued by Donald Broadbent, whose book
+Perception and Communication
+(1958) was one of the first works to model psycho"
+MIT,ORG,5,,,o have started at a workshop in September 1956 at MIT—just two months after the conference at which AI 
+George Miller,PERSON,1,,,"e at which AI itself was “born.”
+At the workshop, George Miller presented
+The Magic Number Seven,
+Noam Chomsky pr"
+The Magic Number Seven,WORK_OF_ART,1,,," “born.”
+At the workshop, George Miller presented
+The Magic Number Seven,
+Noam Chomsky presented
+Three Models of Language,"
+Noam Chomsky,PERSON,2,,,", George Miller presented
+The Magic Number Seven,
+Noam Chomsky presented
+Three Models of Language,
+and Allen New"
+The Logic Theory Machine,ORG,1,,,"age,
+and Allen Newell and Herbert Simon presented
+The Logic Theory Machine."
+Anderson,PERSON,2,,,"nitive theory should be like a computer program” (Anderson, 1980); that is, it should describe the operation"
+Doug Engelbart,PERSON,1,,,"uman–computer interaction
+(HCI) under psychology. Doug Engelbart, one of the pioneers of HCI, championed the idea "
+HCI,PERSON,1,,,"sychology. Doug Engelbart, one of the pioneers of HCI, championed the idea of
+intelligence augmentation"
+IA,GPE,2,,,"championed the idea of
+intelligence augmentation
+—IA rather than AI. He believed that computers should"
+Engelbart,ORG,1,,,"s rather than automate away human tasks. In 1968, Engelbart’s “mother of all demos” showed off for the first "
+Heath Robinson,PERSON,1,,,"st
+operational
+computer was the electromechanical Heath Robinson,
+9
+built in 1943 by Alan Turing’s team for a sing"
+Alan Turing’s,PERSON,2,,,"ctromechanical Heath Robinson,
+9
+built in 1943 by Alan Turing’s team for a single purpose: deciphering German mes"
+Colossus,ORG,1,,,"n messages. In 1943, the same group developed the Colossus, a powerful general-purpose machine based on vacu"
+Konrad Zuse,PERSON,1,,,"ogrammable
+computer was the Z-3, the invention of Konrad Zuse in Germany in 1941. Zuse also invented floating-p"
+Germany,GPE,1,,,"uter was the Z-3, the invention of Konrad Zuse in Germany in 1941. Zuse also invented floating-point number"
+Plankalkül,GPE,1,,,"rs and the first high-level programming language, Plankalkül. The first
+electronic
+computer, the ABC, was asse"
+ABC,ORG,1,,,"e, Plankalkül. The first
+electronic
+computer, the ABC, was assembled by John Atanasoff and his student "
+John Atanasoff,PERSON,1,,,"st
+electronic
+computer, the ABC, was assembled by John Atanasoff and his student Clifford Berry between 1940 and 1"
+Clifford Berry,PERSON,1,,,", was assembled by John Atanasoff and his student Clifford Berry between 1940 and 1942 at Iowa State University. A"
+Iowa State University,ORG,1,,,s student Clifford Berry between 1940 and 1942 at Iowa State University. Atanasoff’s research received little support or 
+Atanasoff,ORG,1,,,y between 1940 and 1942 at Iowa State University. Atanasoff’s research received little support or recognition
+ENIAC,ORG,1,,,"eceived little support or recognition; it was the ENIAC, developed as part of a secret military project a"
+the University of Pennsylvania,ORG,1,,,developed as part of a secret military project at the University of Pennsylvania by a team including John Mauchly and J. Presper E
+John Mauchly,PERSON,1,,,"he University of Pennsylvania by a team including John Mauchly and J. Presper Eckert, that proved to be the most"
+J. Presper Eckert,PERSON,1,,,"Pennsylvania by a team including John Mauchly and J. Presper Eckert, that proved to be the most influential forerunne"
+CPU,ORG,3,,," manufacturers
+to start multiplying the number of CPU cores rather than the clock speed. Current expect"
+GPU,ORG,3,,,"plications, such as the graphics processing unit (GPU), tensor processing unit (TPU), and wafer scale e"
+TPU,ORG,2,,,"cs processing unit (GPU), tensor processing unit (TPU), and wafer scale engine (WSE). From the 1960s to"
+Moore,PRODUCT,1,,," train top machine learning applications followed Moore’s law. Beginning in 2012, things changed: from 20"
+Amodei and Hernandez,ORG,1,,,"ich works out to a doubling every 100 days or so (Amodei and Hernandez, 2018). A machine learning model that took a full"
+Ying,PERSON,1,,," to train in 2014 takes only two minutes in 2018 (Ying
+et al.,
+2018). Although it is not yet practical,
+"
+Joseph Marie Jacquard,PERSON,1,,,"ogrammable
+machine was a loom, devised in 1805 by Joseph Marie Jacquard (1752–1834), that used punched cards to store ins"
+Charles Babbage,PERSON,1,,,"In the mid-19th century, Charles Babbage (1792–1871) designed two computing machines, neit"
+Babbage’s Analytical Engine,ORG,1,,,"ly built and shown to work in 1991 (Swade, 2000). Babbage’s Analytical Engine was far more ambitious: it included addressable m"
+Jacquard’s,PERSON,1,,,"uded addressable memory, stored programs based on Jacquard’s punched cards, and conditional jumps. It was the "
+Babbage,ORG,2,,,"Babbage’s colleague Ada Lovelace, daughter of the poet Lo"
+Ada Lovelace,PERSON,1,,,"Babbage’s colleague Ada Lovelace, daughter of the poet Lord Byron, understood its "
+Lovelace,PERSON,1,,,"f reasoning about “all subjects in the universe” (Lovelace, 1843). She also anticipated AI’s hype cycles, wr"
+the Analytical Engine,ORG,1,,,"erated ideas that might arise as to the powers of the Analytical Engine.” Unfortunately, Babbage’s machines and Lovelace’"
+Lovelace,ORG,1,,,"al Engine.” Unfortunately, Babbage’s machines and Lovelace’s ideas were largely forgotten."
+Ktesibios,GPE,1,,,"Ktesibios of Alexandria (c. 250
+BCE
+) built the first self-"
+Alexandria,GPE,1,,,"Ktesibios of Alexandria (c. 250
+BCE
+) built the first self-controlling ma"
+James Watt,PERSON,1,,,"ems include the steam engine governor, created by James Watt (1736–1819), and the thermostat, invented by Corn"
+Cornelis Drebbel,PERSON,1,,,"Watt (1736–1819), and the thermostat, invented by Cornelis Drebbel (1572–1633), who also invented the submarine. Jam"
+James Clerk Maxwell,PERSON,1,,,"bel (1572–1633), who also invented the submarine. James Clerk Maxwell (1868) initiated the mathematical theory of contr"
+Norbert Wiener,PERSON,4,,,"in the post-war development of
+control theory
+was Norbert Wiener (1894–1964). Wiener was a brilliant mathematician"
+Wiener,PERSON,4,,,"of
+control theory
+was Norbert Wiener (1894–1964). Wiener was a brilliant mathematician who worked with Ber"
+Craik,PERSON,1,,,l systems and their connection to cognition. Like Craik (who also used control systems as psychological m
+Arturo Rosenblueth,PERSON,1,,," psychological models), Wiener and his colleagues Arturo Rosenblueth and Julian Bigelow challenged the behaviorist ort"
+Julian Bigelow,PERSON,1,,, Wiener and his colleagues Arturo Rosenblueth and Julian Bigelow challenged the behaviorist orthodoxy (Rosenblueth
+Rosenblueth,PERSON,1,,,"ian Bigelow challenged the behaviorist orthodoxy (Rosenblueth
+et al.,
+1943). They viewed purposive behavior as "
+Warren McCulloch,PERSON,2,,,"goal state. In the late 1940s, Wiener, along with Warren McCulloch, Walter Pitts, and John von Neumann, organized a "
+Walter Pitts,PERSON,2,,," late 1940s, Wiener, along with Warren McCulloch, Walter Pitts, and John von Neumann, organized a series of infl"
+Wiener,ORG,3,,,"thematical and computational models of cognition. Wiener’s book
+Cybernetics
+(1948) became a bestseller and"
+W. Ross Ashby,PERSON,1,,,"Meanwhile, in Britain, W. Ross Ashby pioneered similar ideas (Ashby, 1940). Ashby, Ala"
+Ashby,ORG,3,,,"n Britain, W. Ross Ashby pioneered similar ideas (Ashby, 1940). Ashby, Alan Turing, Grey Walter, and othe"
+Grey Walter,ORG,1,,," similar ideas (Ashby, 1940). Ashby, Alan Turing, Grey Walter, and others formed the Ratio Club for “those who "
+the Ratio Club,ORG,1,,,"shby, Alan Turing, Grey Walter, and others formed the Ratio Club for “those who had Wiener’s ideas before Wiener’s"
+Brain,ORG,1,,,"ore Wiener’s book appeared.” Ashby’s
+Design for a Brain
+(1948, 1952) elaborated on his idea that intellig"
+B. F. Skinner,PERSON,1,,,"In 1957, B. F. Skinner published
+Verbal Behavior."
+Verbal Behavior,ORG,1,,,"In 1957, B. F. Skinner published
+Verbal Behavior."
+Syntactic Structures,PERSON,1,,," who had just published a book on his own theory,
+Syntactic Structures."
+Chomsky,ORG,1,,,ke up sentences that they had never heard before. Chomsky’s theory—based on syntactic models going back to 
+"The History of Artificial Intelligence
+One",WORK_OF_ART,1,,,"1.3The History of Artificial Intelligence
+1.3
+The History of Artificial Intelligence
+One quick way to summarize the milestones in AI histo"
+Marvin Minsky,PERSON,4,,,n AI history is to list the Turing Award winners: Marvin Minsky (1969) and John McCarthy (1971) for defining the 
+John McCarthy,PERSON,5,,,he Turing Award winners: Marvin Minsky (1969) and John McCarthy (1971) for defining the foundations of the field 
+Ed Feigenbaum,PERSON,2,,,ic models of problem solving and human cognition; Ed Feigenbaum and Raj Reddy (1994) for developing expert system
+Raj Reddy,PERSON,1,,,em solving and human cognition; Ed Feigenbaum and Raj Reddy (1994) for developing expert systems that encode 
+Judea Pearl,PERSON,1,,,ode human knowledge to solve real-world problems; Judea Pearl (2011) for developing probabilistic reasoning tec
+Yoshua Bengio,PERSON,1,,,"h uncertainty in a principled manner; and finally Yoshua Bengio, Geoffrey Hinton, and Yann LeCun (2019) for makin"
+Geoffrey Hinton,PERSON,1,,,"n a principled manner; and finally Yoshua Bengio, Geoffrey Hinton, and Yann LeCun (2019) for making “deep learning”"
+Yann LeCun,PERSON,1,,,"; and finally Yoshua Bengio, Geoffrey Hinton, and Yann LeCun (2019) for making “deep learning” (multilayer neu"
+multilayer neural networks,ORG,1,,,and Yann LeCun (2019) for making “deep learning” (multilayer neural networks) a critical part of modern computing. The rest of
+Pitts’s,ORG,1,,,"3). Inspired by the mathematical modeling work of Pitts’s advisor Nicolas Rashevsky (1936, 1938), they drew"
+Nicolas Rashevsky,PERSON,1,,,"the mathematical modeling work of Pitts’s advisor Nicolas Rashevsky (1936, 1938), they drew on three sources: knowled"
+Whitehead,ORG,2,,,nalysis of propositional logic due to Russell and Whitehead; and Turing’s theory of computation. They propose
+Pitts,GPE,2,,,ented by simple network structures. McCulloch and Pitts also suggested that suitably defined networks cou
+Donald Hebb,PERSON,1,,,ested that suitably defined networks could learn. Donald Hebb (1949) demonstrated a simple updating rule for mo
+Harvard,ORG,1,,,"Two undergraduate students at Harvard, Marvin Minsky (1927–2016) and Dean Edmonds, buil"
+Dean Edmonds,PERSON,1,,,"tudents at Harvard, Marvin Minsky (1927–2016) and Dean Edmonds, built the first neural network computer in 1950."
+"The S
+NARC",ORG,1,,," built the first neural network computer in 1950. The S
+NARC
+, as it was called, used 3000 vacuum tubes and a "
+B-24,PRODUCT,1,,,es and a surplus automatic pilot mechanism from a B-24 bomber to simulate a network of 40 neurons. Later
+Princeton,GPE,2,,,"er to simulate a network of 40 neurons. Later, at Princeton, Minsky studied universal computation in neural n"
+Minsky,PERSON,4,,,"ate a network of 40 neurons. Later, at Princeton, Minsky studied universal computation in neural networks."
+Ph.D.,PERSON,1,,,ied universal computation in neural networks. His Ph.D. committee was skeptical about whether this kind o
+von Neumann,PERSON,1,,,"ind of work should be considered mathematics, but von Neumann reportedly said, “If it isn’t now, it will be som"
+Christopher Strachey,PERSON,1,,,aying programs developed independently in 1952 by Christopher Strachey at the University of Manchester and by Arthur Sam
+the University of Manchester,ORG,1,,," independently in 1952 by Christopher Strachey at the University of Manchester and by Arthur Samuel at IBM. However, Alan Turing"
+Arthur Samuel,PERSON,3,,,"r Strachey at the University of Manchester and by Arthur Samuel at IBM. However, Alan Turing’s vision was the mos"
+IBM,ORG,5,,," University of Manchester and by Arthur Samuel at IBM. However, Alan Turing’s vision was the most influ"
+the London Mathematical Society,ORG,1,,,He gave lectures on the topic as early as 1947 at the London Mathematical Society and articulated a persuasive agenda in his 1950 a
+"Computing
+Machinery and Intelligence",WORK_OF_ART,1,,,"iculated a persuasive agenda in his 1950 article “Computing
+Machinery and Intelligence.” Therein, he introduced the Turing test, machine"
+Dartmouth College,ORG,2,,,"In 1955, John McCarthy of Dartmouth College convinced Minsky, Claude Shannon, and Nathaniel R"
+Claude Shannon,PERSON,1,,,"n McCarthy of Dartmouth College convinced Minsky, Claude Shannon, and Nathaniel Rochester to help him bring togeth"
+Nathaniel Rochester,PERSON,2,,,"uth College convinced Minsky, Claude Shannon, and Nathaniel Rochester to help him bring together U.S. researchers inter"
+U.S.,GPE,8,,,"nd Nathaniel Rochester to help him bring together U.S. researchers interested in automata theory, neural"
+Dartmouth,ORG,3,,,elligence. They organized a two-month workshop at Dartmouth in the summer of 1956. There were 10 attendees in
+Carnegie Tech,ORG,1,,,"ll, including Allen Newell and Herbert Simon from Carnegie Tech,
+11
+Trenchard More from Princeton, Arthur Samuel "
+Ray Solomonoff,PERSON,1,,," More from Princeton, Arthur Samuel from IBM, and Ray Solomonoff and Oliver Selfridge from MIT. The proposal state"
+Oliver Selfridge,PERSON,1,,,"n, Arthur Samuel from IBM, and Ray Solomonoff and Oliver Selfridge from MIT. The proposal states:
+12
+We propose that"
+Hanover,GPE,1,,,"during the summer of 1956 at Dartmouth College in Hanover, New Hampshire. The study is to proceed on the ba"
+New Hampshire,GPE,1,,,"e summer of 1956 at Dartmouth College in Hanover, New Hampshire. The study is to proceed on the basis of the conj"
+Newell,PERSON,4,,,"mouth workshop did not lead to any breakthroughs. Newell and Simon presented perhaps the most mature work,"
+the Logic Theorist,ORG,2,,,"ork, a mathematical theorem-proving system called the Logic Theorist (LT). Simon claimed, “We have invented a computer"
+Principia Mathematica,ORG,1,,," theorems in
+Chapter 2
+of Russell and Whitehead’s
+Principia Mathematica."
+Principia,ORG,1,,," for one theorem that was shorter than the one in
+Principia."
+Journal of Symbolic Logic,ORG,1,,,"The editors of the
+Journal of Symbolic Logic
+were less impressed; they rejected a paper coauth"
+Logic Theorist,ORG,1,,,"rejected a paper coauthored by Newell, Simon, and Logic Theorist."
+Turing,GPE,1,,,"ee
+Chapter 28
+for a long list of
+X
+’s gathered by Turing.) AI researchers naturally responded by demonstra"
+"Look, Ma",WORK_OF_ART,1,,,"ts. John McCarthy referred to this period as the “Look, Ma, no hands!” era."
+the General Problem Solver,ORG,1,,," and Simon followed up their success with LT with the General Problem Solver, or GPS. Unlike LT, this program was designed fro"
+Herbert Gelernter,PERSON,1,,,"olleagues produced some of the first AI programs. Herbert Gelernter (1959) constructed the Geometry Theorem Prover, w"
+the Geometry Theorem Prover,ORG,1,,,"AI programs. Herbert Gelernter (1959) constructed the Geometry Theorem Prover, which was able to prove theorems that many stude"
+Samuel,PERSON,3,,,"ow call reinforcement learning (see
+Chapter 23
+), Samuel’s programs learned to play at a strong amateur le"
+TD,ORG,1,,,"rogram was the precursor of later systems such as TD-G
+AMMON
+(Tesauro, 1992), which was among the worl"
+Tesauro,PERSON,1,,,"he precursor of later systems such as TD-G
+AMMON
+(Tesauro, 1992), which was among the world’s best backgamm"
+Common Sense,PERSON,1,,," next 30 years. In a paper entitled
+Programs with Common Sense,
+he advanced a conceptual proposal for AI systems"
+the Advice Taker,ORG,1,,,"d on knowledge and reasoning. The paper describes the Advice Taker, a hypothetical program that would embody general"
+The Advice Taker,ORG,1,,,"petence in new areas
+without being reprogrammed
+. The Advice Taker thus embodied the central principles of knowledge"
+McCarthy,PERSON,8,,,"nsky moved to MIT. His initial collaboration with McCarthy did not last, however. McCarthy stressed represen"
+Stanford,ORG,4,,," outlook. In 1963, McCarthy started the AI lab at Stanford. His plan to use logic to build the ultimate Advi"
+Advice Taker,ORG,1,,,ford. His plan to use logic to build the ultimate Advice Taker was advanced by J. A. Robinson’s discovery in 196
+J. A. Robinson’s,PERSON,1,,,o build the ultimate Advice Taker was advanced by J. A. Robinson’s discovery in 1965 of the resolution method (a com
+Cordell Green’s,ORG,1,,,"logical reasoning. Applications of logic included Cordell Green’s question-answering and planning systems (Green, 1"
+the Stanford Research Institute,ORG,1,,,"(Green, 1969b) and the Shakey robotics project at the Stanford Research Institute (SRI). The latter project, discussed further in
+C"
+James Slagle’s S,PERSON,1,,,"ese limited domains became known as
+microworlds
+. James Slagle’s S
+AINT
+program (1963) was able to solve closed-form"
+AINT,ORG,1,,,"ns became known as
+microworlds
+. James Slagle’s S
+AINT
+program (1963) was able to solve closed-form calc"
+Tom Evans’s,PERSON,1,,,"n problems typical of first-year college courses. Tom Evans’s A
+NALOGY
+program (1968) solved geometric analogy "
+NALOGY,ORG,1,,,"ical of first-year college courses. Tom Evans’s A
+NALOGY
+program (1968) solved geometric analogy problems "
+Daniel Bobrow’s,PERSON,1,,,"ometric analogy problems that appear in IQ tests. Daniel Bobrow’s S
+TUDENT
+program (1967) solved algebra story prob"
+Tom,PERSON,2,,,"such as the following:
+If the number of customers Tom gets is twice the square of 20 percent of the num"
+David Huffman,PERSON,1,,,"he blocks world was home to the vision project of David Huffman (1971), the vision and constraint-propagation wor"
+David Waltz,PERSON,1,,,"1), the vision and constraint-propagation work of David Waltz (1975), the learning theory of Patrick Winston (1"
+Patrick Winston,PERSON,2,,,"ork of David Waltz (1975), the learning theory of Patrick Winston (1970), the natural-language-understanding progra"
+Terry Winograd,PERSON,1,,,"0), the natural-language-understanding program of Terry Winograd (1972), and the planner of Scott Fahlman (1974)."
+Scott Fahlman,PERSON,1,,,"gram of Terry Winograd (1972), and the planner of Scott Fahlman (1974)."
+Winograd,GPE,1,,,"igure 1.3
+A scene from the blocks world. S
+HRDLU
+(Winograd, 1972) has just completed the command “Find a blo"
+McCulloch,GPE,1,,,"x.”
+Early work building on the neural networks of McCulloch and Pitts also flourished. The work of Shmuel Win"
+Shmuel Winograd,PERSON,1,,, McCulloch and Pitts also flourished. The work of Shmuel Winograd and Jack Cowan (1963) showed how a large number o
+Jack Cowan,PERSON,1,,," also flourished. The work of Shmuel Winograd and Jack Cowan (1963) showed how a large number of elements
+coul"
+Bernie Widrow,PERSON,1,,,"llelism. Hebb’s learning methods were enhanced by Bernie Widrow (Widrow and Hoff, 1960; Widrow, 1962), who called"
+Widrow,GPE,2,,," learning methods were enhanced by Bernie Widrow (Widrow and Hoff, 1960; Widrow, 1962), who called his net"
+Hoff,GPE,1,,,"ethods were enhanced by Bernie Widrow (Widrow and Hoff, 1960; Widrow, 1962), who called his networks
+ada"
+Frank Rosenblatt,PERSON,1,,," 1962), who called his networks
+adalines
+, and by Frank Rosenblatt (1962) with his
+perceptrons
+. The
+perceptron conv"
+Friedberg,GPE,2,,,"hine evolution
+(now called
+genetic programming
+) (Friedberg, 1958; Friedberg
+et al.,
+1959) were based on the "
+Lighthill,ORG,2,,,"one of the main criticisms of AI contained in the Lighthill report (Lighthill, 1973), which formed the basis "
+Papert,PERSON,1,,,"ate intelligent behavior. For example, Minsky and Papert’s book
+Perceptrons
+(1969) proved that, although p"
+multilayer networks,ORG,1,,,"ough their results did not apply to more complex, multilayer networks, research funding for neural-net research soon dw"
+Kelley,PERSON,1,,,"n developed in other contexts in the early 1960s (Kelley, 1960; Bryson, 1962)."
+Bryson,PERSON,1,,," other contexts in the early 1960s (Kelley, 1960; Bryson, 1962)."
+Buchanan,PERSON,2,,,"The D
+ENDRAL
+program (Buchanan
+et al.,
+1969) was an early example of this approa"
+Bruce Buchanan,PERSON,1,,,"d Feigenbaum (a former student of Herbert Simon), Bruce Buchanan (a philosopher turned computer scientist), and Jo"
+Joshua Lederberg,PERSON,1,,,"an (a philosopher turned computer scientist), and Joshua Lederberg (a Nobel laureate geneticist) teamed up to solve "
+Nobel,WORK_OF_ART,1,,,"rned computer scientist), and Joshua Lederberg (a Nobel laureate geneticist) teamed up to solve the probl"
+Feigenbaum,ORG,3,,,"t principles but
+in efficient “cookbook recipes” (Feigenbaum
+et al.,
+1971). The significance of D
+ENDRAL
+was t"
+the Heuristic Programming Project,ORG,1,,," In 1971, Feigenbaum and others at Stanford began the Heuristic Programming Project (HPP) to investigate the extent to which the new "
+HPP,ORG,1,,,Stanford began the Heuristic Programming Project (HPP) to investigate the extent to which the new metho
+"the M
+YCIN",PRODUCT,2,,,"The next major effort was the M
+YCIN
+system for diagnosing blood infections. With abou"
+the Digital Equipment Corporation,ORG,1,,," commercial expert system, R1, began operation at the Digital Equipment Corporation (McDermott, 1982). The program helped configure o"
+McDermott,PERSON,2,,,"n operation at the Digital Equipment Corporation (McDermott, 1982). The program helped configure orders for n"
+DEC,ORG,1,,,"company an estimated $40 million a year. By 1988, DEC’s AI group had 40 expert systems deployed, with m"
+DuPont,ORG,1,,,"40 expert systems deployed, with more on the way. DuPont had 100 in use and 500 in development. Nearly eve"
+"Winograd’s S
+HRDLU",ORG,1,,,"al language understanding. Despite the success of Winograd’s S
+HRDLU
+system, its methods did not extend to more genera"
+Eugene Charniak,PERSON,1,,,"Several researchers, including Eugene Charniak at MIT and Roger Schank at Yale, suggested that r"
+Roger Schank,PERSON,1,,,"researchers, including Eugene Charniak at MIT and Roger Schank at Yale, suggested that robust language understan"
+Yale,ORG,1,,,"luding Eugene Charniak at MIT and Roger Schank at Yale, suggested that robust language understanding wou"
+Schank,PRODUCT,1,,,"hank and his students built a series of programs (Schank and Abelson, 1977; Wilensky, 1978; Schank and Rie"
+Abelson,PERSON,1,,,"s students built a series of programs (Schank and Abelson, 1977; Wilensky, 1978; Schank and Riesbeck, 1981)"
+Wilensky,PERSON,1,,,"t a series of programs (Schank and Abelson, 1977; Wilensky, 1978; Schank and Riesbeck, 1981) that all had th"
+Schank,PERSON,1,,,"ograms (Schank and Abelson, 1977; Wilensky, 1978; Schank and Riesbeck, 1981) that all had the task of unde"
+Riesbeck,PERSON,1,,,"ank and Abelson, 1977; Wilensky, 1978; Schank and Riesbeck, 1981) that all had the task of understanding nat"
+Japan,GPE,2,,," the Prolog language became popular in Europe and Japan, and the P
+LANNER
+family in the United States. Ot"
+the “Fifth Generation,ORG,1,,,"In 1981, the Japanese government announced the “Fifth Generation” project, a 10-year plan to build massively paral"
+the Microelectronics and Computer Technology Corporation,ORG,1,,,"ay’s money. In response, the United States formed the Microelectronics and Computer Technology Corporation (MCC), a consortium designed to assure national c"
+Alvey,ORG,1,,,"ign and human-interface research. In Britain, the Alvey report reinstated the funding removed by the Ligh"
+Parallel Distributed Processing,WORK_OF_ART,1,,,"ad dissemination of the results in the collection
+Parallel Distributed Processing
+(Rumelhart and McClelland, 1986) caused great exc"
+Rumelhart,ORG,1,,,"n the collection
+Parallel Distributed Processing
+(Rumelhart and McClelland, 1986) caused great excitement."
+McClelland,ORG,1,,,"on
+Parallel Distributed Processing
+(Rumelhart and McClelland, 1986) caused great excitement."
+Terrence Deacon,PERSON,1,,,"ns manipulate symbols—in fact, the anthropologist Terrence Deacon’s book
+The Symbolic Species
+(1997) suggests that "
+The Symbolic Species,WORK_OF_ART,1,,,"n fact, the anthropologist Terrence Deacon’s book
+The Symbolic Species
+(1997) suggests that this is the
+defining charact"
+Geoff Hinton,PERSON,1,,,"
+defining characteristic
+of humans. Against this, Geoff Hinton, a leading figure in the resurgence of neural net"
+Cohen,PERSON,1,,,"orous theorems or solid experimental methodology (Cohen, 1995) rather than on intuition, and to show rele"
+UC,GPE,1,,,"he norm for demonstrating progress, including the UC Irvine repository for machine learning data sets,"
+Irvine,PERSON,1,,,"norm for demonstrating progress, including the UC Irvine repository for machine learning data sets, the In"
+the International Planning Competition,ORG,1,,,"Irvine repository for machine learning data sets, the International Planning Competition
+for planning algorithms, the LibriSpeech corpus f"
+LibriSpeech,ORG,1,,,"Planning Competition
+for planning algorithms, the LibriSpeech corpus for speech recognition, the MNIST data set"
+ImageNet,ORG,5,,,"MNIST data set for handwritten digit recognition, ImageNet and COCO for image object recognition, SQ
+U
+AD fo"
+WMT,ORG,1,,,"U
+AD for natural language question answering, the WMT competition for machine translation, and the Inte"
+the International SAT Competitions,ORG,1,,," the WMT competition for machine translation, and the International SAT Competitions for Boolean satisfiability solvers."
+David McAllester,PERSON,1,,,"embraced the positive results of those fields. As David McAllester (1998) put it:
+In the early period of AI it seeme"
+Judea Pearl’s,PERSON,1,,,"ns research, decision theory, and control theory. Judea Pearl’s (1988)
+Probabilistic Reasoning in Intelligent Sys"
+Pearl,PERSON,8,,,"eptance of probability and decision theory in AI. Pearl’s development of
+Bayesian networks
+yielded a rigo"
+Rich Sutton’s,PERSON,1,,,A second major contribution in 1988 was Rich Sutton’s work connecting reinforcement learning—which had 
+Arthur Samuel’s,PERSON,3,,,ing reinforcement learning—which had been used in Arthur Samuel’s checker-playing program in the 1950s—to the theor
+the World Wide Web,EVENT,1,,,e advances in computing power and the creation of the World Wide Web have facilitated the creation of very large data 
+Yarowsky,PERSON,1,,," in such data sets are
+unlabeled;
+for example, in Yarowsky’s (1995) influential work on word-sense disambigu"
+Banko,PERSON,1,,,"which sense was intended in a sentence. Moreover, Banko and Brill (2001) argued that the improvement in p"
+Brill,ORG,1,,,"e was intended in a sentence. Moreover, Banko and Brill (2001) argued that the improvement in performance"
+Efros,PERSON,1,,, damage or by the removal of ex-friends. Hays and Efros (2007) developed a clever method for doing this b
+Deng,PERSON,2,,,"s of millions of images in the ImageNet database (Deng
+et al
+., 2009) sparked a revolution in the field "
+Havenstein,PERSON,1,,,"ning helped AI recover commercial attractiveness (Havenstein, 2005; Halevy
+et al
+., 2009). Big data was a cruc"
+Jeopardy,PRODUCT,1,,,"f IBM’s Watson system over human champions in the Jeopardy! quiz game, an event that had a major impact on t"
+LeCun,PERSON,1,,,"s in hand-written digit recognition in the 1990s (LeCun
+et al.,
+1995). It was not until 2011, however, th"
+Geoffrey Hinton’s,ORG,1,,,"rkscrew, etc.), a deep learning system created in Geoffrey Hinton’s group at the University of Toronto (Krizhevsky
+et"
+the University of Toronto,ORG,1,,,"ning system created in Geoffrey Hinton’s group at the University of Toronto (Krizhevsky
+et al.,
+2013) demonstrated a dramatic"
+Krizhevsky,PERSON,1,,,"frey Hinton’s group at the University of Toronto (Krizhevsky
+et al.,
+2013) demonstrated a dramatic improvement"
+FPGA,ORG,1,,,"nning on specialized hardware (e.g., GPU, TPU, or FPGA) might consume between 10
+14
+and 10
+17
+operations"
+"The State of the Art
+1.4",ORG,1,,,"1.4 The State of the Art
+1.4 The State of the Art
+Stanford University’s One Hu"
+AI100,PRODUCT,2,,,ity’s One Hundred Year Study on AI (also known as AI100) convenes panels of experts to provide reports on
+Grosz and Stone,WORK_OF_ART,1,,,"art in AI. Their 2016 report (Stone
+et al.,
+2016; Grosz and Stone, 2018) concludes that “Substantial increases in t"
+Ph.D.,WORK_OF_ART,1,,,"ut 80% male, 20% female. Similar numbers hold for Ph.D. students and industry hires."
+Singapore,GPE,1,,,"t, U.S. authors are 50% ahead of Chinese authors. Singapore, Brazil, Australia, Canada, and India are the fas"
+Brazil,GPE,1,,,"hors are 50% ahead of Chinese authors. Singapore, Brazil, Australia, Canada, and India are the fastest gro"
+Australia,GPE,15,,," 50% ahead of Chinese authors. Singapore, Brazil, Australia, Canada, and India are the fastest growing countr"
+Canada,GPE,1,,,"of Chinese authors. Singapore, Brazil, Australia, Canada, and India are the fastest growing countries in t"
+LSVRC,GPE,1,,," Error rates for object detection (as achieved in LSVRC, the Large-Scale Visual Recognition Challenge) im"
+the Large-Scale Visual Recognition Challenge,ORG,1,,,"rates for object detection (as achieved in LSVRC, the Large-Scale Visual Recognition Challenge) improved from 28% in 2010 to 2% in 2017, exceedi"
+VQA,ORG,1,,,"Accuracy on open-ended visual question answering (VQA) improved from 55% to 68% since 2015, but lags be"
+F1,GPE,1,,,"e: Accuracy on question answering, as measured by F1 score on the Stanford Question Answering Dataset "
+the Stanford Question Answering Dataset,ORG,1,,,"on question answering, as measured by F1 score on the Stanford Question Answering Dataset (SQ
+U
+AD), increased from 60 to 95 from 2015 to 2"
+Pac-Man,ORG,1,,,"eded human-level performance in chess, Go, poker, Pac-Man, Jeopardy!, ImageNet object detection, speech rec"
+StarCraft II,EVENT,1,,,"lation in a restricted domain, Quake III, Dota 2, StarCraft II, various Atari games, skin cancer detection, pros"
+Atari,ORG,1,,," domain, Quake III, Dota 2, StarCraft II, various Atari games, skin cancer detection, prostate cancer det"
+Ford,ORG,3,,,evel performance across a broad variety of tasks? Ford (2018) interviews AI experts and finds a wide ran
+Grace,PERSON,1,,,"o 2200, with a mean of 2099. In a similar survey (Grace
+et al.,
+2017) 50% of respondents thought this cou"
+Philip Tetlock,ORG,1,,,ut don’t take their predictions too seriously; as Philip Tetlock (2017) demonstrates in the area of predicting wor
+Zapp,ORG,1,,," in the 1980s (Kanade
+et al.,
+1986; Dickmanns and Zapp, 1987). After successful demonstrations of drivin"
+DARPA Grand Challenge,ORG,1,,,"trations of driving on dirt roads in the 132-mile DARPA Grand Challenge in 2005 (Thrun, 2006) and on streets with traffic"
+Thrun,GPE,1,,,"ds in the 132-mile DARPA Grand Challenge in 2005 (Thrun, 2006) and on streets with traffic in the 2007 Ur"
+Urban Challenge,ORG,1,,,"un, 2006) and on streets with traffic in the 2007 Urban Challenge, the race to develop self-driving cars began in e"
+Waymo,WORK_OF_ART,1,,,"elop self-driving cars began in earnest. In 2018, Waymo test vehicles passed the landmark of 10 million m"
+Rwanda,GPE,1,,, been providing cross-country blood deliveries in Rwanda since 2016. Quadcopters perform remarkable aeroba
+BigDog,PRODUCT,1,,,"Legged locomotion
+: BigDog, a quadruped robot by Raibert
+et al."
+Raibert,PERSON,1,,,"Legged locomotion
+: BigDog, a quadruped robot by Raibert
+et al."
+al,PERSON,34,,,"omotion
+: BigDog, a quadruped robot by Raibert
+et al."
+Hollywood,GPE,1,,,"nger the slow, stiff-legged, side-to-side gait of Hollywood movie robots, but something closely resembling an"
+Atlas,PERSON,1,,,"er when shoved or when slipping on an icy puddle. Atlas, a humanoid robot, not only walks on uneven terra"
+Ackerman,PERSON,1,,," terrain but jumps onto boxes and does backflips (Ackerman and Guizzo, 2016)."
+Guizzo,PERSON,1,,,"jumps onto boxes and does backflips (Ackerman and Guizzo, 2016)."
+NASA,ORG,2,,," scheduling
+: A hundred million miles from Earth, NASA’s Remote Agent program became the first on-board "
+Jonsson,PERSON,1,,,"ol the scheduling of operations for a spacecraft (Jonsson
+et al.,
+2000). Remote Agent generated plans from "
+Barreiro,PERSON,1,,,"ey occurred. Today, the E
+UROPA
+planning toolkit (Barreiro
+et al.,
+2012) is used for daily operations of NAS"
+Winternitz,ORG,1,,,"ns of NASA’s Mars rovers and the S
+EXTANT
+system (Winternitz, 2017) allows autonomous navigation in deep space"
+Walker,ORG,1,,,"ic Analysis and Replanning Tool, D
+ART
+(Cross and Walker, 1994), to do automated logistics planning and sc"
+The Defense Advanced Research Project Agency,ORG,1,,,"es, and conflict resolution among all parameters. The Defense Advanced Research Project Agency (DARPA) stated that this single application more "
+DARPA,ORG,2,,,rs. The Defense Advanced Research Project Agency (DARPA) stated that this single application more than pa
+Google Maps,ORG,1,,,mpanies such as Uber and mapping services such as Google Maps provide driving directions for hundreds of millio
+Wu,PERSON,1,,," narrow domain are close to the level of a human (Wu
+et al."
+Microsoft,ORG,2,,,"Speech recognition
+: In 2017, Microsoft showed that its Conversational Speech Recognition"
+Conversational Speech Recognition System,ORG,1,,," recognition
+: In 2017, Microsoft showed that its Conversational Speech Recognition System had reached a word error rate of 5.1%, matching h"
+Switchboard,PRODUCT,1,,,"r rate of 5.1%, matching human performance on the Switchboard task, which involves transcribing telephone conve"
+Xiong,GPE,1,,,"ch involves transcribing telephone conversations (Xiong
+et al.,
+2017). About a third of computer interact"
+Skype,ORG,1,,,ldwide is now done by voice rather than keyboard; Skype provides real-time speech-to-speech translation i
+Alexa,ORG,1,,,"me speech-to-speech translation in ten languages. Alexa, Siri, Cortana, and Google offer assistants that "
+Siri,GPE,1,,,"ch-to-speech translation in ten languages. Alexa, Siri, Cortana, and Google offer assistants that can an"
+Cortana,ORG,1,,,"speech translation in ten languages. Alexa, Siri, Cortana, and Google offer assistants that can answer ques"
+Google,ORG,1,,,"ation in ten languages. Alexa, Siri, Cortana, and Google offer assistants that can answer questions and ca"
+Google Duplex,ORG,1,,,and carry out tasks for the user; for example the Google Duplex service uses speech recognition and speech synthe
+Amazon,ORG,1,,,"Recommendations
+: Companies such as Amazon, Facebook, Netflix, Spotify, YouTube, Walmart, an"
+Netflix,GPE,1,,,"mmendations
+: Companies such as Amazon, Facebook, Netflix, Spotify, YouTube, Walmart, and others use machin"
+Spotify,GPE,1,,,"ns
+: Companies such as Amazon, Facebook, Netflix, Spotify, YouTube, Walmart, and others use machine learnin"
+YouTube,ORG,2,,,"anies such as Amazon, Facebook, Netflix, Spotify, YouTube, Walmart, and others use machine learning to reco"
+Walmart,ORG,1,,,"h as Amazon, Facebook, Netflix, Spotify, YouTube, Walmart, and others use machine learning to recommend wha"
+Resnick,GPE,1,,," field of recommender systems has a long history (Resnick and Varian, 1997) but is changing rapidly due to "
+metadata,PERSON,1,,,"ntent (text, music, video) as well as history and metadata (van den Oord
+et al."
+van den Oord,PERSON,1,,,"t, music, video) as well as history and metadata (van den Oord
+et al."
+"Zhang
+et",PERSON,1,,,", 2014; Zhang
+et al.,
+2017). Spam filtering can also be considered"
+Deep Blue,PERSON,1,,,"Game playing
+: When Deep Blue defeated world chess champion Garry Kasparov in 1"
+Garry Kasparov,PERSON,1,,,"ng
+: When Deep Blue defeated world chess champion Garry Kasparov in 1997, defenders of human supremacy placed thei"
+Piet Hut,PERSON,1,,,"ders of human supremacy placed their hopes on Go. Piet Hut, an astrophysicist and Go enthusiast, predicted t"
+Ke Jie,PERSON,1,,,"urpassed all human players (Silver
+et al.,
+2017). Ke Jie, the world champion, said, “Last year, it was sti"
+ERO,ORG,1,,,"A followup program, A
+LPHA
+Z
+ERO
+, used no input from humans (except for the rules"
+Jeopardy,ORG,1,,," been beaten by AI systems at games as diverse as Jeopardy! (Ferrucci
+et al.,
+2010), poker (Bowling
+et al.,
+"
+Ferrucci,PERSON,1,,,"n by AI systems at games as diverse as Jeopardy! (Ferrucci
+et al.,
+2010), poker (Bowling
+et al.,
+2015; Morav"
+Moravčík,GPE,1,,,"rucci
+et al.,
+2010), poker (Bowling
+et al.,
+2015; Moravčík
+et al.,
+2017; Brown and Sandholm, 2019), and the "
+Brown,PERSON,2,,,"ker (Bowling
+et al.,
+2015; Moravčík
+et al.,
+2017; Brown and Sandholm, 2019), and the video games Dota 2 ("
+Sandholm,GPE,1,,,"ng
+et al.,
+2015; Moravčík
+et al.,
+2017; Brown and Sandholm, 2019), and the video games Dota 2 (Fernandez and"
+Dota 2,ORG,1,,,"7; Brown and Sandholm, 2019), and the video games Dota 2 (Fernandez and Mahlmann, 2018), StarCraft II (Vin"
+Fernandez,ORG,1,,," and Sandholm, 2019), and the video games Dota 2 (Fernandez and Mahlmann, 2018), StarCraft II (Vinyals
+et al."
+Mahlmann,ORG,1,,," 2019), and the video games Dota 2 (Fernandez and Mahlmann, 2018), StarCraft II (Vinyals
+et al.,
+2019), and "
+StarCraft II,ORG,1,,,"ideo games Dota 2 (Fernandez and Mahlmann, 2018), StarCraft II (Vinyals
+et al.,
+2019), and Quake III (Jaderberg
+"
+Jaderberg,PERSON,1,,,"arCraft II (Vinyals
+et al.,
+2019), and Quake III (Jaderberg
+et al.,
+2019)."
+Ding,PERSON,1,,," on images. Examples include Alzheimer’s disease (Ding
+et al.,
+2018), metastatic cancer (Liu
+et al.,
+201"
+Liu,PERSON,4,,,"s disease (Ding
+et al.,
+2018), metastatic cancer (Liu
+et al.,
+2017; Esteva
+et al.,
+2017), ophthalmic di"
+Esteva,PERSON,1,,," al.,
+2018), metastatic cancer (Liu
+et al.,
+2017; Esteva
+et al.,
+2017), ophthalmic disease (Gulshan
+et al."
+Gulshan,GPE,1,,,",
+2017; Esteva
+et al.,
+2017), ophthalmic disease (Gulshan
+et al.,
+2016), and skin diseases (Liu
+et al.,
+201"
+"the L
+YNA",ORG,1,,,"litating human–machine partnerships. For example, the L
+YNA
+system achieves 99.6% overall accuracy in diagnos"
+Steiner,PERSON,1,,,", 2018; Steiner
+et al.,
+2018)."
+Topol,ORG,1,,,"ure transparency, lack of bias, and data privacy (Topol, 2019). In 2017, only two medical AI applications"
+FDA,ORG,1,,," two medical AI applications were approved by the FDA, but that increased to 12 in 2018, and continues "
+Gordon Bell Prize,PERSON,1,,,"imate science
+: A team of scientists won the 2018 Gordon Bell Prize for a deep learning model that discovers detailed"
+Kurth,PERSON,1,,,"nd), the first machine learning program to do so (Kurth
+et al."
+"Rolnick
+et",PERSON,1,,,", 2018). Rolnick
+et al."
+Risks and Benefits of AI,ORG,1,,,"1.5 Risks and Benefits of AI
+1.5 Risks and Benefits of AI
+Francis Bacon, a phi"
+Francis Bacon,PERSON,1,,,"s and Benefits of AI
+1.5 Risks and Benefits of AI
+Francis Bacon, a philosopher credited with creating the scienti"
+The Wisdom of the Ancients,WORK_OF_ART,1,,,"ted with creating the scientific method, noted in
+The Wisdom of the Ancients
+(1609) that the “mechanical arts are of ambiguous"
+Demis Hassabis,PERSON,1,,,"ons for climate change and resource shortages. As Demis Hassabis, CEO of Google DeepMind, has suggested: “First so"
+Google DeepMind,ORG,1,,,"and resource shortages. As Demis Hassabis, CEO of Google DeepMind, has suggested: “First solve AI, then use AI to s"
+the United Nations,ORG,1,,,"•
+Lethal autonomous weapons:
+These are defined by the United Nations as weapons that can locate, select, and eliminate"
+UN,ORG,1,,,"l risks of lethal autonomous weapons began at the UN in 2014, moving to the formal pre-treaty stage of"
+Group of Governmental Experts,ORG,1,,," 2014, moving to the formal pre-treaty stage of a Group of Governmental Experts in 2017."
+Nils Nilsson,PERSON,3,,,"elds would contribute to the broader goals of AI. Nils Nilsson (1995), one of the original leaders of the Shakey"
+Shakey,ORG,1,,,"ilsson (1995), one of the original leaders of the Shakey project at SRI, reminded the field of those broad"
+Winston,GPE,1,,,"rvin Minsky (2007), and Patrick Winston (Beal and Winston, 2009), concurred with Nilsson’s warnings, sugges"
+Nilsson’s,ORG,1,,," Winston (Beal and Winston, 2009), concurred with Nilsson’s warnings, suggesting that instead of focusing on "
+Herb Simon’s,PERSON,1,,,"AI should return to its roots of striving for, in Herb Simon’s words, “machines that think, that learn and that "
+HLAI,ORG,1,,,"create.” They called the effort
+human-level AI
+or HLAI—a machine should be able to learn to do anything "
+Journal of Artificial General Intelligence,ORG,1,,,"007), held its first conference and organized the
+Journal of Artificial General Intelligence
+in 2008."
+Yudkowsky,PERSON,1,,," far surpasses human ability—might be a bad idea (Yudkowsky, 2008; Omohundro, 2008). Turing (1996) himself ma"
+Omohundro,GPE,1,,,"man ability—might be a bad idea (Yudkowsky, 2008; Omohundro, 2008). Turing (1996) himself made the same point"
+Manchester,GPE,1,,,"himself made the same point in a lecture given in Manchester in 1951, drawing on earlier ideas from Samuel But"
+Samuel Butler,PERSON,1,,,"Manchester in 1951, drawing on earlier ideas from Samuel Butler (1863):
+15
+It seems probable that once the machin"
+"Samuel Butler’s
+Erewhon",PERSON,1,,," to take control, in the way that is mentioned in Samuel Butler’s
+Erewhon."
+Nick Bostrom,PERSON,1,,,"publication of books such as
+Superintelligence
+by Nick Bostrom (2014), and public pronouncements from Stephen Ha"
+Stephen Hawking,PERSON,1,,,"ck Bostrom (2014), and public pronouncements from Stephen Hawking, Bill Gates, Martin Rees, and Elon Musk."
+Bill Gates,PERSON,1,,,", and public pronouncements from Stephen Hawking, Bill Gates, Martin Rees, and Elon Musk."
+Martin Rees,PERSON,1,,," pronouncements from Stephen Hawking, Bill Gates, Martin Rees, and Elon Musk."
+Elon Musk,PERSON,1,,,"rom Stephen Hawking, Bill Gates, Martin Rees, and Elon Musk."
+King Midas,GPE,2,,,", is to undo the first two. We will call this the
+King Midas problem
+: Midas, a legendary King in Greek mythol"
+Midas,PERSON,2,,,"t two. We will call this the
+King Midas problem
+: Midas, a legendary King in Greek mythology, asked that "
+King,PERSON,1,,," this the
+King Midas problem
+: Midas, a legendary King in Greek mythology, asked that everything he touc"
+"•
+Philosophers",ORG,1,,,"•
+Philosophers (going back to 400
+BCE
+) made AI conceivable by s"
+Pedro Domingos,PERSON,1,,,"n (2009), one of the early pioneers of the field. Pedro Domingos (2015) and Melanie Mitchell (2019) give overviews"
+Melanie Mitchell,PERSON,1,,, pioneers of the field. Pedro Domingos (2015) and Melanie Mitchell (2019) give overviews of machine learning for a g
+Martin Ford,PERSON,1,,,ibes the race for international leadership in AI. Martin Ford (2018) interviews 23 leading AI researchers.
+the ACM Special Interest Group,ORG,1,,,"he Advancement of Artificial Intelligence (AAAI), the ACM Special Interest Group in Artificial Intelligence (SIGAI, formerly SIGAR"
+Artificial Intelligence,GPE,1,,,"ligence (AAAI), the ACM Special Interest Group in Artificial Intelligence (SIGAI, formerly SIGART), the European Associatio"
+the European Association for AI,ORG,1,,,"Artificial Intelligence (SIGAI, formerly SIGART), the European Association for AI, and the Society for Artificial Intelligence and "
+the Society for Artificial Intelligence and Simulation of Behaviour,ORG,1,,,"rly SIGART), the European Association for AI, and the Society for Artificial Intelligence and Simulation of Behaviour (AISB). The Partnership on AI brings together man"
+The Partnership on AI,ORG,1,,, Intelligence and Simulation of Behaviour (AISB). The Partnership on AI brings together many commercial and nonprofit org
+AAAI,ORG,2,,,"cerned with the ethical and social impacts of AI. AAAI’s
+AI Magazine
+contains many topical and tutorial "
+the International Joint Conference on AI (IJCAI,ORG,1,,,"s in the proceedings of the major AI conferences: the International Joint Conference on AI (IJCAI), the annual European Conference on AI (ECAI), an"
+European Conference on AI,ORG,1,,,"tional Joint Conference on AI (IJCAI), the annual European Conference on AI (ECAI), and the AAAI Conference. Machine learning"
+the AAAI Conference,ORG,1,,," the annual European Conference on AI (ECAI), and the AAAI Conference. Machine learning is covered by the International"
+the International Conference on Machine Learning,ORG,1,,,e AAAI Conference. Machine learning is covered by the International Conference on Machine Learning and the Neural Information Processing Systems (Ne
+the Neural Information Processing Systems,ORG,1,,, International Conference on Machine Learning and the Neural Information Processing Systems (NeurIPS) meeting. The major journals for general
+Artificial Intelligence,ORG,2,,,"S) meeting. The major journals for general AI are
+Artificial Intelligence, Computational Intelligence,
+the
+IEEE Transaction"
+Pattern Analysis,ORG,1,,,"putational Intelligence,
+the
+IEEE Transactions on Pattern Analysis and Machine Intelligence, IEEE Intelligent System"
+"the
+Journal of Artificial Intelligence Research",ORG,1,,,"chine Intelligence, IEEE Intelligent Systems,
+and the
+Journal of Artificial Intelligence Research
+. There are also many conferences and journals de"
+Ruy Lopez,ORG,1,,,"3
+In one of the first books on chess, Ruy Lopez (1561) wrote, “Always place the board so the sun "
+"Aristotle’s
+Organon",ORG,1,,,"nent’s eyes.”
+4
+The
+Novum Organum
+is an update of Aristotle’s
+Organon
+, or instrument of thought."
+Frege’s,ORG,1,,,"5
+Frege’s proposed notation for first-order logic—an arcane"
+Alexander Hood,PERSON,1,,,"7
+Many cite Alexander Hood (1824) as a possible prior source."
+Cajal,PERSON,1,,,"us medium in which neurons were embedded, whereas Cajal propounded the “neuronal doctrine.” The two share"
+Carnegie Mellon University,ORG,1,,,"11
+Now Carnegie Mellon University (CMU)."
+CMU,ORG,1,,,"11
+Now Carnegie Mellon University (CMU)."
+IPL,PERSON,1,,,"d Simon also invented a list-processing language, IPL, to write LT. They had no compiler and translated"
+Richard Thornton,PERSON,1,,,"15
+Even earlier, in 1847, Richard Thornton, editor of the
+Primitive Expounder,
+railed agains"
+"the
+Primitive Expounder",ORG,1,,,"ven earlier, in 1847, Richard Thornton, editor of the
+Primitive Expounder,
+railed against mechanical calculators: “Mind ..."
+keyboard/mouse,ORG,1,,," file contents, network packets, and human input (keyboard/mouse/touchscreen/voice) as sensory inputs and acts on "
+Dirt,PERSON,5,,,"m-cleaning agent and dirt are shown in block ""A"". Dirt is shown in block B."
+Actuators,ORG,5,,,ock. An arrow from the second block points to the Actuators. An arrow from the actuators points to a block la
+Champs Elysées,ORG,1,,,der the following example: I am walking along the Champs Elysées one day and I see an old friend across the street
+caterpillar,ORG,4,,,"r the burrow again to check all is well, drag the caterpillar inside, and lay its eggs. The caterpillar serves "
+Nature of Environments,WORK_OF_ART,1,,,"2.3The Nature of Environments
+2.3
+The Nature of Environments
+Now that we have a"
+"The Nature of Environments
+Now",WORK_OF_ART,1,,,"2.3The Nature of Environments
+2.3
+The Nature of Environments
+Now that we have a definition of rationality, we are "
+State,ORG,3,,,"from the second, third, and fourth blocks labeled State, How the world evolves, and What my actions do, p"
+Alaska,GPE,1,,,"California, where snow is seldom a problem, or in Alaska, where it seldom is not. It could always be drivi"
+Chess,ORG,2,,, number of distinct states (excluding the clock). Chess also has a discrete set of percepts and actions. 
+2.4The Structure of Agents,WORK_OF_ART,1,,,"2.4The Structure of Agents
+2.4
+The Structure of Agents
+So far we have talked"
+"The Structure of Agents
+So",WORK_OF_ART,1,,,"2.4The Structure of Agents
+2.4
+The Structure of Agents
+So far we have talked about agents by describing
+beh"
+Critic,ORG,1,,," Performance standard, points to a block labeled, Critic. An arrow labeled, feedback, from the Critic bloc"
+Learning,PERSON,3,,," from the Critic block points to a block labeled, Learning element. An arrow labeled, learning goals, from t"
+Performance,ORG,1,,,ock. An arrow each from the sensors points to the Performance element and Critic block.
+Newton,ORG,2,,,have now been replaced by a five-line program for Newton’s method running on electronic calculators. The q
+Atomic,PERSON,2,,,"Description
+Part (“a”), Atomic: An arrow from a block labeled B points to a bloc"
+Schematic,ORG,1,,,"×
+Figure 2.9
+Schematic diagram of a simple reflex agent. We use rectangl"
+Chapters 16,PERSON,1,,,"igner can specify the utility function correctly;
+Chapters 16
+,
+17
+, and
+23
+consider the issue of unknown utili"
+Pisa,PERSON,1,,,nk that dropping rocks from the top of a tower in Pisa was valuable in itself. He was not trying to brea
+Chapters 24,PRODUCT,1,,,"8
+), and much of natural language understanding (
+Chapters 24
+and
+25
+). In fact, much of what humans express in"
+Truce,PRODUCT,1,,,"we might confuse
+Truck
+with the unrelated concept
+Truce."
+"Aristotle’s
+Nicomachean Ethics",ORG,1,,," practical reasoning—goes back at least as far as Aristotle’s
+Nicomachean Ethics."
+Programs with Common Sense,WORK_OF_ART,1,,,also the subject of McCarthy’s influential paper “Programs with Common Sense” (1958). The fields of robotics and control theor
+Genesereth,PERSON,3,,,e agents. The discussion of agents in the text by Genesereth and Nilsson (1987) was an influential exception. 
+Nilsson,ORG,9,,,iscussion of agents in the text by Genesereth and Nilsson (1987) was an influential exception. The whole-ag
+Padgham,PERSON,1,,," accepted and is a central theme in recent texts (Padgham and Winikoff, 2004; Jones, 2007; Poole and Mackwo"
+Winikoff,PERSON,1,,,"d is a central theme in recent texts (Padgham and Winikoff, 2004; Jones, 2007; Poole and Mackworth, 2017)."
+Jones,GPE,1,,,"heme in recent texts (Padgham and Winikoff, 2004; Jones, 2007; Poole and Mackworth, 2017)."
+Poole,PRODUCT,1,,,"t texts (Padgham and Winikoff, 2004; Jones, 2007; Poole and Mackworth, 2017)."
+Mackworth,PERSON,4,,,"adgham and Winikoff, 2004; Jones, 2007; Poole and Mackworth, 2017)."
+Jon Doyle,PERSON,1,,,er technical foundations of the field. A paper by Jon Doyle (1983) predicted that rational agent design would
+Dorf,ORG,1,,,"tradition—for example, classical control systems (Dorf and Bishop, 2004; Kirk, 2004) handle fully observ"
+Bishop,ORG,5,,,"—for example, classical control systems (Dorf and Bishop, 2004; Kirk, 2004) handle fully observable, deter"
+Kirk,GPE,1,,,"classical control systems (Dorf and Bishop, 2004; Kirk, 2004) handle fully observable, deterministic env"
+Kumar,GPE,1,,,"inistic environments; stochastic optimal control (Kumar and Varaiya, 1986; Bertsekas and Shreve, 2007) ha"
+Varaiya,GPE,1,,,"vironments; stochastic optimal control (Kumar and Varaiya, 1986; Bertsekas and Shreve, 2007) handles partia"
+Bertsekas,GPE,1,,,"chastic optimal control (Kumar and Varaiya, 1986; Bertsekas and Shreve, 2007) handles partially observable, s"
+Henzinger and Sastry,ORG,1,,,"ble, stochastic environments; and hybrid control (Henzinger and Sastry, 1998; Cassandras and Lygeros, 2006) deals with e"
+Cassandras,PERSON,1,,,"; and hybrid control (Henzinger and Sastry, 1998; Cassandras and Lygeros, 2006) deals with environments contai"
+Lygeros,GPE,1,,,"ntrol (Henzinger and Sastry, 1998; Cassandras and Lygeros, 2006) deals with environments containing both di"
+Rosenschein,PERSON,1,,,iew them as too simple to provide much leverage. (Rosenschein (1985) and Brooks (1986) questioned this assumpti
+Brooks,ORG,1,,,"to provide much leverage. (Rosenschein (1985) and Brooks (1986) questioned this assumption; see
+Chapter 26"
+Bar-Shalom,ORG,1,,,"rithms for keeping track of complex environments (Bar-Shalom
+et al.,
+2001; Choset
+et al.,
+2005; Simon, 2006), "
+Choset,PRODUCT,1,,,"of complex environments (Bar-Shalom
+et al.,
+2001; Choset
+et al.,
+2005; Simon, 2006), most of it in the pro"
+Shoham,PERSON,1,,,alled agent-oriented programming was developed by Shoham (1993). The agent-based approach is now extremely
+Ciancarini and Wooldridge,ORG,1,,,"is now extremely popular in software engineering (Ciancarini and Wooldridge, 2001). It has also infiltrated the area of opera"
+Kephart,ORG,1,,,"a perceive–act loop and machine learning methods (Kephart and Chess, 2003). Noting that a collection of age"
+Michael Bratman,PERSON,1,,, to the influential theory of agents developed by Michael Bratman (1987).
+Feldman,PERSON,1,,,"tilities in favor of goals, with some exceptions (Feldman and Sproull, 1977). The resurgence of interest in"
+Sproull,PERSON,1,,,"favor of goals, with some exceptions (Feldman and Sproull, 1977). The resurgence of interest in probabilist"
+Horvitz,ORG,1,,,"s the most general framework for decision making (Horvitz
+et al.,
+1988). The text by Pearl (1988) was the f"
+Sutton,GPE,1,,,"eoretic framework also contributed to this shift (Sutton, 1988). Somewhat remarkably, almost all AI resear"
+Hadfield-Menell,ORG,1,,,"he form of a utility function or reward function (Hadfield-Menell
+et al.,
+2017a; Russell, 2019)."
+Mitchell,PERSON,3,,,"chine learning literature (Buchanan
+et al.,
+1978; Mitchell, 1997). Examples of the design, as embodied in pr"
+Huhns,ORG,1,,,papers on agent-based approaches are collected by Huhns and Singh (1998) and Wooldridge and Rao (1999). T
+Singh,GPE,1,,,agent-based approaches are collected by Huhns and Singh (1998) and Wooldridge and Rao (1999). Texts on mu
+Wooldridge,ORG,2,,,aches are collected by Huhns and Singh (1998) and Wooldridge and Rao (1999). Texts on multiagent systems provi
+Rao,PERSON,1,,,cted by Huhns and Singh (1998) and Wooldridge and Rao (1999). Texts on multiagent systems provide a goo
+Weiss,ORG,1,,,"ood introduction to many aspects of agent design (Weiss, 2000a; Wooldridge, 2009). Several conference ser"
+the International Workshop on Agent Theories,ORG,1,,,"s devoted to agents began in the 1990s, including the International Workshop on Agent Theories, Architectures, and Languages (ATAL), the Interna"
+the International Conference on Autonomous Agents,ORG,1,,,"nt Theories, Architectures, and Languages (ATAL), the International Conference on Autonomous Agents (AGENTS), and the International Conference on Mul"
+the International Conference on Multi-Agent Systems,ORG,1,,,"nal Conference on Autonomous Agents (AGENTS), and the International Conference on Multi-Agent Systems (ICMAS). In 2002, these three merged to form the "
+the International Joint Conference on Autonomous Agents,ORG,1,,,"tems (ICMAS). In 2002, these three merged to form the International Joint Conference on Autonomous Agents and Multi-Agent Systems (AAMAS). From 2000 to 201"
+AOSE,ORG,1,,,"workshops on Agent-Oriented Software Engineering (AOSE). The journal
+Autonomous Agents and Multi-Agent S"
+Autonomous Agents,ORG,1,,,"Oriented Software Engineering (AOSE). The journal
+Autonomous Agents and Multi-Agent Systems
+was founded in 1998. Fina"
+Dung Beetle Ecology,PERSON,1,,,"Multi-Agent Systems
+was founded in 1998. Finally,
+Dung Beetle Ecology
+(Hanski and Cambefort, 1991) provides a wealth of"
+Hanski and Cambefort,PERSON,1,,,"as founded in 1998. Finally,
+Dung Beetle Ecology
+(Hanski and Cambefort, 1991) provides a wealth of interesting informati"
+N. Henderson,PERSON,1,,,"3
+See N. Henderson, “New door latches urged for Boeing 747 jumbo jet"
+Boeing,ORG,1,,,"3
+See N. Henderson, “New door latches urged for Boeing 747 jumbo jets,”
+Washington Post,
+August 24, 1989"
+747,PRODUCT,1,,," N. Henderson, “New door latches urged for Boeing 747 jumbo jets,”
+Washington Post,
+August 24, 1989."
+Washington Post,ORG,1,,,"ew door latches urged for Boeing 747 jumbo jets,”
+Washington Post,
+August 24, 1989."
+Problem-Solving Agents,ORG,1,,,"3.1Problem-Solving Agents
+3.1
+Problem-Solving Agents
+Imagine an agent enjoying a touring vacation in R"
+Romania,GPE,19,,,"s
+Imagine an agent enjoying a touring vacation in Romania. The agent wants to take in the sights, improve i"
+Arad,GPE,19,,,"ow, suppose the agent is currently in the city of Arad and has a nonrefundable ticket to fly out of Buch"
+Arad,PERSON,37,,,"nd sees that there are three roads leading out of Arad: one toward Sibiu, one to Timisoara, and one to Z"
+Sibiu,GPE,14,,,"e are three roads leading out of Arad: one toward Sibiu, one to Timisoara, and one to Zerind. None of the"
+Timisoara,PERSON,16,,,"ads leading out of Arad: one toward Sibiu, one to Timisoara, and one to Zerind. None of these are the goal, s"
+Zerind,PERSON,17,,,"d: one toward Sibiu, one to Timisoara, and one to Zerind. None of these are the goal, so unless the agent "
+Iasi,GPE,2,,,"ws the distance in miles between cities. Neamt to Iasi, 87. Iasi to Valsui, 92. Vaslui to Urziceni, 142."
+Valsui,ORG,1,,," miles between cities. Neamt to Iasi, 87. Iasi to Valsui, 92. Vaslui to Urziceni, 142. Urziceni to Hirsova"
+Vaslui,PERSON,2,,,"en cities. Neamt to Iasi, 87. Iasi to Valsui, 92. Vaslui to Urziceni, 142. Urziceni to Hirsova, 98. Hirsov"
+Hirsova,ORG,3,,," Valsui, 92. Vaslui to Urziceni, 142. Urziceni to Hirsova, 98. Hirsova to Eforie, 86. Urziceni to Bucharest"
+Eforie,GPE,1,,,"rziceni, 142. Urziceni to Hirsova, 98. Hirsova to Eforie, 86. Urziceni to Bucharest, 85. Bucharest to Giur"
+Bucharest,ORG,11,,,"o Hirsova, 98. Hirsova to Eforie, 86. Urziceni to Bucharest, 85. Bucharest to Giurgiu, 90. Bucharest to Pites"
+Giurgiu,GPE,1,,,"orie, 86. Urziceni to Bucharest, 85. Bucharest to Giurgiu, 90. Bucharest to Pitesti, 101. Bucharest to Faga"
+Fagaras,GPE,3,,,"rgiu, 90. Bucharest to Pitesti, 101. Bucharest to Fagaras, 211. Fagaras to Sibiu, 99. Pitesti to Craiova, 1"
+Craiova,GPE,4,,,"to Fagaras, 211. Fagaras to Sibiu, 99. Pitesti to Craiova, 138. Pitesti to Rimnicu Vilcea, 97. Rimnicu Vilc"
+Oradea,ORG,12,,,"Vilcea, 97. Rimnicu Vilcea to Sibiu, 80. Sibiu to Oradea, 151. Sibiu to Arad, 140. Arad to Zerind, 75. Zer"
+Lugoj,ORG,10,,," Oradea, 71. Arad to Timisoara, 118. Timisoara to Lugoj, 111. Lugoj to Mehadia, 70. Mehadia to Drobeta, 7"
+Mehadia,GPE,4,,,"Timisoara, 118. Timisoara to Lugoj, 111. Lugoj to Mehadia, 70. Mehadia to Drobeta, 75. Drobeta to Craiova, "
+Drobeta,PERSON,5,,,"a to Lugoj, 111. Lugoj to Mehadia, 70. Mehadia to Drobeta, 75. Drobeta to Craiova, 120."
+Sibiu,PERSON,38,,," problem is a fixed sequence of actions:
+drive to Sibiu, then Fagaras, then Bucharest. If the model is co"
+Road Closed,WORK_OF_ART,1,,,by accident or finds a sign saying “Drum Închis” (Road Closed).
+OAL,ORG,4,,,"ee of these possibilities by specifying an I
+S
+-G
+OAL
+method for a problem. In this chapter we will som"
+Suck,PERSON,4,,,":
+In the two-cell world we defined three actions:
+Suck,
+move
+Left,
+and move
+Right."
+Backward,PERSON,1,,," the viewpoint of the agent—for example,
+Forward, Backward, TurnRight,
+and
+TurnLeft."
+TurnRight,ORG,2,,,"oint of the agent—for example,
+Forward, Backward, TurnRight,
+and
+TurnLeft."
+TurnLeft,PRODUCT,1,,,"nt—for example,
+Forward, Backward, TurnRight,
+and
+TurnLeft."
+Start,PRODUCT,6,,,"Description
+A square labeled Start state has three rows and three columns. Row 1: Co"
+Donald Knuth,PERSON,2,,,Our final standardized problem was devised by Donald Knuth (1964) and illustrates how infinite state spaces 
+Knuth,ORG,2,,," illustrates how infinite state spaces can arise. Knuth conjectured that starting with the number 4, a se"
+Boston,GPE,1,,,"ptimization algorithm for routing school buses in Boston saved $5 million, cut traffic and air pollution, "
+Bertsimas,PERSON,1,,,"llution, and saved time for drivers and students (Bertsimas
+et al.,
+2019). In addition to planning trips, sea"
+Automatic,GPE,2,,,"Automatic assembly sequencing
+of complex objects (such as e"
+Algorithms,PERSON,1,,,"3.3Search Algorithms
+3.3
+Search Algorithms
+A
+search algorithm
+takes a "
+"node
+",PERSON,2,,,"ting
+a new node (called a
+child node
+or
+successor node
+) for each of the resulting states. Each child nod"
+Root node Arad,PERSON,3,,,"ed and all other nodes are in faint dashed lines. Root node Arad has three child nodes: Sibiu, Timisoara, and Zeri"
+Node Sibiu,PERSON,3,,," three child nodes: Sibiu, Timisoara, and Zerind. Node Sibiu has four child nodes: Arad, Fagaras, Oradea, and "
+Node Timisoara,PERSON,3,,,"nodes: Arad, Fagaras, Oradea, and Rimnicu Vilcea. Node Timisoara has two child nodes: Arad and Lugoj. Node Zerind "
+Node Zerind,PERSON,3,,,de Timisoara has two child nodes: Arad and Lugoj. Node Zerind has two child nodes: Arad and Oradea. Search tree
+node,GPE,51,,,"ated for it has been
+reached
+(whether or not that node has been expanded)."
+Zerind,GPE,1,,,"escription
+In all three parts, paths to Arad from Zerind, Sibiu, and Timisoara are highlighted and marked "
+node,PERSON,1,,,reen-colored. The four paths between the lavender node and green nodes are colored in lavender. All othe
+node,ORG,16,,,"3.3.1
+Best-first search
+How do we decide which node from the frontier to expand next? A very general "
+XPAND,PERSON,1,,," its state is a goal state, and otherwise apply E
+XPAND
+to generate child nodes. Each child node is added"
+Node,PERSON,17,,,"four binary trees have the root node labeled ""A"". Node ""A"" has two child nodes labeled B and C. Node B h"
+C. Node,PERSON,3,,,"d ""A"". Node ""A"" has two child nodes labeled B and C. Node B has two child nodes labeled D and E. Node C has"
+E. Node C,PERSON,3,,,B and C. Node B has two child nodes labeled D and E. Node C has two child nodes labeled F and G. Binary Tree 
+F and G. Binary Tree 1,PRODUCT,1,,,"beled D and E. Node C has two child nodes labeled F and G. Binary Tree 1: Node ""A"" is green-colored and a right arrowhead "
+Binary Tree 2,PERSON,1,,," other nodes and paths are in faint dashed lines. Binary Tree 2: Node ""A"" is lavender-colored. Nodes B and C are "
+Binary Tree,PERSON,1,,," other nodes and paths are in faint dashed lines. Binary Tree 3: Nodes ""A"" and B are lavender-colored. Nodes C,"
+Binary Tree 4: Nodes,PRODUCT,1,,," other nodes and paths are in faint dashed lines. Binary Tree 4: Nodes ""A"", B, and C are lavender-colored. Other nodes a"
+Arad–Sibiu,ORG,1,,,"h
+. For example, we can get to Sibiu via the path Arad–Sibiu (140 miles long) or the path Arad–Zerind–Oradea–S"
+"Description
+Sibiu",PERSON,1,,,"Description
+Sibiu to Fagaras, 99. Fagaras to Bucharest, 211. Sibiu "
+Bucharest,GPE,1,,,"Description
+Sibiu to Fagaras, 99. Fagaras to Bucharest, 211. Sibiu to Rimnicu Vilcea, 80. Rimnicu Vilcea"
+F,PRODUCT,23,,,beled D and E. Node C has two child nodes labeled F and G. Node D has two child nodes labeled H and I
+G. Node,PERSON,2,,,D and E. Node C has two child nodes labeled F and G. Node D has two child nodes labeled H and I. Node E has
+H,ORG,2,,,beled F and G. Node D has two child nodes labeled H and I. Node E has two child nodes labeled J and K
+I. Node,PERSON,2,,,F and G. Node D has two child nodes labeled H and I. Node E has two child nodes labeled J and K. Node F has
+L,PRODUCT,2,,,beled J and K. Node F has two child nodes labeled L and M. Node G has two child nodes labeled N and O
+M. Node G,PERSON,2,,,J and K. Node F has two child nodes labeled L and M. Node G has two child nodes labeled N and O.
+N,ORG,2,,,beled L and M. Node G has two child nodes labeled N and O.
+I.,ORG,2,,,", and I are green-colored. An arrowhead points to I. The paths from “A” and B are solid lines. The pat"
+J. The,ORG,2,,,", and K are green-colored. An arrowhead points to J. The paths from “A” and E are solid lines. The path be"
+Nodes F and G,PRODUCT,3,,,ry Tree 10: Nodes “A” and C are lavender-colored. Nodes F and G are green-colored. An arrowhead points to F. The 
+F and M,PRODUCT,2,,,tween “A” and C is a solid line. The path between F and M is a solid line. The path from F to L and node L 
+Dijkstra,ORG,5,,,"3.4.2
+Dijkstra’s algorithm or uniform-cost search
+When actions h"
+"3.4.3
+Depth-first",PRODUCT,1,,,"3.4.3
+Depth-first search and the problem of memory
+Depth-first sear"
+BFS,ORG,1,,,"
+(IDS) = 50+400+3,000+20,000+100,000 = 123,450
+N
+(BFS) = 10+100+1,000+10,000+100,000 = 111,110,
+If you "
+"F
+",PRODUCT,1,,,"function, one in the forward direction (subscript
+F
+) and one in the backward direction (subscript
+B
+)"
+|V,ORG,1,,,"he state space (the number of vertices and edges, |V | + |
+E
+|)."
+≥,PERSON,2,,,"2
+complete if all action costs are ≥
+ϵ
+> 0;
+3
+cost-optimal if action costs are all ide"
+"node
+n",ORG,1,,,"mated cost of the cheapest path from the state at node
+n
+to a goal state."
+Greedy,ORG,1,,,"3.5.1
+Greedy best-first search
+Greedy best-first search
+is a form of best-first search "
+SLD,ORG,10,,,"ght-line
+distance
+heuristic, which we will call
+h
+SLD
+. If the goal is Bucharest, we need to know the s"
+Node C,PERSON,2,,,Binary Tree 3: Node “A” is lavender-colored. Node C is green-colored. The path between nodes “A” and 
+Node G,PERSON,1,,,ary Tree 7: Nodes “A” and C are lavender-colored. Node G is green-colored. The path between “A” and C is a
+"Description
+Arad",PERSON,1,,,"Description
+Arad, 366. Bucharest, 0, Craiova, 160. Drobeta, 242. E"
+Urziceni,ORG,1,,," Rimnicu Vilcea, 193. Sibiu, 253. Timisoara, 329. Urziceni, 80. Vaslui, 199. Zerind, 374."
+g(n,ORG,1,,,"uation function
+f
+(
+n
+) =
+g
+(
+n
+) +
+h
+(
+n
+)
+where
+g(n)
+is the path cost from the initial state to node
+"
+"node
+n
+",ORG,1,,,"e
+g(n)
+is the path cost from the initial state to node
+n
+, and
+h
+(
+n
+) is the
+estimated
+cost of the shortes"
+Pitesti,ORG,3,,,"ay this is that there
+might
+be a solution through Pitesti whose cost is as low as 417, so the algorithm wil"
+Timisoara 329,PERSON,3,,,"d to three green-colored nodes labeled Sibiu 253, Timisoara 329, and Zerind 374. An arrowhead points to Sibiu."
+Zerind 374,PERSON,3,,,"lored nodes labeled Sibiu 253, Timisoara 329, and Zerind 374. An arrowhead points to Sibiu."
+Arad 366,PERSON,4,,," is connected to four green-colored nodes labeled Arad 366, Fagaras 177, Oradea 380, and Rimnicu Vilcea 193."
+Oradea 380,ORG,1,,,"reen-colored nodes labeled Arad 366, Fagaras 177, Oradea 380, and Rimnicu Vilcea 193. An arrowhead points to F"
+Oradea 671,ORG,2,,,"ls 280 plus 366, Fagaras 415 equals 239 plus 176, Oradea 671 equals 291 plus 380, and Rimnicu Vilcea 413 equal"
+Craiova 526,PRODUCT,1,,,"is connected to three green-colored nodes labeled Craiova 526 equals 366 plus 160, Pitesti 417 equals 317 plus "
+Sibiu 591,ORG,1,,,d is connected to two green-colored nodes labeled Sibiu 591 equals 338 plus 253 and Bucharest 450 equals 450 
+Bucharest 450,ORG,1,,,d nodes labeled Sibiu 591 equals 338 plus 253 and Bucharest 450 equals 450 plus 0. An arrowhead points to Pitesti
+Pitesti under Rimnicu Vilcea,ORG,1,,,est 450 equals 450 plus 0. An arrowhead points to Pitesti under Rimnicu Vilcea.
+Craiova 615,ORG,1,,,"ed nodes labeled Bucharest 418 equals 418 plus 0, Craiova 615 equals 455 plus 160, and Rimnicu Vilcea 607 equal"
+Pitesti,PRODUCT,2,,,s 193. An arrowhead points to Bucharest under the Pitesti node.
+Triangle,ORG,1,,,"×
+Figure 3.19
+Triangle inequality: If the heuristic
+h
+is
+consistent
+, th"
+Felner,PERSON,2,,,"mplementers to avoid inconsistent heuristics, but Felner
+et al."
+Beam,ORG,2,,,"Beam search
+limits the size of the frontier. The easie"
+IDA,PERSON,6,,,"Iterative-deepening A
+*
+search
+(IDA*) is to A* what iterative-deepening search is to "
+RBFS,ORG,10,,,"
+—the best
+f
+-value of its children. In this way, RBFS remembers the
+f
+-value of the best leaf in the fo"
+Timisoara 447,PERSON,1,,,"66 is connected to three nodes labeled Sibiu 393, Timisoara 447, and Zerind 449. Timisoara and Zerind are green-c"
+Craiova 526,PERSON,1,,,"Vilcea is connected to three green-colored nodes, Craiova 526, Pitesti 417, and Sibiu 553."
+Sibiu 553,PERSON,2,,,"reen-colored nodes, Craiova 526, Pitesti 417, and Sibiu 553."
+h(n,PERSON,3,,,"RBFS is optimal if the heuristic function
+h(n)
+is admissible. Its space complexity is linear in"
+MA,PERSON,1,,,"to use all of it. Two algorithms that do this are
+MA
+* (memory-bounded A*) and
+SMA
+* (simplified MA*)."
+MA*,PERSON,1,,,"re
+MA
+* (memory-bounded A*) and
+SMA
+* (simplified MA*). SMA* is—well—simpler, so we will describe it. S"
+SMA,ORG,10,,,"*). SMA* is—well—simpler, so we will describe it. SMA* proceeds just like A*, expanding the best leaf u"
+f(n,GPE,1,,,"idirectional best-first search, we saw that using
+f(n)
+=
+g(n)
++
+h
+(
+n
+) as the evaluation function give"
+Eckerle,GPE,1,,," efficiency will have to consider pairs of nodes (Eckerle
+et al.,
+2017)."
+max,PERSON,3,,,"n follows the path to the goal as
+l
+b
+(
+m
+,
+n
+) = max (
+g
+F
+(
+m
+) +
+g
+B
+(
+n
+),
+f
+F
+(
+m
+),
+f
+B
+(
+n
+))
+In"
+Goal,PERSON,5,,,"r circles in the first row are Start, “A”, F, and Goal. The four circles in the second row are C, B, D, "
+Start,ORG,1,,,"f subscript 2 equals 10. Another solid arrow from Start to B is labeled 6. For B, f equals 8 equals 6 plu"
+node F,PRODUCT,1,,,pt 2 equals 10. A dashed double-headed arrow from node F to “A” is labeled 2.
+node F,PERSON,1,,,"es A and B are successors of Start; on the right, node F is an inverse successor of Goal. Each node is lab"
+Start-A-F-Goal,ORG,1,,,"om anything in the figure.) The optimal solution, Start-A-F-Goal, has cost
+C
+* = 4 + 2 + 4 = 10, so that means tha"
+Heuristic Functions,ORG,1,,,"3.6Heuristic Functions
+3.6
+Heuristic Functions
+In this section, we look at how the accuracy of a"
+Manhattan,GPE,10,,,"ances—sometimes called the
+city-block distance
+or
+Manhattan distance
+."
+Korf,ORG,4,,,Korf and Reid (1998) argue that a better way to charac
+Reid,PERSON,2,,,Korf and Reid (1998) argue that a better way to characterize th
+Rubik’s Cube,ORG,3,,,"
+) for an uninformed search. Their experiments on Rubik’s Cube and
+n-
+puzzle problems show that this formula giv"
+Asterisk,PERSON,8,,,"as three rows and three columns. Row 1: Column 1, Asterisk. Column 2, 2. Column 3, 4. Row 2: Column 1, Aster"
+Exercise,PRODUCT,1,,,"n. The heuristic derived from (b) is discussed in Exercise
+3."
+Prieditis,PERSON,2,,,"xed problem” method and various other techniques (Prieditis, 1993). A
+BSOLVER
+generated a new heuristic for t"
+Berkeley,ORG,1,,,"the U.S., and we were trying to navigate from the Berkeley campus in California to NYU in New York, we could"
+California,GPE,1,,,"re trying to navigate from the Berkeley campus in California to NYU in New York, we could take the shortcut be"
+NYU,ORG,1,,,"avigate from the Berkeley campus in California to NYU in New York, we could take the shortcut between S"
+New York,GPE,2,,," from the Berkeley campus in California to NYU in New York, we could take the shortcut between Sacramento an"
+Sacramento,GPE,1,,,"U in New York, we could take the shortcut between Sacramento and Manhattan and cover 90% of the path in one ac"
+−,GPE,6,,,"(
+n
+) =
+min
+L
+∈
+L
+a
+n
+d
+m
+a
+r
+k
+s
+|
+C
+*
+(
+n
+,
+L
+)
+−
+C
+*
+(
+g
+o
+a
+l
+,
+L
+) |
+This is called a
+differenti"
+Slocum,GPE,1,,,"5-puzzle, whose history is recounted at length by Slocum and Sonneveld (2006). In 1880, the 15-puzzle attr"
+Johnson,PERSON,1,,,"oad attention from the public and mathematicians (Johnson and Story, 1879; Tait, 1880). The editors of the
+"
+Story,PERSON,1,,,"n from the public and mathematicians (Johnson and Story, 1879; Tait, 1880). The editors of the
+American J"
+Tait,PERSON,1,,,"blic and mathematicians (Johnson and Story, 1879; Tait, 1880). The editors of the
+American Journal of Ma"
+American Journal of Mathematics,ORG,1,,," and Story, 1879; Tait, 1880). The editors of the
+American Journal of Mathematics
+stated, “The ‘15’ puzzle for the last few weeks h"
+The ‘15,WORK_OF_ART,1,,,"s of the
+American Journal of Mathematics
+stated, “The ‘15’ puzzle for the last few weeks has been prominent"
+Weekly News-Democrat,ORG,1,,," ages and conditions of the community,” while the
+Weekly News-Democrat
+of Emporia, Kansas wrote on March 12, 1880 that “"
+Emporia,GPE,1,,,"the community,” while the
+Weekly News-Democrat
+of Emporia, Kansas wrote on March 12, 1880 that “It has beco"
+Kansas,GPE,1,,,"nity,” while the
+Weekly News-Democrat
+of Emporia, Kansas wrote on March 12, 1880 that “It has become liter"
+Sam Loyd,PERSON,1,,,"r the country.”
+The famous American game designer Sam Loyd falsely claimed to have invented the 15 puzzle (L"
+Loyd,PERSON,1,,,"d falsely claimed to have invented the 15 puzzle (Loyd, 1959); actually it was invented by Noyes Chapman"
+Noyes Chapman,PERSON,1,,," puzzle (Loyd, 1959); actually it was invented by Noyes Chapman, a postmaster in Canastota, New York, in the mid-"
+Canastota,GPE,1,,,"it was invented by Noyes Chapman, a postmaster in Canastota, New York, in the mid-1870s (although a generic p"
+Ernest Kinsey,PERSON,1,,,ric patent covering sliding blocks was granted to Ernest Kinsey in 1878). Ratner and Warmuth (1986) showed that t
+Ratner,ORG,1,,,"ing blocks was granted to Ernest Kinsey in 1878). Ratner and Warmuth (1986) showed that the general
+n
+×
+n
+"
+Warmuth,PERSON,1,,,"was granted to Ernest Kinsey in 1878). Ratner and Warmuth (1986) showed that the general
+n
+×
+n
+version of t"
+Ernő Rubik,PERSON,1,,,"Rubik’s Cube was of course invented in 1974 by Ernő Rubik, who also discovered an algorithm for finding goo"
+Korf,PERSON,6,,,"ithm for finding good, but not optimal solutions. Korf (1997) found optimal solutions for some random pr"
+Agostinelli,PERSON,1,,,"s not lead immediately to an efficient algorithm. Agostinelli
+et al."
+Monte Carlo,PERSON,1,,,"inforcement learning, deep learning networks, and Monte Carlo tree search to learn a much more efficient solver"
+Rubik,ORG,1,,, search to learn a much more efficient solver for Rubik’s cube. It is not guaranteed to find a cost-optim
+Carl de Marcken,PERSON,1,,,"flights remain proprietary for the most part, but Carl de Marcken has shown by a reduction to Diophantine decision "
+Robinson,PERSON,1,,,"ecting an optimal flight is formally
+undecidable
+(Robinson, 2002). The traveling salesperson problem (TSP) i"
+Lawler,PERSON,1,,,"natorial problem in theoretical computer science (Lawler
+et al.,
+1992). Karp (1972) proved the TSP decisio"
+TSP,ORG,2,,,"nce (Lawler
+et al.,
+1992). Karp (1972) proved the TSP decision problem to be NP-hard, but effective heu"
+Lin,PERSON,2,,,"e heuristic approximation methods were developed (Lin and Kernighan, 1973). Arora (1998) devised a full"
+Kernighan,GPE,1,,,"tic approximation methods were developed (Lin and Kernighan, 1973). Arora (1998) devised a fully polynomial a"
+Arora,PERSON,2,,,"methods were developed (Lin and Kernighan, 1973). Arora (1998) devised a fully polynomial approximation s"
+LaPaugh,ORG,1,,,"clidean TSPs. VLSI layout methods are surveyed by LaPaugh (2010), and many layout optimization papers appea"
+VLSI,ORG,3,,,"0), and many layout optimization papers appear in VLSI journals. Robotic navigation is discussed in
+Chap"
+"F
+REDDY
+",PRODUCT,1,,,"tic assembly sequencing was first demonstrated by F
+REDDY
+(Michie, 1972); a comprehensive review is given by"
+Michie,PERSON,4,,,"bly sequencing was first demonstrated by F
+REDDY
+(Michie, 1972); a comprehensive review is given by (Bahub"
+Bahubalendruni,PERSON,1,,,"ichie, 1972); a comprehensive review is given by (Bahubalendruni and Biswal, 2016)."
+Biswal,ORG,1,,,"prehensive review is given by (Bahubalendruni and Biswal, 2016)."
+Dreyfus,ORG,1,,,"e (Cormen
+et al
+., 2009) and operations research (Dreyfus, 1969). Breadth-first search was formulated for s"
+Moore,PERSON,1,,,-first search was formulated for solving mazes by Moore (1959). The method of dynamic programming (Bellma
+Bellman and Dreyfus,ORG,1,,,"The method of dynamic programming (Bellman, 1957; Bellman and Dreyfus, 1962), which systematically records solutions fo"
+Barr,PERSON,1,,,"ST
+-S
+EARCH
+was introduced in the
+Handbook of AI
+(Barr and Feigenbaum, 1981). The Floyd–Warshall (Floyd,"
+The Floyd–Warshall,ORG,1,,,"n the
+Handbook of AI
+(Barr and Feigenbaum, 1981). The Floyd–Warshall (Floyd, 1962) and Bellman-Ford (Bellman, 1958; Fo"
+Bellman-Ford,ORG,1,,,"baum, 1981). The Floyd–Warshall (Floyd, 1962) and Bellman-Ford (Bellman, 1958; Ford, 1956) algorithms allow nega"
+Slate,ORG,1,,,"fficient use of the chess clock was first used by Slate and Atkin (1977) in the C
+HESS
+4.5 game-playing p"
+Atkin,GPE,1,,,"se of the chess clock was first used by Slate and Atkin (1977) in the C
+HESS
+4.5 game-playing program. Ma"
+Martelli’s,PERSON,1,,,"in (1977) in the C
+HESS
+4.5 game-playing program. Martelli’s algorithm B (1977) also includes an iterative dee"
+Bertram Raphael,PERSON,1,,,e iterative deepening technique was introduced by Bertram Raphael (1976) and came to the fore in work by Korf (1985
+Newell and Ernst,ORG,1,,,"ate the distance to the goal came somewhat later (Newell and Ernst, 1965; Lin, 1965). Doran and Michie (1966) conduc"
+Doran,PERSON,2,,,"mewhat later (Newell and Ernst, 1965; Lin, 1965). Doran and Michie (1966) conducted extensive experimenta"
+Hart,ORG,1,,,"path cost into heuristic search, was developed by Hart, Nilsson, and Raphael (1968). Dechter and Pearl ("
+Raphael,PERSON,1,,,"istic search, was developed by Hart, Nilsson, and Raphael (1968). Dechter and Pearl (1985) studied the cond"
+Pohl,PERSON,1,,,"nctions. The monotone condition was introduced by Pohl (1977) as a simpler replacement, but Pearl (1984)"
+Gaschnig,PERSON,2,,,"action costs and a single goal state (Pohl, 1977; Gaschnig, 1979; Huyn
+et al.,
+1980; Pearl, 1984) and with m"
+Pearl,GPE,2,,,"e (Pohl, 1977; Gaschnig, 1979; Huyn
+et al.,
+1980; Pearl, 1984) and with multiple goal states (Dinh
+et al."
+Helmert,PERSON,1,,,"mpirical measure of efficiency. For graph search, Helmert and Röger (2008)
+noted that several well-known pr"
+Röger,PERSON,1,,,"sure of efficiency. For graph search, Helmert and Röger (2008)
+noted that several well-known problems con"
+Ebendt,PERSON,1,,,re the weight changes over the depth of the tree. Ebendt and Drechsler (2009) synthesize the results and e
+Drechsler,PERSON,1,,,ht changes over the depth of the tree. Ebendt and Drechsler (2009) synthesize the results and examine some ap
+Ruml,PERSON,3,,, results and examine some applications. Hatem and Ruml (2014) show a simplified and improved version of 
+NBS,ORG,1,,,"irectional search can be optimally efficient. The NBS algorithm (Chen
+et al."
+Chen,PERSON,1,,,"ch can be optimally efficient. The NBS algorithm (Chen
+et al."
+al,ORG,4,,,"e optimally efficient. The NBS algorithm (Chen
+et al."
+Knoblock,PERSON,1,,,e-to-fine search provides an exponential speedup. Knoblock (1991) provides experimental results and analysis
+Lawler and Wood,ORG,1,,,"ques that are widely used in operations research (Lawler and Wood, 1966; Rayward-Smith
+et al."
+Rayward-Smith,PERSON,1,,,"ed in operations research (Lawler and Wood, 1966; Rayward-Smith
+et al."
+Kumar,PERSON,1,,,", 1996). Kumar and Kanal (1988) attempt a “grand unification” of"
+Kanal,ORG,1,,,", 1996). Kumar and Kanal (1988) attempt a “grand unification” of heuristic"
+CDP,ORG,1,,,"and branch-and-bound techniques under the name of CDP—the “composite decision process.”
+Because most co"
+The Graph Traverser,PERSON,1,,,"ded heuristic search was an early research topic. The Graph Traverser (Doran and Michie, 1966), one of the earliest sea"
+Patrick,GPE,1,,,"fficulties with real-valued heuristics appears in Patrick
+et al."
+Bratko’s,ORG,1,,, of the best alternative path appeared earlier in Bratko’s (2009) elegant Prolog implementation of A* and in
+Russell and Wefald,WORK_OF_ART,1,,,"g implementation of A* and in the DTA* algorithm (Russell and Wefald, 1991). The latter work also discusses metalevel "
+Chakrabarti,GPE,1,,,"The MA* algorithm appeared in Chakrabarti
+et al."
+Simplified MA*,PERSON,1,,,"(1989). SMA*, or Simplified MA*, emerged from an attempt to implement MA* (Russel"
+MA*,ORG,1,,,"plified MA*, emerged from an attempt to implement MA* (Russell, 1992). Kaindl and Khorsand (1994) appli"
+Khorsand,GPE,1,,,"empt to implement MA* (Russell, 1992). Kaindl and Khorsand (1994) applied SMA* to produce a bidirectional se"
+Zhang,PERSON,1,,,"ntially faster than previous algorithms. Korf and Zhang (2000) describe a divide-and-conquer approach, an"
+Zhou,PERSON,2,,,"2000) describe a divide-and-conquer approach, and Zhou and Hansen (2002) introduce memory-bounded A* gra"
+Hansen,PERSON,4,,,"cribe a divide-and-conquer approach, and Zhou and Hansen (2002) introduce memory-bounded A* graph search a"
+Samadi,PRODUCT,1,,,"machine learning to discover heuristic functions (Samadi
+et al.,
+2008; Arfaee
+et al.,
+2010; Thayer
+et al."
+Arfaee,PERSON,1,,,"iscover heuristic functions (Samadi
+et al.,
+2008; Arfaee
+et al.,
+2010; Thayer
+et al."
+Thayer,PERSON,1,,,"ctions (Samadi
+et al.,
+2008; Arfaee
+et al.,
+2010; Thayer
+et al."
+Lelis,GPE,1,,,", 2011; Lelis
+et al.,
+2012)."
+Gasser,PERSON,1,,,"tabases to derive admissible heuristics is due to Gasser (1995) and Culberson and Schaeffer (1996, 1998); "
+Culberson,ORG,1,,,"admissible heuristics is due to Gasser (1995) and Culberson and Schaeffer (1996, 1998); disjoint pattern data"
+Schaeffer,PERSON,1,,,"ristics is due to Gasser (1995) and Culberson and Schaeffer (1996, 1998); disjoint pattern databases are desc"
+Korf and Felner (2002,ORG,1,,,998); disjoint pattern databases are described by Korf and Felner (2002); a similar method using symbolic patterns is due
+Hansson,PERSON,1,,,f heuristics was investigated by Pearl (1984) and Hansson and Mayer (1989).
+Mayer,PERSON,1,,, was investigated by Pearl (1984) and Hansson and Mayer (1989).
+Edelkamp and Schrödl’s,WORK_OF_ART,1,,,"Pearl’s (1984)
+Heuristics
+and Edelkamp and Schrödl’s (2012)
+Heuristic Search
+are influential textbooks"
+Heuristic Search,ORG,1,,,"984)
+Heuristics
+and Edelkamp and Schrödl’s (2012)
+Heuristic Search
+are influential textbooks on search. Papers about"
+the International Conference on Automated Planning and Scheduling,ORG,1,,,"onal Symposium on Combinatorial Search (SoCS) and the International Conference on Automated Planning and Scheduling (ICAPS), as well as in general AI conferences suc"
+ICAPS,ORG,1,,," Conference on Automated Planning and Scheduling (ICAPS), as well as in general AI conferences such as AA"
+IJCAI,ORG,1,,,"ell as in general AI conferences such as AAAI and IJCAI, and journals such as
+Artificial Intelligence
+and"
+Journal of the ACM,ORG,1,,," and journals such as
+Artificial Intelligence
+and
+Journal of the ACM."
+Floyd–Warshall,PERSON,1,,,an infinite number of times. The Bellman–Ford and Floyd–Warshall algorithms (not covered here) handle negative-cos
+Zeno’s,PERSON,1,,,trarily small action costs. Consider a version of Zeno’s paradox where there is an action to move half way
+Search and Optimization Problems,ORG,1,,,"4.1Local Search and Optimization Problems
+4.1
+Local Search and Optimization Problems
+In the"
+Local Search and Optimization Problems,ORG,1,,,"4.1Local Search and Optimization Problems
+4.1
+Local Search and Optimization Problems
+In the search problems of
+Chapter 3
+we wanted to "
+Hill,PERSON,5,,,"4.1.1
+Hill-climbing search
+The
+hill-climbing
+search algorith"
+Success,ORG,1,,,nstances solved by hill climbing from 14% to 94%. Success comes at a cost: the algorithm averages roughly 2
+maxima,PRODUCT,3,,,"the state-space landscape: if there are few local maxima and plateaus, random-restart hill climbing will f"
+Appendix A,PERSON,1,,,p of each porcupine needle. NP-hard problems (see Appendix A) typically have an exponential number of local ma
+harden,GPE,1,,,"lurgy,
+annealing
+is the process used to temper or harden metals and glass by heating them to a high temper"
+minima,PRODUCT,1,,, just hard enough to bounce the ball out of local minima but not hard enough to dislodge it from the globa
+Boltzmann,PERSON,1,,,"wers
+T
+to 0 slowly enough, then a property of the Boltzmann distribution,
+e
+∆
+E/T
+, is that
+all the probabili"
+Selection,ORG,1,,," is labeled Initial population, Fitness function, Selection, Cross over, and Mutation. The four 8-digit strin"
+Loop,ORG,3,,, node with an arc point to states 5 and 1 labeled Loop. A bold arrow from the fourth node points to stat
+Left,PRODUCT,1,,,"old arrow labeled Suck, and a light arrow labeled Left from state 6 points to the seventh and eighth nod"
+Charles Darwin,PERSON,1,,,"d Search
+The theory of
+evolution
+was developed by Charles Darwin in
+On the Origin of Species by Means of Natural S"
+the Origin of Species,ORG,1,,,"f
+evolution
+was developed by Charles Darwin in
+On the Origin of Species by Means of Natural Selection
+(1859) and independ"
+Alfred Russel Wallace,PERSON,1,,," of Natural Selection
+(1859) and independently by Alfred Russel Wallace (1858). The central idea is simple: variations oc"
+Darwin,PERSON,1,,,Darwin’s theory was developed with no knowledge of how t
+Gregor Mendel,PERSON,1,,,"overning these processes were first identified by Gregor Mendel (1866), a monk who experimented with sweet peas. "
+Watson,PERSON,1,,,"onk who experimented with sweet peas. Much later, Watson and Crick (1953) identified the structure of the "
+Crick,PERSON,1,,,"erimented with sweet peas. Much later, Watson and Crick (1953) identified the structure of the DNA molecu"
+AGTC,ORG,1,,,"e structure of the DNA molecule and its alphabet, AGTC (adenine, guanine, thymine, cytosine). In the sta"
+Jean Lamarck,PERSON,1,,,n. Although the otherwise great French naturalist Jean Lamarck (1809) was wrong to propose that traits acquired 
+James Baldwin’s,PERSON,1,,,"m’s lifetime would be passed on to its offspring, James Baldwin’s (1896) superficially similar theory is correct: l"
+Hinton and,ORG,2,,,"n a way that is beneficial. Computer simulations (Hinton and Nowlan, 1987) confirm that this
+Baldwin effect
+is"
+Nowlan,ORG,2,,,"t is beneficial. Computer simulations (Hinton and Nowlan, 1987) confirm that this
+Baldwin effect
+is real, "
+Baldwin,PERSON,2,,,"tions (Hinton and Nowlan, 1987) confirm that this
+Baldwin effect
+is real, and that a consequence is that th"
+Morgan,PERSON,2,,,"ngs that are easy to learn need not reside there (Morgan and Griffiths, 2015)."
+schemas correspond,PERSON,1,,,istent benefit. Genetic algorithms work best when schemas correspond to meaningful components of a solution. For examp
+Marler,ORG,1,,,"thin the broad landscape of optimization methods (Marler and Arora, 2004), particularly for complex struct"
+Miikkulainen,PERSON,2,,,"volving the architecture of deep neural networks (Miikkulainen
+et al.,
+2019). It is not clear how much of the ap"
+Continuous Spaces,ORG,2,,,"4.2Local Search in Continuous Spaces
+4.2
+Local Search in Continuous Spaces
+In
+Chapter "
+Local Search,ORG,1,,,"4.2Local Search in Continuous Spaces
+4.2
+Local Search in Continuous Spaces
+In
+Chapter 2
+, we explained "
+Leibniz,ORG,1,,,", after the development of calculus by Newton and Leibniz."
+"←
+x
++
+α
+∇
+f
+",PERSON,1,,,"ting the current state according to the formula
+x
+←
+x
++
+α
+∇
+f
+(
+x
+)
+,
+where α (alpha) is a small constant often "
+"←
+x",PERSON,2,,,"te for the root
+x
+according to Newton’s formula
+x
+←
+x
+−
+g
+(
+x
+)
+/
+g
+'
+(
+x
+)
+."
+Linear,ORG,5,,,Linear programming is probably the most widely studied a
+Nondeterministic Actions,ORG,2,,,"4.3Search with Nondeterministic Actions
+4.3
+Search with Nondeterministic Actions
+In
+Chapt"
+I’m,WORK_OF_ART,1,,," an action. That means that rather than thinking “I’m in state
+s
+1
+and if I do action
+a
+I’ll end up in "
+Left or Right or Suck,WORK_OF_ART,1,,,"rld, for example, at an
+OR
+node the agent chooses
+Left or Right or Suck
+. In a nondeterministic environment, branching is"
+Vacuum,PERSON,1,,,"abeled on them. Example “a”, Deterministic world: Vacuum world states 1 and 3 are included in the first be"
+Dirty,ORG,4,,,"ef state. An arrow labeled open square bracket B, Dirty close square bracket, points to the vacuum world "
+Partially Observable Environments,ORG,1,,,"4.4Search in Partially Observable Environments
+4.4
+Search in Partially Observable Environments
+W"
+Open,PRODUCT,1,,,"acket ""A"", clean close square bracket, Right, and Open square bracket B, Dirty close square bracket. An "
+ERCEPTS,ORG,1,,," sensing is nondeterministic, then we can use a P
+ERCEPTS
+function that returns a set of possible percepts."
+G. An,PERSON,1,,,the first unlabeled node points to a node labeled G. An arrow from the second unlabeled node points to a 
+Search Agents and Unknown,ORG,1,,,"4.5Online Search Agents and Unknown Environments
+4.5
+Online Search Agents and Unknown"
+labyrinths,GPE,1,,,"r getting from
+A
+to
+B
+. Methods for escaping from labyrinths—required knowledge for aspiring heroes of antiqui"
+Node 2,PERSON,2,,,e connected using double-headed arrows labeled 1. Node 2 is shaded in red.
+Node 4,PERSON,2,,,Note: The digit 5 in the third node is encircled. Node 4 is shaded in red.
+S,PERSON,1,,,"al, because, for each state in the top row except S, backward progress is twice as likely as forward "
+Raphson,PERSON,1,,," Indeed, the Newton–Raphson method (Newton, 1671; Raphson, 1690) can be seen as a very efficient local sear"
+Lowerre,ORG,1,,,"ming for speech recognition in the H
+ARPY
+system (Lowerre, 1976). A related algorithm is analyzed in depth "
+Ch,PERSON,1,,,"ed algorithm is analyzed in depth by Pearl (1984, Ch. 5)."
+Minton,PERSON,2,,,"nstraint-satisfaction problems such as
+n
+-queens (Minton
+et al."
+Selman,PERSON,2,,,", 1992) and Boolean satisfiability (Selman
+et al."
+Christos Papadimitriou,PERSON,1,,, and other improvements. This renaissance of what Christos Papadimitriou has called “New Age” algorithms also sparked incr
+New Age,WORK_OF_ART,1,,,ssance of what Christos Papadimitriou has called “New Age” algorithms also sparked increased interest among
+Koutsoupias,PERSON,1,,,"d interest among theoretical computer scientists (Koutsoupias and Papadimitriou, 1992; Aldous and Vazirani, 199"
+Papadimitriou,PERSON,2,,," theoretical computer scientists (Koutsoupias and Papadimitriou, 1992; Aldous and Vazirani, 1994)."
+Vazirani,PERSON,1,,," (Koutsoupias and Papadimitriou, 1992; Aldous and Vazirani, 1994)."
+Glover,PRODUCT,1,,,"limbing called
+tabu search
+has gained popularity (Glover and Laguna, 1997). This algorithm maintains a tab"
+Laguna,GPE,1,,,"led
+tabu search
+has gained popularity (Glover and Laguna, 1997). This algorithm maintains a tabu list of
+k"
+Stützle,PERSON,2,,,"verage, than a single run to completion. Hoos and Stützle (2004) provide a book-length coverage of the topi"
+Kirkpatrick,GPE,2,,,"Simulated annealing was first described by Kirkpatrick
+et al."
+Metropolis,PERSON,2,,,"(1983), who borrowed directly from the
+Metropolis algorithm
+(which is used to simulate complex syst"
+Los Alamos,GPE,1,,,",1953) and was supposedly invented at a Los Alamos dinner party). Simulated annealing is now a field"
+Dias,PERSON,1,,,"ll climbing); economics (market-based algorithms (Dias
+et al."
+Li,PERSON,1,,,", 2006)); physics (particle swarms (Li and Yao, 2012) and spin glasses (Mézard
+et al."
+Yao,PERSON,1,,,", 2006)); physics (particle swarms (Li and Yao, 2012) and spin glasses (Mézard
+et al."
+grey wolf,PERSON,1,,," 1987)); animal behavior (reinforcement learning, grey wolf optimizers (Mirjalili and Lewis, 2014)); ornithol"
+Mirjalili and Lewis,ORG,1,,,"or (reinforcement learning, grey wolf optimizers (Mirjalili and Lewis, 2014)); ornithology (Cuckoo search (Yang and Deb"
+Cuckoo,ORG,1,,,"mizers (Mirjalili and Lewis, 2014)); ornithology (Cuckoo search (Yang and Deb, 2014)); entomology (ant col"
+Yang,PERSON,2,,,"li and Lewis, 2014)); ornithology (Cuckoo search (Yang and Deb, 2014)); entomology (ant colony (Dorigo
+e"
+Dorigo,ORG,1,,,"ch (Yang and Deb, 2014)); entomology (ant colony (Dorigo
+et al."
+bee colony,PERSON,1,,,", 2008), bee colony (Karaboga and Basturk, 2007), firefly (Yang, 2009"
+Karaboga,PERSON,1,,,", 2008), bee colony (Karaboga and Basturk, 2007), firefly (Yang, 2009) and glow"
+Basturk,GPE,1,,,", 2008), bee colony (Karaboga and Basturk, 2007), firefly (Yang, 2009) and glowworm (Krishn"
+Leonid Kantorovich,PERSON,1,,,first studied systematically by the mathematician Leonid Kantorovich (1939). It was one of the first applications of c
+"simplex algorithm
+",PERSON,1,,,"s one of the first applications of computers; the
+simplex algorithm
+(Dantzig, 1949) is still used despite worst-case e"
+Dantzig,ORG,1,,,"applications of computers; the
+simplex algorithm
+(Dantzig, 1949) is still used despite worst-case exponenti"
+Karmarkar,PERSON,1,,,l used despite worst-case exponential complexity. Karmarkar (1984) developed the far more efficient family of
+Nesterov,PERSON,1,,, general class of convex optimization problems by Nesterov and Nemirovski (1994). Excellent introductions to
+Nemirovski,PERSON,2,,,s of convex optimization problems by Nesterov and Nemirovski (1994). Excellent introductions to convex optimiz
+Ben-Tal,PERSON,1,,,roductions to convex optimization are provided by Ben-Tal and Nemirovski (2001) and Boyd and Vandenberghe (
+Boyd,PERSON,1,,,are provided by Ben-Tal and Nemirovski (2001) and Boyd and Vandenberghe (2004).
+Vandenberghe,PERSON,1,,,ded by Ben-Tal and Nemirovski (2001) and Boyd and Vandenberghe (2004).
+Sewall Wright,PERSON,1,,,"Work by Sewall Wright (1931) on the concept of a
+fitness landscape
+was "
+Box,PERSON,1,,,"s. In the 1950s, several statisticians, including Box (1957) and Friedman (1959), used evolutionary tec"
+Friedman,PERSON,1,,,", several statisticians, including Box (1957) and Friedman (1959), used evolutionary techniques for optimiza"
+Rechenberg,PERSON,1,,,"es for optimization problems, but it wasn’t until Rechenberg (1965) introduced
+evolution strategies
+to solve o"
+John Holland,PERSON,1,,,"proach gained popularity. In the 1960s and 1970s, John Holland (1975) championed genetic algorithms, both as a u"
+Holland,GPE,1,,,"method to expand our understanding of adaptation (Holland, 1995)."
+Langton,GPE,1,,,"The
+artificial life
+movement (Langton, 1995) took this idea one step further, viewing t"
+Conwy Lloyd Morgan,ORG,1,,,"he chapter was proposed roughly simultaneously by Conwy Lloyd Morgan (1896) and James (Baldwin, 1896). Computer simula"
+James,PERSON,1,,,"y simultaneously by Conwy Lloyd Morgan (1896) and James (Baldwin, 1896). Computer simulations have helped"
+Baldwin,GPE,1,,,"taneously by Conwy Lloyd Morgan (1896) and James (Baldwin, 1896). Computer simulations have helped to clari"
+Ackley,ORG,1,,,"larify its implications (Hinton and Nowlan, 1987; Ackley and Littman, 1991; Morgan and Griffiths, 2015). S"
+Littman,ORG,1,,,"implications (Hinton and Nowlan, 1987; Ackley and Littman, 1991; Morgan and Griffiths, 2015). Smith and Sza"
+Szathmáry,GPE,1,,,"man, 1991; Morgan and Griffiths, 2015). Smith and Szathmáry (1999), Ridley (2004), and Carroll (2007) provide"
+Ridley,ORG,1,,,"and Griffiths, 2015). Smith and Szathmáry (1999), Ridley (2004), and Carroll (2007) provide general backgr"
+Carroll,ORG,1,,,"). Smith and Szathmáry (1999), Ridley (2004), and Carroll (2007) provide general background on evolution."
+Oppacher,ORG,1,,,"c algorithms are slower to converge (O’Reilly and Oppacher, 1994; Mitchell
+et al."
+Juels,GPE,1,,,", 1996; Juels and Wattenberg, 1996; Baluja, 1997). Such finding"
+Wattenberg,GPE,1,,,", 1996; Juels and Wattenberg, 1996; Baluja, 1997). Such findings are not unive"
+Baluja,PERSON,1,,,", 1996; Juels and Wattenberg, 1996; Baluja, 1997). Such findings are not universally popular"
+GA,ORG,1,,,"h findings are not universally popular within the GA community, but recent attempts within that commun"
+Rabani,PERSON,1,,," systems
+may also explain the performance of GAs (Rabani
+et al.,
+1998). There are some impressive practica"
+Renner,ORG,1,,,"esign (Lohn
+et al.,
+2001), computer-aided design (Renner and Ekart, 2003), climate models (Stanislawska
+et"
+Ekart,ORG,1,,,"
+et al.,
+2001), computer-aided design (Renner and Ekart, 2003), climate models (Stanislawska
+et al.,
+2015"
+Stanislawska,ORG,1,,," design (Renner and Ekart, 2003), climate models (Stanislawska
+et al.,
+2015), medicine (Ghaheri
+et al.,
+2015), a"
+Ghaheri,PERSON,1,,,"ate models (Stanislawska
+et al.,
+2015), medicine (Ghaheri
+et al.,
+2015), and designing deep neural networks"
+John Koza,PERSON,1,,,"in genetic programming was spurred by the work of John Koza (1992, 1994), but it goes back at least to early "
+Friedberg,ORG,1,,,"t least to early experiments with machine code by Friedberg (1958) and with finite-state automata by Fogel
+et"
+Fogel,PERSON,2,,,"riedberg (1958) and with finite-state automata by Fogel
+et al."
+IEEE Transactions on Evolutionary Computation,ORG,1,,,"The journals
+Evolutionary Computation
+and
+IEEE Transactions on Evolutionary Computation
+cover evolutionary algorithms; articles are also "
+Complex Systems,ORG,1,,,"olutionary algorithms; articles are also found in
+Complex Systems
+,
+Adaptive Behavior,
+and
+Artificial Life."
+Adaptive Behavior,ORG,1,,,"hms; articles are also found in
+Complex Systems
+,
+Adaptive Behavior,
+and
+Artificial Life."
+Artificial Life,ORG,1,,,"found in
+Complex Systems
+,
+Adaptive Behavior,
+and
+Artificial Life."
+GECCO,ORG,1,,,"
+Genetic and Evolutionary
+Computation Conference
+(GECCO). Good overview texts on genetic algorithms inclu"
+Langdon,GPE,1,,,"s include those by Mitchell (1996), Fogel (2000), Langdon and Poli (2002), and Poli
+et al."
+Poli,PERSON,2,,,"ose by Mitchell (1996), Fogel (2000), Langdon and Poli (2002), and Poli
+et al."
+"Shakey (Fikes
+et al.",WORK_OF_ART,1,,,"projects that used planning techniques, including Shakey (Fikes
+et al.,
+1972) and F
+REDDY
+(Michie, 1972). The problems r"
+"F
+REDDY",PRODUCT,1,,,"niques, including Shakey (Fikes
+et al.,
+1972) and F
+REDDY
+(Michie, 1972). The problems received more attent"
+Planning and Acting,WORK_OF_ART,1,,,"cation of McDermott’s (1978a) influential article
+Planning and Acting."
+"Slagle’s S
+AINT",PERSON,1,,,"e explicit use of
+AND–OR
+trees seems to have been Slagle’s S
+AINT
+program for symbolic integration, mentioned in
+Ch"
+RAPH,ORG,1,,,"oduced a search algorithm similar to A
+ND
+-O
+R
+-G
+RAPH
+-S
+EARCH
+. The algorithm was further developed by"
+Martelli,PERSON,1,,,ds optimal solutions. AO* was further improved by Martelli and Montanari (1973).
+Montanari,ORG,1,,,lutions. AO* was further improved by Martelli and Montanari (1973).
+AO,ORG,1,,,AO* is a top-down algorithm; a bottom-up generalizat
+McAllester,PERSON,2,,,"*LD, for A* Lightest Derivation (Felzenszwalb and McAllester, 2007). Interest in
+AND–OR
+search underwent a rev"
+Torras,PERSON,1,,,"orithms for finding cyclic solutions (Jimenez and Torras, 2000; Hansen and Zilberstein, 2001) and new tech"
+Zilberstein,GPE,1,,,"c solutions (Jimenez and Torras, 2000; Hansen and Zilberstein, 2001) and new techniques inspired by dynamic pro"
+Erdmann,ORG,1,,,"e of probabilistic uncertainty (see
+Chapter 16
+). Erdmann and Mason (1988) studied the problem of robotic m"
+Mason,ORG,1,,,"listic uncertainty (see
+Chapter 16
+). Erdmann and Mason (1988) studied the problem of robotic manipulatio"
+Wiegley,PERSON,1,,,"conveyor belt, use the same algorithmic insights (Wiegley
+et al.,
+1996)."
+Nourbakhsh,PERSON,1,,,ally observable search problems by Genesereth and Nourbakhsh (1993). Additional work was done on sensorless pr
+Goldman,ORG,1,,,"s problems in the logic-based planning community (Goldman and Boddy, 1996; Smith and Weld, 1998). This work"
+Boddy,GPE,1,,,"n the logic-based planning community (Goldman and Boddy, 1996; Smith and Weld, 1998). This work has empha"
+Weld,PERSON,1,,,"ing community (Goldman and Boddy, 1996; Smith and Weld, 1998). This work has emphasized concise represen"
+Geffner,PERSON,1,,,"ef states, as explained in
+Chapter 11
+. Bonet and Geffner (2000) introduced the first effective heuristics "
+Bryce,PERSON,1,,,"cs for belief-state search; these were refined by Bryce
+et al."
+Kurien,PERSON,1,,," state, was studied in the planning literature by Kurien
+et al."
+Hierholzer,PERSON,1,,,outgoing edges) was solved by an algorithm due to Hierholzer (1873).
+Yannakakis,GPE,1,,, for exploring a general graph. Papadimitriou and Yannakakis (1991) examined the question of finding paths to 
+Lifelong Planning A*,ORG,1,,,"l the plan. Incremental search algorithms such as Lifelong Planning A* (Koenig
+et al."
+Likhachev,ORG,1,,,", 2004) and D* Lite (Koenig and Likhachev, 2002) deal with this situation."
+Koenig,GPE,1,,,"e uninformed case than simple depth-first search (Koenig, 2000). Dasgupta
+et al."
+Pemberton,ORG,1,,,"d updating within the known portion of the graph (Pemberton and Korf, 1992). As yet, there is no good theoret"
+Bulitko,PERSON,1,,, when using heuristic information. Sturtevant and Bulitko (2016) provide an analysis of some pitfalls that 
+singleton,GPE,1,,,"Chapter 3
+as searching in a belief-state space of singleton belief states."
+Hughes,ORG,1,,,"turns to the starting point is only about 0.3405 (Hughes, 1995)."
+CSP,ORG,68,,," is called a
+constraint satisfaction problem
+, or
+CSP
+."
+"rel
+〉",PERSON,1,,,". Each constraint
+C
+j
+consists of a pair 〈
+scope, rel
+〉, where
+scope
+is a tuple of variables that partici"
+Suppose,PERSON,1,,,"5.1.1
+Example problem: Map coloring
+Suppose that, having tired of Romania, we are looking at "
+MAX,ORG,28,,,The first row is labeled MAX (x) and has one square box with nine empty square
+MIN,ORG,20,,,The second row is labeled MIN (o) and has nine boxes. The boxes in the second r
+TERMINAL,ORG,2,,,ows continue this way and the last row is labeled TERMINAL. The last row shows three boxes representing thre
+"x. Row 2: o, o",PERSON,1,,,"d box is filled row-wise as follows. Row 1: x, o, x. Row 2: o, o, x. Row 3: x, x, o. The third box has a utility v"
+x. Row,PERSON,1,,,"row-wise as follows. Row 1: x, o, x. Row 2: o, o, x. Row 3: x, x, o. The third box has a utility value of "
+x. Row 2:,PERSON,1,,,"d box is filled row-wise as follows. Row 1: x, o, x. Row 2: blank, x, blank. Row 3: x, o, o."
+SA,ORG,33,,,"Here we are using abbreviations;
+SA ≠ WA
+is a shortcut for 〈(
+SA, WA
+),
+SA
+≠
+WA
+〉, wh"
+"F
++",PRODUCT,3,,,"0 minutes to install an axle, so we write
+A
+x
+l
+e
+F
++ 10
+≤
+W
+h
+e
+e
+l
+R
+F
+;
+A
+x
+l
+e
+F
++ 10
+≤
+W
+h
+e
+e
+l
+L"
+"F
++
+1
+≤
+N",PRODUCT,1,,," (1 minute, but not represented yet):
+W
+h
+e
+e
+l
+R
+F
++
+1
+≤
+N
+u
+t
+s
+R
+F
+;
+N
+u
+t
+s
+R
+F
++
+2
+≤
+C
+a
+p
+R
+F
+;
+W
+h
+e
+e"
+"F
++
+2
+≤",PRODUCT,1,,,"yet):
+W
+h
+e
+e
+l
+R
+F
++
+1
+≤
+N
+u
+t
+s
+R
+F
+;
+N
+u
+t
+s
+R
+F
++
+2
+≤
+C
+a
+p
+R
+F
+;
+W
+h
+e
+e
+l
+L
+F
++
+1
+≤
+N
+u
+t
+s
+L
+F
+;
+N
+u"
+"U, W",ORG,1,,,"resented as the global constraint
+Alldiff
+(
+F, T, U, W, R, O
+). The addition constraints on the four col"
+Node B,PERSON,1,,,"s each have three child nodes that are MAX nodes. Node B is marked 3, C is marked 2, and D is marked 2. Th"
+NARY,GPE,2,,,"NARY
+asks you to prove, every finite-domain constraint"
+COP,ORG,1,,,"a problem a
+constrained optimization problem
+, or COP. Linear programs are one class of COPs."
+5.2Constraint Propagation: Inference,ORG,1,,,"5.2Constraint Propagation: Inference in CSPs
+5.2
+Constraint Propagation: Inference in "
+Constraint Propagation: Inference,ORG,1,,,"5.2Constraint Propagation: Inference in CSPs
+5.2
+Constraint Propagation: Inference in CSPs
+An atomic state-space search algorithm ma"
+〈,PERSON,1,,,"igits. We can write this constraint explicitly as
+〈
+(
+X
+,
+Y
+),{(0,0), (1,1), (2,4), (3,9)}
+〉
+."
+AC-3,PRODUCT,4,,,"algorithm for enforcing arc consistency is called AC-3 (see
+Figure 5.3
+). To make every variable arc-con"
+the AC-3 algorithm,ORG,1,,,"ure 5.3
+). To make every variable arc-consistent, the AC-3 algorithm maintains a queue of arcs to consider. Initially,"
+AC-3,GPE,4,,,"now the whole CSP has no consistent solution, and AC-3 can immediately return failure. Otherwise, we kee"
+Computing 2-consistency,PERSON,1,,,"sistency checking is mostly an empirical science. Computing 2-consistency is common, and 3-consistency less common."
+Sudoku,ORG,6,,,lues (as in the cryptarithmetic problem above and Sudoku puzzles below). One simple form of inconsistency 
+"F
+1",PRODUCT,3,,,"ing problem, let’s suppose there are two flights,
+F
+1
+and
+F
+2
+, for which the planes have capacities 16"
+"F
+2",PRODUCT,3,,,"lem, let’s suppose there are two flights,
+F
+1
+and
+F
+2
+, for which the planes have capacities 165 and 38"
+"F
+1
++
+F
+2",PRODUCT,1,,,"t the two flights together must carry 420 people:
+F
+1
++
+F
+2
+= 420. Propagating bounds constraints, we reduce "
+Sudoku,PERSON,5,,,The Sudoku puzzles that appear in newspapers and puzzle book
+E6,PRODUCT,5,,,"ly the AC-3 algorithm directly. Consider variable
+E6
+from
+Figure 5.4(a)
+—the empty square between the "
+I6,PRODUCT,1,,,"e are left with only the value 7 in the domain of
+I6."
+max node,PERSON,1,,," and MIN nodes, respectively. At the top level, a max node is present and the level is labeled Player. The n"
+Player,PERSON,2,,,"l, a max node is present and the level is labeled Player. The next level is labeled Opponent and a MIN nod"
+Opponent,ORG,2,,,evel is labeled Player. The next level is labeled Opponent and a MIN node is labeled m. The nodes in the pla
+PC-2,ORG,2,,,"ku puzzles. Slightly harder ones can be solved by PC-2, but at a greater computational cost: there are 2"
+Knights d 4,ORG,1,,,"8. Queen, g 2. Rooks, ""a"" 8 and h 8. Bishop, c 8. Knights d 4 and g 8. Pawns, ""a"" 7, b 7, c 7, d 6, e 5, f 7, g"
+Knight c3.,PERSON,1,,,"1. Queen, d 1. Rooks, ""a"" 1 and h 1. Bishop, c 4. Knight c3. Pawns, ""a"" 2, b 2, c 2, e 4, f 2, and h 2. Part ("
+OMAIN,ORG,2,,,"ons S
+ELECT
+-U
+NASSIGNED
+-V
+ARIABLE
+and O
+RDER
+-D
+OMAIN
+-V
+ALUES
+implement the generalpurpose heuristics "
+ALUES,ORG,2,,,"CT
+-U
+NASSIGNED
+-V
+ARIABLE
+and O
+RDER
+-D
+OMAIN
+-V
+ALUES
+implement the generalpurpose heuristics discussed"
+"←
+SELECT-UNASSIGNED-VARIABLE",ORG,1,,,"he backtracking algorithm contains the line
+v
+a
+r
+←
+SELECT-UNASSIGNED-VARIABLE(
+c
+s
+p
+,
+a
+s
+s
+i
+g
+n
+m
+e
+n
+t
+)
+."
+MRV,ORG,7,,," If some variable
+X
+has no legal values left, the MRV heuristic will select
+X
+and failure will be detec"
+MAC,ORG,7,,,"The algorithm called MAC (for
+Maintaining Arc Consistency
+) detects incons"
+Maintaining Arc Consistency,WORK_OF_ART,1,,,"The algorithm called MAC (for
+Maintaining Arc Consistency
+) detects inconsistencies like this. After a vari"
+AC-3,ORG,2,,,"variables that are neighbors of
+X
+i
+. From there, AC-3 does constraint propagation in the usual way, and"
+Tasmania,ORG,6,,,"nstraint. We back up to
+T
+and try a new color for Tasmania! Obviously this is silly—recoloring Tasmania cann"
+Tasmania,GPE,1,,,"e algorithm should backtrack to
+NSW
+and skip over Tasmania. A backjumping algorithm that uses conflict sets "
+←,PERSON,1,,," conflict set for
+X
+i
+as follows:
+c
+o
+n
+f
+(
+X
+i
+)
+←
+c
+o
+n
+f
+(
+X
+i
+)
+∪
+c
+o
+n
+f
+(
+X
+j
+)
+−
+{
+X
+i
+}
+."
+CHANCE,PERSON,2,,,represent MAX and MIN nodes and circles represent CHANCE nodes. The first level of the game tree is labele
+CHANCE,ORG,10,,,t node is a MAX node. The second level is labeled CHANCE and contains many circles. Paths from the node in
+C. Paths,ORG,1,,,"ontains many circles. The first circle is labeled C. Paths from the MIN node labeled 1 by 18, 6 to 5 in the "
+"The M
+IN",WORK_OF_ART,1,,,"×
+Figure 5.9
+The M
+IN
+-C
+ONFLICTS
+local search algorithm for CSPs. The "
+The Structure of Problems,WORK_OF_ART,1,,,"5.5The Structure of Problems
+5.5
+The Structure of Problems
+In this section, we examine ways in which the
+str"
+⋃,PRODUCT,2,,,". If assignment
+S
+i
+is a solution of
+CSP
+i
+, then ⋃
+i
+S
+i
+is a solution of ⋃
+i
+CSP
+i
+. Why is this im"
+DAC,ORG,1,,,"onsistency, called
+directional arc consistency
+or DAC. A CSP is defined to be directional arc-consisten"
+K c,ORG,1,,,"ng positions. King, d 2. Rook d 3. A line labeled K c 3 question mark from Board 1 connects to a circul"
+Board 1,ORG,1,,,Rook d 3. A line labeled K c 3 question mark from Board 1 connects to a circular node. An arrow labeled Ill
+Check,PERSON,1,,,"tions. King, d 2. Rook c 3. Another arrow labeled Check from the second node points to board 4."
+South Australia,GPE,1,,,"ustralia, shown again in
+Figure 5.12(a)
+. Without South Australia, the graph would become a tree, as in
+(b)
+. Fortu"
+S. S,ORG,1,,," constraint graph becomes a tree after removal of
+S. S
+is called a
+cycle cutset
+."
+Universe,ORG,1,,,", this would get us down from the lifetime of the Universe to a few minutes. In the worst case, however,
+c
+c"
+Diophantus,ORG,1,,,"ical and Historical Notes
+The Greek mathematician Diophantus (c. 200–284) presented and solved problems involv"
+= c.,PERSON,1,,,"r the domain of integers for the equation
+ax + by = c."
+linear,ORG,1,,,Systematic methods for solving linear equations by variable elimination were studied by
+Gauss,ORG,1,,,equations by variable elimination were studied by Gauss (1829); the solution of linear inequality constra
+Fourier,PERSON,1,,,ion of linear inequality constraints goes back to Fourier (1827).
+Francis Guthrie,PERSON,1,,,"ored with four or fewer colors) was first made by Francis Guthrie, a student of De Morgan, in 1852. It resisted sol"
+De Morgan,PERSON,1,,,") was first made by Francis Guthrie, a student of De Morgan, in 1852. It resisted solution—despite several pu"
+Appel and,ORG,1,,,"aims to the contrary—until a proof was devised by Appel and Haken (1977) (see the book
+Four Colors Suffice
+(W"
+Haken,PERSON,1,,,"e contrary—until a proof was devised by Appel and Haken (1977) (see the book
+Four Colors Suffice
+(Wilson,"
+Georges Gonthier,PERSON,1,,,"d that part of the proof relied on a computer, so Georges Gonthier (2008), using the C
+OQ
+theorem prover, derived a "
+Appel,PERSON,1,,," C
+OQ
+theorem prover, derived a formal proof that Appel and Haken’s proof program was correct."
+Haken,ORG,1,,,"rem prover, derived a formal proof that Appel and Haken’s proof program was correct."
+Sutherland,GPE,1,,,"e most influential early examples was S
+KETCHPAD
+(Sutherland, 1963), which solved geometric constraints in dia"
+CAD,ORG,1,,,"was the forerunner of modern drawing programs and CAD tools. The identification of CSPs as a
+general
+cl"
+Ugo Montanari,PERSON,1,,,"entification of CSPs as a
+general
+class is due to Ugo Montanari (1974). The reduction of higher-order CSPs to pur"
+Charles Sanders Peirce,PERSON,1,,,"
+) is due originally to the 19th-century logician Charles Sanders Peirce. It was introduced into the CSP literature by Dec"
+Dechter,ORG,7,,,rce. It was introduced into the CSP literature by Dechter (1990b) and was elaborated by Bacchus and van Bee
+Bacchus,ORG,2,,,terature by Dechter (1990b) and was elaborated by Bacchus and van Beek (1998). CSPs with preferences among 
+van Beek,PERSON,4,,,Dechter (1990b) and was elaborated by Bacchus and van Beek (1998). CSPs with preferences among solutions are
+Bistarelli,PERSON,1,,,"tudied widely in the optimization literature; see Bistarelli
+et al."
+Waltz’s,ORG,1,,,onstraint propagation methods were popularized by Waltz’s (1975) success on polyhedral line-labeling proble
+Waltz,PERSON,1,,,"edral line-labeling problems for computer vision. Waltz showed that in many problems, propagation complet"
+Montanari,PERSON,1,,, completely eliminates the need for backtracking. Montanari (1974) introduced the notion of constraint graphs
+Alan Mackworth,PERSON,1,,,raint graphs and propagation by path consistency. Alan Mackworth (1977) proposed the AC-3 algorithm for enforcing 
+Mohr,ORG,1,,," efficient
+arc-consistency algorithm developed by Mohr and Henderson (1986), runs in
+O
+(
+cd
+2
+) worst-ca"
+Henderson,GPE,1,,,"t
+arc-consistency algorithm developed by Mohr and Henderson (1986), runs in
+O
+(
+cd
+2
+) worst-case time but ca"
+Mackworth,ORG,1,,,"r than AC-3 on average cases. The PC-2 algorithm (Mackworth, 1977) achieves path consistency in much the same"
+Haralick,PERSON,2,,,nt and the benefits in terms of search reduction. Haralick and Elliott (1980) favored the minimal forward-ch
+Elliott,PERSON,2,,,nefits in terms of search reduction. Haralick and Elliott (1980) favored the minimal forward-checking algor
+McGregor,PERSON,1,,,"e minimal forward-checking algorithm described by McGregor (1979), whereas Gaschnig (1979) suggested full ar"
+Sabin,PERSON,1,,,iable assignment—an algorithm later called MAC by Sabin and Freuder (1994). The latter paper provides som
+Freuder,PERSON,5,,,gnment—an algorithm later called MAC by Sabin and Freuder (1994). The latter paper provides somewhat convin
+Bessière,ORG,1,,,"orithms can be analyzed, and surveys are given by Bessière (2006) and Barták
+et al."
+Marriott,GPE,1,,,"hin the context of
+constraint logic programming
+. Marriott and Stuckey (1998) provide excellent coverage of "
+Stuckey,GPE,1,,,"xt of
+constraint logic programming
+. Marriott and Stuckey (1998) provide excellent coverage of research in "
+Regin,PERSON,1,,," this area. The
+Alldiff
+constraint was studied by Regin (1994), Stergiou and Walsh (1999), and van Hoeve "
+Stergiou,PERSON,1,,,"e
+Alldiff
+constraint was studied by Regin (1994), Stergiou and Walsh (1999), and van Hoeve (2001). There are"
+Walsh,PERSON,1,,,"straint was studied by Regin (1994), Stergiou and Walsh (1999), and van Hoeve (2001). There are more comp"
+van Hoeve,PERSON,3,,,"d by Regin (1994), Stergiou and Walsh (1999), and van Hoeve (2001). There are more complex inference algorith"
+Katriel,GPE,1,,,"ference algorithms for
+Alldiff
+(see van Hoeve and Katriel, 2006) that propagate more constraints but are mo"
+Van Hentenryck,PERSON,1,,,"incorporated into constraint logic programming by Van Hentenryck
+et al."
+Katriel,PERSON,1,,,f global constraints is provided by van Hoeve and Katriel (2006).
+Simonis,PERSON,1,,,ost widely known CSP and was described as such by Simonis (2005). Agerbeck and Hansen (2008) describe some 
+Agerbeck,PERSON,1,,, CSP and was described as such by Simonis (2005). Agerbeck and Hansen (2008) describe some of the strategies
+C. F. Gauss,PERSON,1,,,"In 1850, C. F. Gauss described a recursive backtracking algorithm for "
+Schachzeitung,PERSON,1,,,"h had been published in the German chess magazine
+Schachzeitung
+in 1848. Gauss called his method
+Tatonniren,
+deri"
+Tatonniren,PERSON,1,,,"ne
+Schachzeitung
+in 1848. Gauss called his method
+Tatonniren,
+derived from the French word
+tâtonner
+—to grope "
+R. J. Walker,PERSON,1,,,"cording to Donald Knuth (personal communication), R. J. Walker introduced the term
+backtrack
+in the 1950s. Walke"
+Golomb and Baumert,PERSON,1,,,"t to find all solutions to the 13-queens problem. Golomb and Baumert (1965) formulated, with examples, the general cla"
+Reingold,PERSON,1,,,oduced what we call the MRV heuristic. Bitner and Reingold (1975) provided an influential survey of backtrac
+Brelaz,ORG,1,,,an influential survey of backtracking techniques. Brelaz (1979) used the degree heuristic as a tiebreaker 
+John Gaschnig,PERSON,1,,,"The basic backjumping method is due to John Gaschnig (1977, 1979). Kondrak and van Beek (1997) showed "
+Kondrak,PERSON,2,,,"ping method is due to John Gaschnig (1977, 1979). Kondrak and van Beek (1997) showed that this algorithm is"
+Prosser,PRODUCT,1,,,ing. Conflict-directed backjumping was devised by Prosser (1993). Dechter (1990a) introduced graph-based ba
+Frost,PERSON,2,,,"s a function of the constraint graph (Dechter and Frost, 2002)."
+Stallman and Sussman,ORG,2,,,"ntelligent backtracking was developed early on by Stallman and Sussman (1977). Their technique of
+dependency-directed ba"
+de Kleer,PERSON,1,,,e connection between the two areas is analyzed by de Kleer (1989).
+Kondrak,GPE,1,,, be combined with conflict-directed back-jumping; Kondrak and van Beek (1997) present a hybrid algorithm th
+Ginsberg,PERSON,1,,,"The method of
+dynamic backtracking
+(Ginsberg, 1993) retains successful partial assignments fro"
+SAT,ORG,2,,,niques and others are used to create an efficient SAT solver. Empirical studies of several randomized b
+Gomes,PERSON,2,,,"eral randomized backtracking methods were done by Gomes
+et al."
+Van Beek,PERSON,1,,,(2000) and Gomes and Selman (2001). Van Beek (2006) surveys backtracking.
+Gu,PERSON,2,,,"The min-conflicts heuristic was first proposed by Gu (1989) and was developed independently by Minton
+"
+Peter Cheeseman,PERSON,1,,,"ure and prevalence of “easy” and “hard” problems. Peter Cheeseman
+et al."
+Konolige,PERSON,1,,,Konolige (1994) showed that local search is inferior to ba
+Pinkas,ORG,1,,,"bined local search and inference, such as that by Pinkas and Dechter (1995). Hoos and Tsang (2006) provide"
+Hoos,PERSON,2,,,"rence, such as that by Pinkas and Dechter (1995). Hoos and Tsang (2006) provide a survey of local search"
+Tsang,PERSON,2,,,ch as that by Pinkas and Dechter (1995). Hoos and Tsang (2006) provide a survey of local search technique
+acyclic hypergraphs,PERSON,1,,,"acktracking. A similar result, with extensions to acyclic hypergraphs, was developed in the database community (Beeri
+e"
+Beeri,PERSON,1,,,"rgraphs, was developed in the database community (Beeri
+et al."
+Bayardo,PERSON,1,,,", 1983). Bayardo and Miranker (1994) present an algorithm for tree"
+Miranker,ORG,1,,,", 1983). Bayardo and Miranker (1994) present an algorithm for tree-structured C"
+Robertson,PERSON,1,,," tree width was introduced by the graph theorists Robertson and Seymour (1986). Dechter and Pearl (1987, 1989"
+Seymour,PERSON,1,,,"s introduced by the graph theorists Robertson and Seymour (1986). Dechter and Pearl (1987, 1989), building "
+Bayardo,ORG,1,,,"The R
+ELSAT
+algorithm of Bayardo and Schrag (1997) combined constraint learning an"
+Schrag,GPE,1,,,"The R
+ELSAT
+algorithm of Bayardo and Schrag (1997) combined constraint learning and backjumpi"
+Mateescu,PERSON,1,,,"oth CSPs and probabilistic reasoning (Dechter and Mateescu, 2007). Brown
+et al."
+Collin,GPE,1,,," problem since 2000, and good coverage elsewhere (Collin
+et al.,
+1999; Pearce
+et al.,
+2008)."
+Hooker,ORG,1,,,"rform better on typical instances of problems. As Hooker (1995) points out, we need to be careful to disti"
+Lecoutre,ORG,1,,," by Apt (2003), Dechter (2003), Tsang (1993), and Lecoutre (2009), and the collection by Rossi
+et al."
+Rossi,GPE,1,,,"1993), and Lecoutre (2009), and the collection by Rossi
+et al."
+Cooper,PERSON,1,,,(2010). Carbonnel and Cooper (2016) survey tractable classes of CSPs. Kondrak 
+van Run,PERSON,1,,,"f backtracking search algorithms, and Bacchus and van Run (1995) give a more empirical survey. Constraint p"
+Fruhwirth,PERSON,1,,,ramming is covered in the books by Apt (2003) and Fruhwirth and Abdennadher (2003). Papers on constraint sati
+Artificial Intelligence,PERSON,1,,,"rs on constraint satisfaction appear regularly in
+Artificial Intelligence
+and in the specialist journal
+Constraints;
+the la"
+International SAT Competition,EVENT,1,,,he latest SAT solvers are described in the annual International SAT Competition. The primary conference venue is the Internationa
+the International Conference on Principles and Practice of Constraint Programming,ORG,1,,," SAT Competition. The primary conference venue is the International Conference on Principles and Practice of Constraint Programming, often called
+CP."
+Sulawesi,PERSON,1,,," of the world have tree-structured maps, although Sulawesi comes close."
