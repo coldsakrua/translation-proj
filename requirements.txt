@@ -1,16 +1,16 @@
-t-ragx
+# t-ragx
 
 python-dotenv>=0.5.1
 
-torch==2.1.1
-torchvision
-torchaudio
+# torch==2.1.1
+# torchvision
+# torchaudio
 
 #For elastic search
 elasticsearch>=7.9.1
 
-transformers>=4.38.1
-llama-cpp-python==0.2.54
+# transformers>=4.38.1
+# llama-cpp-python==0.2.54
 openai~=1.13.3
 unbabel-comet>=2.2.1
 

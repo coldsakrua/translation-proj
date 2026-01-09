@@ -17,7 +17,9 @@ TARGET_COL = "target_text"  # 目标文本（中文）
 ID_KEY = SOURCE_COL  # 以源文本列为基准生成ID
 
 # 1. 连接ES
-es = Elasticsearch(ES_HOST, timeout=30)
+es = Elasticsearch(ES_HOST, 
+        # timeout=30,
+        )
 if not es.ping():
     raise Exception("无法连接到Elasticsearch，请检查容器是否运行")
 

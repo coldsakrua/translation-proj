@@ -22,13 +22,31 @@ def glossary_to_text(glossary):
     return out_text
 
 
-def trans_mem_to_text(trans_mem: list, source_lang_code='ja', target_lang_code='en'):
+def trans_mem_to_text(trans_mem: list, source_lang_code='zh', target_lang_code='en'):
     if len(trans_mem) < 1:
         return ""
     out_text = "Examples translations:\n"
     count = 1
     for row in trans_mem:
-        out_text += f""" {count}. \n   {row[source_lang_code]}\n   {row[target_lang_code]}\n"""
+        # 检查字段是否存在，如果不存在则尝试使用数据中实际存在的字段
+        # 这可以处理不同语言对的翻译记忆（如日英、中英等）
+        if source_lang_code not in row or target_lang_code not in row:
+            # 尝试找到数据中实际存在的语言字段
+            available_langs = [k for k in row.keys() if k in ['ja', 'en', 'zh', 'zh-cn', 'zh-tw'] and isinstance(row[k], str)]
+            if len(available_langs) >= 2:
+                # 使用前两个可用的语言字段
+                actual_source = available_langs[0]
+                actual_target = available_langs[1]
+                source_text = row.get(actual_source, '')
+                target_text = row.get(actual_target, '')
+            else:
+                # 如果找不到合适的字段，跳过这条记录
+                continue
+        else:
+            source_text = row[source_lang_code]
+            target_text = row[target_lang_code]
+        
+        out_text += f""" {count}. \n   {source_text}\n   {target_text}\n"""
         count += 1
     return out_text
 

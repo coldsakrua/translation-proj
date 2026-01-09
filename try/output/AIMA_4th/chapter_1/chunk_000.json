@@ -1,0 +1,92 @@
+{
+  "chunk_id": 0,
+  "source_text": "Artificial Intelligence: A Modern Approach\nArtificial Intelligence\nA Modern Approach\nFourth Edition\nGlobal Edition\nStuart J. Russell and Peter Norvig\nContributing writers:\nMing-Wei Chang\nJacob Devlin\nAnca Dragan\nDavid Forsyth\nIan Goodfellow\nJitendra M. Malik\nVikash Mansinghka\nJudea Pearl\nMichael Wooldridge",
+  "translation": "《人工智能：一种现代方法》\n人工智能\n一种现代方法\n第四版\n全球版\n斯图尔特·J·拉塞尔 彼得·诺维格 著\n参与撰写者：\nMing-Wei Chang\n雅各布·德夫林\n安卡·德拉根\nDavid Forsyth\nIan Goodfellow\nJitendra M. Malik\nVikash Mansinghka\n朱迪亚·珀尔\nMichael Wooldridge",
+  "quality_score": 8.0,
+  "glossary": [
+    {
+      "src": "Artificial Intelligence",
+      "type": "Terminology",
+      "context_meaning": "The term 'Artificial Intelligence' refers to the field of computer science that focuses on creating machines capable of intelligent behavior similar to that of humans. It encompasses a wide range of technologies, including machine learning, natural language processing, and robotics, aimed at simulating human intelligence in machines.",
+      "suggested_trans": "人工智能",
+      "rationale": "The suggested translation matches the provided translation memory, which aligns with the standard translation of 'Artificial Intelligence' into Chinese. The context in which 'Artificial Intelligence' is used in the source text indicates a broad field of study and development, therefore, the translation '人工智能' is appropriate as it captures the essence of intelligence that is artificially created, rather than innate or natural."
+    },
+    {
+      "src": "Stuart J. Russell",
+      "type": "person",
+      "context_meaning": "Co-author of the book 'Artificial Intelligence: A Modern Approach' and a prominent figure in the field of Artificial Intelligence.",
+      "suggested_trans": "斯图尔特·J·拉塞尔",
+      "rationale": "The name 'Stuart J. Russell' is a proper noun referring to a person. Translating it into Chinese, we use the standard transliteration method for English names into Chinese. 'Stuart' is transliterated as '斯图尔特', 'J.' is kept as is since it is an initial, and 'Russell' is transliterated as '拉塞尔'. The name is well-known in the field of Artificial Intelligence, and maintaining the transliteration helps to preserve the identity and recognition of the individual."
+    },
+    {
+      "src": "Peter Norvig",
+      "type": "proper_noun",
+      "context_meaning": "Peter Norvig is a prominent computer scientist and author, best known for his work in the field of artificial intelligence. In the context of the provided source text, he is the co-author of the book 'Artificial Intelligence: A Modern Approach' along with Stuart J. Russell.",
+      "suggested_trans": "彼得·诺维格",
+      "rationale": "The term 'Peter Norvig' is a proper noun representing a specific individual's name. Since it's a personal name, the translation should retain its original form to accurately represent the person. The suggested translation '彼得·诺维格' is a phonetic rendering of the name in Chinese, which is a common practice for translating personal names. The context meaning is provided to ensure that the person's professional background is understood, which is important when translating names of notable individuals."
+    },
+    {
+      "src": "Ming-Wei Chang",
+      "type": "Person Name",
+      "context_meaning": "Ming-Wei Chang is listed as a contributing writer to the book 'Artificial Intelligence: A Modern Approach' by Stuart J. Russell and Peter Norvig.",
+      "suggested_trans": "Ming-Wei Chang",
+      "rationale": "As 'Ming-Wei Chang' is a personal name, it should be retained in its original form to respect the individual's identity and to maintain consistency with the source material. Personal names are generally not translated in academic or professional contexts unless the person has a known preference for a specific translation or transliteration. In this case, no such preference is indicated, and the name appears in the context of a list of contributing authors, so the original name is the most appropriate and respectful representation."
+    },
+    {
+      "src": "Jacob Devlin",
+      "type": "proper noun",
+      "context_meaning": "Jacob Devlin is a contributing writer to the fourth edition of 'Artificial Intelligence: A Modern Approach' by Stuart J. Russell and Peter Norvig.",
+      "suggested_trans": "雅各布·德夫林",
+      "rationale": "The term 'Jacob Devlin' is a proper noun referring to an individual's name. Given that it is a personal name, the most appropriate translation approach is to transliterate the name into the target language while preserving its pronunciation and meaning. In this case, the name 'Jacob Devlin' is translated to '雅各布·德夫林' in Chinese, which reflects a phonetic rendering that would be recognizable to speakers of the target language as the same name."
+    },
+    {
+      "src": "Anca Dragan",
+      "type": "Proper Noun",
+      "context_meaning": "Anca Dragan is a contributing writer to the book 'Artificial Intelligence: A Modern Approach', a comprehensive textbook on the field of artificial intelligence.",
+      "suggested_trans": "安卡·德拉根",
+      "rationale": "The term 'Anca Dragan' is a proper noun, specifically a personal name. As such, it should be translated into the target language while preserving its proper noun status. The suggested translation '安卡·德拉根' is a phonetic rendering of the name in Chinese, maintaining its integrity as a personal identifier. Proper nouns, especially names, are typically not translated in a literal sense but rather adapted to the phonetic structure of the target language to ensure they are recognizable and respectful of the individual's identity."
+    },
+    {
+      "src": "David Forsyth",
+      "type": "proper noun",
+      "context_meaning": "David Forsyth is a contributing writer to the book 'Artificial Intelligence: A Modern Approach', which suggests that he is likely a professional with expertise in the field of artificial intelligence, possibly a researcher, academic, or practitioner.",
+      "suggested_trans": "David Forsyth",
+      "rationale": "Since 'David Forsyth' is a proper noun and specifically a person's name, it should not be translated but rather kept in its original form. Names are unique identifiers and do not have direct translations. The context of being a contributing writer to a book on artificial intelligence implies that this is a professional name and should be consistently used as such across any language or medium."
+    },
+    {
+      "src": "Ian Goodfellow",
+      "type": "name",
+      "context_meaning": "Ian Goodfellow is a leading figure in the field of artificial intelligence, particularly known for his work on Generative Adversarial Networks (GANs). Within the context of 'Artificial Intelligence: A Modern Approach', his name is listed among the contributing writers, indicating his significant contributions to the book and the field.",
+      "suggested_trans": "Ian Goodfellow",
+      "rationale": "As 'Ian Goodfellow' is a proper noun and a personal name, it does not require translation. Names are unique identifiers and are typically retained in their original form across different languages to maintain authenticity and recognition. The context provided confirms his identity as a notable contributor to AI literature, further supporting the decision to keep the name untranslated."
+    },
+    {
+      "src": "Jitendra M. Malik",
+      "type": "proper noun",
+      "context_meaning": "Jitendra M. Malik is a notable figure in the field of computer vision and artificial intelligence. He is a professor at the University of California, Berkeley, and a member of the National Academy of Engineering and the National Academy of Sciences. He has made significant contributions to the understanding of visual perception in both humans and machines. In the context of the book 'Artificial Intelligence: A Modern Approach', his name appears as a contributing writer, indicating his involvement in the development of the content within the book.",
+      "suggested_trans": "Jitendra M. Malik",
+      "rationale": "The term 'Jitendra M. Malik' is a proper noun referring to a specific individual. As it is a name, it does not require translation. Proper nouns typically retain their original form across languages to preserve their identity and to avoid confusion. The context provided by the book title and the list of contributing writers highlights his role and expertise in the field of artificial intelligence, which further supports the decision to keep the name untranslated."
+    },
+    {
+      "src": "Vikash Mansinghka",
+      "type": "Proper Noun",
+      "context_meaning": "Vikash Mansinghka is a contributing writer to the book 'Artificial Intelligence: A Modern Approach', specifically mentioned in the list of contributing authors.",
+      "suggested_trans": "Vikash Mansinghka",
+      "rationale": "Since 'Vikash Mansinghka' is a personal name and a proper noun, it should not be translated but rather transliterated to maintain its original form and pronunciation in any target language. This approach respects the identity of the individual and ensures that the name is recognized and referred to consistently in different languages."
+    },
+    {
+      "src": "Judea Pearl",
+      "type": "person",
+      "context_meaning": "Judea Pearl is a computer scientist and professor who is a contributor to the fourth edition of 'Artificial Intelligence: A Modern Approach' by Stuart J. Russell and Peter Norvig.",
+      "suggested_trans": "朱迪亚·珀尔",
+      "rationale": "The term 'Judea Pearl' refers to a person's name. In the context provided, it refers to a contributor to the book 'Artificial Intelligence: A Modern Approach'. Since the name is a proper noun, the translation should maintain the individual's name in Chinese, which is '朱迪亚·珀尔'. The 'type' field is identified as 'person' because we are dealing with an individual's name. The 'context_meaning' provides additional clarity that Judea Pearl is a computer scientist and professor who contributed to the book mentioned, which is essential for understanding the context in which the name appears."
+    },
+    {
+      "src": "Michael Wooldridge",
+      "suggested_trans": "Michael Wooldridge",
+      "type": "Unknown",
+      "context_meaning": "Insufficient context from retrieval.",
+      "rationale": "Fallback due to error: Error code: 429 - {'error': {'message': 'Your account org-53b90bcb8bfd4d26972c183473a44b25<ak-f7h7bymm8nw111ak7cgi> request reached organization max RPM: 20, please try again after 1 seconds', 'type': 'rate_limit_reached_error'}}"
+    }
+  ]
+}

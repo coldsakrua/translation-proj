@@ -9,7 +9,7 @@ try:
     es = Elasticsearch(
         "http://localhost:9200",
         # 增加超时配置，避免连接失败
-        timeout=30,
+        # timeout=30,
         max_retries=3,
         retry_on_timeout=True
     )
