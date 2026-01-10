@@ -8,18 +8,22 @@ class TranslationTask:
         self.thread_id = None  # 这里的 thread_id 存储的是 LangGraph 的 config dict
 
     def run(self, input_data: dict):
+        """
+        完整执行翻译流程，不中断（用于 chapter 级别审查模式）
+        """
         # 构造正确的 LangGraph config 字典
-        # 修正点：确保 thread_id 是字符串或整数
         t_id = str(input_data.get("thread_id", "default"))
         self.thread_id = {"configurable": {"thread_id": t_id}}
 
-        # 运行直到 interrupt_before 标记的节点
+        # 完整执行工作流，不中断
         for event in self.app.stream(input_data, self.thread_id):
-            pass
+            # 打印正在执行的节点，方便调试
+            for node_name in event.keys():
+                print(f"   [Flow] Reached Node: {node_name}")
 
-        # 获取当前状态快照的值
+        # 获取最终状态快照
         state_snapshot = self.app.get_state(self.thread_id)
-        self.logger.info(f"Glossary generated for thread {t_id}, waiting for review")
+        self.logger.info(f"Translation completed for thread {t_id}")
         
         return state_snapshot.values  # 返回 dict 类型的数据
 

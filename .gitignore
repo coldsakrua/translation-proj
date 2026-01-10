@@ -2,7 +2,7 @@
 __pycache__/
 *.py[cod]
 *$py.class
-
+try/core/get_llm.py
 # C extensions
 *.so
 

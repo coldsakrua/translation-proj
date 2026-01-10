@@ -22,8 +22,9 @@ def build_translation_agent():
     workflow.add_edge("analyze_style", "extract_terms")
     workflow.add_edge("extract_terms", "search_terms")
 
-    # --- 人机协作点 1: 术语确认 ---
-    # 在 search_terms 结束后，我们希望暂停，让人类检查 glossary
+    # --- 工作流连接（已改为chapter级别审查，不再逐chunk中断） ---
+    # 原逻辑：在 search_terms 结束后暂停，让人类检查 glossary（已注释）
+    # 新逻辑：完整执行所有chunk，chapter完成后统一审查术语表
     workflow.add_edge("search_terms", "translate")
 
     workflow.add_edge("translate", "evaluate")
@@ -65,11 +66,10 @@ def build_translation_agent():
     )
     workflow.add_edge("persistence", END)
 
-    # 编译 Graph，开启 checkpointer 用于人机交互
+    # 编译 Graph，开启 checkpointer（不再中断，完整执行）
     memory = MemorySaver()
     app = workflow.compile(
-        checkpointer=memory, 
-        interrupt_after=["search_terms"] 
-        # interrupt_before=["translate"] # ★ 关键：在进入翻译前暂停，等待人工修改 glossary
+        checkpointer=memory
+        # 已移除 interrupt_after，改为 chapter 级别统一审查
     )
     return app

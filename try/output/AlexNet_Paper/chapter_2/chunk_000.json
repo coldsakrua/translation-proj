@@ -1,0 +1,29 @@
+{
+  "chunk_id": 0,
+  "source_text": "",
+  "translation": "由于您提供的原文部分缺失，我无法提供具体的翻译。如果您能提供需要翻译的原文，我将会按照您的要求进行翻译。以下是我将遵循的步骤：\n\n1. **理解与解构**：分析您提供的句子结构。\n2. **多版本生成**：\n   - 直译版 (Literal)\n   - 意译版 (Liberal)\n3. **融合与润色**：结合最佳表达，生成最终译文。\n\n同时，我会严格遵守风格要求，使用术语表，并保留文化负载词和俚语的原意。请提供原文，以便我能够继续进行翻译工作。",
+  "quality_score": 8.0,
+  "glossary": [
+    {
+      "src": "命名实体",
+      "type": "term",
+      "context_meaning": "命名实体指的是在自然语言处理（NLP）中，识别和分类文本中具有特定意义和指代的词或短语，如人名、地名、组织名等。",
+      "suggested_trans": "Named Entity",
+      "rationale": "根据提供的翻译记忆，'Named Entity Recognition'翻译为'命名实体识别'，因此简化后的术语'命名实体'可以翻译为'Named Entity'。"
+    },
+    {
+      "src": "领域术语",
+      "type": "term_translation",
+      "context_meaning": "A term specific to a particular field or domain, used to describe concepts or entities unique to that domain.",
+      "suggested_trans": "Domain-Specific Terminology",
+      "rationale": "The term '领域术语' is most accurately translated as 'Domain-Specific Terminology' to convey the meaning of terms that are specific to a certain field or domain. This translation captures the essence of the term and is consistent with the retrieved translation memory example where 'Domain Adaptation' is translated as '领域自适应', indicating a preference for domain-specific translations."
+    },
+    {
+      "src": "文化负载词/俚语",
+      "type": "术语",
+      "context_meaning": "指带有特定文化背景和含义的词语或俚语，这些词汇在翻译时需要特别注意，以确保准确传达原意和文化内涵。",
+      "suggested_trans": "文化负载词: 文化负载词\n俚语: 俚语",
+      "rationale": "根据检索到的翻译记忆，'文化负载词'和'俚语'这两个术语在中文里分别对应'文化负载词'和'俚语'。这两个翻译能够准确表达原术语的含义，同时保留了原文的文化内涵和特点。"
+    }
+  ]
+}

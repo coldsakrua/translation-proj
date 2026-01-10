@@ -1,0 +1,40 @@
+{
+  "chunk_id": 0,
+  "source_text": "You Only Look Once: Unified, Real-Time Object Detection",
+  "translation": "YOLO：统一的实时目标检测",
+  "quality_score": 9.0,
+  "glossary": [
+    {
+      "src": "You Only Look Once",
+      "type": "Acronym",
+      "context_meaning": "在计算机视觉领域，'You Only Look Once'是指一种实时目标检测算法，简称YOLO。",
+      "suggested_trans": "YOLO",
+      "rationale": "因为'You Only Look Once'是一个缩写词，所以保留了原词YOLO。在中文中，我们通常也直接使用YOLO来指代这种算法。",
+      "human_reviewed": true,
+      "human_modified": false,
+      "reviewed_at": "2026-01-11T02:16:52.334157"
+    },
+    {
+      "src": "Unified",
+      "type": "Terminology",
+      "context_meaning": "在“你只看一眼：统一的，实时目标检测”这句话中，“Unified”指的是将不同的目标检测算法整合成一个整体，实现统一的、实时的目标检测功能。",
+      "suggested_trans": "统一的",
+      "rationale": "在这里，“Unified”作为形容词，表示“统一的”或“整合的”，用于描述目标检测算法的整合性。因此，将其翻译为“统一的”是合适的。",
+      "human_reviewed": true,
+      "human_modified": false,
+      "reviewed_at": "2026-01-11T02:16:52.334157"
+    },
+    {
+      "src": "Real-Time Object Detection",
+      "type": "Terminology",
+      "context_meaning": "在上下文中，'Real-Time Object Detection'指的是一种能够实时识别和定位图像或视频中物体的技术。",
+      "suggested_trans": "实时目标检测",
+      "rationale": "根据提供的检索记忆，'Object Detection'可以翻译为'目标检测'。'Real-Time'直接翻译为'实时'。因此，'Real-Time Object Detection'翻译为'实时目标检测'。",
+      "human_reviewed": true,
+      "human_modified": false,
+      "reviewed_at": "2026-01-11T02:16:52.334157"
+    }
+  ],
+  "human_reviewed": true,
+  "reviewed_glossary_count": 3
+}

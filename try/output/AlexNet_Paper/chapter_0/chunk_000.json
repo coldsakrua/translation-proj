@@ -1,0 +1,36 @@
+{
+  "chunk_id": 0,
+  "source_text": "ImageNet Classification with Deep Convolutional Neural Networks",
+  "translation": "ImageNet 分类任务中的深度卷积神经网络应用",
+  "quality_score": 9.0,
+  "glossary": [
+    {
+      "src": "ImageNet",
+      "type": "term",
+      "context_meaning": "ImageNet is a large visual database designed for use in visual object recognition software research, which includes millions of images organized according to the WordNet hierarchy. The term refers to the dataset that is widely used in machine learning, specifically in the field of computer vision, for training and evaluating the performance of algorithms on image classification tasks.",
+      "suggested_trans": "ImageNet",
+      "rationale": "The term 'ImageNet' is a proper noun and a specific dataset name, which should not be translated but rather kept as is across different languages. The translation memory did not provide any relevant translations because the term is a proper noun and universally recognized in the field of machine learning and computer vision."
+    },
+    {
+      "src": "Named Entity Recognition (NER): ImageNet is a large image recognition dataset.",
+      "type": "translation",
+      "context_meaning": "The term 'Named Entity Recognition (NER)' is used to describe the process of identifying and classifying specific entities within text, which in this context is applied to the ImageNet dataset. ImageNet is a dataset widely used for training and evaluating image recognition algorithms, particularly deep convolutional neural networks.",
+      "suggested_trans": "命名实体识别 (NER)：ImageNet 是一个大型的图像识别数据集。",
+      "rationale": "The translation suggested is based on the retrieved translation memory which provides the translations for each component of the sentence. 'Named Entity Recognition' is translated to '命名实体识别', 'Image Recognition' to '图像识别', and 'Data Set' to '数据集'. The context meaning is provided to explain the significance of each term within the sentence and its application."
+    },
+    {
+      "src": "Deep Convolutional Neural Networks",
+      "type": "term",
+      "context_meaning": "This term refers to a type of artificial neural network with multiple layers of convolutional layers, which are specifically designed to process and analyze visual imagery. These networks are particularly effective for tasks such as image classification, object detection, and image segmentation.",
+      "suggested_trans": "深度卷积神经网络",
+      "rationale": "The term 'Deep Convolutional Neural Networks' is a compound term that combines 'Deep' from 'Deep Neural Network' and 'Convolutional Neural Network'. The word 'Deep' is translated as '深度', and 'Convolutional Neural Network' is translated as '卷积神经网络'. Therefore, the translation '深度卷积神经网络' accurately captures the essence of the source term and maintains the integrity of the original concept. The context of the source text, 'ImageNet Classification with Deep Convolutional Neural Networks', further supports the translation as it implies a focus on image-related tasks, which is where deep convolutional neural networks excel."
+    },
+    {
+      "src": "领域术语 (Domain Terms): 深度卷积神经网络是深度学习中的一种网络结构。",
+      "type": "Machine Learning",
+      "context_meaning": "This sentence introduces domain-specific terminology related to deep learning, specifically the concept of deep convolutional neural networks as a type of network architecture within deep learning.",
+      "suggested_trans": "领域术语: 深度卷积神经网络是深度学习中的一种网络结构。",
+      "rationale": "The translation maintains the original meaning by directly translating '领域术语' as 'field terms', which is appropriate for domain-specific vocabulary. '深度卷积神经网络' is translated as 'deep convolutional neural networks', which accurately reflects the technical term. '是深度学习中的一种网络结构' is translated as 'is a type of network structure in deep learning', which keeps the context of the sentence intact and conveys the relationship between deep convolutional neural networks and deep learning."
+    }
+  ]
+}

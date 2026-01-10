@@ -1,0 +1,141 @@
+{
+  "chunk_id": 1,
+  "source_text": "1. Introduction Humans glance at an image and instantly know what objects are in the image, where they are, and how they interact. The human visual system is fast and accurate, allowing us to perform complex tasks like driving with little conscious thought. Fast, accurate algorithms for object detection would allow computers to drive cars without specialized sensors, enable assistive devices to convey real-time scene information to human users, and unlock the potential for general purpose, responsive robotic systems. Current detection systems repurpose classifiers to perform detection. To detect an object, these systems take a classifier for that object and evaluate it at various locations and scales in a test image. Systems like deformable parts models (DPM) use a sliding window approach where the classifier is run at evenly spaced locations over the entire image [10]. More recent approaches like R-CNN use region proposal methods to first generate potential bounding boxes in an image and then run a classifier on these proposed boxes. After classification, post-processing is used to refine the bounding boxes, eliminate duplicate detections, and rescore the boxes based on other objects in the scene [13]. These complex pipelines are slow and hard to optimize because each individual component must be trained separately. We reframe object detection as a single regression problem, straight from image pixels to bounding box coordinates and class probabilities. Using our system, you only look once (YOLO) at an image to predict what objects are present and where they are. YOLO is refreshingly simple: see Figure 1. A single convolutional network simultaneously predicts multiple bounding boxes and class probabilities for those boxes. YOLO trains on full images and directly optimizes detection performance. This unified model has several benefits over traditional methods of object detection. Figure 1: The YOLO Detection System. Processing images with YOLO is simple and straightforward. Our system (1) resizes the input image to 448 × 448, (2) runs a single convolutional network on the image, and (3) thresholds the resulting detections by the model’s confidence. First, YOLO is extremely fast. Since we frame detection as a regression problem we don’t need a complex pipeline. We simply run our neural network on a new image at test time to predict detections. Our base network runs at 45 frames per second with no batch processing on a Titan X GPU and a fast version runs at more than 150 fps. This means we can process streaming video in real-time with less than 25 milliseconds of latency. Furthermore, YOLO achieves more than twice the mean average precision of other real-time systems. For a demo of our system running in real-time on a webcam please see our project webpage: http://pjreddie.com/yolo/. Second, YOLO reasons globally about the image when making predictions. Unlike sliding window and region proposal-based techniques, YOLO sees the entire image during training and test time so it implicitly encodes contextual information about classes as well as their appearance. Fast R-CNN, a top detection method [14], mistakes background patches in an image for objects because it can’t see the larger context. YOLO makes less than half the number of background errors compared to Fast R-CNN. Third, YOLO learns generalizable representations of objects. When trained on natural images and tested on artwork, YOLO outperforms top detection methods like DPM and R-CNN by a wide margin. Since YOLO is highly generalizable it is less likely to break down when applied to new domains or unexpected inputs. YOLO still lags behind state-of-the-art detection systems in accuracy. While it can quickly identify objects in images it struggles to precisely localize some objects, especially small ones. We examine these tradeoffs further in our experiments. All of our training and testing code is open source. A variety of pretrained models are also available to download.",
+  "translation": "1. 引言\n人类只需瞥一眼图像，就能立即知道图像中有哪些物体、它们的位置以及它们之间的互动。人类视觉系统快速且准确，使我们能够像驾驶这样的复杂任务几乎不需要有意识的思考。快速、准确的目标检测算法将使计算机能够在没有专用传感器的情况下驾驶汽车，使辅助设备能够向人类用户传达实时场景信息，并解锁通用、响应性强的机器人系统的潜力。当前的检测系统将分类器重新用于执行检测。为了检测一个物体，这些系统需要一个针对该物体的分类器，并在测试图像的各个位置和尺度上对其进行评估。像可变形部件模型（DPM）这样的系统使用滑动窗口方法，在整张图像上均匀间隔的位置运行分类器。更近期的方法，如R-CNN，使用区域提议方法首先在图像中生成潜在的边界框，然后对这些提议的框运行分类器。分类后，使用后处理来细化边界框、消除重复检测，并根据场景中的其他物体重新评分。这些复杂的流程速度慢且难以优化，因为每个单独的组件必须单独训练。我们将目标检测重新定义为一个单一的回归问题，直接从图像像素到边界框坐标和类别概率。使用我们的系统，你只需在图像上“看一次”（YOLO），就能预测图像中存在哪些物体以及它们的位置。YOLO非常简单：见图1。一个卷积网络同时预测多个边界框和这些框的类别概率。YOLO在完整图像上训练，并直接优化检测性能。这个统一的模型比传统的目标检测方法具有几个优势。图1: YOLO检测系统。使用YOLO处理图像简单直接。我们的系统（1）将输入图像调整为448×448，（2）在图像上运行一个卷积网络，（3）通过模型的置信度阈值来筛选结果。首先，YOLO速度极快。由于我们将检测框架为回归问题，我们不需要复杂的流程。我们只需在测试时将神经网络应用于新图像以预测检测。我们的基础网络在Titan X GPU上以每秒45帧的速度运行，无需批处理，而快速版本的速度超过150 fps。这意味着我们可以实时处理视频流，延迟不到25毫秒。此外，YOLO的均值平均精度是其他实时系统的两倍多。有关我们系统在网络摄像头上实时运行的演示，请访问我们的项目网页：http://pjreddie.com/yolo/。其次，YOLO在进行预测时全局考虑图像。与基于滑动窗口和区域提议的技术不同，YOLO在训练和测试时都能看到整个图像，因此它隐式地编码了关于类别及其外观的上下文信息。快速R-CNN，一种顶级检测方法，会将图像中的背景补丁误认为物体，因为它看不到更大的上下文。与快速R-CNN相比，YOLO的背景错误数量不到一半。第三，YOLO学习了可泛化的物体表示。当在自然图像上训练并在艺术作品上测试时，YOLO的性能远远超过DPM和R-CNN等顶级检测方法。由于YOLO高度可泛化，因此在应用于新领域或意外输入时不太可能崩溃。YOLO在准确性方面仍落后于最先进的检测系统。尽管它可以快速识别图像中的物体，但在精确定位某些物体，特别是小型物体方面存在困难。我们在实验中进一步探讨了这些权衡。我们所有的训练和测试代码都是开源的。还有各种预训练模型可供下载。",
+  "quality_score": 9.0,
+  "glossary": [
+    {
+      "src": "object detection",
+      "type": "Terminology",
+      "context_meaning": "在本文中，'object detection'指的是一种用于识别和定位图像中特定物体的新方法。YOLO算法通过一个单一的神经网络直接从完整图像中预测边界框和类别概率，以实现对物体的检测。",
+      "suggested_trans": "目标检测",
+      "rationale": "根据检索到的翻译记忆，'Object Detection'被翻译为'目标检测'，这是一种标准的行业术语。因此，我建议将'object detection'翻译为'目标检测'，这符合中文行业术语的标准和习惯用法。",
+      "human_reviewed": true,
+      "human_modified": false,
+      "reviewed_at": "2026-01-11T02:18:18.563750"
+    },
+    {
+      "src": "deformable parts models",
+      "type": "Terminology",
+      "context_meaning": "在计算机视觉领域，可变形部件模型是一种用于目标检测的算法。它通过在测试图像中不同位置和尺度上评估分类器来检测对象。",
+      "suggested_trans": "可变形部件模型",
+      "rationale": "直接将'deformable'翻译为'可变形'，'parts'翻译为'部件'，'models'翻译为'模型'，组合起来得到'可变形部件模型'。这个翻译准确地反映了原文中'deformable parts models'的意思，并且符合计算机视觉领域的专业术语。",
+      "human_reviewed": true,
+      "human_modified": false,
+      "reviewed_at": "2026-01-11T02:20:17.337805"
+    },
+    {
+      "src": "DPM",
+      "type": "Acronym",
+      "context_meaning": "在上下文中，DPM指的是一种对象检测方法，全称为Deformable Parts Model（可变形部件模型）。它是一种基于部件的检测算法，通过建模对象的不同部分和它们之间的关系来提高检测性能。",
+      "suggested_trans": "可变形部件模型",
+      "rationale": "由于DPM是一个特定的技术术语和缩写，直接翻译成中文更能准确传达其含义。在计算机视觉领域，DPM是广泛认可的缩写，代表Deformable Parts Model（可变形部件模型），因此在这里提供中文解释是合适的。",
+      "human_reviewed": true,
+      "human_modified": false,
+      "reviewed_at": "2026-01-11T02:18:18.563750"
+    },
+    {
+      "src": "R-CNN",
+      "type": "Acronym",
+      "context_meaning": "在上下文中，R-CNN指的是一种用于物体识别和检测的计算机视觉算法。",
+      "suggested_trans": "R-CNN",
+      "rationale": "R-CNN是一个缩写词，是'Region-based Convolutional Neural Network'的缩写，因此在翻译时保持原样。由于它是一个特定的技术术语，并且在中文文献和技术社区中也常常直接使用原词，因此不需要翻译成中文。",
+      "human_reviewed": true,
+      "human_modified": false,
+      "reviewed_at": "2026-01-11T02:18:18.563750"
+    },
+    {
+      "src": "region proposal methods",
+      "type": "Terminology",
+      "context_meaning": "在目标检测领域，指的是先在图像中生成可能包含目标的区域（bounding boxes），然后对这些区域应用分类器进行检测的方法。",
+      "suggested_trans": "区域提议方法",
+      "rationale": "将'region proposal methods'翻译为'区域提议方法'，是因为“region proposal”在计算机视觉领域中通常被翻译为“区域提议”，而“methods”则表示这是一系列方法或技术。因此，整个词组的翻译既符合术语习惯，也准确表达了原文概念。",
+      "human_reviewed": true,
+      "human_modified": false,
+      "reviewed_at": "2026-01-11T02:20:17.337805"
+    },
+    {
+      "src": "bounding boxes",
+      "type": "Terminology",
+      "context_meaning": "在对象检测领域，'bounding boxes'指的是用来界定和识别图像中对象位置的矩形框，它通常包含对象的边缘，用以确定对象的空间位置和范围。",
+      "suggested_trans": "边界框",
+      "rationale": "术语'bounding boxes'直接翻译为'边界框'，因为这种矩形框确实界定了图像中对象的空间边界。在计算机视觉和图像识别领域中，'边界框'是一个常见且被广泛接受的术语。",
+      "human_reviewed": true,
+      "human_modified": false,
+      "reviewed_at": "2026-01-11T02:18:18.563750"
+    },
+    {
+      "src": "YOLO",
+      "type": "Acronym",
+      "context_meaning": "YOLO是'You Only Look Once'的缩写，指的是一种用于目标检测的算法。在文中，YOLO被描述为一种新的物体检测方法，它将物体检测问题作为一个回归问题来处理，直接从整张图像中预测边界框和类别概率，使得整个检测流程可以作为一个单一网络进行优化。YOLO算法因其速度快而著名，基础模型可以实时处理图像，速度为每秒45帧，而更小的版本Fast YOLO甚至可以处理每秒155帧。",
+      "suggested_trans": "YOLO",
+      "rationale": "保存原有缩写即可，不需要再多翻译了",
+      "original_suggested_trans": "YOLO（你只观察一次）",
+      "human_reviewed": true,
+      "human_modified": true,
+      "reviewed_at": "2026-01-11T02:18:18.563750"
+    },
+    {
+      "src": "convolutional network",
+      "type": "Terminology",
+      "context_meaning": "在上文中提到的“convolutional network”指的是用于图像识别和对象检测的卷积神经网络。它通过模拟人类视觉系统的方式，对图像进行处理和识别，从而实现对图像中物体的快速和准确检测。",
+      "suggested_trans": "卷积网络",
+      "rationale": "根据检索到的翻译记忆，'Convolutional Neural Network'被翻译为'卷积神经网络'。因此，'convolutional network'的合适翻译是'卷积网络'。这个翻译既符合专业术语的标准，也与上下文中提到的卷积神经网络的概念相符合。",
+      "human_reviewed": true,
+      "human_modified": false,
+      "reviewed_at": "2026-01-11T02:20:17.337805"
+    },
+    {
+      "src": "mean average precision",
+      "type": "Terminology",
+      "context_meaning": "在计算机视觉和机器学习领域，特别是在目标检测任务中，用于衡量模型性能的一个重要指标。它综合考虑了模型的查准率（precision）和查全率（recall），通过计算模型识别出的目标与实际目标之间的匹配程度，来衡量模型的整体性能。",
+      "suggested_trans": "平均精度均值",
+      "rationale": "根据检索到的翻译记忆，'Precision'可以翻译为'查准率'或'准确率'，'Mean'可以翻译为'平均'。结合上下文，'mean average precision'指的是一种衡量模型性能的指标，因此将其翻译为'平均精度均值'，既符合术语的准确性，也便于理解。",
+      "human_reviewed": true,
+      "human_modified": false,
+      "reviewed_at": "2026-01-11T02:20:17.337805"
+    },
+    {
+      "src": "Fast R-CNN",
+      "type": "Terminology",
+      "context_meaning": "Fast R-CNN是一种对象检测算法，它是R-CNN算法的改进版，通过引入区域提议网络（Region Proposal Network, RPN）来提高检测速度。",
+      "suggested_trans": "快速R-CNN",
+      "rationale": "由于'Fast R-CNN'是一个专有名词，我们将其翻译为'快速R-CNN'。'Fast'在此上下文中表示算法的速度提升，因此翻译为'快速'；'R-CNN'保持不变，因为这是一个特定的算法名称。",
+      "human_reviewed": true,
+      "human_modified": false,
+      "reviewed_at": "2026-01-11T02:20:17.337805"
+    },
+    {
+      "src": "natural images",
+      "type": "Terminology",
+      "context_meaning": "在文中，'natural images'指的是自然界中真实拍摄的图像，通常包含多种物体和场景。",
+      "suggested_trans": "自然图像",
+      "rationale": "在中文中，'natural'常用来表示自然界的、非人为的，而'images'对应的中文是'图像'。因此，将'natural images'翻译为'自然图像'是合适的。这个翻译能够准确地传达原文中的意思，即指那些自然世界中未经人为加工或修改的图像。",
+      "human_reviewed": true,
+      "human_modified": false,
+      "reviewed_at": "2026-01-11T02:20:17.337805"
+    },
+    {
+      "src": "DPM",
+      "type": "Acronym",
+      "context_meaning": "在上下文中，DPM指的是一种对象检测方法，全称为Deformable Parts Model（可变形部件模型）。它是一种基于部件的检测算法，通过建模对象的不同部分和它们之间的关系来提高检测性能。",
+      "suggested_trans": "可变形部件模型",
+      "rationale": "由于DPM是一个特定的技术术语和缩写，直接翻译成中文更能准确传达其含义。在计算机视觉领域，DPM是广泛认可的缩写，代表Deformable Parts Model（可变形部件模型），因此在这里提供中文解释是合适的。",
+      "human_reviewed": true,
+      "human_modified": false,
+      "reviewed_at": "2026-01-11T02:18:18.563750"
+    },
+    {
+      "src": "R-CNN",
+      "type": "Acronym",
+      "context_meaning": "在上下文中，R-CNN指的是一种用于物体识别和检测的计算机视觉算法。",
+      "suggested_trans": "R-CNN",
+      "rationale": "R-CNN是一个缩写词，是'Region-based Convolutional Neural Network'的缩写，因此在翻译时保持原样。由于它是一个特定的技术术语，并且在中文文献和技术社区中也常常直接使用原词，因此不需要翻译成中文。",
+      "human_reviewed": true,
+      "human_modified": false,
+      "reviewed_at": "2026-01-11T02:18:18.563750"
+    }
+  ],
+  "human_reviewed": true,
+  "reviewed_glossary_count": 13
+}

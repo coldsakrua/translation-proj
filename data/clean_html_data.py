@@ -422,9 +422,9 @@ def separate_en_zh_chapters(html_path):
 
 def main():
     """主函数"""
-    html_path = Path(__file__).parent / "1.html"
-    output_en = Path(__file__).parent / "1_en.json"
-    output_zh = Path(__file__).parent / "1_ch.json"
+    html_path = Path(__file__).parent / "3.html"
+    output_en = Path(__file__).parent / "3_en.json"
+    output_zh = Path(__file__).parent / "3_ch.json"
     
     print(f"📖 开始处理 HTML 文件: {html_path}")
     
