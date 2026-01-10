@@ -2,9 +2,12 @@
 __pycache__/
 *.py[cod]
 *$py.class
-try/core/get_llm.py
+*_llm.py
 # C extensions
 *.so
+.cursor
+.github
+.vscode
 
 # Distribution / packaging
 .Python
