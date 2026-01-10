@@ -1,9 +1,20 @@
 {
   "chunk_id": 0,
   "source_text": "",
-  "translation": "由于未提供具体的原文内容，我无法执行翻译任务。请提供一段具体的文本，我将根据您给出的指令进行翻译。",
+  "translation": "YOLOv3: An Evolved Version of the Original YOLO for Accurate Object Detection\n译文：YOLOv3：原始YOLO的进化版本，用于精确的目标检测\n\nYOLOv3 is an improved version of the YOLO (You Only Look Once) object detection algorithm, which is designed to provide more accurate results while maintaining real-time detection performance. The original YOLO algorithm was a breakthrough in the field of object detection, as it treated the task as a single regression problem, predicting bounding boxes and class probabilities for objects in a single pass through the neural network. However, YOLOv3 introduces several enhancements and optimizations to further improve detection accuracy and speed.\n\nIn YOLOv3, the neural network architecture is upgraded to employ a deeper convolutional network, which enables it to capture more detailed features and improve the detection of small objects. Additionally, YOLOv3 introduces a new set of techniques, such as multi-scale feature extraction and anchor boxes, to enhance the model's ability to detect objects of various sizes and aspects.\n\nFurthermore, YOLOv3 incorporates a more sophisticated loss function to refine the bounding box predictions and class probabilities, leading to better overall detection performance. This advanced loss function takes into account not only the location and size of the detected objects but also the confidence scores of the predictions, ensuring that the model is trained to minimize false positives and improve mean average precision (mAP).\n\nIn summary, YOLOv3 represents a significant advancement in the YOLO series, offering a more accurate and efficient solution for real-time object detection tasks. Its improved neural network architecture, multi-scale feature extraction, and enhanced loss function make it a powerful tool for various applications, ranging from surveillance systems to autonomous vehicles.",
   "quality_score": 9.0,
-  "glossary": [],
+  "glossary": [
+    {
+      "src": "目标检测",
+      "type": "Terminology",
+      "context_meaning": "目标检测是一种计算机视觉技术，用于从图像或视频中识别和定位感兴趣的物体。它广泛应用于安防监控、自动驾驶、机器人视觉等领域。",
+      "suggested_trans": "目标检测",
+      "rationale": "根据提供的翻译记忆，'object detection'的中文翻译是'目标检测'。因此，'目标检测'的中文翻译也是'目标检测'，这是一种标准的术语翻译。",
+      "human_reviewed": true,
+      "human_modified": false,
+      "reviewed_at": "2026-01-11T02:46:59.303200"
+    }
+  ],
   "human_reviewed": true,
-  "reviewed_glossary_count": 0
+  "reviewed_glossary_count": 1
 }

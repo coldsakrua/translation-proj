@@ -3,12 +3,19 @@ from utils.logger import setup_logger
 from utils.human import review_glossary
 from utils.book_cut import split_epub_by_chapter
 from utils.book_cut import split_chapter_into_chunks
+from utils.glossary_storage import load_reviewed_glossary
+from utils.memory_storage import (
+    get_previous_chapter_summaries,
+    save_chapter_summary,
+    get_chapter_translation_memory
+)
 from core.state_manager import StateManager
 from core.action_executor import ActionExecutor
 from core.learning_engine import LearningEngine
 from core.base_agent import BaseAgent
 from task import TranslationTask
 from pathlib import Path
+import json
 
 class BaseAgent:
     def __init__(self, name, state_manager, executor, learner, logger, max_steps):
@@ -88,11 +95,12 @@ class BaseAgent:
 
 def collect_chapter_glossaries(book_id, chapter_id, num_chunks):
     """
-    收集整个chapter所有chunk的术语表
+    收集整个chapter所有chunk的术语表和原文
     """
     import json
     import os
     all_glossaries = []
+    chapter_source_text = []  # 收集所有原文，用于显示上下文
     
     for chunk_id in range(num_chunks):
         chunk_file = f"output/{book_id}/chapter_{chapter_id}/chunk_{chunk_id:03d}.json"
@@ -101,6 +109,8 @@ def collect_chapter_glossaries(book_id, chapter_id, num_chunks):
                 data = json.load(f)
                 if 'glossary' in data:
                     all_glossaries.extend(data['glossary'])
+                if 'source_text' in data:
+                    chapter_source_text.append(data['source_text'])
     
     # 去重：相同src的术语只保留一个（保留第一个出现的）
     seen_src = set()
@@ -111,7 +121,10 @@ def collect_chapter_glossaries(book_id, chapter_id, num_chunks):
             seen_src.add(src)
             unique_glossaries.append(term)
     
-    return unique_glossaries
+    # 合并所有原文
+    full_source_text = "\n\n".join(chapter_source_text)
+    
+    return unique_glossaries, full_source_text
 
 def update_chunks_with_reviewed_glossary(book_id, chapter_id, num_chunks, reviewed_glossary):
     """
@@ -173,6 +186,176 @@ def update_chunks_with_reviewed_glossary(book_id, chapter_id, num_chunks, review
     
     print(f"  ✅ 已更新 {updated_count} 个chunk文件中的术语表")
 
+def generate_chapter_summary(book_id, chapter_id, chunks_data):
+    """
+    生成章节摘要
+    
+    Args:
+        book_id: 书籍ID
+        chapter_id: 章节ID
+        chunks_data: chunk数据列表，每个包含source_text和translation
+    """
+    try:
+        from core.get_llm import llm
+        
+        # 收集所有原文和译文
+        source_texts = [chunk.get('source_text', '') for chunk in chunks_data]
+        translations = [chunk.get('translation', '') for chunk in chunks_data]
+        
+        combined_source = "\n\n".join(source_texts[:5])  # 只取前5个chunk
+        combined_translation = "\n\n".join(translations[:5])
+        
+        prompt = f"""
+请为以下章节生成摘要和关键点。
+
+【原文（前5个chunk）】
+{combined_source[:2000]}
+
+【译文（前5个chunk）】
+{combined_translation[:2000]}
+
+请生成：
+1. 章节摘要（100-200字，中文）
+2. 关键点列表（3-5个要点）
+
+请严格按照以下JSON格式输出：
+{{
+    "summary": "章节摘要",
+    "key_points": ["要点1", "要点2", "要点3"]
+}}
+"""
+        try:
+            from pydantic import BaseModel, Field
+            class ChapterSummary(BaseModel):
+                summary: str = Field(description="章节摘要")
+                key_points: list = Field(description="关键点列表")
+            
+            structured_llm = llm.with_structured_output(ChapterSummary)
+            result = structured_llm.invoke(prompt)
+            summary_data = result.model_dump()
+            
+            # 保存摘要
+            save_chapter_summary(
+                book_id=book_id,
+                chapter_id=chapter_id,
+                summary=summary_data['summary'],
+                key_points=summary_data['key_points']
+            )
+            print(f"  ✅ 章节摘要已生成并保存")
+            return summary_data
+        except Exception as e:
+            print(f"  ⚠️  生成章节摘要失败: {e}")
+            return None
+    except Exception as e:
+        print(f"  ⚠️  生成章节摘要时出错: {e}")
+        return None
+
+
+def review_chapter_translation(book_id, chapter_id, num_chunks):
+    """
+    人工审查章节翻译质量
+    
+    Args:
+        book_id: 书籍ID
+        chapter_id: 章节ID
+        num_chunks: chunk数量
+    
+    Returns:
+        审查结果字典，包含 accepted 和 feedback 字段
+    """
+    import json
+    import os
+    
+    print("\n" + "="*60)
+    print(f"📖 章节 {chapter_id} 翻译质量审查")
+    print("="*60)
+    
+    # 收集所有chunk的翻译
+    translations = []
+    for chunk_id in range(num_chunks):
+        chunk_file = f"output/{book_id}/chapter_{chapter_id}/chunk_{chunk_id:03d}.json"
+        if os.path.exists(chunk_file):
+            with open(chunk_file, 'r', encoding='utf-8') as f:
+                data = json.load(f)
+                translations.append({
+                    "chunk_id": chunk_id,
+                    "source_text": data.get('source_text', ''),
+                    "translation": data.get('translation', ''),
+                    "quality_score": data.get('quality_score', 0)
+                })
+    
+    if not translations:
+        print("  ⚠️  未找到翻译结果")
+        return {"accepted": False, "feedback": "未找到翻译结果"}
+    
+    # 显示翻译统计
+    scores = [t['quality_score'] for t in translations if t['quality_score']]
+    avg_score = sum(scores) / len(scores) if scores else 0
+    print(f"\n  📊 翻译统计:")
+    print(f"     - 总chunk数: {len(translations)}")
+    print(f"     - 平均质量分: {avg_score:.1f}/10")
+    
+    # 显示前3个chunk的翻译示例
+    print(f"\n  📝 翻译示例（前3个chunk）:")
+    for i, t in enumerate(translations[:3], 1):
+        print(f"\n  [示例 {i}] Chunk {t['chunk_id']}")
+        print(f"  原文: {t['source_text'][:150]}...")
+        print(f"  译文: {t['translation'][:150]}...")
+        print(f"  质量分: {t['quality_score']}/10")
+    
+    # 询问是否接受
+    print(f"\n" + "-"*60)
+    while True:
+        action = input(
+            "是否接受本章节翻译？ [y=接受 | n=不接受 | s=跳过] > "
+        ).strip().lower()
+        
+        if action == "y" or action == "":
+            print("  ✅ 已接受本章节翻译")
+            return {"accepted": True, "feedback": ""}
+        elif action == "n":
+            feedback = input("  👉 请输入修改意见（可直接回车跳过）: ").strip()
+            return {"accepted": False, "feedback": feedback or "需要修改"}
+        elif action == "s":
+            print("  ⏭️  跳过审查")
+            return {"accepted": True, "feedback": "跳过审查"}
+        else:
+            print("  ⚠️  无效操作，请输入 y/n/s")
+
+
+def load_global_glossary(book_id, current_chapter_id):
+    """
+    加载全局术语表（之前章节的已审查术语）
+    
+    Args:
+        book_id: 书籍ID
+        current_chapter_id: 当前章节ID
+    
+    Returns:
+        全局术语表字典
+    """
+    try:
+        # 加载已审查的术语库
+        reviewed_glossary = load_reviewed_glossary()
+        
+        # 过滤出当前书籍的术语（如果有book_id标记的话）
+        # 或者直接返回所有已审查的术语
+        global_glossary = {}
+        for term_src, term_info in reviewed_glossary.items():
+            if isinstance(term_info, dict):
+                global_glossary[term_src] = term_info
+        
+        if global_glossary:
+            print(f"  📚 加载了 {len(global_glossary)} 个全局术语（来自之前章节）")
+        else:
+            print(f"  ℹ️  暂无全局术语表")
+        
+        return global_glossary
+    except Exception as e:
+        print(f"  ⚠️  加载全局术语表失败: {e}")
+        return {}
+
+
 def run_book_translation(json_path, agent, book_id="AlexNet_Paper"):
     """从 JSON 文件读取章节并翻译（chapter级别人工审查）"""
     chapters = split_epub_by_chapter(json_path)
@@ -188,6 +371,18 @@ def run_book_translation(json_path, agent, book_id="AlexNet_Paper"):
             print(f"  ⚠️  Chapter {chapter_id} is empty, skipping...")
             continue
         
+        # ===== 加载全局术语表和章节上下文 =====
+        print(f"\n  📚 Loading global context...")
+        global_glossary = load_global_glossary(book_id, chapter_id)
+        
+        # 加载之前章节的摘要
+        try:
+            prev_summaries = get_previous_chapter_summaries(book_id, chapter_id)
+            if prev_summaries:
+                print(f"  📝 加载了 {len(prev_summaries)} 个之前章节的摘要")
+        except Exception as e:
+            print(f"  ⚠️  加载章节摘要失败: {e}")
+        
         # 如果内容超过一定长度，仍然需要分割
         chunks = split_chapter_into_chunks(content)
         print(f"  📊 Total chunks: {len(chunks)}")
@@ -195,6 +390,8 @@ def run_book_translation(json_path, agent, book_id="AlexNet_Paper"):
         # ===== 阶段1: 自动翻译所有chunks =====
         print(f"\n  🔄 Phase 1: Auto-translating all chunks...")
         chunk_results = []
+        chunks_data = []  # 用于生成摘要
+        
         for chunk_id, chunk_text in enumerate(chunks):
             task = {
                 "input": {
@@ -203,18 +400,27 @@ def run_book_translation(json_path, agent, book_id="AlexNet_Paper"):
                     "chunk_id": chunk_id,
                     "source_text": chunk_text,
                     "thread_id": f"ch{chapter_id}_ck{chunk_id}",
+                    # 传递全局术语表
+                    "global_glossary": global_glossary,
                 }
             }
             result = agent.run_chunk_auto(task)
             chunk_results.append(result)
+            
+            # 收集chunk数据用于生成摘要
+            if isinstance(result, dict):
+                chunks_data.append({
+                    "source_text": result.get("source_text", chunk_text),
+                    "translation": result.get("combined_translation", "")
+                })
         
         # ===== 阶段2: 收集整个chapter的术语表并人工审查 =====
         print(f"\n  🛑 Phase 2: Human review for Chapter {chapter_id}...")
-        chapter_glossary = collect_chapter_glossaries(book_id, chapter_id, len(chunks))
+        chapter_glossary, chapter_source_text = collect_chapter_glossaries(book_id, chapter_id, len(chunks))
         
         if chapter_glossary:
             print(f"  📋 Found {len(chapter_glossary)} unique terms in this chapter")
-            reviewed_glossary = review_glossary(chapter_glossary)
+            reviewed_glossary = review_glossary(chapter_glossary, chapter_source_text)
             print(f"  ✅ Reviewed glossary: {len(reviewed_glossary)} terms")
             
             # ===== 更新所有chunk文件中的术语表 =====
@@ -223,6 +429,21 @@ def run_book_translation(json_path, agent, book_id="AlexNet_Paper"):
         else:
             print(f"  ℹ️  No terms found in this chapter")
             reviewed_glossary = []
+        
+        # ===== 阶段3: 生成章节摘要 =====
+        print(f"\n  📝 Phase 3: Generating chapter summary...")
+        if chunks_data:
+            generate_chapter_summary(book_id, chapter_id, chunks_data)
+        
+        # ===== 阶段4: 章节翻译质量人工审查 =====
+        print(f"\n  🛑 Phase 4: Chapter translation quality review...")
+        chapter_review_result = review_chapter_translation(book_id, chapter_id, len(chunks))
+        
+        if chapter_review_result and not chapter_review_result.get('accepted', False):
+            print(f"  ⚠️  章节翻译未通过审查，请根据修改意见进行调整")
+            print(f"  💡 修改意见: {chapter_review_result.get('feedback', '无')}")
+        else:
+            print(f"  ✅ 章节翻译已通过审查")
         
         print(f"\n  ✅ Chapter {chapter_id} completed!")
         print("-" * 60 + "\n")

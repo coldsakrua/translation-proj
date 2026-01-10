@@ -1,4 +1,66 @@
-def review_glossary(auto_glossary: list[dict], skip_reviewed: bool = True) -> list[dict]:
+def find_term_context(term: str, source_text: str, context_window: int = 200) -> str:
+    """
+    在原文中找到包含术语的句子上下文
+    
+    Args:
+        term: 要查找的术语
+        source_text: 原文
+        context_window: 上下文窗口大小（字符数）
+    
+    Returns:
+        包含术语的句子或上下文片段
+    """
+    import re
+    
+    # 转义特殊字符
+    term_escaped = re.escape(term)
+    
+    # 查找术语在原文中的位置（不区分大小写）
+    pattern = re.compile(term_escaped, re.IGNORECASE)
+    matches = list(pattern.finditer(source_text))
+    
+    if not matches:
+        return "未找到该术语在原文中的位置"
+    
+    # 取第一个匹配位置
+    match = matches[0]
+    start = match.start()
+    end = match.end()
+    
+    # 向前向后扩展，找到句子边界
+    # 向前查找句子开始（句号、问号、感叹号、换行符）
+    sentence_start = start
+    for i in range(start, max(0, start - context_window), -1):
+        if source_text[i] in '.!?\n':
+            sentence_start = i + 1
+            break
+    else:
+        sentence_start = max(0, start - context_window)
+    
+    # 向后查找句子结束
+    sentence_end = end
+    for i in range(end, min(len(source_text), end + context_window)):
+        if source_text[i] in '.!?\n':
+            sentence_end = i + 1
+            break
+    else:
+        sentence_end = min(len(source_text), end + context_window)
+    
+    # 提取句子并高亮术语
+    sentence = source_text[sentence_start:sentence_end].strip()
+    
+    # 高亮术语（用**标记）
+    highlighted = re.sub(
+        pattern, 
+        lambda m: f"**{m.group(0)}**", 
+        sentence, 
+        flags=re.IGNORECASE
+    )
+    
+    return highlighted
+
+
+def review_glossary(auto_glossary: list[dict], source_text: str = "", skip_reviewed: bool = True) -> list[dict]:
     """
     人工审查术语表
     
@@ -52,10 +114,17 @@ def review_glossary(auto_glossary: list[dict], skip_reviewed: bool = True) -> li
     # 审查新术语
     newly_reviewed = []
     for i, term in enumerate(terms_to_review, 1):
-        print(f"[{i}/{len(terms_to_review)}] 原词: {term['src']}")
+        print(f"\n[{i}/{len(terms_to_review)}] 原词: {term['src']}")
         print(f"    当前译名: {term['suggested_trans']}")
         print(f"    类型: {term.get('type')}")
-        print(f"    理由: {term.get('rationale')}\n")
+        print(f"    理由: {term.get('rationale')}")
+        
+        # 显示术语所在的句子上下文
+        if source_text:
+            context = find_term_context(term['src'], source_text)
+            print(f"\n    📝 所在句子:")
+            print(f"    {context}")
+        print()
 
         action = input(
             "操作: [Enter=接受 | e=编辑 | d=删除] > "

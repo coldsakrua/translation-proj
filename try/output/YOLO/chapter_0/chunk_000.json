@@ -1,7 +1,7 @@
 {
   "chunk_id": 0,
   "source_text": "You Only Look Once: Unified, Real-Time Object Detection",
-  "translation": "YOLO：统一的实时目标检测",
+  "translation": "YOLO: 统一的实时目标检测",
   "quality_score": 9.0,
   "glossary": [
     {
@@ -25,16 +25,26 @@
       "reviewed_at": "2026-01-11T02:16:52.334157"
     },
     {
-      "src": "Real-Time Object Detection",
+      "src": "Real-Time",
       "type": "Terminology",
-      "context_meaning": "在上下文中，'Real-Time Object Detection'指的是一种能够实时识别和定位图像或视频中物体的技术。",
-      "suggested_trans": "实时目标检测",
-      "rationale": "根据提供的检索记忆，'Object Detection'可以翻译为'目标检测'。'Real-Time'直接翻译为'实时'。因此，'Real-Time Object Detection'翻译为'实时目标检测'。",
+      "context_meaning": "在给定的源文本中，'Real-Time'指的是对象检测系统的实时性，即系统能够即时处理和识别图像或视频中的对象。",
+      "suggested_trans": "实时",
+      "rationale": "考虑到检索到的翻译记忆，'Real-Time Object Detection'被翻译为'实时目标检测'，因此可以推断'Real-Time'在此上下文中应翻译为'实时'。'实时'一词在技术领域中常用来描述系统即时响应的能力，符合原文的意图。",
       "human_reviewed": true,
       "human_modified": false,
-      "reviewed_at": "2026-01-11T02:16:52.334157"
+      "reviewed_at": "2026-01-11T02:44:17.154762"
+    },
+    {
+      "src": "Object Detection",
+      "type": "Terminology",
+      "context_meaning": "在计算机视觉领域，指的是识别和定位图像或视频帧中的目标物体的技术。",
+      "suggested_trans": "目标检测",
+      "rationale": "根据检索到的翻译记忆，'Object Detection'已有一个统一的中文翻译，即'目标检测'。该翻译符合计算机视觉领域的专业术语，且已经被广泛接受和使用。",
+      "human_reviewed": true,
+      "human_modified": false,
+      "reviewed_at": "2026-01-11T02:44:17.154762"
     }
   ],
   "human_reviewed": true,
-  "reviewed_glossary_count": 3
+  "reviewed_glossary_count": 4
 }

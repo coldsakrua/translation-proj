@@ -11,7 +11,12 @@ from langgraph.checkpoint.memory import MemorySaver
 
 from .get_llm import llm
 from rag.es_retriever import retrieve_translation_memory
-from .latex_utils import extract_latex, restore_latex, has_latex
+from utils.memory_storage import (
+    get_previous_chapters_memory,
+    get_similar_translation_examples,
+    get_previous_chapter_summaries,
+    get_chapter_translation_memory
+)
 
 from typing import Any
 
@@ -101,11 +106,49 @@ class TranslationState(BaseModel):
 def node_analyze_style(state: TranslationState):
     print("\n🔹 [Phase A] Analyzing Style & Domain...")
     
-    chapter_ctx = "\n".join(state.chapter_memory) if state.chapter_memory else "无"
+    # 加载章节上下文（之前的章节摘要和翻译记忆）
+    chapter_context_parts = []
+    
+    # 1. 加载之前章节的摘要
+    try:
+        prev_summaries = get_previous_chapter_summaries(state.book_id, state.chapter_id)
+        if prev_summaries:
+            summary_text = "\n".join([
+                f"第{summ['chapter_id']}章摘要: {summ['summary']}" 
+                for summ in prev_summaries[-2:]  # 只取最近2章
+            ])
+            chapter_context_parts.append(f"之前章节摘要:\n{summary_text}")
+    except Exception as e:
+        print(f"  ⚠️  加载章节摘要失败: {e}")
+    
+    # 2. 加载当前章节已翻译的chunk（用于上下文）
+    try:
+        current_chapter_memories = get_chapter_translation_memory(
+            state.book_id, state.chapter_id
+        )
+        # 只取当前chunk之前的翻译记忆
+        prev_chunks = [
+            mem for mem in current_chapter_memories 
+            if mem.get('chunk_id', -1) < state.chunk_id
+        ]
+        if prev_chunks:
+            context_text = "\n".join([
+                f"Chunk {mem['chunk_id']}: {mem['source_text'][:100]}... → {mem['translation'][:100]}..."
+                for mem in prev_chunks[-3:]  # 只取最近3个chunk
+            ])
+            chapter_context_parts.append(f"本章已翻译内容:\n{context_text}")
+    except Exception as e:
+        print(f"  ⚠️  加载章节翻译记忆失败: {e}")
+    
+    # 3. 使用state中的chapter_memory（如果有）
+    if state.chapter_memory:
+        chapter_context_parts.append("\n".join(state.chapter_memory))
+    
+    chapter_ctx = "\n\n".join(chapter_context_parts) if chapter_context_parts else "无"
     
     prompt = f"""
     分析以下文本的领域、语体风格和复杂度。
-    参考上文脉络：{chapter_ctx}
+    参考上下文脉络：{chapter_ctx}
     当前文本：{state.source_text}
     
     请严格按照以下 JSON 格式输出：
@@ -143,11 +186,15 @@ def node_extract_terms(state: TranslationState):
     
     prompt = f"""
     你是术语专家。请识别文本中的：
-    1. 命名实体 (NER)
-    2. 领域术语 (Domain Terms)
-    3. 文化负载词/俚语 (Idioms/Slang)
+    1. 命名实体 (NER) - 人名、地名、机构名等
+    2. 领域术语 (Domain Terms) - 专业术语、技术词汇
+    3. 文化负载词/俚语 (Idioms/Slang) - 习语、俚语等
 
-    仅输出需要查证或统一译名的词汇列表。
+    重要要求：
+    - 只识别英文原文中的词汇，不要识别中文
+    - 只输出英文原文词汇，不要输出翻译
+    - 仅输出需要查证或统一译名的词汇列表
+    
     文本：{state.source_text}
     领域：{domain}
     
@@ -155,6 +202,8 @@ def node_extract_terms(state: TranslationState):
     {{
         "terms": ["term1", "term2", "term3"]
     }}
+    
+    注意：terms数组中的每个元素必须是英文原文，不能是中文翻译。
     """
     class RawTerms(BaseModel):
         terms: List[str]
@@ -261,36 +310,117 @@ def node_translate_fusion(state: TranslationState):
     iteration = state.revision_count
     print(f"\n🔸 [Phase 2] Translation Generation (Iter {iteration+1})...")
     
-    # 提取LaTeX公式
-    source_text_cleaned, latex_dict = extract_latex(state.source_text)
-    if latex_dict:
-        print(f"  📐 检测到 {len(latex_dict)} 个LaTeX公式，已提取保护")
+    # 直接使用原文，不再提取LaTeX公式
+    source_text_cleaned = state.source_text
     
-    glossary_text = "\n".join([f"- {t['src']} -> {t['suggested_trans']} ({t['rationale']})" for t in state.glossary])
+    # 加载全局术语表（跨章节）
+    global_glossary_text = ""
+    if state.global_glossary:
+        global_terms = []
+        for term_key, term_info in state.global_glossary.items():
+            if isinstance(term_info, dict):
+                src = term_info.get('src', term_key)
+                trans = term_info.get('suggested_trans', '')
+                if src and trans:
+                    global_terms.append(f"- {src} -> {trans}")
+        if global_terms:
+            global_glossary_text = "\n".join(global_terms[:20])  # 限制数量
+            print(f"  📚 加载了 {len(global_terms)} 个全局术语")
+    
+    # 当前chunk的术语表
+    current_glossary_text = "\n".join([
+        f"- {t['src']} -> {t['suggested_trans']} ({t.get('rationale', '')})" 
+        for t in state.glossary
+    ])
+    
+    # 合并术语表
+    all_glossary_text = ""
+    if global_glossary_text:
+        all_glossary_text += f"【全局术语表（来自之前章节）】\n{global_glossary_text}\n\n"
+    if current_glossary_text:
+        all_glossary_text += f"【当前章节术语表】\n{current_glossary_text}"
+    
     style_str = str(state.style_guide)
     prev_feedback = state.critique or "无"
     
+    # 加载相似的翻译示例（从已翻译的文本中）
+    translation_examples = []
+    try:
+        similar_examples = get_similar_translation_examples(
+            state.source_text, state.book_id, top_k=3
+        )
+        if similar_examples:
+            print(f"  📖 找到 {len(similar_examples)} 个相似的翻译示例")
+            translation_examples = similar_examples
+    except Exception as e:
+        print(f"  ⚠️  加载翻译示例失败: {e}")
+    
+    # 加载之前章节的翻译记忆（用于风格参考）
+    previous_memories = []
+    try:
+        prev_memories = get_previous_chapters_memory(
+            state.book_id, state.chapter_id, top_k=3
+        )
+        if prev_memories:
+            print(f"  📝 加载了 {len(prev_memories)} 个之前章节的翻译记忆")
+            previous_memories = prev_memories
+    except Exception as e:
+        print(f"  ⚠️  加载之前章节记忆失败: {e}")
+    
+    # 构建翻译示例文本
+    examples_text = ""
+    if translation_examples:
+        examples_text = "\n【相似翻译示例（参考这些已翻译的文本对）】\n"
+        for i, ex in enumerate(translation_examples, 1):
+            examples_text += f"\n示例{i}:\n原文: {ex['source_text'][:200]}...\n译文: {ex['translation'][:200]}...\n"
+    
+    if previous_memories:
+        examples_text += "\n【之前章节的翻译风格参考】\n"
+        for i, mem in enumerate(previous_memories, 1):
+            examples_text += f"\n参考{i}:\n原文: {mem['source_text'][:150]}...\n译文: {mem['translation'][:150]}...\n"
+    
+    # 多步骤引导翻译的prompt
     prompt = f"""
-    你是一个高级翻译引擎。请执行以下步骤：
+你是一个高级翻译引擎，需要参考已翻译的文本对来保持翻译风格的一致性。
 
-    1. **理解与解构**：分析句子结构。
-    2. **多版本生成**：
-    - 直译版 (Literal)
-    - 意译版 (Liberal)
-    3. **融合与润色**：结合最佳表达，生成最终译文。
+【翻译步骤】
+请严格按照以下步骤执行：
 
-    [约束条件]
-    - 严格遵守风格：{style_str}
-    - 强制使用术语表：
-    {glossary_text}
+步骤1：理解与解构
+- 仔细分析原文的句子结构、语法关系和语义层次
+- 识别关键信息点和逻辑连接
+- 注意：文本中的 __LATEX_PLACEHOLDER_X__ 是LaTeX公式占位符，请保持原样
+
+步骤2：参考已翻译文本
+- 仔细研究下面提供的已翻译文本对
+- 学习其翻译风格、术语使用和表达方式
+- 确保当前翻译与已有翻译保持风格一致
+
+步骤3：多版本生成（在脑海中）
+- 直译版：尽可能贴近原文结构，保留原文的表达方式
+- 意译版：根据目标语言习惯调整表达，使译文更自然流畅
+- 风格化版：结合已翻译文本的风格，保持全书一致性
+
+步骤4：融合与润色
+- 结合直译和意译的优点
+- 参考已翻译文本的风格和术语使用
+- 确保术语使用与术语表完全一致
+- 生成最终译文
+
+【约束条件】
+- 严格遵守风格：{style_str}
+- 强制使用术语表（必须严格遵守）：
+{all_glossary_text if all_glossary_text else "无术语表"}
     - 上一轮反馈（如有）：{prev_feedback}
-    - 注意：文本中的 __LATEX_PLACEHOLDER_X__ 是LaTeX公式占位符，请保持原样，不要翻译
+    - 注意：如果文本中包含LaTeX公式（如 $...$ 或 $$...$$），请保持原样，不要翻译
 
-    [原文]
-    {source_text_cleaned}
+{examples_text if examples_text else ""}
 
-    请只输出最终融合后的译文。
-    """
+【待翻译原文】
+{source_text_cleaned}
+
+请只输出最终融合后的译文，不要输出中间步骤。
+"""
     
     # 添加重试机制
     max_retries = 3
@@ -299,10 +429,6 @@ def node_translate_fusion(state: TranslationState):
         try:
             response = llm.invoke(prompt)
             translated_text = response.content
-            # 恢复LaTeX公式
-            if latex_dict:
-                translated_text = restore_latex(translated_text, latex_dict)
-                print(f"  ✅ 已恢复LaTeX公式")
             state.combined_translation = translated_text
             state.revision_count += 1
             print("----------------------------", translated_text)
@@ -321,8 +447,7 @@ def node_translate_fusion(state: TranslationState):
                 time.sleep(retry_delay)
             else:
                 print(f"  ❌ 达到最大重试次数，使用原文作为翻译")
-                # 如果失败，至少恢复LaTeX公式
-                state.combined_translation = restore_latex(state.source_text, latex_dict) if latex_dict else state.source_text
+                state.combined_translation = state.source_text
                 state.revision_count += 1
     
     return {
@@ -335,13 +460,11 @@ def node_translate_fusion(state: TranslationState):
 def node_tear_evaluation(state: TranslationState):
     print("\n🔸 [Phase 3] TEaR Evaluation (Back-translation & Scoring)...")
     
-    # 提取LaTeX公式（从翻译结果中）
-    translation_cleaned, latex_dict = extract_latex(state.combined_translation)
-    if latex_dict:
-        print(f"  📐 检测到 {len(latex_dict)} 个LaTeX公式，回译时已提取保护")
+    # 直接使用翻译结果，不再提取LaTeX公式
+    translation_cleaned = state.combined_translation
     
     bt_prompt = f"""Translate the following text back to the source language (English) strictly.
-Note: Text contains __LATEX_PLACEHOLDER_X__ placeholders for LaTeX formulas. Keep these placeholders unchanged, do not translate them.
+Note: If the text contains LaTeX formulas (like $...$ or $$...$$), keep them unchanged, do not translate them.
 
 Text to translate:
 {translation_cleaned}"""
@@ -355,9 +478,6 @@ Text to translate:
         try:
             bt_res = llm.invoke(bt_prompt)
             back_translation = bt_res.content
-            # 恢复LaTeX公式
-            if latex_dict:
-                back_translation = restore_latex(back_translation, latex_dict)
             state.back_translation = back_translation
             break
         except Exception as e:
@@ -462,4 +582,20 @@ def node_persistence(state: TranslationState):
         json.dump(data_to_save, f, ensure_ascii=False, indent=2)
     
     print(f"📂 File saved: {file_path}")
+    
+    # 保存翻译记忆到Memory系统
+    try:
+        from utils.memory_storage import save_translation_memory
+        save_translation_memory(
+            book_id=book_id,
+            chapter_id=chapter_id,
+            chunk_id=chunk_id,
+            source_text=source_text,
+            translation=translation,
+            quality_score=quality_score
+        )
+        print(f"  ✅ 翻译记忆已保存到Memory系统")
+    except Exception as e:
+        print(f"  ⚠️  保存翻译记忆失败: {e}")
+    
     return {"need_human_review": False}

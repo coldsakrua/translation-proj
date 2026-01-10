@@ -1,0 +1,29 @@
+{
+  "chunk_id": 1,
+  "source_text": "2. Unified Detection We unify the separate components of object detection into a single neural network. Our network uses features from the entire image to predict each bounding box. It also predicts all bounding boxes across all classes for an image simultaneously. This means our network reasons globally about the full image and all the objects in the image. The YOLO design enables end-to-end training and real-time speeds while maintaining high average precision. Our system divides the input image into an $S\\times S$ grid. If the center of an object falls into a grid cell, that grid cell is responsible for detecting that object. Each grid cell predicts $B$ bounding boxes and confidence scores for those boxes. These confidence scores reflect how confident the model is that the box contains an object and also how accurate it thinks the box is that it predicts. Formally we define confidence as $\\Pr(\\textrm{Object}) * \\textrm{IOU}_{\\textrm{pred}}^{\\textrm{truth}}$. If no object exists in that cell, the confidence scores should be zero. Otherwise we want the confidence score to equal the intersection over union (IOU) between the predicted box and the ground truth. Each bounding box consists of 5 predictions: $x$, $y$, $w$, $h$, and confidence. The $(x,y)$ coordinates represent the center of the box relative to the bounds of the grid cell. The width and height are predicted relative to the whole image. Finally the confidence prediction represents the IOU between the predicted box and any ground truth box. Each grid cell also predicts $C$ conditional class probabilities, $\\Pr(\\textrm{Class}_i | \\textrm{Object})$. These probabilities are conditioned on the grid cell containing an object. We only predict one set of class probabilities per grid cell, regardless of the number of boxes $B$. At test time we multiply the conditional class probabilities and the individual box confidence predictions, $$\\Pr(\\textrm{Class}_i | \\textrm{Object}) * \\Pr(\\textrm{Object}) * \\textrm{IOU}_{\\textrm{pred}}^{\\textrm{truth}} = \\Pr(\\textrm{Class}_i)*\\textrm{IOU}_{\\textrm{pred}}^{\\textrm{truth}}$$ which gives us class-specific confidence scores for each box. These scores encode both the probability of that class appearing in the box and how well the predicted box fits the object. For evaluating YOLO on Pascal VOC, we use $S=7$, $B=2$. Pascal VOC has 20 labelled classes so $C=20$. Our final prediction is a $7\\times 7 \\times 30$ tensor. The Model. Our system models detection as a regression problem. It divides the image into an $S \\times S$ grid and for each grid cell predicts $B$ bounding boxes, confidence for those boxes, and $C$ class probabilities. These predictions are encoded as an $S \\times S \\times (B*5 + C)$ tensor.",
+  "translation": "2. 统一检测 我们将目标检测的不同组件统一到一个单一的神经网络中。我们的网络使用整个图像的特征来预测每个边界框。它还同时为图像中的所有类别预测所有的边界框。这意味着我们的网络对整个图像和图像中的所有对象进行全局推理。YOLO设计实现了端到端训练和实时速度，同时保持了高平均精度。我们的系统将输入图像划分为一个 $S\\times S$ 网格。如果一个对象的中心落入网格单元，那么该网格单元负责检测该对象。每个网格单元预测 $B$ 个边界框和这些框的置信度分数。这些置信度分数反映了模型对于框包含对象的置信程度，以及它认为预测框的准确性。我们正式定义置信度为 $\\Pr(\\textrm{Object}) * \\textrm{IOU}_{\\textrm{pred}}^{\\textrm{truth}}$。如果该单元中没有对象存在，置信度分数应该是零。否则，我们希望置信度分数等于预测框和真实框之间的交并比（IOU）。每个边界框由5个预测组成：$x$、$y$、$w$、$h$ 和置信度。$(x,y)$ 坐标表示框中心相对于网格单元边界的位置。宽度和高度是相对于整个图像预测的。最后，置信度预测表示预测框和任何真实框之间的IOU。每个网格单元还预测 $C$ 个条件类别概率，$\\Pr(\\textrm{Class}_i | \\textrm{Object})$。这些概率是基于网格单元包含对象的条件。我们每个网格单元只预测一组类别概率，不管边界框的数量如何 $B$。在测试时，我们将条件类别概率和单个框置信度预测相乘，$$\\Pr(\\textrm{Class}_i | \\textrm{Object}) * \\Pr(\\textrm{Object}) * \\textrm{IOU}_{\\textrm{pred}}^{\\textrm{truth}} = \\Pr(\\textrm{Class}_i)*\\textrm{IOU}_{\\textrm{pred}}^{\\textrm{truth}}$$ which gives us class-specific confidence scores for each box. These scores encode both the probability of that class appearing in the box and how well the predicted box fits the object. For evaluating YOLO on Pascal VOC, we use $S=7$, $B=2$. Pascal VOC has 20 labelled classes so $C=20$. Our final prediction is a $7\\times 7 \\times 30$ tensor. The Model. Our system models detection as a regression problem. It divides the image into an $S \\times S$ grid and for each grid cell predicts $B$ bounding boxes, confidence for those boxes, and $C$ class probabilities. These predictions are encoded as an $S \\times S \\times (B*5 + C)$ 张量。",
+  "quality_score": 9.0,
+  "glossary": [
+    {
+      "src": "YOLO",
+      "type": "Acronym",
+      "context_meaning": "YOLO是一个实时目标检测算法，全称You Only Look Once，意味着算法对图像中的目标只进行一次检测。它通过将输入图像划分为SxS的网格，每个网格单元负责检测落入该单元的对象，并预测B个边界框及置信度分数，以此来实现对图像中所有对象的快速检测。",
+      "suggested_trans": "YOLO",
+      "rationale": "YOLO是一个专有名词和缩写词，因此保持原样。在翻译领域，对此类术语通常保持原样或提供相应的中文解释。考虑到YOLO算法的知名度和专业性，直接保留原词，并提供中文解释，以确保翻译的准确性和专业性。"
+    },
+    {
+      "src": "IOU",
+      "type": "Terminology",
+      "context_meaning": "交并比（Intersection over Union），在目标检测中用于衡量预测的边界框与真实边界框之间的相似度。",
+      "suggested_trans": "交并比",
+      "rationale": "IOU是目标检测领域中一个常用术语，表示预测边界框和真实边界框之间的重叠程度。将其翻译为“交并比”可以准确传达其在目标检测任务中的含义，且更符合中文表达习惯。"
+    },
+    {
+      "src": "Pascal VOC",
+      "type": "Acronym",
+      "context_meaning": "Pascal VOC是视觉对象类识别挑战赛（Visual Object Classes Challenge）的缩写，是一个计算机视觉领域内广泛使用的数据集，用于对象检测、图像识别和分割等任务。",
+      "suggested_trans": "Pascal VOC",
+      "rationale": "Pascal VOC作为一个专有名词和缩写，保持原英文形式不变。在中文中，我们通常也会直接引用这个缩写，以表示其特定的含义和背景。"
+    }
+  ]
+}

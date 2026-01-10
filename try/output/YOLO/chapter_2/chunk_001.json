@@ -1,7 +1,7 @@
 {
   "chunk_id": 1,
   "source_text": "1. Introduction Humans glance at an image and instantly know what objects are in the image, where they are, and how they interact. The human visual system is fast and accurate, allowing us to perform complex tasks like driving with little conscious thought. Fast, accurate algorithms for object detection would allow computers to drive cars without specialized sensors, enable assistive devices to convey real-time scene information to human users, and unlock the potential for general purpose, responsive robotic systems. Current detection systems repurpose classifiers to perform detection. To detect an object, these systems take a classifier for that object and evaluate it at various locations and scales in a test image. Systems like deformable parts models (DPM) use a sliding window approach where the classifier is run at evenly spaced locations over the entire image [10]. More recent approaches like R-CNN use region proposal methods to first generate potential bounding boxes in an image and then run a classifier on these proposed boxes. After classification, post-processing is used to refine the bounding boxes, eliminate duplicate detections, and rescore the boxes based on other objects in the scene [13]. These complex pipelines are slow and hard to optimize because each individual component must be trained separately. We reframe object detection as a single regression problem, straight from image pixels to bounding box coordinates and class probabilities. Using our system, you only look once (YOLO) at an image to predict what objects are present and where they are. YOLO is refreshingly simple: see Figure 1. A single convolutional network simultaneously predicts multiple bounding boxes and class probabilities for those boxes. YOLO trains on full images and directly optimizes detection performance. This unified model has several benefits over traditional methods of object detection. Figure 1: The YOLO Detection System. Processing images with YOLO is simple and straightforward. Our system (1) resizes the input image to 448 × 448, (2) runs a single convolutional network on the image, and (3) thresholds the resulting detections by the model’s confidence. First, YOLO is extremely fast. Since we frame detection as a regression problem we don’t need a complex pipeline. We simply run our neural network on a new image at test time to predict detections. Our base network runs at 45 frames per second with no batch processing on a Titan X GPU and a fast version runs at more than 150 fps. This means we can process streaming video in real-time with less than 25 milliseconds of latency. Furthermore, YOLO achieves more than twice the mean average precision of other real-time systems. For a demo of our system running in real-time on a webcam please see our project webpage: http://pjreddie.com/yolo/. Second, YOLO reasons globally about the image when making predictions. Unlike sliding window and region proposal-based techniques, YOLO sees the entire image during training and test time so it implicitly encodes contextual information about classes as well as their appearance. Fast R-CNN, a top detection method [14], mistakes background patches in an image for objects because it can’t see the larger context. YOLO makes less than half the number of background errors compared to Fast R-CNN. Third, YOLO learns generalizable representations of objects. When trained on natural images and tested on artwork, YOLO outperforms top detection methods like DPM and R-CNN by a wide margin. Since YOLO is highly generalizable it is less likely to break down when applied to new domains or unexpected inputs. YOLO still lags behind state-of-the-art detection systems in accuracy. While it can quickly identify objects in images it struggles to precisely localize some objects, especially small ones. We examine these tradeoffs further in our experiments. All of our training and testing code is open source. A variety of pretrained models are also available to download.",
-  "translation": "1. 引言\n人类只需瞥一眼图像，就能立即知道图像中有哪些物体、它们的位置以及它们之间的互动。人类视觉系统快速且准确，使我们能够像驾驶这样的复杂任务几乎不需要有意识的思考。快速、准确的目标检测算法将使计算机能够在没有专用传感器的情况下驾驶汽车，使辅助设备能够向人类用户传达实时场景信息，并解锁通用、响应性强的机器人系统的潜力。当前的检测系统将分类器重新用于执行检测。为了检测一个物体，这些系统需要一个针对该物体的分类器，并在测试图像的各个位置和尺度上对其进行评估。像可变形部件模型（DPM）这样的系统使用滑动窗口方法，在整张图像上均匀间隔的位置运行分类器。更近期的方法，如R-CNN，使用区域提议方法首先在图像中生成潜在的边界框，然后对这些提议的框运行分类器。分类后，使用后处理来细化边界框、消除重复检测，并根据场景中的其他物体重新评分。这些复杂的流程速度慢且难以优化，因为每个单独的组件必须单独训练。我们将目标检测重新定义为一个单一的回归问题，直接从图像像素到边界框坐标和类别概率。使用我们的系统，你只需在图像上“看一次”（YOLO），就能预测图像中存在哪些物体以及它们的位置。YOLO非常简单：见图1。一个卷积网络同时预测多个边界框和这些框的类别概率。YOLO在完整图像上训练，并直接优化检测性能。这个统一的模型比传统的目标检测方法具有几个优势。图1: YOLO检测系统。使用YOLO处理图像简单直接。我们的系统（1）将输入图像调整为448×448，（2）在图像上运行一个卷积网络，（3）通过模型的置信度阈值来筛选结果。首先，YOLO速度极快。由于我们将检测框架为回归问题，我们不需要复杂的流程。我们只需在测试时将神经网络应用于新图像以预测检测。我们的基础网络在Titan X GPU上以每秒45帧的速度运行，无需批处理，而快速版本的速度超过150 fps。这意味着我们可以实时处理视频流，延迟不到25毫秒。此外，YOLO的均值平均精度是其他实时系统的两倍多。有关我们系统在网络摄像头上实时运行的演示，请访问我们的项目网页：http://pjreddie.com/yolo/。其次，YOLO在进行预测时全局考虑图像。与基于滑动窗口和区域提议的技术不同，YOLO在训练和测试时都能看到整个图像，因此它隐式地编码了关于类别及其外观的上下文信息。快速R-CNN，一种顶级检测方法，会将图像中的背景补丁误认为物体，因为它看不到更大的上下文。与快速R-CNN相比，YOLO的背景错误数量不到一半。第三，YOLO学习了可泛化的物体表示。当在自然图像上训练并在艺术作品上测试时，YOLO的性能远远超过DPM和R-CNN等顶级检测方法。由于YOLO高度可泛化，因此在应用于新领域或意外输入时不太可能崩溃。YOLO在准确性方面仍落后于最先进的检测系统。尽管它可以快速识别图像中的物体，但在精确定位某些物体，特别是小型物体方面存在困难。我们在实验中进一步探讨了这些权衡。我们所有的训练和测试代码都是开源的。还有各种预训练模型可供下载。",
+  "translation": "1. 引言 人类只需一瞥图像，就能立即识别出图像中的对象、它们的位置以及它们的交互方式。人类视觉系统快速而准确，使我们能够在几乎没有意识思考的情况下执行驾驶等复杂任务。快速、准确的目标检测算法将使计算机能够在没有专用传感器的情况下驾驶汽车，使辅助设备能够向人类用户传达实时场景信息，并释放出通用、响应性机器人系统的潜力。当前的检测系统将分类器重新用于执行检测。为了检测一个对象，这些系统采用该对象的分类器，并在测试图像的不同位置和尺度上对其进行评估。像可变形部件模型（DPM）这样的系统采用滑动窗口方法，在整个图像上均匀间隔的位置运行分类器[10]。更近期的方法，如R-CNN，使用区域提议方法首先在图像中生成潜在的边界框，然后在这些提议的框上运行分类器。分类后，使用后处理来细化边界框、消除重复检测，并根据场景中的其他对象重新评分[13]。这些复杂的流程慢且难以优化，因为每个单独的组件必须分别进行训练。我们将目标检测重新框架化为一个单一的回归问题，直接从图像像素到边界框坐标和类别概率。使用我们的系统，你只需一次（YOLO）查看图像即可预测图像中存在哪些对象以及它们的位置。YOLO简洁明了：见图1。单个卷积网络同时预测多个边界框和这些框的类别概率。YOLO在完整图像上进行训练，并直接优化检测性能。这种统一的模型比传统的目标检测方法有几个好处。图1：YOLO检测系统。使用YOLO处理图像简单直接。我们的系统（1）将输入图像调整为448×448大小，（2）在图像上运行单个卷积网络，以及（3）通过模型的置信度阈值进行检测结果筛选。首先，YOLO极其快速。由于我们将检测框架化为回归问题，我们不需要复杂的流程。我们只需在测试时在新图像上运行我们的神经网络以预测检测结果。我们的基准网络在没有批量处理的情况下，在Titan X GPU上每秒可以运行45帧，而快速版本运行速度超过150 fps。这意味着我们可以实时处理流媒体视频，延迟不到25毫秒。此外，YOLO的均值平均精度是其他实时系统的两倍多。有关我们的系统在网络摄像头上实时运行的演示，请访问我们的项目网页：http://pjreddie.com/yolo/。其次，YOLO在进行预测时对图像进行全局推理。与基于滑动窗口和区域提议的技术不同，YOLO在训练和测试期间都能看到整个图像，因此它隐式地编码了关于类别及其外观的上下文信息。Fast R-CNN，一个顶级的检测方法[14]，将图像中的背景补丁误识别为对象，因为它无法看到更大的上下文。YOLO的背景错误数量不到Fast R-CNN的一半。第三，YOLO学习对象的泛化表示。在自然图像上训练并在艺术作品上测试时，YOLO的表现明显优于DPM和R-CNN等顶级检测方法。由于YOLO具有高度的泛化性，当应用于新领域或意外输入时，它不太可能崩溃。YOLO在准确性方面仍然落后于最先进的检测系统。尽管它可以快速识别图像中的对象，但在精确定位某些对象，特别是小对象时存在困难。我们在实验中进一步考察了这些权衡。我们所有的训练和测试代码都是开源的。还有各种预训练模型可供下载。",
   "quality_score": 9.0,
   "glossary": [
     {
@@ -13,6 +13,16 @@
       "human_reviewed": true,
       "human_modified": false,
       "reviewed_at": "2026-01-11T02:18:18.563750"
+    },
+    {
+      "src": "classifier",
+      "type": "Terminology",
+      "context_meaning": "在这段文本中，'classifier'指的是一种用于识别和分类图像中对象的算法。它被用来在不同位置和尺度上评估测试图像中的对象。",
+      "suggested_trans": "分类器",
+      "rationale": "根据检索到的翻译记忆，'Classifier' 对应中文为 '分类器'。在这段文本中，'classifier' 是一个术语，用来指代一种算法，因此翻译为 '分类器' 是合适的。",
+      "human_reviewed": true,
+      "human_modified": false,
+      "reviewed_at": "2026-01-11T02:46:59.303200"
     },
     {
       "src": "deformable parts models",
@@ -33,6 +43,16 @@
       "human_reviewed": true,
       "human_modified": false,
       "reviewed_at": "2026-01-11T02:18:18.563750"
+    },
+    {
+      "src": "sliding window",
+      "type": "Terminology",
+      "context_meaning": "在图像识别和目标检测中，滑动窗口方法是一种在测试图像的各个位置和尺度上评估分类器的技术。这种方法通过在图像上均匀移动一个窗口，并在每个位置运行分类器来检测对象。例如，在可变形部件模型（DPM）中，就使用了滑动窗口方法来识别图像中的对象。",
+      "suggested_trans": "滑动窗口",
+      "rationale": "术语“sliding window”在计算机视觉领域中指的是一种图像处理技术，其直接翻译为“滑动窗口”。这个翻译既准确又直观，能够很好地传达原文中该术语的含义，并且符合中文读者的阅读习惯。",
+      "human_reviewed": true,
+      "human_modified": false,
+      "reviewed_at": "2026-01-11T02:46:59.303200"
     },
     {
       "src": "R-CNN",
@@ -63,6 +83,16 @@
       "human_reviewed": true,
       "human_modified": false,
       "reviewed_at": "2026-01-11T02:18:18.563750"
+    },
+    {
+      "src": "post-processing",
+      "type": "Terminology",
+      "context_meaning": "在图像识别和计算机视觉领域，指的是在初步分类或检测后对结果进行进一步处理的过程，包括优化边界框、消除重复检测和根据场景中其他物体重新评分。",
+      "suggested_trans": "后处理",
+      "rationale": "在计算机视觉和图像处理领域，'后处理'是一个常用术语，用来描述在初步分析之后对数据进行进一步处理的步骤。根据上下文，'后处理'涵盖了对检测结果的优化和调整，与'数据处理'和'自然语言处理'等术语类似，它们都涉及到对信息进行进一步的加工和分析。因此，'后处理'是一个合适的中文翻译，既符合专业术语的习惯用法，也准确地传达了原词的含义。",
+      "human_reviewed": true,
+      "human_modified": false,
+      "reviewed_at": "2026-01-11T02:46:59.303200"
     },
     {
       "src": "YOLO",
@@ -137,5 +167,5 @@
     }
   ],
   "human_reviewed": true,
-  "reviewed_glossary_count": 13
+  "reviewed_glossary_count": 16
 }

@@ -1,7 +1,7 @@
 {
   "chunk_id": 0,
   "source_text": "Abstract We present YOLO, a new approach to object detection. Prior work on object detection repurposes classifiers to perform detection. Instead, we frame object detection as a regression problem to spatially separated bounding boxes and associated class probabilities. A single neural network predicts bounding boxes and class probabilities directly from full images in one evaluation. Since the whole detection pipeline is a single network, it can be optimized end-to-end directly on detection performance. Our unified architecture is extremely fast. Our base YOLO model processes images in real-time at 45 frames per second. A smaller version of the network, Fast YOLO, processes an astounding 155 frames per second while still achieving double the mAP of other real-time detectors. Compared to state-of-the-art detection systems, YOLO makes more localization errors but is less likely to predict false positives on background. Finally, YOLO learns very general representations of objects. It outperforms other detection methods, including DPM and R-CNN, when generalizing from natural images to other domains like artwork.",
-  "translation": "摘要：我们提出了YOLO（你只观察一次），一种新的目标检测方法。先前的目标检测工作将分类器重新用于执行检测任务。相反，我们将目标检测视为一个回归问题，以空间分离的边界框和相关的类别概率为目标。一个单一的神经网络能够直接从完整图像中预测边界框和类别概率，一次性评估即可完成。由于整个检测流程是一个单一网络，因此可以直接在检测性能上进行端到端优化。我们统一的架构非常快速。我们的基础YOLO模型以每秒45帧的速度实时处理图像。网络的一个较小版本，快速YOLO，以惊人的每秒155帧的速度处理图像，同时仍然实现了其他实时检测器两倍的平均精度均值（mAP）。与最先进的检测系统相比，YOLO在目标定位上会犯更多的错误，但在背景上预测假阳性的可能性较小。最后，YOLO学习到了非常通用的目标表示。它在从自然图像泛化到艺术品等其他领域时，超越了包括可变形部件模型（DPM）和R-CNN在内的其他检测方法。",
+  "translation": "摘要：我们提出了YOLO，一种新的目标检测方法。先前的目标检测工作将分类器重新用于执行检测。相反，我们将目标检测框架为一个回归问题，以空间分离的边界框和相关的类别概率。一个单一的神经网络直接从完整图像中预测边界框和类别概率。由于整个检测流程是一个单一网络，因此可以直接针对检测性能进行端到端的优化。我们的统一架构速度极快。我们的基准YOLO模型以每秒45帧的速度实时处理图像。网络的一个较小版本，快速YOLO，以惊人的每秒155帧的速度处理图像，同时仍然实现其他实时检测器两倍的平均精度均值。与最先进的检测系统相比，YOLO在定位误差上更多，但在背景上预测假阳性的可能性较小。最后，YOLO学习了非常通用的对象表示。它在从自然图像泛化到艺术作品等其他领域时，优于其他检测方法，包括DPM和R-CNN。",
   "quality_score": 9.0,
   "glossary": [
     {
@@ -13,66 +13,6 @@
       "original_suggested_trans": "YOLO（你只观察一次）",
       "human_reviewed": true,
       "human_modified": true,
-      "reviewed_at": "2026-01-11T02:18:18.563750"
-    },
-    {
-      "src": "object detection",
-      "type": "Terminology",
-      "context_meaning": "在本文中，'object detection'指的是一种用于识别和定位图像中特定物体的新方法。YOLO算法通过一个单一的神经网络直接从完整图像中预测边界框和类别概率，以实现对物体的检测。",
-      "suggested_trans": "目标检测",
-      "rationale": "根据检索到的翻译记忆，'Object Detection'被翻译为'目标检测'，这是一种标准的行业术语。因此，我建议将'object detection'翻译为'目标检测'，这符合中文行业术语的标准和习惯用法。",
-      "human_reviewed": true,
-      "human_modified": false,
-      "reviewed_at": "2026-01-11T02:18:18.563750"
-    },
-    {
-      "src": "regression problem",
-      "type": "Terminology",
-      "context_meaning": "在机器学习中，将目标检测任务视为回归问题，即直接从整张图片中预测出空间上分离的边界框和相关类别概率。",
-      "suggested_trans": "回归问题",
-      "rationale": "根据提供的原文和检索到的翻译记忆，'回归'是'Regression'的常用翻译，而'问题'在此处指的是机器学习中的任务或挑战，因此将'regression problem'翻译为'回归问题'。",
-      "human_reviewed": true,
-      "human_modified": false,
-      "reviewed_at": "2026-01-11T02:18:18.563750"
-    },
-    {
-      "src": "bounding boxes",
-      "type": "Terminology",
-      "context_meaning": "在对象检测领域，'bounding boxes'指的是用来界定和识别图像中对象位置的矩形框，它通常包含对象的边缘，用以确定对象的空间位置和范围。",
-      "suggested_trans": "边界框",
-      "rationale": "术语'bounding boxes'直接翻译为'边界框'，因为这种矩形框确实界定了图像中对象的空间边界。在计算机视觉和图像识别领域中，'边界框'是一个常见且被广泛接受的术语。",
-      "human_reviewed": true,
-      "human_modified": false,
-      "reviewed_at": "2026-01-11T02:18:18.563750"
-    },
-    {
-      "src": "class probabilities",
-      "type": "Terminology",
-      "context_meaning": "在文中指的是与特定类别的对象相关的预测概率，即神经网络预测的对象类别的概率值。",
-      "suggested_trans": "类别概率",
-      "rationale": "根据上下文，'class probabilities'指的是对象检测中，不同类别对象的预测概率。因此，将其翻译为'类别概率'，既符合术语标准，也符合上下文含义。",
-      "human_reviewed": true,
-      "human_modified": false,
-      "reviewed_at": "2026-01-11T02:18:18.563750"
-    },
-    {
-      "src": "neural network",
-      "type": "Terminology",
-      "context_meaning": "在上下文中，'neural network'指的是一种模仿人脑神经元结构的计算模型，用于进行图像识别、分类和预测等任务。",
-      "suggested_trans": "神经网络",
-      "rationale": "根据提供的翻译记忆，'Neural Network'对应的中文翻译是'神经网络'，因此在此上下文中也采用相同的翻译。此外，'神经网络'是一个通用术语，广泛用于描述模仿生物神经网络的计算模型，故此翻译符合上下文。",
-      "human_reviewed": true,
-      "human_modified": false,
-      "reviewed_at": "2026-01-11T02:18:18.563750"
-    },
-    {
-      "src": "detection performance",
-      "type": "Terminology",
-      "context_meaning": "在本文中，'detection performance'指的是目标检测算法在识别和定位目标方面的表现能力。具体来说，它涉及到算法的准确性、速度以及在各种情况下的可靠性。",
-      "suggested_trans": "检测性能",
-      "rationale": "根据上下文，'detection performance'应当翻译为'检测性能'，这是因为它描述的是一个关于目标检测算法的性能指标。'检测'是对'detection'的直译，而'性能'则来自检索到的术语'Performance Measure'，即性能度量，符合原文中对检测算法性能的要求和评估。",
-      "human_reviewed": true,
-      "human_modified": false,
       "reviewed_at": "2026-01-11T02:18:18.563750"
     },
     {
@@ -91,16 +31,6 @@
       "context_meaning": "mAP（mean Average Precision）是评估目标检测算法性能的一个常用指标，它计算了算法在不同置信度阈值下的平均准确率。",
       "suggested_trans": "平均精度均值",
       "rationale": "mAP是目标检测领域中的一个常用术语，它代表了算法在不同置信度阈值下的平均准确率。在中文中，我们通常将其翻译为“平均精度均值”，以便更直观地理解其含义。",
-      "human_reviewed": true,
-      "human_modified": false,
-      "reviewed_at": "2026-01-11T02:18:18.563750"
-    },
-    {
-      "src": "false positives",
-      "type": "Terminology",
-      "context_meaning": "在目标检测中，错误地将背景或非目标对象识别为目标对象的情况。",
-      "suggested_trans": "假阳性",
-      "rationale": "根据提供的翻译记忆，'false positives'对应的中文翻译为'假阳性'。这个术语在目标检测领域中用来描述错误识别的情况，因此使用已存在的翻译。",
       "human_reviewed": true,
       "human_modified": false,
       "reviewed_at": "2026-01-11T02:18:18.563750"
@@ -127,5 +57,5 @@
     }
   ],
   "human_reviewed": true,
-  "reviewed_glossary_count": 12
+  "reviewed_glossary_count": 5
 }
