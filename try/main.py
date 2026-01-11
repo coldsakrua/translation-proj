@@ -16,6 +16,7 @@ from core.base_agent import BaseAgent
 from task import TranslationTask
 from pathlib import Path
 import json
+from datetime import datetime
 
 class BaseAgent:
     def __init__(self, name, state_manager, executor, learner, logger, max_steps):
@@ -128,7 +129,7 @@ def collect_chapter_glossaries(book_id, chapter_id, num_chunks):
 
 def update_chunks_with_reviewed_glossary(book_id, chapter_id, num_chunks, reviewed_glossary):
     """
-    将人工审查后的术语表更新到所有chunk文件中
+    将人工审查后的术语表更新到所有chunk文件中，并更新译文中的术语翻译
     
     Args:
         book_id: 书籍ID
@@ -138,11 +139,23 @@ def update_chunks_with_reviewed_glossary(book_id, chapter_id, num_chunks, review
     """
     import json
     import os
+    import re
     
     # 创建术语字典，方便查找
     reviewed_dict = {term.get('src', ''): term for term in reviewed_glossary if term.get('src')}
     
+    # 找出所有被人工修改的术语（需要更新译文的）
+    translation_updates = {}  # {original_trans: new_trans}
+    for term in reviewed_glossary:
+        if term.get('human_modified', False) and 'original_suggested_trans' in term:
+            original_trans = term['original_suggested_trans']
+            new_trans = term.get('suggested_trans', '')
+            if original_trans and new_trans and original_trans != new_trans:
+                translation_updates[original_trans] = new_trans
+    
     updated_count = 0
+    translation_updated_count = 0
+    
     for chunk_id in range(num_chunks):
         chunk_file = f"output/{book_id}/chapter_{chapter_id}/chunk_{chunk_id:03d}.json"
         if not os.path.exists(chunk_file):
@@ -152,6 +165,8 @@ def update_chunks_with_reviewed_glossary(book_id, chapter_id, num_chunks, review
             # 读取chunk文件
             with open(chunk_file, 'r', encoding='utf-8') as f:
                 data = json.load(f)
+            
+            translation_updated = False
             
             # 更新术语表
             if 'glossary' in data and isinstance(data['glossary'], list):
@@ -175,16 +190,57 @@ def update_chunks_with_reviewed_glossary(book_id, chapter_id, num_chunks, review
                 # 添加人工审查标记
                 data['human_reviewed'] = True
                 data['reviewed_glossary_count'] = len([t for t in updated_glossary if t.get('human_reviewed', False)])
+            
+            # 更新译文中的术语翻译
+            if 'translation' in data and data['translation'] and translation_updates:
+                translation = data['translation']
+                # 按长度降序排序，优先替换较长的术语，避免短术语被长术语包含
+                sorted_updates = sorted(translation_updates.items(), key=lambda x: len(x[0]), reverse=True)
                 
-                # 保存更新后的文件
-                with open(chunk_file, 'w', encoding='utf-8') as f:
-                    json.dump(data, f, ensure_ascii=False, indent=2)
+                for original_trans, new_trans in sorted_updates:
+                    # 直接替换，因为术语通常是完整的词或短语
+                    # 如果原文中存在该术语，则替换
+                    if original_trans in translation:
+                        # 使用字符串替换（简单直接）
+                        translation = translation.replace(original_trans, new_trans)
+                        translation_updated = True
                 
-                updated_count += 1
+                data['translation'] = translation
+                
+                # 添加译文更新标记
+                if translation_updated:
+                    data['translation_updated_by_glossary'] = True
+                    data['translation_updated_at'] = datetime.now().isoformat()
+            
+            # 保存更新后的文件
+            with open(chunk_file, 'w', encoding='utf-8') as f:
+                json.dump(data, f, ensure_ascii=False, indent=2)
+            
+            updated_count += 1
+            if translation_updated:
+                translation_updated_count += 1
+                
+                # 同时更新翻译记忆库
+                try:
+                    from utils.memory_storage import load_translation_memory, save_translation_memory
+                    memory_key = f"{book_id}_ch{chapter_id}_ck{chunk_id}"
+                    memory = load_translation_memory(book_id)
+                    if memory_key in memory:
+                        memory[memory_key]['translation'] = data['translation']
+                        memory[memory_key]['updated_at'] = datetime.now().isoformat()
+                        # 保存更新后的记忆库
+                        memory_file = f"output/{book_id}/translation_memory.json"
+                        with open(memory_file, 'w', encoding='utf-8') as f:
+                            json.dump(memory, f, ensure_ascii=False, indent=2)
+                except Exception as e:
+                    print(f"  ⚠️  更新翻译记忆库失败: {e}")
+                    
         except Exception as e:
             print(f"  ⚠️  更新 chunk_{chunk_id:03d}.json 失败: {e}")
     
     print(f"  ✅ 已更新 {updated_count} 个chunk文件中的术语表")
+    if translation_updated_count > 0:
+        print(f"  ✅ 已更新 {translation_updated_count} 个chunk文件中的译文（根据术语审查结果）")
 
 def generate_chapter_summary(book_id, chapter_id, chunks_data):
     """

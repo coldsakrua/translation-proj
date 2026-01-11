@@ -1,0 +1,10 @@
+{
+  "chunk_id": "interactive_20260111_160247",
+  "source_text": "The RPN can be trained end-to-end by back-propagation and stochastic gradient descent (SGD) [35]. We follow the “image-centric” sampling strategy from [2] to train this network. Each mini-batch arises from a single image that contains many positive and negative example anchors. It is possible to optimize for the loss functions of all anchors, but this will bias towards negative samples as they are dominate. Instead, we randomly sample 256 anchors in an image to compute the loss function of a mini-batch, where the sampled positive and negative anchors have a ratio of up to 1:1. If there are fewer than 128 positive samples in an image, we pad the mini-batch with negative ones.",
+  "translation": "RPN可以通过反向传播和随机梯度下降（SGD）进行端到端的训练。我们遵循[2]中的“以图像为中心”的采样策略来训练这个网络。每个小批量数据来自一张包含许多正负样本锚点的图像。虽然可以针对所有锚点的损失函数进行优化，但这会偏向负样本，因为它们占主导地位。相反，我们随机采样256个锚点来计算小批量的损失函数，其中采样的正负锚点的比例最多为1:1。如果一张图像中的正样本少于128个，我们会用负样本来填充小批量。",
+  "translation_style": "popular",
+  "user_requirements": null,
+  "glossary_used": true,
+  "quality_score": null,
+  "saved_at": "2026-01-11T16:02:47.419165"
+}

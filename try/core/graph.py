@@ -15,6 +15,7 @@ def build_translation_agent():
     workflow.add_node("search_terms", node_search_and_consolidate)
     workflow.add_node("translate", node_translate_fusion)
     workflow.add_node("evaluate", node_tear_evaluation)
+    workflow.add_node("refine", node_refine_translation)  # 新增：专门的修正节点
     workflow.add_node("persistence", node_persistence)
 
     # 构建流程连线
@@ -29,41 +30,46 @@ def build_translation_agent():
 
     workflow.add_edge("translate", "evaluate")
 
-    # --- 循环逻辑 (Router) ---
-    # def quality_gate(state: TranslationState):
-    #     # 限制最大迭代次数防止死循环
-    #     if state["revision_count"] > 3:
-    #         print("   >>> Max iterations reached. Force stop.")
-    #         return "persistence"
-        
-    #     if state["quality_score"] >= 7:
-    #         print("   >>> Quality verified. Finishing.")
-    #         return "persistence"
-    #     else:
-    #         print("   >>> Quality insufficient. Refining...")
-    #         return "translate" # 带着 critique 回到翻译节点
+    # --- TEaR循环逻辑 (Router) ---
     def quality_gate(state: TranslationState):
-    # 限制最大迭代次数防止死循环
-    # 错误写法：state["revision_count"]
-    # 正确写法：state.revision_count (因为你是 Pydantic 模型)
-    
-        if state.revision_count > 3:
-            print("   >>> [Gate] Max iterations reached. Force stop.")
+        """
+        质量门控：决定是否需要继续修正
+        - 如果质量达标（>=7分）或达到最大迭代次数，则保存
+        - 如果质量不达标，则进入refine节点进行针对性修正
+        """
+        # 限制最大迭代次数防止死循环
+        if state.revision_count >= 3:
+            print(f"   >>> [Gate] Max iterations reached ({state.revision_count}). Force stop.")
             return "persistence"
         
-        # 同样修改质量分的判定
+        # 质量达标，保存结果
         if state.quality_score is not None and state.quality_score >= 7:
-            print(f"   >>> [Gate] Quality verified ({state.quality_score}). Finishing.")
+            print(f"   >>> [Gate] Quality verified (Score: {state.quality_score}/10). Finishing.")
             return "persistence"
+        
+        # 质量不达标，进入refine节点进行针对性修正
         else:
-            print(f"   >>> [Gate] Quality insufficient ({state.quality_score}). Refining...")
-            return "translate"    
+            score_display = state.quality_score if state.quality_score is not None else "N/A"
+            print(f"   >>> [Gate] Quality insufficient (Score: {score_display}/10). Entering refine step...")
+            
+            # 如果有评估历史，说明已经评估过，应该进入refine
+            if state.refinement_history:
+                return "refine"
+            else:
+                # 如果没有评估历史，说明是第一次翻译，直接进入refine（这种情况不应该发生）
+                return "refine"
 
     workflow.add_conditional_edges(
         "evaluate",
         quality_gate,
-        {"persistence": "persistence", "translate": "translate"}
+        {
+            "persistence": "persistence", 
+            "refine": "refine"  # 改为refine节点而不是translate
+        }
     )
+    
+    # refine节点完成后，重新评估
+    workflow.add_edge("refine", "evaluate")
     workflow.add_edge("persistence", END)
 
     # 编译 Graph，开启 checkpointer（不再中断，完整执行）

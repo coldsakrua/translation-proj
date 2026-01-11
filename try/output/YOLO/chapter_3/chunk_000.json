@@ -1,22 +1,50 @@
 {
   "chunk_id": 0,
   "source_text": "",
-  "translation": "摘要：我们提出了YOLO，一种新的目标检测方法。先前的目标检测工作将分类器重新用于执行检测。与之不同，我们构建了目标检测作为一个回归问题，以空间分离的边界框和相关的类别概率。一个统一的神经网络直接从完整图像中预测边界框和类别概率。由于整个检测流程是一个单一网络，因此可以直接针对检测性能进行端到端的优化。",
+  "translation": "摘要：我们提出了计算机科学与技术领域中人工智能和机器学习的一个新方法——YOLO，这是一种新的目标检测方法。在先前的目标检测研究中，分类器被重新用于执行检测任务。与此不同，我们将目标检测框架化为一个回归问题，用于空间分隔的边界框和相关的类别概率。一个统一的神经网络直接从完整图像中预测边界框和类别概率。由于整个检测流程是一个单一网络，它可以在检测性能上直接进行端到端优化。这种方法不仅提高了目标检测的速度，也提高了准确性，使其成为实时目标检测领域中的一个最先进解决方案。",
   "quality_score": 9.0,
   "glossary": [
     {
-      "src": "计算机视觉",
+      "src": "Computer Science and Technology",
       "type": "Terminology",
-      "context_meaning": "计算机视觉是计算机科学领域的一个重要分支，它主要研究如何使计算机能够像人类一样通过图像来认识和理解世界。",
-      "suggested_trans": "计算机视觉",
-      "rationale": "根据提供的翻译记忆，'Computer Vision'已经有一个对应的中文翻译'计算机视觉'，因此我们直接使用这个翻译。这个翻译是准确的，因为它直接反映了计算机视觉这个领域的名称和含义。"
+      "context_meaning": "计算机科学与技术是研究计算机系统结构、软件、硬件及其应用的学科。",
+      "suggested_trans": "计算机科学与技术",
+      "rationale": "根据检索到的翻译记忆，'Computer Science'翻译为'计算机科学'，'Technology'翻译为'技术'。结合这两个词，'Computer Science and Technology'被翻译为'计算机科学与技术'，这是该领域学术和工业界广泛认可的标准翻译。",
+      "human_reviewed": true,
+      "human_modified": false,
+      "reviewed_at": "2026-01-11T15:08:24.181941"
     },
     {
-      "src": "机器学习",
+      "src": "Artificial Intelligence",
       "type": "Terminology",
-      "context_meaning": "机器学习是一种人工智能技术，它通过数据分析和算法训练，使计算机系统能够自动学习和改进。",
+      "context_meaning": "指的是由计算机程序或机器所表现出的智能行为，包括学习、推理、自我修正等能力。",
+      "suggested_trans": "人工智能",
+      "rationale": "根据提供的翻译记忆，'Artificial Intelligence'对应的中文简体翻译是'人工智能'。这是一个专业术语，在中国广泛使用，因此无需任何变更地采用这个翻译。",
+      "human_reviewed": true,
+      "human_modified": false,
+      "reviewed_at": "2026-01-11T15:08:24.181941"
+    },
+    {
+      "src": "Machine Learning",
+      "type": "Terminology",
+      "context_meaning": "机器学习是一种使计算机系统利用数据和算法，通过学习不断改进其性能的技术。",
       "suggested_trans": "机器学习",
-      "rationale": "机器学习是人工智能领域的一个重要概念，其英文对应词汇是Machine Learning。在这里，我们直接将英文词汇翻译成中文，保持术语的专业性和准确性。"
+      "rationale": "机器学习是一个专业术语，翻译为中文时，直接使用对应的中文术语“机器学习”。这是因为“机器学习”这个概念在中文领域内已经有了广泛的认可和使用。",
+      "human_reviewed": true,
+      "human_modified": false,
+      "reviewed_at": "2026-01-11T15:08:24.181941"
+    },
+    {
+      "src": "Object Detection",
+      "type": "Terminology",
+      "context_meaning": "在计算机视觉中，目标检测是指识别和定位图像或视频帧中的一个或多个目标物体的过程。",
+      "suggested_trans": "目标检测",
+      "rationale": "根据检索到的翻译记忆，'Object Detection'被翻译为'目标检测'，这是该术语在计算机视觉领域的标准翻译。",
+      "human_reviewed": true,
+      "human_modified": false,
+      "reviewed_at": "2026-01-11T03:13:51.265182"
     }
-  ]
+  ],
+  "human_reviewed": true,
+  "reviewed_glossary_count": 4
 }

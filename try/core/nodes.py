@@ -51,11 +51,14 @@ class TermEntry(BaseModel):
 class TermList(BaseModel):
     terms: List[TermEntry]
 
-# (C3) 评估结果结构
+# (C3) 评估结果结构（增强版）
 class QualityReview(BaseModel):
     score: int = Field(description="1-10分，10分为完美")
     critique: str = Field(description="详细的批评和修改建议")
     pass_flag: bool = Field(description="是否达到出版标准")
+    error_types: List[str] = Field(default_factory=list, description="错误类型列表，如：术语错误、语义偏差、语法问题等")
+    specific_issues: List[str] = Field(default_factory=list, description="具体问题列表，指出需要修正的具体位置和内容")
+    improvement_suggestions: List[str] = Field(default_factory=list, description="改进建议列表，提供具体的修正方向")
 
 class Book:
     book_id: str
@@ -97,6 +100,7 @@ class TranslationState(BaseModel):
     critique: Optional[str] = None
     quality_score: Optional[float] = None
     revision_count: int = 0
+    refinement_history: List[Dict[str, Any]] = Field(default_factory=list)  # 修正历史记录
 
 # ============================================
 # 2. 节点实现 (Node Functions)
@@ -496,16 +500,26 @@ Text to translate:
                 print(f"  ❌ 回译失败，跳过回译步骤")
                 state.back_translation = state.source_text  # 使用原文作为回译结果
     
+    # 构建术语表文本（用于评估）
+    glossary_text = ""
+    if state.glossary:
+        glossary_text = "\n".join([
+            f"- {t['src']} -> {t['suggested_trans']}" 
+            for t in state.glossary[:20]
+        ])
+    
     eval_prompt = f"""
-    你是翻译质量评估系统。
+    你是专业的翻译质量评估系统，需要对翻译进行多维度评估。
 
-    请严格按照以下 JSON 格式输出，不要包含任何多余文本：
+    请仔细对比原文、译文和回译文，识别以下问题：
+    1. **术语一致性**：译文中的术语是否与术语表一致
+    2. **语义准确性**：译文是否准确传达了原文的意思
+    3. **回译一致性**：回译文与原文的相似度如何
+    4. **语言流畅性**：译文是否符合中文表达习惯
+    5. **风格一致性**：译文是否与已翻译文本保持风格一致
 
-    {{
-    "score": 0-10 的整数,
-    "pass_flag": true 或 false,
-    "critique": "简要评估意见"
-    }}
+    【术语表（必须严格遵守）】
+    {glossary_text if glossary_text else "无术语表"}
 
     【原文】
     {state.source_text}
@@ -513,14 +527,32 @@ Text to translate:
     【当前译文】
     {state.combined_translation}
 
-    【回译】
+    【回译文】
     {state.back_translation}
+
+    请按照以下格式输出评估结果：
+    {{
+        "score": 0-10的整数（10分为完美）,
+        "pass_flag": true或false（是否达到出版标准，通常7分以上为true）,
+        "critique": "总体评估意见，包括优点和主要问题",
+        "error_types": ["错误类型1", "错误类型2"]（如：["术语不一致", "语义偏差", "语法问题"]）,
+        "specific_issues": ["具体问题1：指出具体位置和内容", "具体问题2：..."],
+        "improvement_suggestions": ["改进建议1：如何修正", "改进建议2：..."]
+    }}
+
+    注意：
+    - error_types应该具体明确，如"术语不一致"、"语义偏差"、"语法错误"、"流畅性问题"等
+    - specific_issues应该指出具体的问题位置和内容，便于修正
+    - improvement_suggestions应该提供可操作的修正建议
     """
     try:
         eval_res = llm.with_structured_output(QualityReview).invoke(eval_prompt)
         quality_score = eval_res.score
         critique = eval_res.critique
         pass_flag = eval_res.pass_flag
+        error_types = eval_res.error_types or []
+        specific_issues = eval_res.specific_issues or []
+        improvement_suggestions = eval_res.improvement_suggestions or []
     except Exception as e:
         print(f"⚠️  Structured output failed: {e}")
         print("   Using default quality scores...")
@@ -528,16 +560,180 @@ Text to translate:
         quality_score = 7.0
         critique = "评估系统暂时不可用，使用默认评分"
         pass_flag = True
+        error_types = []
+        specific_issues = []
+        improvement_suggestions = []
     
     state.quality_score = quality_score
     state.critique = critique
     
+    # 保存详细的评估信息到refinement_history
+    evaluation_detail = {
+        "iteration": state.revision_count,
+        "score": quality_score,
+        "critique": critique,
+        "error_types": error_types,
+        "specific_issues": specific_issues,
+        "improvement_suggestions": improvement_suggestions,
+        "back_translation": state.back_translation
+    }
+    state.refinement_history.append(evaluation_detail)
+    
     print(f"   >>> Score: {quality_score}/10 | Pass: {pass_flag}")
+    if error_types:
+        print(f"   >>> 错误类型: {', '.join(error_types)}")
+    if specific_issues:
+        print(f"   >>> 主要问题: {specific_issues[0] if specific_issues else '无'}")
+    
     return {
         "back_translation": state.back_translation,
         "quality_score": state.quality_score,
-        "critique": state.critique
+        "critique": state.critique,
+        "refinement_history": state.refinement_history
     }
+
+# --- Node C3: 基于评估结果的针对性修正 (Refine) ---
+def node_refine_translation(state: TranslationState):
+    """
+    TEaR框架的Refine步骤：基于评估反馈进行针对性修正
+    """
+    iteration = state.revision_count
+    print(f"\n🔹 [Phase 4] Refinement (Iter {iteration+1})...")
+    
+    # 获取最新的评估信息
+    if not state.refinement_history:
+        print("  ⚠️  没有评估历史，跳过修正步骤")
+        return {"combined_translation": state.combined_translation}
+    
+    latest_eval = state.refinement_history[-1]
+    critique = latest_eval.get("critique", "")
+    error_types = latest_eval.get("error_types", [])
+    specific_issues = latest_eval.get("specific_issues", [])
+    improvement_suggestions = latest_eval.get("improvement_suggestions", [])
+    
+    # 构建问题总结
+    issues_summary = ""
+    if specific_issues:
+        issues_summary = "\n".join([f"- {issue}" for issue in specific_issues])
+    
+    suggestions_summary = ""
+    if improvement_suggestions:
+        suggestions_summary = "\n".join([f"- {suggestion}" for suggestion in improvement_suggestions])
+    
+    # 加载术语表
+    glossary_text = ""
+    if state.glossary:
+        glossary_text = "\n".join([
+            f"- {t['src']} -> {t['suggested_trans']}" 
+            for t in state.glossary
+        ])
+    
+    # 加载全局术语表
+    global_glossary_text = ""
+    if state.global_glossary:
+        global_terms = []
+        for term_key, term_info in state.global_glossary.items():
+            if isinstance(term_info, dict):
+                src = term_info.get('src', term_key)
+                trans = term_info.get('suggested_trans', '')
+                if src and trans:
+                    global_terms.append(f"- {src} -> {trans}")
+        if global_terms:
+            global_glossary_text = "\n".join(global_terms[:20])
+    
+    all_glossary_text = ""
+    if global_glossary_text:
+        all_glossary_text += f"【全局术语表】\n{global_glossary_text}\n\n"
+    if glossary_text:
+        all_glossary_text += f"【当前章节术语表】\n{glossary_text}"
+    
+    style_str = str(state.style_guide)
+    
+    # 构建修正提示词
+    refine_prompt = f"""
+    你是专业的翻译修正专家。当前译文已经过评估，发现了一些问题，需要你进行针对性修正。
+
+    【修正原则】
+    1. **针对性修正**：只修正评估中发现的具体问题，不要大幅改动
+    2. **保持优点**：保留译文中正确的部分，不要过度修改
+    3. **术语一致性**：严格遵循术语表，确保术语翻译一致
+    4. **语义准确性**：确保修正后的译文准确传达原文意思
+    5. **语言流畅性**：确保修正后的译文符合中文表达习惯
+
+    【评估反馈】
+    总体评估：{critique}
+    
+    错误类型：{', '.join(error_types) if error_types else '无'}
+    
+    具体问题：
+    {issues_summary if issues_summary else "无具体问题"}
+    
+    改进建议：
+    {suggestions_summary if suggestions_summary else "无具体建议"}
+
+    【术语表（必须严格遵守）】
+    {all_glossary_text if all_glossary_text else "无术语表"}
+
+    【风格要求】
+    {style_str}
+
+    【原文】
+    {state.source_text}
+
+    【当前译文（需要修正）】
+    {state.combined_translation}
+
+    【回译文（用于参考）】
+    {state.back_translation}
+
+    【修正步骤】
+    1. 仔细阅读评估反馈，理解具体问题
+    2. 对照原文和回译文，识别语义偏差
+    3. 检查术语使用是否与术语表一致
+    4. 针对性地修正发现的问题
+    5. 确保修正后的译文流畅自然
+
+    【注意事项】
+    - 只修正评估中发现的问题，不要做不必要的改动
+    - 如果术语表中有对应术语，必须使用术语表中的翻译
+    - 保持译文的整体风格和结构
+    - 如果文本中包含LaTeX公式（如 $...$ 或 $$...$$），请保持原样
+
+    请输出修正后的完整译文：
+    """
+    
+    # 执行修正
+    max_retries = 3
+    retry_delay = 2
+    for attempt in range(max_retries):
+        try:
+            response = llm.invoke(refine_prompt)
+            refined_translation = response.content.strip()
+            state.combined_translation = refined_translation
+            state.revision_count += 1
+            print(f"  ✅ 修正完成（迭代 {state.revision_count}）")
+            break
+        except Exception as e:
+            error_str = str(e)
+            is_rate_limit = "RateLimitError" in str(type(e).__name__) or "rate_limit" in error_str.lower() or "429" in error_str
+            
+            if is_rate_limit and attempt < max_retries - 1:
+                wait_time = retry_delay * (attempt + 1)
+                print(f"  ⚠️  速率限制错误，等待 {wait_time} 秒后重试... (尝试 {attempt + 1}/{max_retries})")
+                time.sleep(wait_time)
+            elif attempt < max_retries - 1:
+                print(f"  ⚠️  修正错误: {e}，等待 {retry_delay} 秒后重试... (尝试 {attempt + 1}/{max_retries})")
+                time.sleep(retry_delay)
+            else:
+                print(f"  ❌ 达到最大重试次数，保持原译文")
+                # 保持原译文不变
+                state.revision_count += 1
+    
+    return {
+        "combined_translation": state.combined_translation,
+        "revision_count": state.revision_count
+    }
+
 # --- Node D: 持久化保存 ---
 def node_persistence(state: TranslationState):
     """保存最终翻译结果到本地文件"""
@@ -551,6 +747,8 @@ def node_persistence(state: TranslationState):
         source_text = state.source_text
         quality_score = state.quality_score
         glossary = state.glossary
+        refinement_history = state.refinement_history
+        revision_count = state.revision_count
     except AttributeError:
         # 万一 LangGraph 传进来的是个 dict（通常不会，除非配置改了）
         book_id = state.get("book_id")
@@ -560,6 +758,8 @@ def node_persistence(state: TranslationState):
         source_text = state.get("source_text")
         quality_score = state.get("quality_score")
         glossary = state.get("glossary")
+        refinement_history = state.get("refinement_history", [])
+        revision_count = state.get("revision_count", 0)
 
     print(f"💾 [Persistence] Writing data for Chunk {chunk_id}...")
 
@@ -575,7 +775,9 @@ def node_persistence(state: TranslationState):
         "source_text": source_text,
         "translation": translation,
         "quality_score": quality_score,
-        "glossary": glossary
+        "glossary": glossary,
+        "refinement_history": state.refinement_history,  # 保存修正历史
+        "revision_count": state.revision_count  # 保存迭代次数
     }
 
     with open(file_path, "w", encoding="utf-8") as f:

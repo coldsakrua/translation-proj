@@ -53,8 +53,7 @@ def find_term_context(term: str, source_text: str, context_window: int = 200) ->
     highlighted = re.sub(
         pattern, 
         lambda m: f"**{m.group(0)}**", 
-        sentence, 
-        flags=re.IGNORECASE
+        sentence
     )
     
     return highlighted

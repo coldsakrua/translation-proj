@@ -1,0 +1,436 @@
+{
+  "You Only Look Once": {
+    "src": "You Only Look Once",
+    "type": "Terminology",
+    "context_meaning": "在计算机视觉领域，'You Only Look Once'指的是一种实时目标检测系统，其特点是对图像进行一次识别处理，快速准确地识别出图像中的目标物体。",
+    "suggested_trans": "YOLO",
+    "rationale": "保持缩写即可",
+    "original_suggested_trans": "你只看一次",
+    "human_reviewed": true,
+    "human_modified": true,
+    "reviewed_at": "2026-01-11T03:13:51.265182"
+  },
+  "Unified": {
+    "src": "Unified",
+    "type": "Terminology",
+    "context_meaning": "在这个上下文中，'Unified'指的是将多个功能或组件整合到一个系统或框架中，实现统一管理和优化。",
+    "suggested_trans": "统一的",
+    "rationale": "根据提供的原文和翻译记忆，'Unified'译为'统一的'是合适的。在这里，'Unified'描述了一种集成和整合的技术特点，所以翻译为'统一的'能够准确表达原文的含义。",
+    "human_reviewed": true,
+    "human_modified": false,
+    "reviewed_at": "2026-01-11T03:13:51.265182"
+  },
+  "Real-Time": {
+    "src": "Real-Time",
+    "type": "Terminology",
+    "context_meaning": "在此上下文中，'Real-Time'指的是能够即时处理和响应的系统或技术。",
+    "suggested_trans": "实时",
+    "rationale": "根据提供的翻译记忆，'Real-Time'翻译为'实时'是恰当的，因为'实时'在中文中常用来表示即时处理和响应的概念。",
+    "human_reviewed": true,
+    "human_modified": false,
+    "reviewed_at": "2026-01-11T03:13:51.265182"
+  },
+  "Object Detection": {
+    "src": "Object Detection",
+    "type": "Terminology",
+    "context_meaning": "在计算机视觉中，目标检测是指识别和定位图像或视频帧中的一个或多个目标物体的过程。",
+    "suggested_trans": "目标检测",
+    "rationale": "根据检索到的翻译记忆，'Object Detection'被翻译为'目标检测'，这是该术语在计算机视觉领域的标准翻译。",
+    "human_reviewed": true,
+    "human_modified": false,
+    "reviewed_at": "2026-01-11T03:13:51.265182"
+  },
+  "YOLO": {
+    "src": "YOLO",
+    "type": "Acronym",
+    "context_meaning": "YOLO是一种用于目标检测的新方法，它将目标检测问题视为一个回归问题，直接从整张图像预测边界框和类别概率，整个检测流程是一个单一的神经网络，可以直接针对检测性能进行端到端优化。",
+    "suggested_trans": "YOLO",
+    "rationale": "YOLO是一个英文缩写，代表'You Only Look Once'，但在技术术语中，通常保留原英文形式。在这段文本中，YOLO指的是一种目标检测的方法，因此直接使用'YOLO'作为翻译即可，不需要将其展开为'你只看一次'。",
+    "human_reviewed": true,
+    "human_modified": false,
+    "reviewed_at": "2026-01-11T03:16:20.213774"
+  },
+  "object detection": {
+    "src": "object detection",
+    "type": "Terminology",
+    "context_meaning": "目标检测是一种计算机视觉技术，用于识别图像或视频帧中的特定对象，并确定它们的位置。在本文中，目标检测被描述为一种回归问题，用于预测空间上分离的边界框和相关的类别概率。",
+    "suggested_trans": "目标检测",
+    "rationale": "根据检索到的翻译记忆，'object detection'的标准翻译是'目标检测'。这个术语是计算机视觉领域的常用术语，因此选择使用这个标准化的翻译。",
+    "human_reviewed": true,
+    "human_modified": false,
+    "reviewed_at": "2026-01-11T03:16:20.213774"
+  },
+  "regression problem": {
+    "src": "regression problem",
+    "type": "Terminology",
+    "context_meaning": "在机器学习中，'回归问题'是指预测连续数值输出的问题，与分类问题不同。在源文本中，作者将目标检测问题重新定义为一个回归问题，即通过神经网络直接从整张图片中预测空间分离的边界框和相关的类别概率。",
+    "suggested_trans": "回归问题",
+    "rationale": "根据检索到的翻译记忆，'回归问题'是该术语的标准中文翻译。在机器学习领域，这个术语被广泛使用，指的是预测连续值的任务。",
+    "human_reviewed": true,
+    "human_modified": false,
+    "reviewed_at": "2026-01-11T03:16:20.213774"
+  },
+  "bounding boxes": {
+    "src": "bounding boxes",
+    "type": "Terminology",
+    "context_meaning": "在目标检测领域中，bounding boxes指的是用于框定图像中物体的矩形区域，它包含物体的位置和大小信息。",
+    "suggested_trans": "边界框",
+    "rationale": "根据检索到的翻译记忆，'bounding boxes'被翻译为'边界框'，这个翻译符合目标检测领域的专业术语。因此，我们直接采用这个翻译。",
+    "human_reviewed": true,
+    "human_modified": false,
+    "reviewed_at": "2026-01-11T03:16:20.213774"
+  },
+  "class probabilities": {
+    "src": "class probabilities",
+    "type": "Terminology",
+    "context_meaning": "类别概率是指在对象检测中，一个模型对特定类别对象存在的预测概率。在YOLO模型中，这指的是神经网络直接从整张图像预测边界框和类别概率。",
+    "suggested_trans": "类别概率",
+    "rationale": "根据检索到的翻译记忆，'class probabilities'被翻译为'类别概率'。这个翻译准确反映了原文中的含义，即模型预测某一类别对象存在的概率。因此，我们采用这个翻译。",
+    "human_reviewed": true,
+    "human_modified": false,
+    "reviewed_at": "2026-01-11T03:16:20.213774"
+  },
+  "neural network": {
+    "src": "neural network",
+    "type": "Terminology",
+    "context_meaning": "在本文中，'neural network'指的是一种模仿人脑结构和功能的数学模型，用于进行图像识别、分类和检测等任务。",
+    "suggested_trans": "神经网络",
+    "rationale": "根据提供的翻译记忆，'neural network'的标准翻译是'神经网络'。在上下文中，'neural network'指的是一种用于进行目标检测的深度学习模型，因此建议使用'神经网络'这一术语。",
+    "human_reviewed": true,
+    "human_modified": false,
+    "reviewed_at": "2026-01-11T03:16:20.213774"
+  },
+  "Fast YOLO": {
+    "src": "Fast YOLO",
+    "type": "Terminology",
+    "context_meaning": "Fast YOLO是YOLO的一个变体，专门设计用于实现更快的实时对象检测。它通过减少网络的复杂性，实现了155帧每秒的处理速度，同时保持较高的准确度。",
+    "suggested_trans": "快速YOLO",
+    "rationale": "根据检索到的翻译记忆，Fast YOLO已有对应的翻译“快速YOLO”，因此直接采用这一翻译。同时考虑到YOLO作为一个专有名词和算法名称，通常保留原名称不进行翻译。",
+    "human_reviewed": true,
+    "human_modified": false,
+    "reviewed_at": "2026-01-11T03:16:20.213774"
+  },
+  "mAP": {
+    "src": "mAP",
+    "type": "Acronym",
+    "context_meaning": "在目标检测领域，mAP 是一种衡量模型性能的指标，即平均精度均值（mean Average Precision）。它通过计算模型在各个置信度阈值下的平均精度，来衡量模型在目标检测任务中的整体性能。",
+    "suggested_trans": "平均精度均值",
+    "rationale": "根据检索到的翻译记忆，mAP 的标准翻译是 '平均精度均值'。这个翻译准确反映了 mAP 在目标检测领域的含义，并被广泛接受和使用。因此，我们选择 '平均精度均值' 作为 mAP 的中文翻译。",
+    "human_reviewed": true,
+    "human_modified": false,
+    "reviewed_at": "2026-01-11T03:16:20.213774"
+  },
+  "state-of-the-art": {
+    "src": "state-of-the-art",
+    "type": "Terminology",
+    "context_meaning": "在上文中，\"state-of-the-art\"指的是最先进的技术或方法，即在某个领域中性能最优、技术最尖端的系统或解决方案。",
+    "suggested_trans": "最先进的",
+    "rationale": "将\"state-of-the-art\"翻译为\"最先进的\"，是因为这个短语在技术和学术领域中广泛使用，用以表示一个领域内最高水平、最先进或性能最优的技术或方法。这个翻译既符合原文的意思，也符合中文的表达习惯。",
+    "human_reviewed": true,
+    "human_modified": false,
+    "reviewed_at": "2026-01-11T03:16:20.213774"
+  },
+  "localization errors": {
+    "src": "localization errors",
+    "type": "Terminology",
+    "context_meaning": "在机器视觉和目标检测领域，指的是模型预测的边界框与目标实际位置之间的偏差。",
+    "suggested_trans": "错误定位",
+    "rationale": "更顺畅",
+    "original_suggested_trans": "定位错误",
+    "human_reviewed": true,
+    "human_modified": true,
+    "reviewed_at": "2026-01-11T03:16:20.213774"
+  },
+  "false positives": {
+    "src": "false positives",
+    "type": "Terminology",
+    "context_meaning": "在机器学习和图像识别领域，'false positives'指的是错误地将背景或无关对象识别为目标对象的情况。",
+    "suggested_trans": "假阳性",
+    "rationale": "根据检索到的翻译记忆，'false positives'在专业术语中被翻译为'假阳性'，符合机器学习领域的常规翻译。",
+    "human_reviewed": true,
+    "human_modified": false,
+    "reviewed_at": "2026-01-11T03:16:20.213774"
+  },
+  "DPM": {
+    "src": "DPM",
+    "type": "Acronym",
+    "context_meaning": "在文本中，DPM指的是一种先进的目标检测方法，全称为Deformable Parts Model，即可变形部件模型。",
+    "suggested_trans": "可变形部件模型",
+    "rationale": "DPM是Deformable Parts Model的缩写，中文译为可变形部件模型。这是因为DPM是一种计算机视觉领域中的目标检测算法，其核心思想是利用物体的可变形部件来建模，以提高检测的准确性。在翻译时，我们保留了DPM这一缩写形式，并在括号中提供了对应的中文全称，以便读者理解。",
+    "human_reviewed": true,
+    "human_modified": false,
+    "reviewed_at": "2026-01-11T03:16:20.213774"
+  },
+  "R-CNN": {
+    "src": "R-CNN",
+    "type": "Acronym",
+    "context_meaning": "在文中指的是一种物体检测算法，全称为Regions with Convolutional Neural Networks，是一种将卷积神经网络（CNN）应用于图像区域以进行物体检测的方法。",
+    "suggested_trans": "R-CNN",
+    "rationale": "R-CNN是一个专有名词和缩写词，通常在学术和技术文献中保留原样，不进行翻译。在中文文献和技术社区中，人们也普遍使用R-CNN这个缩写，因此建议直接使用原词。",
+    "human_reviewed": true,
+    "human_modified": false,
+    "reviewed_at": "2026-01-11T03:16:20.213774"
+  },
+  "frames per second": {
+    "src": "frames per second",
+    "type": "Terminology",
+    "context_meaning": "每秒帧数是指视频播放或者是图像处理时每秒钟显示的图片帧数。",
+    "suggested_trans": "每秒帧数",
+    "rationale": "在翻译“frames per second”时，我们将其译为“每秒帧数”。这是因为“frame”指的是视频或图像中的单帧，“per second”表示的是每秒钟。在计算机视觉和视频处理领域，这个术语用来描述视频的流畅度和处理速度。因此，将“frames per second”翻译为“每秒帧数”是准确且符合专业术语习惯的。",
+    "human_reviewed": true,
+    "human_modified": false,
+    "reviewed_at": "2026-01-11T15:00:47.629667"
+  },
+  "background": {
+    "src": "background",
+    "type": "Terminology",
+    "context_meaning": "在本文中，'background'指的是图像中与目标物体相对的背景区域，是目标检测中区分前景物体和背景的术语。",
+    "suggested_trans": "背景",
+    "rationale": "在计算机视觉领域，'background'一词通常被翻译为'背景'，表示与目标物体相对的图像区域。这种翻译符合专业术语的使用习惯，也容易被中文读者理解。",
+    "human_reviewed": true,
+    "human_modified": false,
+    "reviewed_at": "2026-01-11T15:00:47.629667"
+  },
+  "artwork": {
+    "src": "artwork",
+    "type": "Terminology",
+    "context_meaning": "在这段文本中，'artwork'指的是其他领域或艺术作品。",
+    "suggested_trans": "艺术作品",
+    "rationale": "在中文中，'artwork'通常被翻译为'艺术作品'，来表示绘画、雕塑等艺术创作。在这段上下文中，'artwork'指的是与自然图像不同的其他领域或艺术作品，因此使用'艺术作品'作为翻译较为合适。",
+    "human_reviewed": true,
+    "human_modified": false,
+    "reviewed_at": "2026-01-11T15:00:47.629667"
+  },
+  "Computer Science": {
+    "src": "Computer Science",
+    "type": "Terminology",
+    "context_meaning": "计算机科学是研究计算机及其应用的科学，包括计算机系统结构、软件工程、人工智能、算法设计等。",
+    "suggested_trans": "计算机科学",
+    "rationale": "根据提供的翻译记忆，'Computer Science'对应的中文翻译是'计算机科学'。这个翻译已经广泛使用并且被普遍认可，因此可以直接采用。",
+    "human_reviewed": true,
+    "human_modified": false,
+    "reviewed_at": "2026-01-11T15:05:36.216216"
+  },
+  "Technology": {
+    "src": "Technology",
+    "type": "Terminology",
+    "context_meaning": "技术是应用科学知识以实现实用目的的活动，涵盖广泛的领域，包括电子、计算机、通信、机械、医学等。",
+    "suggested_trans": "技术",
+    "rationale": "“Technology”一词在英文中指的是技术或科技，是英语中一个常用术语。在中文中，最常用的对应词汇是“技术”。因此，将“Technology”翻译为“技术”符合中文习惯，并且能够准确传达原词的意义。",
+    "human_reviewed": true,
+    "human_modified": false,
+    "reviewed_at": "2026-01-11T15:05:36.216216"
+  },
+  "deformable parts models": {
+    "src": "deformable parts models",
+    "type": "Terminology",
+    "context_meaning": "在计算机视觉领域中，'deformable parts models'指的是一种用于目标检测的模型，该模型通过滑动窗口方法，在图像中评估不同位置和尺度下的分类器，以识别图像中的对象。",
+    "suggested_trans": "可变形部件模型",
+    "rationale": "根据检索到的翻译记忆，'deformable parts models'被翻译为'可变形部件模型'。这个翻译准确地反映了原词组的含义，并且根据上下文，它指的是一种目标检测模型，因此使用这个翻译是合适的。",
+    "human_reviewed": true,
+    "human_modified": false,
+    "reviewed_at": "2026-01-11T15:05:36.216216"
+  },
+  "region proposal methods": {
+    "src": "region proposal methods",
+    "type": "Terminology",
+    "context_meaning": "在计算机视觉领域，特别是在对象检测任务中，'region proposal methods'指的是一种算法技术，它首先在图像中生成可能包含目标的边界框，然后再在这些提出的边界框上运行分类器进行进一步的处理。这种方法有助于减少需要分类的区域数量，提高检测效率。",
+    "suggested_trans": "区域提议方法",
+    "rationale": "根据检索到的翻译记忆，'region proposal methods'被翻译为'区域提议方法'。这个翻译准确反映了原词组在计算机视觉领域中的含义，即通过算法提出可能包含目标的区域（边界框）。因此，我采用了这个翻译。",
+    "human_reviewed": true,
+    "human_modified": false,
+    "reviewed_at": "2026-01-11T15:05:36.216216"
+  },
+  "convolutional network": {
+    "src": "convolutional network",
+    "type": "Terminology",
+    "context_meaning": "在本文中，'convolutional network'指的是一种用于图像识别和对象检测的深度学习模型，它通过卷积层提取图像特征，并预测图像中的对象及其位置。",
+    "suggested_trans": "卷积网络",
+    "rationale": "根据检索到的翻译记忆，'convolutional network'的翻译为'卷积网络'。这个翻译不仅准确，而且已经被广泛接受和使用。在深度学习和计算机视觉领域，'卷积网络'是一个标准的术语，因此我们选择这个翻译。",
+    "human_reviewed": true,
+    "human_modified": false,
+    "reviewed_at": "2026-01-11T15:05:36.216216"
+  },
+  "mean average precision": {
+    "src": "mean average precision",
+    "type": "Terminology",
+    "context_meaning": "在给定的文本中，'mean average precision'是指一个衡量对象检测算法性能的指标，它综合考虑了查准率（precision）和查全率（recall）来评估算法的平均表现。",
+    "suggested_trans": "平均精度均值",
+    "rationale": "根据提供的翻译记忆，'mean average precision'被翻译为'平均精度均值'。这里的'mean'指的是均值，'average'强调平均，'precision'对应于查准率，因此整体翻译为'平均精度均值'能够较好地表达原词组的意思。在计算机视觉领域，该术语用于描述评估算法识别和定位对象的能力，特别是在对象检测任务中。",
+    "human_reviewed": true,
+    "human_modified": false,
+    "reviewed_at": "2026-01-11T15:05:36.216216"
+  },
+  "Fast R-CNN": {
+    "src": "Fast R-CNN",
+    "type": "Terminology",
+    "context_meaning": "快速R-CNN是一种计算机视觉算法，用于对象检测。它通过区域提议网络生成可能的边界框，然后利用卷积神经网络对这些边界框进行分类。快速R-CNN相较于传统的R-CNN，通过共享卷积特征减少了计算量，提高了检测速度。",
+    "suggested_trans": "快速R-CNN",
+    "rationale": "根据提供的翻译记忆，'Fast R-CNN'已经被翻译为'快速R-CNN'。这个翻译是准确的，因为它保留了原词的缩写形式，并且'Fast'被翻译为'快速'，符合中文习惯。",
+    "human_reviewed": true,
+    "human_modified": false,
+    "reviewed_at": "2026-01-11T15:05:36.216216"
+  },
+  "Titan X GPU": {
+    "src": "Titan X GPU",
+    "type": "Proper Noun",
+    "context_meaning": "Titan X GPU是NVIDIA公司生产的一款高性能图形处理单元（GPU），被广泛应用于深度学习、图像处理和高性能计算等领域。",
+    "suggested_trans": "Titan X GPU",
+    "rationale": "保留原名即可，不必翻译",
+    "original_suggested_trans": "泰坦X GPU",
+    "human_reviewed": true,
+    "human_modified": true,
+    "reviewed_at": "2026-01-11T15:05:36.216216"
+  },
+  "pretrained models": {
+    "src": "pretrained models",
+    "type": "Terminology",
+    "context_meaning": "在深度学习领域，预训练模型指在大量数据上预先训练好的模型，这些模型可以被用于新任务，通过微调来适应新的数据集。",
+    "suggested_trans": "预训练模型",
+    "rationale": "根据上下文，'pretrained models'指的是在大量数据上预先训练好的模型。'预训练模型'是该术语在中文中的直接翻译，能够准确传达原词的含义，因此在翻译时选择使用这个表达。",
+    "human_reviewed": true,
+    "human_modified": false,
+    "reviewed_at": "2026-01-11T15:05:36.216216"
+  },
+  "Computer Science and Technology": {
+    "src": "Computer Science and Technology",
+    "type": "Terminology",
+    "context_meaning": "计算机科学与技术是研究计算机系统结构、软件、硬件及其应用的学科。",
+    "suggested_trans": "计算机科学与技术",
+    "rationale": "根据检索到的翻译记忆，'Computer Science'翻译为'计算机科学'，'Technology'翻译为'技术'。结合这两个词，'Computer Science and Technology'被翻译为'计算机科学与技术'，这是该领域学术和工业界广泛认可的标准翻译。",
+    "human_reviewed": true,
+    "human_modified": false,
+    "reviewed_at": "2026-01-11T15:08:24.181941"
+  },
+  "Artificial Intelligence": {
+    "src": "Artificial Intelligence",
+    "type": "Terminology",
+    "context_meaning": "指的是由计算机程序或机器所表现出的智能行为，包括学习、推理、自我修正等能力。",
+    "suggested_trans": "人工智能",
+    "rationale": "根据提供的翻译记忆，'Artificial Intelligence'对应的中文简体翻译是'人工智能'。这是一个专业术语，在中国广泛使用，因此无需任何变更地采用这个翻译。",
+    "human_reviewed": true,
+    "human_modified": false,
+    "reviewed_at": "2026-01-11T15:08:24.181941"
+  },
+  "Machine Learning": {
+    "src": "Machine Learning",
+    "type": "Terminology",
+    "context_meaning": "机器学习是一种使计算机系统利用数据和算法，通过学习不断改进其性能的技术。",
+    "suggested_trans": "机器学习",
+    "rationale": "机器学习是一个专业术语，翻译为中文时，直接使用对应的中文术语“机器学习”。这是因为“机器学习”这个概念在中文领域内已经有了广泛的认可和使用。",
+    "human_reviewed": true,
+    "human_modified": false,
+    "reviewed_at": "2026-01-11T15:08:24.181941"
+  },
+  "Unified Detection": {
+    "src": "Unified Detection",
+    "type": "Terminology",
+    "context_meaning": "统一检测是指将目标检测中的各个分离组件整合到一个单一神经网络中，该网络使用整张图像的特征来预测每个边界框，并同时预测图像中所有类别的所有边界框。这意味着网络对整个图像及其中的物体进行全面推理。",
+    "suggested_trans": "统一检测",
+    "rationale": "将'Unified Detection'翻译为'统一检测'，是因为'Unified'意为'统一的'，而'Detection'在此上下文中指的是目标检测。'统一检测'准确地表达了将多个分散组件整合到单一网络的概念，并符合术语翻译的规范。",
+    "human_reviewed": true,
+    "human_modified": false,
+    "reviewed_at": "2026-01-11T15:08:24.181941"
+  },
+  "bounding box": {
+    "src": "bounding box",
+    "type": "Terminology",
+    "context_meaning": "在目标检测中，用以确定目标位置的矩形区域，通常由中心点坐标、宽度和高度来定义。",
+    "suggested_trans": "边界框",
+    "rationale": "在计算机视觉领域，'bounding box'指的是用来框定图像中目标物体位置的矩形区域。在提供的源文本中，它被用来描述神经网络预测的目标位置信息。根据检索到的翻译记忆，'bounding boxes'被翻译为'边界框'，因此单个'bounding box'应翻译为'边界框'。这样的翻译既符合行业术语，也保持了原文的意思。",
+    "human_reviewed": true,
+    "human_modified": false,
+    "reviewed_at": "2026-01-11T15:08:24.181941"
+  },
+  "IOU": {
+    "src": "IOU",
+    "type": "Terminology",
+    "context_meaning": "IOU是交并比（Intersection over Union）的缩写，它是一个衡量预测边界框和真实边界框匹配程度的指标。在目标检测任务中，IOU计算预测边界框和真实边界框之间的重叠区域占两个边界框面积之和的比例。",
+    "suggested_trans": "交并比",
+    "rationale": "IOU是图像识别领域中常用的一个术语，表示预测边界框和真实边界框之间的匹配程度。在翻译时，我们保留了原词的缩写形式，并给出了中文解释，即交并比。这样的翻译既保留了原词的含义，又便于中文读者理解。",
+    "human_reviewed": true,
+    "human_modified": false,
+    "reviewed_at": "2026-01-11T15:08:24.181941"
+  },
+  "Pascal VOC": {
+    "src": "Pascal VOC",
+    "type": "Acronym",
+    "context_meaning": "Pascal VOC是视觉对象分类竞赛（Visual Object Classes）的缩写，它是一个广泛用于计算机视觉领域的对象识别和检测的基准数据集。",
+    "suggested_trans": "Pascal VOC",
+    "rationale": "Pascal VOC作为一个专有名词和缩写，无需翻译，直接保留原样。在计算机视觉领域，Pascal VOC是一个公认的标准化测试集，用于评估对象检测算法的性能，因此保持原英文缩写有助于保持其专业性和国际通用性。",
+    "human_reviewed": true,
+    "human_modified": false,
+    "reviewed_at": "2026-01-11T15:08:24.181941"
+  },
+  "S": {
+    "src": "S",
+    "type": "Terminology",
+    "context_meaning": "S 在文中指代的是将输入图像划分成的网格大小，即 $S\\times S$ 网格。",
+    "suggested_trans": "S",
+    "rationale": "保留缩写即可",
+    "original_suggested_trans": "网格大小",
+    "human_reviewed": true,
+    "human_modified": true,
+    "reviewed_at": "2026-01-11T15:08:24.181941"
+  },
+  "B": {
+    "src": "B",
+    "type": "Terminology",
+    "context_meaning": "在这段文本中，\"B\"指的是每个网格单元预测的边界框数量。",
+    "suggested_trans": "边界框数量",
+    "rationale": "根据上下文，\"B\"代表的是每个网格单元预测的边界框数量，因此将其翻译为\"边界框数量\"更为准确，符合原文的术语使用。",
+    "human_reviewed": true,
+    "human_modified": false,
+    "reviewed_at": "2026-01-11T15:08:24.181941"
+  },
+  "C": {
+    "src": "C",
+    "type": "Terminology",
+    "context_meaning": "在上下文中，'C'指的是类别的数量。Pascal VOC数据集中有20个标注好的类别，所以'C=20'。这里的'C'表示每个网格单元预测的条件类别概率的数量。",
+    "suggested_trans": "类别数",
+    "rationale": "在这段文本中，'C'是代表一个概念或术语，而不是一个专有名词或缩写。根据上下文，'C'指的是类别的数量，所以将其翻译为'类别数'是最合适的选择。",
+    "human_reviewed": true,
+    "human_modified": false,
+    "reviewed_at": "2026-01-11T15:08:24.181941"
+  },
+  "Object": {
+    "src": "Object",
+    "type": "Terminology",
+    "context_meaning": "在这段文本中，'Object'指的是图像识别领域中的目标或物体，是目标检测对象的总称。",
+    "suggested_trans": "物体",
+    "rationale": "在目标检测领域，'Object'通常被翻译为“物体”，这是因为在图像识别和计算机视觉任务中，需要识别和定位的图像中的实体通常被称为“物体”。",
+    "human_reviewed": true,
+    "human_modified": false,
+    "reviewed_at": "2026-01-11T15:08:24.181941"
+  },
+  "Class": {
+    "src": "Class",
+    "type": "Terminology",
+    "context_meaning": "在上文中，'Class'指的是不同类别的物体。在图像识别和对象检测的背景下，'Class'用来描述一个对象可能属于的不同类别或标签。",
+    "suggested_trans": "类别",
+    "rationale": "根据检索到的翻译记忆，'Class'在专业术语中通常被翻译为'类别'。这是因为在机器学习和计算机视觉领域，'Class'多指代类别或种类，特别是在分类或识别任务中。因此，将'Class'翻译为'类别'，既准确又符合领域内的通用表达。",
+    "human_reviewed": true,
+    "human_modified": false,
+    "reviewed_at": "2026-01-11T15:08:24.181941"
+  },
+  "IOU_pred_truth": {
+    "src": "IOU_pred_truth",
+    "type": "Terminology",
+    "context_meaning": "预测的交并比真实值，用于衡量预测的边界框和真实边界框之间的匹配程度。",
+    "suggested_trans": "预测IOU真实值",
+    "rationale": "IOU_pred_truth是一个复合术语，其中IOU是交并比（Intersection over Union），pred代表预测（predicted），truth代表真实（ground truth）。因此，将IOU_pred_truth翻译为“预测IOU真实值”能够较好地表达这一术语在目标检测领域中的含义，即模型预测的边界框和真实边界框之间的交并比。这种翻译方式既保持了原术语的结构，也传达了其在目标检测中的具体含义。",
+    "human_reviewed": true,
+    "human_modified": false,
+    "reviewed_at": "2026-01-11T15:08:24.181941"
+  },
+  "IOU_class_i_truth": {
+    "src": "IOU_class_i_truth",
+    "type": "Terminology",
+    "context_meaning": "在目标检测中，'IOU_class_i_truth'指的是预测框与真实框之间的交并比（Intersection over Union），其中'class_i'表示第i类目标。'IOU'是衡量预测框精确度的关键指标，用于评估预测框与真实框之间的重叠程度。'truth'表示真实框，即标注框。",
+    "suggested_trans": "IOU_class_i_真实值",
+    "rationale": "将'IOU_class_i_truth'翻译为'IOU_class_i_真实值'，其中'IOU'保持不变，'class_i'表示第i类目标，'真实值'用来表示'truth'，即真实框或标注框。这样的翻译既保留了原术语的专业性，又符合中文表达习惯，能够让读者更容易理解术语的含义。",
+    "human_reviewed": true,
+    "human_modified": false,
+    "reviewed_at": "2026-01-11T15:08:24.181941"
+  }
+}
