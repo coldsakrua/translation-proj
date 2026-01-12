@@ -1,0 +1,105 @@
+{
+  "evaluation_info": {
+    "output_dir": "output/resnet_nohuman",
+    "reference_file": "data/resnet_ch.json",
+    "evaluated_at": "2026-01-12T16:15:36.930748",
+    "total_chunks": 13,
+    "valid_chunks": 13,
+    "evaluated_chunks": 13
+  },
+  "metrics_summary": {
+    "quality_score": {
+      "average": 7.69,
+      "min": 2.0,
+      "max": 10.0,
+      "count": 13,
+      "direction": "higher_is_better",
+      "direction_cn": "越高越好"
+    },
+    "back_translation": {
+      "average": 4.73,
+      "min": 0.0,
+      "max": 8.04,
+      "count": 13,
+      "direction": "higher_is_better",
+      "direction_cn": "越高越好"
+    },
+    "terminology": {
+      "average": 6.88,
+      "min": 2.86,
+      "max": 10.0,
+      "count": 13,
+      "direction": "higher_is_better",
+      "direction_cn": "越高越好"
+    },
+    "length_ratio": {
+      "average": 5.47,
+      "min": 0,
+      "max": 9.07,
+      "count": 13,
+      "direction": "closer_to_ideal",
+      "direction_cn": "越接近理想值越好"
+    },
+    "fluency": {
+      "average": 10.0,
+      "min": 10.0,
+      "max": 10.0,
+      "count": 13,
+      "direction": "higher_is_better",
+      "direction_cn": "越高越好"
+    },
+    "number_preservation": {
+      "average": 8.85,
+      "min": 6.88,
+      "max": 10.0,
+      "count": 13,
+      "direction": "higher_is_better",
+      "direction_cn": "越高越好"
+    },
+    "bleu": {
+      "average": 1.9,
+      "min": 0.11,
+      "max": 6.97,
+      "count": 10,
+      "direction": "higher_is_better",
+      "direction_cn": "越高越好"
+    },
+    "semantic_similarity": {
+      "average": 7.31,
+      "min": 6.48,
+      "max": 8.5,
+      "count": 10,
+      "direction": "higher_is_better",
+      "direction_cn": "越高越好"
+    },
+    "edit_distance": {
+      "average": 0.65,
+      "min": 0.14,
+      "max": 1.89,
+      "count": 10,
+      "direction": "lower_is_better",
+      "direction_cn": "越低越好"
+    }
+  },
+  "overall_statistics": {
+    "quality_score": {
+      "average": 7.69,
+      "min": 2.0,
+      "max": 10.0,
+      "count": 13
+    },
+    "evaluation_score": {
+      "average": 5.94,
+      "min": 5.06,
+      "max": 6.9
+    },
+    "unsupervised_metrics": {
+      "average": 7.19,
+      "count": 13
+    },
+    "supervised_metrics": {
+      "average": 3.29,
+      "count": 10
+    }
+  }
+}

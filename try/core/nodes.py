@@ -23,6 +23,8 @@ from typing import Any
 import json
 import os
 import time
+from collections import deque
+from threading import Lock
 
 # 尝试导入RateLimitError（不同版本的openai可能位置不同）
 try:
@@ -30,6 +32,67 @@ try:
 except ImportError:
     # 如果导入失败，使用通用异常处理
     RateLimitError = Exception  # 使用通用Exception，在代码中通过错误消息判断
+
+# ============================================
+# 速率限制器：防止超过每分钟20次调用
+# ============================================
+class RateLimiter:
+    """
+    速率限制器，确保不超过每分钟20次调用
+    当 enable_human_review=False 时使用
+    """
+    def __init__(self, max_calls_per_minute=20):
+        self.max_calls_per_minute = max_calls_per_minute
+        self.min_interval = 60.0 / max_calls_per_minute  # 每次调用之间的最小间隔（秒）
+        self.call_times = deque()  # 存储最近调用的时间戳
+        self.lock = Lock()  # 线程锁，确保线程安全
+    
+    def wait_if_needed(self, enable_human_review=True):
+        """
+        如果需要，等待以确保不超过速率限制
+        
+        Args:
+            enable_human_review: 如果为 False，则应用速率限制
+        """
+        if enable_human_review:
+            # 如果启用了人工审查，不需要速率限制
+            return
+        
+        with self.lock:
+            current_time = time.time()
+            
+            # 移除超过1分钟的旧记录
+            while self.call_times and current_time - self.call_times[0] > 60:
+                self.call_times.popleft()
+            
+            # 如果已经达到限制，等待
+            if len(self.call_times) >= self.max_calls_per_minute:
+                # 计算需要等待的时间（直到最早的调用超过1分钟）
+                wait_time = 60 - (current_time - self.call_times[0]) + 0.1  # 加0.1秒缓冲
+                if wait_time > 0:
+                    print(f"  [Rate Limit] 等待 {wait_time:.1f} 秒以避免超过速率限制...")
+                    time.sleep(wait_time)
+                    # 更新当前时间
+                    current_time = time.time()
+                    # 清理过期记录
+                    while self.call_times and current_time - self.call_times[0] > 60:
+                        self.call_times.popleft()
+            
+            # 确保调用间隔至少为 min_interval
+            if self.call_times:
+                last_call_time = self.call_times[-1]
+                time_since_last = current_time - last_call_time
+                if time_since_last < self.min_interval:
+                    wait_time = self.min_interval - time_since_last
+                    print(f"  [Rate Limit] 等待 {wait_time:.1f} 秒以保持调用间隔...")
+                    time.sleep(wait_time)
+                    current_time = time.time()
+            
+            # 记录本次调用时间
+            self.call_times.append(current_time)
+
+# 创建全局速率限制器实例
+_rate_limiter = RateLimiter(max_calls_per_minute=20)
 # ============================================
 # 1. 定义数据结构 (State & Pydantic Models)
 # ============================================
@@ -97,6 +160,8 @@ class TranslationState(BaseModel):
     back_translation: Optional[str] = None # 回译文
     # ===== 控制信号 =====
     need_human_review: bool = True
+    enable_human_review: bool = True  # 是否启用人工审查模式（用于控制速率限制）
+    use_rag: bool = True  # 是否使用 RAG 检索（默认启用）
     critique: Optional[str] = None
     quality_score: Optional[float] = None
     revision_count: int = 0
@@ -108,7 +173,7 @@ class TranslationState(BaseModel):
 
 # --- Node A: 风格与预处理 ---
 def node_analyze_style(state: TranslationState):
-    print("\n🔹 [Phase A] Analyzing Style & Domain...")
+    print("\n[Phase A] Analyzing Style & Domain...")
     
     # 加载章节上下文（之前的章节摘要和翻译记忆）
     chapter_context_parts = []
@@ -123,7 +188,7 @@ def node_analyze_style(state: TranslationState):
             ])
             chapter_context_parts.append(f"之前章节摘要:\n{summary_text}")
     except Exception as e:
-        print(f"  ⚠️  加载章节摘要失败: {e}")
+        print(f"  [WARNING] 加载章节摘要失败: {e}")
     
     # 2. 加载当前章节已翻译的chunk（用于上下文）
     try:
@@ -142,7 +207,7 @@ def node_analyze_style(state: TranslationState):
             ])
             chapter_context_parts.append(f"本章已翻译内容:\n{context_text}")
     except Exception as e:
-        print(f"  ⚠️  加载章节翻译记忆失败: {e}")
+        print(f"  [WARNING] 加载章节翻译记忆失败: {e}")
     
     # 3. 使用state中的chapter_memory（如果有）
     if state.chapter_memory:
@@ -164,12 +229,14 @@ def node_analyze_style(state: TranslationState):
     """
     # 结构化输出
     try:
+        # 速率限制检查（如果禁用了人工审查）
+        _rate_limiter.wait_if_needed(state.enable_human_review)
         structured_llm = llm.with_structured_output(StyleMetadata)
         res = structured_llm.invoke(prompt)
         print("----------------------------", res)
         style_data = res.model_dump()
     except Exception as e:
-        print(f"⚠️  Structured output failed: {e}")
+        print(f"[WARNING] Structured output failed: {e}")
         print("   Using default style metadata...")
         # 回退到默认值
         style_data = {
@@ -184,7 +251,7 @@ def node_analyze_style(state: TranslationState):
 
 # --- Node B1: 术语识别 (Term Miner) ---
 def node_extract_terms(state: TranslationState):
-    print("\n🔹 [Phase B1] Mining Terms & Entities...")
+    print("\n[Phase B1] Mining Terms & Entities...")
     
     domain = state.style_guide.get('domain', '未知领域')
     
@@ -198,6 +265,7 @@ def node_extract_terms(state: TranslationState):
     - 只识别英文原文中的词汇，不要识别中文
     - 只输出英文原文词汇，不要输出翻译
     - 仅输出需要查证或统一译名的词汇列表
+    - ⚠️ 注意：人名（如作者名、研究者姓名）虽然会被识别，但在翻译时应保留英文原文，不需要翻译
     
     文本：{state.source_text}
     领域：{domain}
@@ -213,14 +281,17 @@ def node_extract_terms(state: TranslationState):
         terms: List[str]
 
     try:
+        # 速率限制检查（如果禁用了人工审查）
+        _rate_limiter.wait_if_needed(state.enable_human_review)
         structured_llm = llm.with_structured_output(RawTerms)
         res = structured_llm.invoke(prompt)
         print("----------------------------", res)
         terms_list = res.terms
     except Exception as e:
-        print(f"⚠️  Structured output failed: {e}")
+        print(f"[WARNING] Structured output failed: {e}")
         print("   Falling back to manual JSON parsing...")
         # 回退方案：普通调用 + 手动解析
+        _rate_limiter.wait_if_needed(state.enable_human_review)
         response = llm.invoke(prompt)
         content = response.content.strip()
         
@@ -243,7 +314,7 @@ def node_extract_terms(state: TranslationState):
             parsed = json.loads(json_str)
             terms_list = parsed.get("terms", [])
         except json.JSONDecodeError as je:
-            print(f"⚠️  JSON parsing failed: {je}")
+            print(f"[WARNING] JSON parsing failed: {je}")
             print(f"   Raw content: {content[:200]}...")
             # 最后的回退：尝试从文本中提取可能的术语
             terms_list = []
@@ -254,19 +325,29 @@ def node_extract_terms(state: TranslationState):
             terms_list.extend(quoted_terms)
             # 如果没有找到，返回空列表
             if not terms_list:
-                print("   ⚠️  Could not extract terms, using empty list")
+                print("   [WARNING] Could not extract terms, using empty list")
     
     state.raw_terms = terms_list
     return {"raw_terms": state.raw_terms}
 
 # --- Node B2: 知识查证 (RAG/Search) ---
 def node_search_and_consolidate(state: TranslationState):
-    print("\n🔹 [Phase B2] Searching & Standardizing Terms (RAG)...")
+    if state.use_rag:
+        print("\n[Phase B2] Searching & Standardizing Terms (RAG)...")
+    else:
+        print("\n[Phase B2] Standardizing Terms (Direct Translation, No RAG)...")
     
     consolidated = []
     
     for term in state.raw_terms:
-        search_result = retrieve_translation_memory(term, top_k=3)
+        # 如果启用 RAG，则检索翻译记忆；否则跳过检索
+        if state.use_rag:
+            search_result = retrieve_translation_memory(term, top_k=3)
+            rag_context = f"\n\nRetrieved translation memory:\n{search_result}"
+        else:
+            search_result = ""
+            rag_context = "\n\nNote: RAG retrieval is disabled. Translate based on your knowledge only."
+        
         term_prompt = f"""
         You are a terminology expert specializing in English-to-Chinese translation.
 
@@ -274,25 +355,26 @@ def node_search_and_consolidate(state: TranslationState):
 
         Term: "{term}"
         Source text: "{state.source_text}"
-
-        Retrieved translation memory:
-        {search_result}
+        {rag_context}
 
         IMPORTANT: 
         - The "suggested_trans" field MUST be in Chinese (Simplified Chinese), not any other language.
         - If the term is a proper noun or acronym (like "YOLO"), you may keep it as is or provide a Chinese explanation.
+        - CRITICAL: If the term is a person's name (e.g., "Krizhevsky", "Alex", "John Smith"), you MUST keep it as the original English name in the "suggested_trans" field. Do NOT translate person names into Chinese.
         - The "rationale" field should explain your translation choice in Chinese.
 
         Output a JSON object with ALL fields:
         {{
         "src": string (the original English term),
-        "suggested_trans": string (MUST be in Chinese/Simplified Chinese),
-        "type": string (e.g., "Terminology", "Acronym", "Proper Noun"),
+        "suggested_trans": string (MUST be in Chinese/Simplified Chinese, EXCEPT for person names which should remain in English),
+        "type": string (e.g., "Terminology", "Acronym", "Proper Noun", "Person Name"),
         "context_meaning": string (explain the meaning in the context, in Chinese),
         "rationale": string (explain translation rationale, in Chinese)
         }}
         """
         try:
+            # 速率限制检查（如果禁用了人工审查）
+            _rate_limiter.wait_if_needed(state.enable_human_review)
             entry = llm.with_structured_output(TermEntry).invoke(term_prompt)
             consolidated.append(entry.model_dump())
         except Exception as e:
@@ -300,7 +382,7 @@ def node_search_and_consolidate(state: TranslationState):
                 "src": term,
                 "suggested_trans": term,
                 "type": "Unknown",
-                "context_meaning": "Insufficient context from retrieval.",
+                "context_meaning": "Insufficient context from retrieval." if state.use_rag else "Direct translation without RAG.",
                 "rationale": f"Fallback due to error: {e}"
             })
     
@@ -312,7 +394,7 @@ def node_search_and_consolidate(state: TranslationState):
 # --- Node C1: 多策略翻译与融合 (The Translator) ---
 def node_translate_fusion(state: TranslationState):
     iteration = state.revision_count
-    print(f"\n🔸 [Phase 2] Translation Generation (Iter {iteration+1})...")
+    print(f"\n[Phase 2] Translation Generation (Iter {iteration+1})...")
     
     # 直接使用原文，不再提取LaTeX公式
     source_text_cleaned = state.source_text
@@ -329,7 +411,7 @@ def node_translate_fusion(state: TranslationState):
                     global_terms.append(f"- {src} -> {trans}")
         if global_terms:
             global_glossary_text = "\n".join(global_terms[:20])  # 限制数量
-            print(f"  📚 加载了 {len(global_terms)} 个全局术语")
+            print(f"  加载了 {len(global_terms)} 个全局术语")
     
     # 当前chunk的术语表
     current_glossary_text = "\n".join([
@@ -349,27 +431,33 @@ def node_translate_fusion(state: TranslationState):
     
     # 加载相似的翻译示例（从已翻译的文本中）
     translation_examples = []
-    try:
-        similar_examples = get_similar_translation_examples(
-            state.source_text, state.book_id, top_k=3
-        )
-        if similar_examples:
-            print(f"  📖 找到 {len(similar_examples)} 个相似的翻译示例")
-            translation_examples = similar_examples
-    except Exception as e:
-        print(f"  ⚠️  加载翻译示例失败: {e}")
+    if state.use_rag:
+        try:
+            similar_examples = get_similar_translation_examples(
+                state.source_text, state.book_id, top_k=3
+            )
+            if similar_examples:
+                print(f"  找到 {len(similar_examples)} 个相似的翻译示例")
+                translation_examples = similar_examples
+        except Exception as e:
+            print(f"  [WARNING] 加载翻译示例失败: {e}")
+    else:
+        print(f"  跳过翻译示例检索（RAG已禁用）")
     
     # 加载之前章节的翻译记忆（用于风格参考）
     previous_memories = []
-    try:
-        prev_memories = get_previous_chapters_memory(
-            state.book_id, state.chapter_id, top_k=3
-        )
-        if prev_memories:
-            print(f"  📝 加载了 {len(prev_memories)} 个之前章节的翻译记忆")
-            previous_memories = prev_memories
-    except Exception as e:
-        print(f"  ⚠️  加载之前章节记忆失败: {e}")
+    if state.use_rag:
+        try:
+            prev_memories = get_previous_chapters_memory(
+                state.book_id, state.chapter_id, top_k=3
+            )
+            if prev_memories:
+                print(f"  加载了 {len(prev_memories)} 个之前章节的翻译记忆")
+                previous_memories = prev_memories
+        except Exception as e:
+            print(f"  [WARNING] 加载之前章节记忆失败: {e}")
+    else:
+        print(f"  跳过之前章节记忆检索（RAG已禁用）")
     
     # 构建翻译示例文本
     examples_text = ""
@@ -416,7 +504,9 @@ def node_translate_fusion(state: TranslationState):
 - 强制使用术语表（必须严格遵守）：
 {all_glossary_text if all_glossary_text else "无术语表"}
     - 上一轮反馈（如有）：{prev_feedback}
+{f"重要：这是根据用户反馈的重新翻译，请特别注意以下反馈意见并据此改进翻译：{prev_feedback}" if (state.critique and state.critique != "无" and state.revision_count == 0) else ""}
     - 注意：如果文本中包含LaTeX公式（如 $...$ 或 $$...$$），请保持原样，不要翻译
+    - 重要：人名（包括作者名、研究者姓名等）必须保留英文原文，不要翻译成中文。例如："Krizhevsky"、"Alex"、"John Smith" 等应保持原样
 
 {examples_text if examples_text else ""}
 
@@ -431,6 +521,8 @@ def node_translate_fusion(state: TranslationState):
     retry_delay = 2  # 秒
     for attempt in range(max_retries):
         try:
+            # 速率限制检查（如果禁用了人工审查）
+            _rate_limiter.wait_if_needed(state.enable_human_review)
             response = llm.invoke(prompt)
             translated_text = response.content
             state.combined_translation = translated_text
@@ -444,13 +536,13 @@ def node_translate_fusion(state: TranslationState):
             
             if is_rate_limit and attempt < max_retries - 1:
                 wait_time = retry_delay * (attempt + 1)
-                print(f"  ⚠️  速率限制错误，等待 {wait_time} 秒后重试... (尝试 {attempt + 1}/{max_retries})")
+                print(f"  [WARNING] 速率限制错误，等待 {wait_time} 秒后重试... (尝试 {attempt + 1}/{max_retries})")
                 time.sleep(wait_time)
             elif attempt < max_retries - 1:
-                print(f"  ⚠️  翻译错误: {e}，等待 {retry_delay} 秒后重试... (尝试 {attempt + 1}/{max_retries})")
+                print(f"  [WARNING] 翻译错误: {e}，等待 {retry_delay} 秒后重试... (尝试 {attempt + 1}/{max_retries})")
                 time.sleep(retry_delay)
             else:
-                print(f"  ❌ 达到最大重试次数，使用原文作为翻译")
+                print(f"  × 达到最大重试次数，使用原文作为翻译")
                 state.combined_translation = state.source_text
                 state.revision_count += 1
     
@@ -462,7 +554,7 @@ def node_translate_fusion(state: TranslationState):
 
 # --- Node C2: 回译与 TEaR 评估 ---
 def node_tear_evaluation(state: TranslationState):
-    print("\n🔸 [Phase 3] TEaR Evaluation (Back-translation & Scoring)...")
+    print("\n[Phase 3] TEaR Evaluation (Back-translation & Scoring)...")
     
     # 直接使用翻译结果，不再提取LaTeX公式
     translation_cleaned = state.combined_translation
@@ -480,6 +572,8 @@ Text to translate:
     
     for attempt in range(max_retries):
         try:
+            # 速率限制检查（如果禁用了人工审查）
+            _rate_limiter.wait_if_needed(state.enable_human_review)
             bt_res = llm.invoke(bt_prompt)
             back_translation = bt_res.content
             state.back_translation = back_translation
@@ -491,13 +585,13 @@ Text to translate:
             
             if is_rate_limit and attempt < max_retries - 1:
                 wait_time = retry_delay * (attempt + 1)
-                print(f"  ⚠️  速率限制错误，等待 {wait_time} 秒后重试... (尝试 {attempt + 1}/{max_retries})")
+                print(f"  [WARNING] 速率限制错误，等待 {wait_time} 秒后重试... (尝试 {attempt + 1}/{max_retries})")
                 time.sleep(wait_time)
             elif attempt < max_retries - 1:
-                print(f"  ⚠️  回译错误: {e}，等待 {retry_delay} 秒后重试... (尝试 {attempt + 1}/{max_retries})")
+                print(f"  [WARNING] 回译错误: {e}，等待 {retry_delay} 秒后重试... (尝试 {attempt + 1}/{max_retries})")
                 time.sleep(retry_delay)
             else:
-                print(f"  ❌ 回译失败，跳过回译步骤")
+                print(f"  × 回译失败，跳过回译步骤")
                 state.back_translation = state.source_text  # 使用原文作为回译结果
     
     # 构建术语表文本（用于评估）
@@ -554,7 +648,7 @@ Text to translate:
         specific_issues = eval_res.specific_issues or []
         improvement_suggestions = eval_res.improvement_suggestions or []
     except Exception as e:
-        print(f"⚠️  Structured output failed: {e}")
+        print(f"[WARNING] Structured output failed: {e}")
         print("   Using default quality scores...")
         # 回退到默认值
         quality_score = 7.0
@@ -598,11 +692,11 @@ def node_refine_translation(state: TranslationState):
     TEaR框架的Refine步骤：基于评估反馈进行针对性修正
     """
     iteration = state.revision_count
-    print(f"\n🔹 [Phase 4] Refinement (Iter {iteration+1})...")
+    print(f"\n[Phase 4] Refinement (Iter {iteration+1})...")
     
     # 获取最新的评估信息
     if not state.refinement_history:
-        print("  ⚠️  没有评估历史，跳过修正步骤")
+        print("  [WARNING] 没有评估历史，跳过修正步骤")
         return {"combined_translation": state.combined_translation}
     
     latest_eval = state.refinement_history[-1]
@@ -698,6 +792,7 @@ def node_refine_translation(state: TranslationState):
     - 如果术语表中有对应术语，必须使用术语表中的翻译
     - 保持译文的整体风格和结构
     - 如果文本中包含LaTeX公式（如 $...$ 或 $$...$$），请保持原样
+    - 重要：人名（包括作者名、研究者姓名等）必须保留英文原文，不要翻译成中文
 
     请输出修正后的完整译文：
     """
@@ -707,11 +802,13 @@ def node_refine_translation(state: TranslationState):
     retry_delay = 2
     for attempt in range(max_retries):
         try:
+            # 速率限制检查（如果禁用了人工审查）
+            _rate_limiter.wait_if_needed(state.enable_human_review)
             response = llm.invoke(refine_prompt)
             refined_translation = response.content.strip()
             state.combined_translation = refined_translation
             state.revision_count += 1
-            print(f"  ✅ 修正完成（迭代 {state.revision_count}）")
+            print(f"  √ 修正完成（迭代 {state.revision_count}）")
             break
         except Exception as e:
             error_str = str(e)
@@ -719,13 +816,13 @@ def node_refine_translation(state: TranslationState):
             
             if is_rate_limit and attempt < max_retries - 1:
                 wait_time = retry_delay * (attempt + 1)
-                print(f"  ⚠️  速率限制错误，等待 {wait_time} 秒后重试... (尝试 {attempt + 1}/{max_retries})")
+                print(f"  [WARNING] 速率限制错误，等待 {wait_time} 秒后重试... (尝试 {attempt + 1}/{max_retries})")
                 time.sleep(wait_time)
             elif attempt < max_retries - 1:
-                print(f"  ⚠️  修正错误: {e}，等待 {retry_delay} 秒后重试... (尝试 {attempt + 1}/{max_retries})")
+                print(f"  [WARNING] 修正错误: {e}，等待 {retry_delay} 秒后重试... (尝试 {attempt + 1}/{max_retries})")
                 time.sleep(retry_delay)
             else:
-                print(f"  ❌ 达到最大重试次数，保持原译文")
+                print(f"  × 达到最大重试次数，保持原译文")
                 # 保持原译文不变
                 state.revision_count += 1
     
@@ -761,7 +858,12 @@ def node_persistence(state: TranslationState):
         refinement_history = state.get("refinement_history", [])
         revision_count = state.get("revision_count", 0)
 
-    print(f"💾 [Persistence] Writing data for Chunk {chunk_id}...")
+    print(f"[Persistence] Writing data for Chunk {chunk_id}...")
+
+    # 检查source_text是否为空，如果为空则跳过保存
+    if not source_text or not source_text.strip():
+        print(f"  [WARNING] Chunk {chunk_id} 的source_text为空，跳过保存")
+        return {"need_human_review": False}
 
     # 路径构造
     base_dir = f"./output/{book_id}/chapter_{chapter_id}"
@@ -783,7 +885,7 @@ def node_persistence(state: TranslationState):
     with open(file_path, "w", encoding="utf-8") as f:
         json.dump(data_to_save, f, ensure_ascii=False, indent=2)
     
-    print(f"📂 File saved: {file_path}")
+    print(f"File saved: {file_path}")
     
     # 保存翻译记忆到Memory系统
     try:
@@ -796,8 +898,8 @@ def node_persistence(state: TranslationState):
             translation=translation,
             quality_score=quality_score
         )
-        print(f"  ✅ 翻译记忆已保存到Memory系统")
+        print(f"  √ 翻译记忆已保存到Memory系统")
     except Exception as e:
-        print(f"  ⚠️  保存翻译记忆失败: {e}")
+        print(f"  [WARNING] 保存翻译记忆失败: {e}")
     
     return {"need_human_review": False}

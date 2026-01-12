@@ -7,38 +7,89 @@ from datetime import datetime
 es = Elasticsearch("http://localhost:9200")
 INDEX_NAME = "zh_en_translation_memory"
 
-def retrieve_translation_memory(term: str, top_k: int = 3) -> str:
+def retrieve_translation_memory(term: str, top_k: int = 3, include_context: bool = True) -> str:
     """
     用术语检索翻译记忆，返回可直接喂给 LLM 的文本
+    
+    Args:
+        term: 检索关键词（可以是术语或句子片段）
+        top_k: 返回最相关的k个结果
+        include_context: 是否包含上下文信息（标题、章节等）
     """
-    # 1. 统计总文档数（验证导入数量）,用于测试ES是否能够正常运行
-    # count = es.count(index=INDEX_NAME)
-    # print(f"✅ ES索引总文档数：{count['count']}（应和导入的1120条一致）")
-
-    resp = es.search(
-        index=INDEX_NAME,
-        size=top_k,
-        body={
-            "query": {
-                "multi_match": {
-                    "query": term,
-                    "fields": ["en^2", "zh"]
+    try:
+        # 检查ES连接
+        if not es.ping():
+            return "No relevant translation memory found (ES not available)."
+        
+        # 检查索引是否存在
+        if not es.indices.exists(index=INDEX_NAME):
+            return "No relevant translation memory found (index not exists)."
+        
+        # 构建查询
+        try:
+            # 尝试新版本API（直接传参）
+            resp = es.search(
+                index=INDEX_NAME,
+                size=top_k,
+                query={
+                    "multi_match": {
+                        "query": term,
+                        "fields": ["en^2", "zh", "title^0.5"],  # 英文权重更高，标题权重较低
+                        "type": "best_fields",
+                        "fuzziness": "AUTO"  # 允许模糊匹配
+                    }
                 }
-            }
-        }
-    )
+            )
+        except (TypeError, AttributeError):
+            # 回退到旧版本API（使用body参数）
+            resp = es.search(
+                index=INDEX_NAME,
+                size=top_k,
+                body={
+                    "query": {
+                        "multi_match": {
+                            "query": term,
+                            "fields": ["en^2", "zh", "title^0.5"],
+                            "type": "best_fields",
+                            "fuzziness": "AUTO"
+                        }
+                    }
+                }
+            )
 
-    hits = resp["hits"]["hits"]
-    if not hits:
+        hits = resp["hits"]["hits"]
+        if not hits:
+            return "No relevant translation memory found."
+
+        snippets = []
+        for h in hits:
+            src = h["_source"].get("en", "")
+            tgt = h["_source"].get("zh", "")
+            
+            if include_context:
+                # 包含上下文信息
+                title = h["_source"].get("title", "")
+                source = h["_source"].get("source", "")
+                pair_type = h["_source"].get("pair_type", "")
+                
+                context_info = []
+                if title:
+                    context_info.append(f"章节: {title}")
+                if source:
+                    context_info.append(f"来源: {source}")
+                if pair_type:
+                    context_info.append(f"类型: {pair_type}")
+                
+                context_str = f" ({', '.join(context_info)})" if context_info else ""
+                snippets.append(f"- {src} → {tgt}{context_str}")
+            else:
+                snippets.append(f"- {src} → {tgt}")
+
+        return "\n".join(snippets)
+    
+    except Exception as e:
+        print(f"[WARNING] 检索翻译记忆失败: {e}")
         return "No relevant translation memory found."
-
-    snippets = []
-    for h in hits:
-        src = h["_source"].get("en", "")
-        tgt = h["_source"].get("zh", "")
-        snippets.append(f"- {src} → {tgt}")
-
-    return "\n".join(snippets)
 
 
 def update_term_to_es(term_dict: dict) -> bool:
@@ -56,7 +107,7 @@ def update_term_to_es(term_dict: dict) -> bool:
         zh_text = term_dict.get('suggested_trans', '').strip()
         
         if not en_text or not zh_text:
-            print(f"⚠️  术语数据不完整，跳过: {term_dict}")
+            print(f"[WARNING] 术语数据不完整，跳过: {term_dict}")
             return False
         
         # 生成文档ID（基于英文文本的SHA1哈希）
@@ -104,7 +155,7 @@ def update_term_to_es(term_dict: dict) -> bool:
         return response.get('result') in ['created', 'updated']
         
     except Exception as e:
-        print(f"⚠️  更新术语到ES失败: {e}")
+        print(f"[WARNING] 更新术语到ES失败: {e}")
         return False
 
 
@@ -138,7 +189,7 @@ def batch_update_terms_to_es(terms: list[dict]) -> dict:
         "total": len(terms)
     }
     
-    print(f"✅ ES更新完成: 成功 {success_count} 个，失败 {failed_count} 个，总计 {len(terms)} 个")
+    print(f"√ ES更新完成: 成功 {success_count} 个，失败 {failed_count} 个，总计 {len(terms)} 个")
     
     return result
 
@@ -156,12 +207,12 @@ def export_rag_data_to_file(output_dir: str = "output/rag_backups") -> str:
     try:
         # 检查ES连接
         if not es.ping():
-            print(f"  ⚠️  无法连接到Elasticsearch，跳过RAG数据导出")
+            print(f"  [WARNING] 无法连接到Elasticsearch，跳过RAG数据导出")
             return ""
         
         # 检查索引是否存在
         if not es.indices.exists(index=INDEX_NAME):
-            print(f"  ⚠️  索引 {INDEX_NAME} 不存在，跳过RAG数据导出")
+            print(f"  [WARNING] 索引 {INDEX_NAME} 不存在，跳过RAG数据导出")
             return ""
         
         # 确保输出目录存在
@@ -222,7 +273,7 @@ def export_rag_data_to_file(output_dir: str = "output/rag_backups") -> str:
                     hits = response['hits']['hits']
                     all_docs.extend([hit['_source'] for hit in hits])
                 except Exception as scroll_error:
-                    print(f"  ⚠️  Scroll获取数据时出错: {scroll_error}")
+                    print(f"  [WARNING] Scroll获取数据时出错: {scroll_error}")
                     break
             
             # 清理scroll上下文
@@ -233,7 +284,7 @@ def export_rag_data_to_file(output_dir: str = "output/rag_backups") -> str:
                     pass
             
         except Exception as search_error:
-            print(f"  ⚠️  搜索ES数据时出错: {search_error}")
+            print(f"  [WARNING] 搜索ES数据时出错: {search_error}")
             # 如果scroll失败，尝试简单搜索（仅适用于数据量小的情况）
             try:
                 response = es.search(
@@ -249,14 +300,14 @@ def export_rag_data_to_file(output_dir: str = "output/rag_backups") -> str:
             with open(file_path, 'w', encoding='utf-8') as f:
                 json.dump(all_docs, f, ensure_ascii=False, indent=2)
             
-            print(f"  💾 RAG数据已导出: {file_path} (共 {len(all_docs)} 条记录)")
+            print(f"  RAG数据已导出: {file_path} (共 {len(all_docs)} 条记录)")
             return file_path
         else:
-            print(f"  ⚠️  未找到任何RAG数据")
+            print(f"  [WARNING] 未找到任何RAG数据")
             return ""
         
     except Exception as e:
-        print(f"  ⚠️  导出RAG数据失败: {e}")
+        print(f"  [WARNING] 导出RAG数据失败: {e}")
         import traceback
         traceback.print_exc()
         return ""

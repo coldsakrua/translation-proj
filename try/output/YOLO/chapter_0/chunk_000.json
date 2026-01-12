@@ -1,8 +1,8 @@
 {
   "chunk_id": 0,
   "source_text": "You Only Look Once: Unified, Real-Time Object Detection",
-  "translation": "YOLO：统一的、实时目标检测",
-  "quality_score": 9.0,
+  "translation": "你只需看一次：统一的、实时目标检测",
+  "quality_score": 8.0,
   "glossary": [
     {
       "src": "You Only Look Once",
@@ -46,8 +46,27 @@
       "reviewed_at": "2026-01-11T03:13:51.265182"
     }
   ],
+  "refinement_history": [
+    {
+      "iteration": 1,
+      "score": 8,
+      "critique": "译文基本符合要求，术语一致性、语义准确性较好。但回译一致性和语言流畅性有提升空间。",
+      "error_types": [
+        "回译不一致",
+        "流畅性问题"
+      ],
+      "specific_issues": [
+        "具体问题1：当前译文中的'统一的、实时目标检测'语序不够流畅，不符合中文表达习惯。",
+        "具体问题2：回译文中的'You only need to see it once'与原文'You Only Look Once'不一致。"
+      ],
+      "improvement_suggestions": [
+        "改进建议1：将译文优化为'你只需看一次：统一的实时目标检测'，使语序更流畅。",
+        "改进建议2：回译时注意保持与原文的一致性，可参考'You Only Look Once: Unified, Real-Time Object Detection'。"
+      ],
+      "back_translation": "You only need to see it once: Unified, real-time object detection"
+    }
+  ],
+  "revision_count": 1,
   "human_reviewed": true,
-  "reviewed_glossary_count": 4,
-  "translation_updated_by_glossary": true,
-  "translation_updated_at": "2026-01-11T14:46:33.691317"
+  "reviewed_glossary_count": 4
 }

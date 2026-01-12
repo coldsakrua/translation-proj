@@ -1,141 +1,107 @@
 {
   "chunk_id": 1,
   "source_text": "2. Unified Detection We unify the separate components of object detection into a single neural network. Our network uses features from the entire image to predict each bounding box. It also predicts all bounding boxes across all classes for an image simultaneously. This means our network reasons globally about the full image and all the objects in the image. The YOLO design enables end-to-end training and real-time speeds while maintaining high average precision. Our system divides the input image into an $S\\times S$ grid. If the center of an object falls into a grid cell, that grid cell is responsible for detecting that object. Each grid cell predicts $B$ bounding boxes and confidence scores for those boxes. These confidence scores reflect how confident the model is that the box contains an object and also how accurate it thinks the box is that it predicts. Formally we define confidence as $\\Pr(\\textrm{Object}) * \\textrm{IOU}_{\\textrm{pred}}^{\\textrm{truth}}$. If no object exists in that cell, the confidence scores should be zero. Otherwise we want the confidence score to equal the intersection over union (IOU) between the predicted box and the ground truth. Each bounding box consists of 5 predictions: $x$, $y$, $w$, $h$, and confidence. The $(x,y)$ coordinates represent the center of the box relative to the bounds of the grid cell. The width and height are predicted relative to the whole image. Finally the confidence prediction represents the IOU between the predicted box and any ground truth box. Each grid cell also predicts $C$ conditional class probabilities, $\\Pr(\\textrm{Class}_i | \\textrm{Object})$. These probabilities are conditioned on the grid cell containing an object. We only predict one set of class probabilities per grid cell, regardless of the number of boxes $B$. At test time we multiply the conditional class probabilities and the individual box confidence predictions, $$\\Pr(\\textrm{Class}_i | \\textrm{Object}) * \\Pr(\\textrm{Object}) * \\textrm{IOU}_{\\textrm{pred}}^{\\textrm{truth}} = \\Pr(\\textrm{Class}_i)*\\textrm{IOU}_{\\textrm{pred}}^{\\textrm{truth}}$$ which gives us class-specific confidence scores for each box. These scores encode both the probability of that class appearing in the box and how well the predicted box fits the object. For evaluating YOLO on Pascal VOC, we use $S=7$, $B=2$. Pascal VOC has 20 labelled classes so $C=20$. Our final prediction is a $7\\times 7 \\times 30$ tensor. The Model. Our system models detection as a regression problem. It divides the image into an $S \\times S$ grid and for each grid cell predicts $B$ bounding boxes, confidence for those boxes, and $C$ class probabilities. These predictions are encoded as an $S \\times S \\times (B*5 + C)$ tensor.",
-  "translation": "2. 统一检测 我们将目标检测的各个独立组件统一为一个单一的神经网络。我们的网络利用整个图像的特征来预测每个边界框。它还同时预测图像中所有类别的所有边界框。这意味着我们的网络对整个图像和图像中的所有物体进行全局推理。YOLO的设计使得端到端训练和实时速度得以保持，同时保持高平均精度。我们的系统将输入图像划分为一个 $S\\times S$ 网格。如果一个物体的中心落入网格单元，则该网格单元负责检测该物体。每个网格单元预测 $B$ 个边界框和这些框的置信度分数。这些置信度分数反映了模型对框包含物体的置信程度以及它预测的框有多准确。我们正式定义置信度为 $\\Pr(\\textrm{物体}) * \\textrm{IOU}_{\\textrm{预测}}^{\\textrm{真实值}}$。如果该单元中没有物体存在，则置信度分数应为零。否则，我们希望置信度分数等于预测框和真实框之间的交并比（IOU）。每个边界框包括5个预测：$x$、$y$、$w$、$h$ 和置信度。$(x,y)$ 坐标表示框的中心相对于网格单元边界的位置。宽度和高度是相对于整个图像预测的。最后，置信度预测表示预测框和任何真实框之间的交并比。每个网格单元还预测 $C$ 个条件类别概率，$\\Pr(\\textrm{类别}_i | \\textrm{物体})$。这些概率是基于网格单元包含物体的条件。我们每个网格单元只预测一组类别概率，不管边界框的数量 $B$。在测试时，我们将条件类别概率和单个框置信度预测相乘，$$\\Pr(\\textrm{类别}_i | \\textrm{物体}) * \\Pr(\\textrm{物体}) * \\textrm{IOU}_{\\textrm{预测}}^{\\textrm{真实值}} = \\Pr(\\textrm{类别}_i)*\\textrm{IOU}_{\\textrm{预测}}^{\\textrm{真实值}}$$ 这为我们每个框提供了类别特定的置信度分数。这些分数既编码了该类别在框中出现的概率，也编码了预测框与物体的拟合程度。在Pascal VOC上评估YOLO时，我们使用 $S=7$、$B=2$。Pascal VOC有20个标记类别，所以 $C=20$。我们的最终预测是一个 $7\\times 7 \\times 30$ 张量。模型。我们的系统将检测建模为一个回归问题。它将图像划分为一个 $S \\times S$ 网格，并对每个网格单元预测 $B$ 个边界框、这些框的置信度和 $C$ 个类别概率。这些预测被编码为一个 $S \\times S \\times (B*5 + C)$ 张量。",
-  "quality_score": 9.0,
+  "translation": "2. 统一检测 我们将目标检测的不同组件统一到单个神经网络中。我们的网络使用整个图像的特征来预测每个边界框。它还同时为图像中的所有类别预测所有边界框。这意味着我们的网络对整个图像以及图像中的所有物体进行全局推理。YOLO的设计支持端到端训练和实时速度，同时保持高平均精度。我们的系统将输入图像划分为一个$S\\times S$网格。如果一个物体的中心落在某个网格单元内，那么该网格单元负责检测该物体。每个网格单元预测$B$个边界框和这些框的置信度分数。这些置信度分数反映了模型对框包含物体的置信程度，以及它认为预测的框有多准确。形式上，我们定义置信度为$\\Pr(\\textrm{物体}) * \\textrm{IOU}_{\\textrm{预测}}^{\\textrm{真实}}$。如果该单元内没有物体存在，置信度分数应为零。否则，我们希望置信度分数等于预测框与真实框之间的交并比（IOU）。每个边界框由5个预测组成：$x$, $y$, $w$, $h$, 和置信度。坐标$(x,y)$表示框的中心相对于网格单元边界的位置。宽度和高度是相对于整个图像预测的。最后，置信度预测表示预测框与任何真实框之间的IOU。每个网格单元还预测$C$个条件类别概率，$\\Pr(\\textrm{类别}_i | \\textrm{物体})$。这些概率以网格单元包含物体为条件。无论边界框数量$B$如何，我们只预测每个网格单元的一组类别概率。在测试时，我们将条件类别概率与单个框的置信度预测相乘，$$\\Pr(\\textrm{类别}_i | \\textrm{物体}) * \\Pr(\\textrm{物体}) * \\textrm{IOU}_{\\textrm{预测}}^{\\textrm{真实}} = \\Pr(\\textrm{类别}_i)*\\textrm{IOU}_{\\textrm{预测}}^{\\textrm{真实}}$$，这为我们提供了每个框的类别特定的置信度分数。这些分数编码了该类别出现在框中的概率以及预测框与物体的拟合程度。在Pascal VOC上评估YOLO时，我们使用$S=7$，$B=2$。Pascal VOC有20个标记类别，所以$C=20$。我们的最终预测是一个$7\\times 7 \\times 30$张量。模型。我们的系统将检测建模为一个回归问题。它将图像划分为一个$S \\times S$网格，并对每个网格单元预测$B$个边界框、这些框的置信度以及$C$个类别概率。这些预测被编码为一个$S \\times S \\times (B*5 + C)$张量。",
+  "quality_score": 8.0,
   "glossary": [
     {
       "src": "Unified Detection",
       "type": "Terminology",
-      "context_meaning": "统一检测是指将目标检测中的各个分离组件整合到一个单一神经网络中，该网络使用整张图像的特征来预测每个边界框，并同时预测图像中所有类别的所有边界框。这意味着网络对整个图像及其中的物体进行全面推理。",
+      "context_meaning": "统一检测是指将目标检测中的各个独立组件统一到一个神经网络中，该网络利用整张图片的特征来预测每个边界框，同时为一张图片中的所有类别预测所有边界框。这种方式使得网络能够全局地考虑整张图片以及图片中的所有对象。YOLO设计使得系统能够在保持高精度的同时进行端到端训练和实现实时速度。系统将输入图片划分为一个S×S的网格。如果一个物体的中心落在一个网格单元内，那么这个网格单元就负责检测该物体。每个网格单元预测B个边界框和这些框的置信分数。这些置信分数反映了模型对框中包含物体的置信度以及它预测的框的准确性。我们正式将置信度定义为\\u03a0(对象) * IOU_(预测)^(真实)。如果该单元内没有物体，置信分数应该为零。否则我们希望置信分数等于预测框和真实框之间的交并比（IOU）。每个边界框由5个预测组成：x、y、w、h和置信度。(x,y)坐标表示框的中心相对于网格单元边界的位置。宽度和高度是相对于整个图片预测的。最后，置信度预测表示预测框和任何真实框之间的IOU。每个网格单元还预测C个条件类别概率，\\u03a0(类别_i | 对象)。这些概率是基于网格单元包含物体的条件。我们每个网格单元只预测一组类别概率，不管有多少个框B。在测试时，我们将条件类别概率和单个框的置信度预测相乘，\\u03a0(类别_i | 对象) * Π(对象) * IOU_(预测)^(真实) = Π(类别_i)*IOU_(预测)^(真实)，这为我们提供了每个框的类别特定的置信度分数。这些分数编码了该类别出现在框中的概率以及预测框适应物体的程度。在Pascal VOC上评估YOLO时，我们使用S=7，B=2。Pascal VOC有20个标记类别，所以C=20。我们的最终预测是一个7×7×30的张量。模型。我们的系统将检测建模为一个回归问题。它将图片划分为一个S×S的网格，并对每个网格单元预测B个边界框，这些框的置信度，以及C个类别概率。这些预测被编码为一个S×S×(B*5+C)的张量。",
       "suggested_trans": "统一检测",
-      "rationale": "将'Unified Detection'翻译为'统一检测'，是因为'Unified'意为'统一的'，而'Detection'在此上下文中指的是目标检测。'统一检测'准确地表达了将多个分散组件整合到单一网络的概念，并符合术语翻译的规范。",
-      "human_reviewed": true,
-      "human_modified": false,
-      "reviewed_at": "2026-01-11T15:08:24.181941"
+      "rationale": "根据提供的术语记忆和上下文，'Unified Detection'应翻译为“统一检测”。这个术语描述了一个将目标检测的各个组件整合到单一神经网络中的过程，因此“统一检测”是一个贴切的翻译。"
     },
     {
       "src": "neural network",
       "type": "Terminology",
-      "context_meaning": "在本文中，'neural network'指的是一种模仿人脑结构和功能的数学模型，用于进行图像识别、分类和检测等任务。",
+      "context_meaning": "在文中指的是统一检测中将目标检测的各个部分整合到单个神经网络中，该网络利用整个图像的特征来预测每个边界框，并同时预测图像中所有类别的所有边界框。",
       "suggested_trans": "神经网络",
-      "rationale": "根据提供的翻译记忆，'neural network'的标准翻译是'神经网络'。在上下文中，'neural network'指的是一种用于进行目标检测的深度学习模型，因此建议使用'神经网络'这一术语。",
-      "human_reviewed": true,
-      "human_modified": false,
-      "reviewed_at": "2026-01-11T03:16:20.213774"
+      "rationale": "根据检索到的翻译记忆，'neural network'的标准翻译为'神经网络'，这是一个专业术语，所以直接使用这个翻译。"
     },
     {
       "src": "bounding box",
       "type": "Terminology",
-      "context_meaning": "在目标检测中，用以确定目标位置的矩形区域，通常由中心点坐标、宽度和高度来定义。",
+      "context_meaning": "在计算机视觉中，边界框（bounding box）是用来表示图像中目标物体位置的矩形框，通常由中心点坐标、宽度和高度来确定。",
       "suggested_trans": "边界框",
-      "rationale": "在计算机视觉领域，'bounding box'指的是用来框定图像中目标物体位置的矩形区域。在提供的源文本中，它被用来描述神经网络预测的目标位置信息。根据检索到的翻译记忆，'bounding boxes'被翻译为'边界框'，因此单个'bounding box'应翻译为'边界框'。这样的翻译既符合行业术语，也保持了原文的意思。",
-      "human_reviewed": true,
-      "human_modified": false,
-      "reviewed_at": "2026-01-11T15:08:24.181941"
+      "rationale": "根据检索到的翻译记忆，'bounding box' 被翻译为 '边界框'。这个术语在计算机视觉和图像识别领域中常用，用来描述图像中物体的位置和大小。"
     },
     {
       "src": "YOLO",
       "type": "Acronym",
-      "context_meaning": "YOLO是一种用于目标检测的新方法，它将目标检测问题视为一个回归问题，直接从整张图像预测边界框和类别概率，整个检测流程是一个单一的神经网络，可以直接针对检测性能进行端到端优化。",
+      "context_meaning": "在上下文中，YOLO指的是一种统一的物体检测技术，全称为'You Only Look Once'，它将目标检测的不同组成部分整合到一个单一的神经网络中，能够同时预测图像中所有类别的所有边界框，并且以端到端的方式进行训练，实现实时速度，同时保持高平均精度。",
       "suggested_trans": "YOLO",
-      "rationale": "YOLO是一个英文缩写，代表'You Only Look Once'，但在技术术语中，通常保留原英文形式。在这段文本中，YOLO指的是一种目标检测的方法，因此直接使用'YOLO'作为翻译即可，不需要将其展开为'你只看一次'。",
-      "human_reviewed": true,
-      "human_modified": false,
-      "reviewed_at": "2026-01-11T03:16:20.213774"
-    },
-    {
-      "src": "IOU",
-      "type": "Terminology",
-      "context_meaning": "IOU是交并比（Intersection over Union）的缩写，它是一个衡量预测边界框和真实边界框匹配程度的指标。在目标检测任务中，IOU计算预测边界框和真实边界框之间的重叠区域占两个边界框面积之和的比例。",
-      "suggested_trans": "交并比",
-      "rationale": "IOU是图像识别领域中常用的一个术语，表示预测边界框和真实边界框之间的匹配程度。在翻译时，我们保留了原词的缩写形式，并给出了中文解释，即交并比。这样的翻译既保留了原词的含义，又便于中文读者理解。",
-      "human_reviewed": true,
-      "human_modified": false,
-      "reviewed_at": "2026-01-11T15:08:24.181941"
-    },
-    {
-      "src": "Pascal VOC",
-      "type": "Acronym",
-      "context_meaning": "Pascal VOC是视觉对象分类竞赛（Visual Object Classes）的缩写，它是一个广泛用于计算机视觉领域的对象识别和检测的基准数据集。",
-      "suggested_trans": "Pascal VOC",
-      "rationale": "Pascal VOC作为一个专有名词和缩写，无需翻译，直接保留原样。在计算机视觉领域，Pascal VOC是一个公认的标准化测试集，用于评估对象检测算法的性能，因此保持原英文缩写有助于保持其专业性和国际通用性。",
-      "human_reviewed": true,
-      "human_modified": false,
-      "reviewed_at": "2026-01-11T15:08:24.181941"
+      "rationale": "由于YOLO是一个广为人知的缩写词，并且在技术领域内具有特定且固定的含义，因此建议保留原英文表达。在中文语境中，YOLO通常也被直接使用，不进行翻译，以保持其原有的意义和辨识度。"
     },
     {
       "src": "S",
       "type": "Terminology",
-      "context_meaning": "S 在文中指代的是将输入图像划分成的网格大小，即 $S\\times S$ 网格。",
-      "suggested_trans": "S",
-      "rationale": "保留缩写即可",
-      "original_suggested_trans": "网格大小",
-      "human_reviewed": true,
-      "human_modified": true,
-      "reviewed_at": "2026-01-11T15:08:24.181941"
+      "context_meaning": "在文中，'S'指的是将输入图像分割成的网格大小，即S乘S网格。",
+      "suggested_trans": "S乘S网格",
+      "rationale": "根据检索到的翻译记忆，'S'在这里指的是图像被分割成的网格大小，即S乘S网格。这是一个专业术语，用来描述算法中图像的分割方式，因此直接使用检索到的翻译记忆，将其翻译为'S乘S网格'。"
     },
     {
       "src": "B",
       "type": "Terminology",
-      "context_meaning": "在这段文本中，\"B\"指的是每个网格单元预测的边界框数量。",
+      "context_meaning": "在统一检测网络中，每个网格单元预测的边界框数量。",
       "suggested_trans": "边界框数量",
-      "rationale": "根据上下文，\"B\"代表的是每个网格单元预测的边界框数量，因此将其翻译为\"边界框数量\"更为准确，符合原文的术语使用。",
-      "human_reviewed": true,
-      "human_modified": false,
-      "reviewed_at": "2026-01-11T15:08:24.181941"
+      "rationale": "在给定的上下文中，'B'代表的是每个网格单元预测的边界框的数量，因此将其翻译为“边界框数量”。这一术语是根据检索到的翻译记忆确定的，它与上下文中的用法一致，并且与提供的术语相关。"
     },
     {
-      "src": "C",
+      "src": "IOU",
       "type": "Terminology",
-      "context_meaning": "在上下文中，'C'指的是类别的数量。Pascal VOC数据集中有20个标注好的类别，所以'C=20'。这里的'C'表示每个网格单元预测的条件类别概率的数量。",
-      "suggested_trans": "类别数",
-      "rationale": "在这段文本中，'C'是代表一个概念或术语，而不是一个专有名词或缩写。根据上下文，'C'指的是类别的数量，所以将其翻译为'类别数'是最合适的选择。",
-      "human_reviewed": true,
-      "human_modified": false,
-      "reviewed_at": "2026-01-11T15:08:24.181941"
+      "context_meaning": "交并比（Intersection over Union）是一个衡量预测边界框与真实边界框之间匹配程度的指标，它计算两个边界框之间的重叠区域与各自面积之和的比值。",
+      "suggested_trans": "交并比",
+      "rationale": "IOU是图像识别和目标检测领域中的一个专业术语，指的是交并比（Intersection over Union），用于衡量预测边界框与实际边界框的匹配程度。因此，将其翻译为中文的'交并比'既符合术语的本意，也能让目标领域的专业人员理解。"
     },
     {
       "src": "Object",
       "type": "Terminology",
-      "context_meaning": "在这段文本中，'Object'指的是图像识别领域中的目标或物体，是目标检测对象的总称。",
+      "context_meaning": "在这个上下文中，'Object'指的是图像中需要被检测的目标或物体。",
       "suggested_trans": "物体",
-      "rationale": "在目标检测领域，'Object'通常被翻译为“物体”，这是因为在图像识别和计算机视觉任务中，需要识别和定位的图像中的实体通常被称为“物体”。",
-      "human_reviewed": true,
-      "human_modified": false,
-      "reviewed_at": "2026-01-11T15:08:24.181941"
-    },
-    {
-      "src": "Class",
-      "type": "Terminology",
-      "context_meaning": "在上文中，'Class'指的是不同类别的物体。在图像识别和对象检测的背景下，'Class'用来描述一个对象可能属于的不同类别或标签。",
-      "suggested_trans": "类别",
-      "rationale": "根据检索到的翻译记忆，'Class'在专业术语中通常被翻译为'类别'。这是因为在机器学习和计算机视觉领域，'Class'多指代类别或种类，特别是在分类或识别任务中。因此，将'Class'翻译为'类别'，既准确又符合领域内的通用表达。",
-      "human_reviewed": true,
-      "human_modified": false,
-      "reviewed_at": "2026-01-11T15:08:24.181941"
+      "rationale": "根据检索到的翻译记忆，'Object'被翻译为'物体'，这符合专业术语翻译的规范。在目标检测领域，'Object'通常指的是需要被识别和定位的图像中的目标，因此翻译为'物体'是恰当的。"
     },
     {
       "src": "IOU_pred_truth",
       "type": "Terminology",
-      "context_meaning": "预测的交并比真实值，用于衡量预测的边界框和真实边界框之间的匹配程度。",
+      "context_meaning": "预测IOU真实值是对象检测中用来衡量预测框和真实框之间重叠程度的指标，即预测框和真实框的交集与并集的比值。",
       "suggested_trans": "预测IOU真实值",
-      "rationale": "IOU_pred_truth是一个复合术语，其中IOU是交并比（Intersection over Union），pred代表预测（predicted），truth代表真实（ground truth）。因此，将IOU_pred_truth翻译为“预测IOU真实值”能够较好地表达这一术语在目标检测领域中的含义，即模型预测的边界框和真实边界框之间的交并比。这种翻译方式既保持了原术语的结构，也传达了其在目标检测中的具体含义。",
-      "human_reviewed": true,
-      "human_modified": false,
-      "reviewed_at": "2026-01-11T15:08:24.181941"
+      "rationale": "根据检索到的翻译记忆，'IOU_pred_truth'翻译为'预测IOU真实值'。这个术语是一个专业术语，用来表示预测框与真实框之间的重叠程度，因此直接使用已有的翻译即可。"
     },
     {
-      "src": "IOU_class_i_truth",
+      "src": "Class_i",
       "type": "Terminology",
-      "context_meaning": "在目标检测中，'IOU_class_i_truth'指的是预测框与真实框之间的交并比（Intersection over Union），其中'class_i'表示第i类目标。'IOU'是衡量预测框精确度的关键指标，用于评估预测框与真实框之间的重叠程度。'truth'表示真实框，即标注框。",
-      "suggested_trans": "IOU_class_i_真实值",
-      "rationale": "将'IOU_class_i_truth'翻译为'IOU_class_i_真实值'，其中'IOU'保持不变，'class_i'表示第i类目标，'真实值'用来表示'truth'，即真实框或标注框。这样的翻译既保留了原术语的专业性，又符合中文表达习惯，能够让读者更容易理解术语的含义。",
-      "human_reviewed": true,
-      "human_modified": false,
-      "reviewed_at": "2026-01-11T15:08:24.181941"
+      "context_meaning": "在上下文中，'Class_i'是指在神经网络的每个网格单元预测中，对于存在物体的情况，预测的条件类别概率。这些概率是基于每个网格单元包含一个物体的前提下，对物体类别的预测。",
+      "suggested_trans": "类别_i",
+      "rationale": "根据检索到的翻译记忆，'Class_i'翻译为'类别_i'。这是因为在计算机视觉和机器学习领域，'Class'通常被翻译为'类别'，并且'i'在这里代表索引或者是条件概率的下标，所以应该保留英文原文。"
+    },
+    {
+      "src": "Pascal VOC",
+      "type": "Acronym",
+      "context_meaning": "Pascal VOC 是一个计算机视觉领域的物体识别挑战，它提供了一个数据集，用于训练和评估图像中物体检测算法的性能。",
+      "suggested_trans": "Pascal VOC",
+      "rationale": "Pascal VOC 是一个专有名词，是一个计算机视觉领域的知名数据集和挑战的缩写，因此保持原英文不变。"
     }
   ],
-  "human_reviewed": true,
-  "reviewed_glossary_count": 13
+  "refinement_history": [
+    {
+      "iteration": 1,
+      "score": 8,
+      "critique": "翻译总体上是准确的，成功地将原文的意思传达给了中文读者。术语一致性遵循了术语表，语义准确性也较好，回译一致性良好，语言流畅性整体不错，风格也较为一致。",
+      "error_types": [
+        "术语不一致"
+      ],
+      "specific_issues": [
+        "第一段第二句中的'统一检测'应改为'统一检测'，以符合术语表中的'Unified Detection'。",
+        "第一段第四句中的'边界框'应保持一致，使用'边界框'而不是'边界框'。",
+        "第三段中的'类别_i'应改为'类别_i'，以符合术语表中的'Class_i'。"
+      ],
+      "improvement_suggestions": [
+        "在翻译过程中，应始终对照术语表，确保所有术语的一致性。",
+        "对于专业术语，应保持原文中的英文表述，以增强专业性和准确性。",
+        "在翻译完成后，进行仔细校对，确保所有术语和表达的一致性。"
+      ],
+      "back_translation": "2. Unified Detection We unify the different components of object detection into a single neural network. Our network uses features from the entire image to predict each bounding box. It also predicts all bounding boxes for all classes in the image simultaneously. This means our network performs global reasoning on the entire image as well as on all objects in the image. The design of YOLO supports end-to-end training and real-time speed while maintaining high average precision. Our system divides the input image into an $S \\times S$ grid. If the center of an object falls within a grid cell, then that grid cell is responsible for detecting the object. Each grid cell predicts $B$ bounding boxes and the confidence scores for these boxes. These confidence scores reflect the model's confidence in the presence of an object in the box, and how accurately it believes the predicted box is. Formally, we define confidence as $\\Pr(\\textrm{object}) * \\textrm{IOU}_{\\textrm{predicted}}^{\\textrm{true}}$. If no object is present in the cell, the confidence score should be zero. Otherwise, we want the confidence score to equal the intersection over union (IOU) between the predicted box and the true box. Each bounding box is composed of 5 predictions: $x$, $y$, $w$, $h$, and confidence. The coordinates $(x,y)$ represent the location of the box's center relative to the boundaries of the grid cell. The width and height are predicted relative to the entire image. The final confidence prediction represents the IOU between the predicted box and any true box. Each grid cell also predicts $C$ conditional class probabilities, $\\Pr(\\textrm{class}_i | \\textrm{object})$. These probabilities are conditioned on the grid cell containing an object. Regardless of the number of bounding boxes $B$, we only predict a single set of class probabilities per grid cell. At test time, we multiply the conditional class probabilities by the individual box confidence predictions, $$\\Pr(\\textrm{class}_i | \\textrm{object}) * \\Pr(\\textrm{object}) * \\textrm{IOU}_{\\textrm{predicted}}^{\\textrm{true}} = \\Pr(\\textrm{class}_i)*\\textrm{IOU}_{\\textrm{predicted}}^{\\textrm{true}}$$, which gives us class-specific confidence scores for each box. These scores encode the probability of the class appearing in the box as well as how well the predicted box fits the object. When evaluating YOLO on Pascal VOC, we use $S=7$, $B=2$. Pascal VOC has 20 marked classes, so $C=20$. Our final prediction is a $7 \\times 7 \\times 30$ tensor. Model. Our system models detection as a regression problem. It divides the image into an $S \\times S$ grid and predicts $B$ bounding boxes, the confidence for these boxes, and $C$ class probabilities for each grid cell. These predictions are encoded into an $S \\times S \\times (B*5 + C)$ tensor."
+    }
+  ],
+  "revision_count": 1
 }

@@ -1,173 +1,99 @@
 {
   "chunk_id": 0,
   "source_text": "Abstract We present YOLO, a new approach to object detection. Prior work on object detection repurposes classifiers to perform detection. Instead, we frame object detection as a regression problem to spatially separated bounding boxes and associated class probabilities. A single neural network predicts bounding boxes and class probabilities directly from full images in one evaluation. Since the whole detection pipeline is a single network, it can be optimized end-to-end directly on detection performance. Our unified architecture is extremely fast. Our base YOLO model processes images in real-time at 45 frames per second. A smaller version of the network, Fast YOLO, processes an astounding 155 frames per second while still achieving double the mAP of other real-time detectors. Compared to state-of-the-art detection systems, YOLO makes more localization errors but is less likely to predict false positives on background. Finally, YOLO learns very general representations of objects. It outperforms other detection methods, including DPM and R-CNN, when generalizing from natural images to other domains like artwork.",
-  "translation": "摘要：我们提出了YOLO，一种新的目标检测方法。先前的目标检测工作将分类器重新用于检测任务。相反，我们将目标检测框架化为一个回归问题，用于空间分离的边界框和相关的类别概率。一个单一的神经网络直接从完整图像中预测边界框和类别概率。由于整个检测流程是一个单一网络，它可以在检测性能上直接进行端到端优化。我们的统一架构速度极快。我们的基准YOLO模型以实时处理图像，每秒45帧。网络的一个更小版本，快速YOLO，处理速度惊人，每秒155帧，同时仍然达到其他实时检测器平均精度均值的两倍。与最先进的检测系统相比，YOLO在错误定位上更多，但在背景上预测假阳性的可能性较小。最后，YOLO学习了非常通用的目标表示。当从自然图像泛化到其他领域，如艺术作品时，它超越了其他检测方法，包括DPM和R-CNN。",
+  "translation": "摘要：我们提出了YOLO，一种新的目标检测方法。先前的目标检测工作将分类器重新用于执行检测任务。相反，我们将目标检测框架为回归问题，以空间上分离的边界框和相关的类别概率。一个单一的神经网络直接从完整图像中预测边界框和类别概率，仅需要一次评估。由于整个检测流程是一个单一网络，它可以直接针对检测性能进行端到端优化。我们的统一架构非常快速。我们的基准YOLO模型以实时速度处理图像，每秒45帧。网络的较小版本，快速YOLO，以惊人的每秒155帧速度处理图像，同时仍然达到了其他实时检测器两倍的平均精度均值。与最先进的检测系统相比，YOLO在定位误差上更多，但在背景上预测假阳性的可能性较小。最后，YOLO学习了非常通用的目标表示。当从自然图像泛化到其他领域（如艺术作品）时，它超越了其他检测方法，包括可变形部件模型和R-CNN。",
   "quality_score": 9.0,
   "glossary": [
     {
       "src": "YOLO",
       "type": "Acronym",
-      "context_meaning": "YOLO是一种用于目标检测的新方法，它将目标检测问题视为一个回归问题，直接从整张图像预测边界框和类别概率，整个检测流程是一个单一的神经网络，可以直接针对检测性能进行端到端优化。",
-      "suggested_trans": "YOLO",
-      "rationale": "YOLO是一个英文缩写，代表'You Only Look Once'，但在技术术语中，通常保留原英文形式。在这段文本中，YOLO指的是一种目标检测的方法，因此直接使用'YOLO'作为翻译即可，不需要将其展开为'你只看一次'。",
-      "human_reviewed": true,
-      "human_modified": false,
-      "reviewed_at": "2026-01-11T03:16:20.213774"
+      "context_meaning": "YOLO是一种用于目标检测的新方法，它将目标检测问题定义为一个回归问题，通过单个神经网络直接从完整图像中预测出空间上分离的边界框和相关类别概率。",
+      "suggested_trans": "YOLO（你只活一次）",
+      "rationale": "YOLO是英文'You Only Look Once'的缩写，在这个上下文中，它指的是一种目标检测算法。根据检索到的翻译记忆，YOLO可以翻译为'你只活一次'，但考虑到它是一个专有的算法名称，我们保留了原英文缩写，并添加了中文解释以便于理解。"
     },
     {
       "src": "object detection",
       "type": "Terminology",
-      "context_meaning": "目标检测是一种计算机视觉技术，用于识别图像或视频帧中的特定对象，并确定它们的位置。在本文中，目标检测被描述为一种回归问题，用于预测空间上分离的边界框和相关的类别概率。",
+      "context_meaning": "在本文中，'object detection'指的是使用计算机视觉技术来识别和定位图像中的目标物体的过程。",
       "suggested_trans": "目标检测",
-      "rationale": "根据检索到的翻译记忆，'object detection'的标准翻译是'目标检测'。这个术语是计算机视觉领域的常用术语，因此选择使用这个标准化的翻译。",
-      "human_reviewed": true,
-      "human_modified": false,
-      "reviewed_at": "2026-01-11T03:16:20.213774"
+      "rationale": "根据检索到的翻译记忆，'object detection'被翻译为'目标检测'。这是一个计算机视觉领域中的专业术语，用于描述识别图像中目标物体的任务。因此，我们选择将'object detection'翻译为'目标检测'。"
     },
     {
       "src": "regression problem",
       "type": "Terminology",
-      "context_meaning": "在机器学习中，'回归问题'是指预测连续数值输出的问题，与分类问题不同。在源文本中，作者将目标检测问题重新定义为一个回归问题，即通过神经网络直接从整张图片中预测空间分离的边界框和相关的类别概率。",
+      "context_meaning": "在本文中，将目标检测问题重新定义为回归问题，意味着将其视为一个预测空间上分离的边界框和相关类别概率的问题。",
       "suggested_trans": "回归问题",
-      "rationale": "根据检索到的翻译记忆，'回归问题'是该术语的标准中文翻译。在机器学习领域，这个术语被广泛使用，指的是预测连续值的任务。",
-      "human_reviewed": true,
-      "human_modified": false,
-      "reviewed_at": "2026-01-11T03:16:20.213774"
+      "rationale": "根据提供的翻译记忆，'回归问题'是'回归问题'的直接翻译，因此在此上下文中保持一致。"
     },
     {
       "src": "bounding boxes",
       "type": "Terminology",
-      "context_meaning": "在目标检测领域中，bounding boxes指的是用于框定图像中物体的矩形区域，它包含物体的位置和大小信息。",
+      "context_meaning": "在目标检测领域，边界框是用来定位和识别图像中特定物体位置的矩形区域。",
       "suggested_trans": "边界框",
-      "rationale": "根据检索到的翻译记忆，'bounding boxes'被翻译为'边界框'，这个翻译符合目标检测领域的专业术语。因此，我们直接采用这个翻译。",
-      "human_reviewed": true,
-      "human_modified": false,
-      "reviewed_at": "2026-01-11T03:16:20.213774"
+      "rationale": "根据检索到的翻译记忆，'bounding boxes'被翻译为'边界框'，这在计算机视觉领域是一个常见的术语，用来描述用于识别图像中对象位置的矩形区域。因此，将'bounding boxes'翻译为'边界框'是合适的。"
     },
     {
       "src": "class probabilities",
       "type": "Terminology",
-      "context_meaning": "类别概率是指在对象检测中，一个模型对特定类别对象存在的预测概率。在YOLO模型中，这指的是神经网络直接从整张图像预测边界框和类别概率。",
+      "context_meaning": "在目标检测领域，'class probabilities'指的是模型预测每个目标属于各个类别的概率。",
       "suggested_trans": "类别概率",
-      "rationale": "根据检索到的翻译记忆，'class probabilities'被翻译为'类别概率'。这个翻译准确反映了原文中的含义，即模型预测某一类别对象存在的概率。因此，我们采用这个翻译。",
-      "human_reviewed": true,
-      "human_modified": false,
-      "reviewed_at": "2026-01-11T03:16:20.213774"
+      "rationale": "根据已提供的翻译记忆，'class probabilities'被翻译为'类别概率'，这个翻译在上下文中是准确的。'类别'表示不同的目标类别，'概率'指的是模型为每个类别分配的置信度。"
     },
     {
       "src": "neural network",
       "type": "Terminology",
-      "context_meaning": "在本文中，'neural network'指的是一种模仿人脑结构和功能的数学模型，用于进行图像识别、分类和检测等任务。",
+      "context_meaning": "在本文中指的是YOLO模型中使用的一种算法结构，用于直接从完整图像中预测边界框和类别概率。",
       "suggested_trans": "神经网络",
-      "rationale": "根据提供的翻译记忆，'neural network'的标准翻译是'神经网络'。在上下文中，'neural network'指的是一种用于进行目标检测的深度学习模型，因此建议使用'神经网络'这一术语。",
-      "human_reviewed": true,
-      "human_modified": false,
-      "reviewed_at": "2026-01-11T03:16:20.213774"
+      "rationale": "根据检索到的翻译记忆，neural network 可以翻译成“神经网络”。在给定的上下文中，neural network 指的是一种算法结构，而不是专有名词或缩写，因此可以直接翻译成中文。"
     },
     {
       "src": "Fast YOLO",
       "type": "Terminology",
-      "context_meaning": "Fast YOLO是YOLO的一个变体，专门设计用于实现更快的实时对象检测。它通过减少网络的复杂性，实现了155帧每秒的处理速度，同时保持较高的准确度。",
+      "context_meaning": "快速YOLO是YOLO（You Only Look Once）算法的一个变种，用于实时目标检测，具有更快的处理速度，每秒可处理155帧图像，同时保持较高的检测准确性。",
       "suggested_trans": "快速YOLO",
-      "rationale": "根据检索到的翻译记忆，Fast YOLO已有对应的翻译“快速YOLO”，因此直接采用这一翻译。同时考虑到YOLO作为一个专有名词和算法名称，通常保留原名称不进行翻译。",
-      "human_reviewed": true,
-      "human_modified": false,
-      "reviewed_at": "2026-01-11T03:16:20.213774"
-    },
-    {
-      "src": "frames per second",
-      "type": "Terminology",
-      "context_meaning": "每秒帧数是指视频播放或者是图像处理时每秒钟显示的图片帧数。",
-      "suggested_trans": "每秒帧数",
-      "rationale": "在翻译“frames per second”时，我们将其译为“每秒帧数”。这是因为“frame”指的是视频或图像中的单帧，“per second”表示的是每秒钟。在计算机视觉和视频处理领域，这个术语用来描述视频的流畅度和处理速度。因此，将“frames per second”翻译为“每秒帧数”是准确且符合专业术语习惯的。",
-      "human_reviewed": true,
-      "human_modified": false,
-      "reviewed_at": "2026-01-11T15:00:47.629667"
+      "rationale": "Fast YOLO是一个专有的技术术语，用于描述YOLO算法的一个变种。根据提供的翻译记忆，Fast YOLO已经有一个对应的中文翻译“快速YOLO”，因此直接使用这个翻译。同时，YOLO作为一个算法名称，保留英文表达。"
     },
     {
       "src": "mAP",
-      "type": "Acronym",
-      "context_meaning": "在目标检测领域，mAP 是一种衡量模型性能的指标，即平均精度均值（mean Average Precision）。它通过计算模型在各个置信度阈值下的平均精度，来衡量模型在目标检测任务中的整体性能。",
+      "type": "Terminology",
+      "context_meaning": "在计算机视觉领域，特别是在目标检测任务中，mAP指的是平均精度均值（mean Average Precision），它是衡量模型性能的一个重要指标。",
       "suggested_trans": "平均精度均值",
-      "rationale": "根据检索到的翻译记忆，mAP 的标准翻译是 '平均精度均值'。这个翻译准确反映了 mAP 在目标检测领域的含义，并被广泛接受和使用。因此，我们选择 '平均精度均值' 作为 mAP 的中文翻译。",
-      "human_reviewed": true,
-      "human_modified": false,
-      "reviewed_at": "2026-01-11T03:16:20.213774"
-    },
-    {
-      "src": "state-of-the-art",
-      "type": "Terminology",
-      "context_meaning": "在上文中，\"state-of-the-art\"指的是最先进的技术或方法，即在某个领域中性能最优、技术最尖端的系统或解决方案。",
-      "suggested_trans": "最先进的",
-      "rationale": "将\"state-of-the-art\"翻译为\"最先进的\"，是因为这个短语在技术和学术领域中广泛使用，用以表示一个领域内最高水平、最先进或性能最优的技术或方法。这个翻译既符合原文的意思，也符合中文的表达习惯。",
-      "human_reviewed": true,
-      "human_modified": false,
-      "reviewed_at": "2026-01-11T03:16:20.213774"
-    },
-    {
-      "src": "localization errors",
-      "type": "Terminology",
-      "context_meaning": "在机器视觉和目标检测领域，指的是模型预测的边界框与目标实际位置之间的偏差。",
-      "suggested_trans": "错误定位",
-      "rationale": "更顺畅",
-      "original_suggested_trans": "定位错误",
-      "human_reviewed": true,
-      "human_modified": true,
-      "reviewed_at": "2026-01-11T03:16:20.213774"
-    },
-    {
-      "src": "false positives",
-      "type": "Terminology",
-      "context_meaning": "在机器学习和图像识别领域，'false positives'指的是错误地将背景或无关对象识别为目标对象的情况。",
-      "suggested_trans": "假阳性",
-      "rationale": "根据检索到的翻译记忆，'false positives'在专业术语中被翻译为'假阳性'，符合机器学习领域的常规翻译。",
-      "human_reviewed": true,
-      "human_modified": false,
-      "reviewed_at": "2026-01-11T03:16:20.213774"
-    },
-    {
-      "src": "background",
-      "type": "Terminology",
-      "context_meaning": "在本文中，'background'指的是图像中与目标物体相对的背景区域，是目标检测中区分前景物体和背景的术语。",
-      "suggested_trans": "背景",
-      "rationale": "在计算机视觉领域，'background'一词通常被翻译为'背景'，表示与目标物体相对的图像区域。这种翻译符合专业术语的使用习惯，也容易被中文读者理解。",
-      "human_reviewed": true,
-      "human_modified": false,
-      "reviewed_at": "2026-01-11T15:00:47.629667"
+      "rationale": "根据检索到的翻译记忆，'mAP' 翻译为'平均精度均值'。这个术语在目标检测领域被广泛使用，用来衡量模型在不同阈值下的平均性能。"
     },
     {
       "src": "DPM",
       "type": "Acronym",
-      "context_meaning": "在文本中，DPM指的是一种先进的目标检测方法，全称为Deformable Parts Model，即可变形部件模型。",
+      "context_meaning": "DPM是可变形部件模型（Deformable Parts Model）的缩写，在文中提到它是一种检测方法，用于从自然图像中泛化到其他领域（如艺术作品）的对象检测。",
       "suggested_trans": "可变形部件模型",
-      "rationale": "DPM是Deformable Parts Model的缩写，中文译为可变形部件模型。这是因为DPM是一种计算机视觉领域中的目标检测算法，其核心思想是利用物体的可变形部件来建模，以提高检测的准确性。在翻译时，我们保留了DPM这一缩写形式，并在括号中提供了对应的中文全称，以便读者理解。",
-      "human_reviewed": true,
-      "human_modified": false,
-      "reviewed_at": "2026-01-11T03:16:20.213774"
+      "rationale": "根据检索到的翻译记忆，DPM被翻译为'可变形部件模型'，这在专业术语中是一个准确的翻译。因此，我们保留了这个翻译。"
     },
     {
       "src": "R-CNN",
       "type": "Acronym",
-      "context_meaning": "在文中指的是一种物体检测算法，全称为Regions with Convolutional Neural Networks，是一种将卷积神经网络（CNN）应用于图像区域以进行物体检测的方法。",
+      "context_meaning": "R-CNN是一种用于物体检测的深度学习模型，全称为Region-based Convolutional Neural Network，基于区域的卷积神经网络。",
       "suggested_trans": "R-CNN",
-      "rationale": "R-CNN是一个专有名词和缩写词，通常在学术和技术文献中保留原样，不进行翻译。在中文文献和技术社区中，人们也普遍使用R-CNN这个缩写，因此建议直接使用原词。",
-      "human_reviewed": true,
-      "human_modified": false,
-      "reviewed_at": "2026-01-11T03:16:20.213774"
-    },
-    {
-      "src": "artwork",
-      "type": "Terminology",
-      "context_meaning": "在这段文本中，'artwork'指的是其他领域或艺术作品。",
-      "suggested_trans": "艺术作品",
-      "rationale": "在中文中，'artwork'通常被翻译为'艺术作品'，来表示绘画、雕塑等艺术创作。在这段上下文中，'artwork'指的是与自然图像不同的其他领域或艺术作品，因此使用'艺术作品'作为翻译较为合适。",
-      "human_reviewed": true,
-      "human_modified": false,
-      "reviewed_at": "2026-01-11T15:00:47.629667"
+      "rationale": "R-CNN是一个专有名词和缩写词，表示一种特定的物体检测算法。在翻译中，通常保留专有名词和缩写词的原貌，以保留其原有含义和识别度。因此建议直接使用'R-CNN'，而不进行翻译。"
     }
   ],
-  "human_reviewed": true,
-  "reviewed_glossary_count": 16,
-  "translation_updated_by_glossary": true,
-  "translation_updated_at": "2026-01-11T15:00:48.037509"
+  "refinement_history": [
+    {
+      "iteration": 1,
+      "score": 9,
+      "critique": "整体而言，译文较好地传达了原文的意思，术语一致性、语义准确性和风格一致性都做得不错。回译的一致性也较高，语言流畅性方面基本符合中文表达习惯。不过还有小瑕疵需要改进。",
+      "error_types": [
+        "术语不一致",
+        "语法问题"
+      ],
+      "specific_issues": [
+        "具体问题1：'平均精度均值'应统一为术语表中的'mAP'。",
+        "具体问题2：'当从自然图像泛化到其他领域（如艺术作品）时'中的'当'字多余，应删除。"
+      ],
+      "improvement_suggestions": [
+        "改进建议1：将'平均精度均值'统一为术语表中的'mAP'。",
+        "改进建议2：删除'当从自然图像泛化到其他领域（如艺术作品）时'中的多余'当'字。"
+      ],
+      "back_translation": "Abstract: We present YOLO, a new object detection method. Previous object detection work repurposed classifiers to perform detection tasks. Instead, we frame object detection as a regression problem to spatially separated bounding boxes and associated class probabilities. A single neural network predicts bounding boxes and class probabilities directly from full images, requiring only one evaluation. Since the entire detection process is a single network, it can be directly optimized for detection performance, end-to-end. Our unified architecture is very fast. Our benchmark YOLO model processes images in real-time at 45 frames per second. A smaller version of the network, Fast YOLO, processes images at an astonishing 155 frames per second, while still achieving twice the average precision of other real-time detectors. Compared to state-of-the-art detection systems, YOLO has more localization error but is less likely to predict false positives on the background. Finally, YOLO learns a very general representation of objects. When generalizing from natural images to other domains (such as works of art), it outperforms other detection methods, including deformable part models and R-CNN."
+    }
+  ],
+  "revision_count": 1
 }

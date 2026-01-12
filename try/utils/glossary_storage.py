@@ -42,7 +42,7 @@ def load_reviewed_glossary(glossary_file: Optional[str] = None) -> Dict[str, dic
             else:
                 return {}
     except (json.JSONDecodeError, IOError) as e:
-        print(f"⚠️  加载术语库失败: {e}")
+        print(f"[WARNING] 加载术语库失败: {e}")
         return {}
 
 
@@ -77,9 +77,9 @@ def save_reviewed_glossary(reviewed_terms: List[dict], glossary_file: Optional[s
     try:
         with open(glossary_file, 'w', encoding='utf-8') as f:
             json.dump(existing_glossary, f, ensure_ascii=False, indent=2)
-        print(f"✅ 已保存 {len(reviewed_terms)} 个术语到术语库: {glossary_file}")
+        print(f"√ 已保存 {len(reviewed_terms)} 个术语到术语库: {glossary_file}")
     except IOError as e:
-        print(f"⚠️  保存术语库失败: {e}")
+        print(f"[WARNING] 保存术语库失败: {e}")
 
 
 def filter_reviewed_terms(terms: List[dict], glossary_file: Optional[str] = None) -> tuple[List[dict], List[dict]]:

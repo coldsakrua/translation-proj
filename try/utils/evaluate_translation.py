@@ -29,11 +29,11 @@ def evaluate_single_chunk(chunk_file: str, reference_translations: Optional[Dict
     result = evaluator.evaluate_chunk_file(chunk_file, reference_translations)
     
     print("\n" + "="*60)
-    print(f"📊 Chunk评估结果: {chunk_file}")
+    print(f"Chunk评估结果: {chunk_file}")
     print("="*60)
     
     if "error" in result:
-        print(f"❌ 错误: {result['error']}")
+        print(f"× 错误: {result['error']}")
         return
     
     print(f"\n总体分数: {result['overall_score']}/10")
@@ -71,7 +71,7 @@ def evaluate_chapter(
     # 加载参考译文
     reference_translations = None
     if reference_file and os.path.exists(reference_file):
-        print(f"📖 加载参考译文: {reference_file}")
+        print(f"加载参考译文: {reference_file}")
         reference_translations = load_reference_translations(reference_file)
         print(f"  加载了 {len(reference_translations)} 个章节的参考译文")
     
@@ -79,11 +79,11 @@ def evaluate_chapter(
     result = evaluator.evaluate_chapter(book_id, chapter_id, num_chunks, reference_translations)
     
     print("\n" + "="*60)
-    print(f"📊 章节 {chapter_id} 评估结果")
+    print(f"章节 {chapter_id} 评估结果")
     print("="*60)
     
     if "error" in result:
-        print(f"❌ 错误: {result['error']}")
+        print(f"× 错误: {result['error']}")
         return
     
     print(f"\n章节平均分: {result['average_score']}/10")
@@ -104,7 +104,7 @@ def evaluate_chapter(
     os.makedirs(os.path.dirname(output_file), exist_ok=True)
     with open(output_file, 'w', encoding='utf-8') as f:
         json.dump(result, f, ensure_ascii=False, indent=2)
-    print(f"\n✅ 评估结果已保存: {output_file}")
+    print(f"\n√ 评估结果已保存: {output_file}")
     
     return result
 
@@ -125,7 +125,7 @@ def evaluate_book(
     # 加载参考译文
     reference_translations = None
     if reference_file and os.path.exists(reference_file):
-        print(f"📖 加载参考译文: {reference_file}")
+        print(f"加载参考译文: {reference_file}")
         reference_translations = load_reference_translations(reference_file)
     
     evaluator = TranslationEvaluator(reference_translations)
@@ -136,7 +136,7 @@ def evaluate_book(
     # 查找所有章节
     book_dir = f"output/{book_id}"
     if not os.path.exists(book_dir):
-        print(f"❌ 书籍目录不存在: {book_dir}")
+        print(f"× 书籍目录不存在: {book_dir}")
         return
     
     chapters = []
@@ -153,7 +153,7 @@ def evaluate_book(
     if max_chapters:
         chapters = chapters[:max_chapters]
     
-    print(f"\n📚 开始评估书籍: {book_id}")
+    print(f"\n开始评估书籍: {book_id}")
     print(f"   章节数: {len(chapters)}")
     
     for chapter_id in chapters:
@@ -174,12 +174,12 @@ def evaluate_book(
             chapter_scores.append(result["average_score"])
     
     if not book_results:
-        print("❌ 未找到任何评估结果")
+        print("× 未找到任何评估结果")
         return
     
     # 书籍总体统计
     print("\n" + "="*60)
-    print(f"📚 书籍 {book_id} 总体评估结果")
+    print(f"书籍 {book_id} 总体评估结果")
     print("="*60)
     
     overall_avg = sum(chapter_scores) / len(chapter_scores) if chapter_scores else 0
@@ -210,7 +210,7 @@ def evaluate_book(
             "metric_summary": {k: round(sum(v)/len(v), 2) for k, v in all_metrics.items()}
         }, f, ensure_ascii=False, indent=2)
     
-    print(f"\n✅ 书籍评估结果已保存: {book_output_file}")
+    print(f"\n√ 书籍评估结果已保存: {book_output_file}")
 
 
 if __name__ == "__main__":
@@ -240,7 +240,7 @@ if __name__ == "__main__":
             num_chunks = len(chunk_files)
             evaluate_chapter(args.book, args.chapter, num_chunks, args.reference)
         else:
-            print(f"❌ 章节目录不存在: {chapter_dir}")
+            print(f"× 章节目录不存在: {chapter_dir}")
     elif args.book:
         # 评估整本书
         evaluate_book(args.book, args.max_chapters, args.reference)

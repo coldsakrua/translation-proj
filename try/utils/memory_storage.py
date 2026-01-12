@@ -41,7 +41,7 @@ def load_translation_memory(book_id: str, memory_file: Optional[str] = None) -> 
             else:
                 return {}
     except (json.JSONDecodeError, IOError) as e:
-        print(f"⚠️  加载翻译记忆库失败: {e}")
+        print(f"[WARNING] 加载翻译记忆库失败: {e}")
         return {}
 
 
@@ -94,7 +94,7 @@ def save_translation_memory(
         with open(memory_file, 'w', encoding='utf-8') as f:
             json.dump(memory, f, ensure_ascii=False, indent=2)
     except IOError as e:
-        print(f"⚠️  保存翻译记忆库失败: {e}")
+        print(f"[WARNING] 保存翻译记忆库失败: {e}")
 
 
 def get_chapter_translation_memory(
@@ -229,7 +229,7 @@ def load_chapter_summaries(book_id: str, summary_file: Optional[str] = None) -> 
         with open(summary_file, 'r', encoding='utf-8') as f:
             return json.load(f)
     except (json.JSONDecodeError, IOError) as e:
-        print(f"⚠️  加载章节摘要失败: {e}")
+        print(f"[WARNING] 加载章节摘要失败: {e}")
         return {}
 
 
@@ -270,7 +270,7 @@ def save_chapter_summary(
         with open(summary_file, 'w', encoding='utf-8') as f:
             json.dump(summaries, f, ensure_ascii=False, indent=2)
     except IOError as e:
-        print(f"⚠️  保存章节摘要失败: {e}")
+        print(f"[WARNING] 保存章节摘要失败: {e}")
 
 
 def get_previous_chapter_summaries(

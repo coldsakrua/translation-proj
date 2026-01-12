@@ -23,7 +23,7 @@ class BaseAgent:
         chapter_id = task_input.get("chapter_id", "UNKNOWN")
         chunk_id = task_input.get("chunk_id", "UNKNOWN")
         print("\n" + "="*60)
-        print(f"📌 Task: Chapter {chapter_id} - Chunk {chunk_id}")
+        print(f"Task: Chapter {chapter_id} - Chunk {chunk_id}")
         print("="*60)
         # 1. 运行任务到中断点，获取当前的【状态数据字典】
         # 注意：这里改名为 state_values，避免和 thread_id 配置混淆
@@ -37,10 +37,10 @@ class BaseAgent:
         
         # 4. 继续执行剩余流程
         # 注意：必须匹配 resume(updated_glossary, state_dict) 的参数顺序
-        print(f"\n🚀 Resuming translation for Chunk {chunk_id}...")
+        print(f"\nResuming translation for Chunk {chunk_id}...")
         final_result = handler.resume(reviewed_glossary, state_values)
         quality = final_result["result"].get("quality_score", "N/A")
-        print(f"✅ Chunk {chunk_id} Finished. Score: {quality}")
+        print(f"√ Chunk {chunk_id} Finished. Score: {quality}")
         print("-" * 60 + "\n") 
         return final_result
     

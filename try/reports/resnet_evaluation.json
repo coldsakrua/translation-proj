@@ -1,0 +1,1369 @@
+{
+  "evaluation_info": {
+    "output_dir": "output/resnet",
+    "reference_file": "data/resnet_ch.json",
+    "evaluated_at": "2026-01-12T19:37:15.203584",
+    "total_chunks": 13,
+    "valid_chunks": 13,
+    "evaluated_chunks": 13
+  },
+  "overall_statistics": {
+    "quality_score": {
+      "average": 8.23,
+      "min": 7.0,
+      "max": 10.0,
+      "count": 13
+    },
+    "evaluation_score": {
+      "average": 5.85,
+      "min": 4.69,
+      "max": 7.53
+    },
+    "unsupervised_metrics": {
+      "average": 7.0,
+      "count": 13
+    },
+    "supervised_metrics": {
+      "average": 3.33,
+      "count": 10
+    }
+  },
+  "metric_summary": {
+    "quality_score": {
+      "average": 8.23,
+      "min": 7.0,
+      "max": 10.0,
+      "count": 13,
+      "direction": "higher_is_better",
+      "direction_cn": "越高越好"
+    },
+    "back_translation": {
+      "average": 4.77,
+      "min": 0.0,
+      "max": 8.04,
+      "count": 13,
+      "direction": "higher_is_better",
+      "direction_cn": "越高越好"
+    },
+    "terminology": {
+      "average": 6.18,
+      "min": 2.14,
+      "max": 10.0,
+      "count": 12,
+      "direction": "higher_is_better",
+      "direction_cn": "越高越好"
+    },
+    "length_ratio": {
+      "average": 5.39,
+      "min": 0,
+      "max": 9.21,
+      "count": 13,
+      "direction": "closer_to_ideal",
+      "direction_cn": "越接近理想值越好"
+    },
+    "fluency": {
+      "average": 10.0,
+      "min": 10.0,
+      "max": 10.0,
+      "count": 13,
+      "direction": "higher_is_better",
+      "direction_cn": "越高越好"
+    },
+    "number_preservation": {
+      "average": 8.75,
+      "min": 6.56,
+      "max": 10.0,
+      "count": 13,
+      "direction": "higher_is_better",
+      "direction_cn": "越高越好"
+    },
+    "bleu": {
+      "average": 1.89,
+      "min": 0.16,
+      "max": 6.97,
+      "count": 10,
+      "direction": "higher_is_better",
+      "direction_cn": "越高越好"
+    },
+    "semantic_similarity": {
+      "average": 7.41,
+      "min": 6.56,
+      "max": 8.54,
+      "count": 10,
+      "direction": "higher_is_better",
+      "direction_cn": "越高越好"
+    },
+    "edit_distance": {
+      "average": 0.69,
+      "min": 0.14,
+      "max": 1.89,
+      "count": 10,
+      "direction": "lower_is_better",
+      "direction_cn": "越低越好"
+    }
+  },
+  "chapter_statistics": {
+    "0": {
+      "chunk_count": 1,
+      "quality_score_avg": 8.0,
+      "evaluation_score_avg": 6.66
+    },
+    "1": {
+      "chunk_count": 1,
+      "quality_score_avg": 9.0,
+      "evaluation_score_avg": 5.93
+    },
+    "2": {
+      "chunk_count": 1,
+      "quality_score_avg": 8.0,
+      "evaluation_score_avg": 5.44
+    },
+    "3": {
+      "chunk_count": 1,
+      "quality_score_avg": 8.0,
+      "evaluation_score_avg": 5.68
+    },
+    "4": {
+      "chunk_count": 1,
+      "quality_score_avg": 10.0,
+      "evaluation_score_avg": 6.45
+    },
+    "5": {
+      "chunk_count": 1,
+      "quality_score_avg": 8.0,
+      "evaluation_score_avg": 5.29
+    },
+    "6": {
+      "chunk_count": 1,
+      "quality_score_avg": 8.0,
+      "evaluation_score_avg": 4.83
+    },
+    "7": {
+      "chunk_count": 1,
+      "quality_score_avg": 8.0,
+      "evaluation_score_avg": 5.33
+    },
+    "8": {
+      "chunk_count": 1,
+      "quality_score_avg": 9.0,
+      "evaluation_score_avg": 5.38
+    },
+    "9": {
+      "chunk_count": 1,
+      "quality_score_avg": 7.0,
+      "evaluation_score_avg": 4.69
+    },
+    "10": {
+      "chunk_count": 1,
+      "quality_score_avg": 8.0,
+      "evaluation_score_avg": 6.39
+    },
+    "11": {
+      "chunk_count": 1,
+      "quality_score_avg": 8.0,
+      "evaluation_score_avg": 7.53
+    },
+    "12": {
+      "chunk_count": 1,
+      "quality_score_avg": 8.0,
+      "evaluation_score_avg": 6.5
+    }
+  },
+  "chunk_details": [
+    {
+      "chapter_id": 0,
+      "chunk_id": 0,
+      "chunk_file": "output/resnet\\chapter_0\\chunk_000.json",
+      "source_text": "Deep Residual Learning for Image Recognition",
+      "translation": "深度残差学习在图像识别中的应用",
+      "quality_score": 8.0,
+      "evaluation": {
+        "source_text": "Deep Residual Learning for Image Recognition",
+        "translation": "深度残差学习在图像识别中的应用",
+        "metrics": {
+          "quality_score": {
+            "score": 8.0,
+            "method": "quality_score",
+            "details": "质量分数: 8.0/10"
+          },
+          "back_translation": {
+            "score": 8.04,
+            "method": "back_translation_consistency",
+            "details": "回译相似度: 80.39%",
+            "similarity": 0.803921568627451
+          },
+          "terminology": {
+            "score": 10.0,
+            "method": "terminology_consistency",
+            "details": "术语使用: 2/2 正确",
+            "correct_uses": 2,
+            "total_terms": 2,
+            "violations": []
+          },
+          "length_ratio": {
+            "score": 3.33,
+            "method": "length_ratio",
+            "details": "长度比: 2.50 (理想: 1.5)",
+            "ratio": 2.5,
+            "source_length": 6,
+            "translation_length": 15
+          },
+          "fluency": {
+            "score": 10.0,
+            "method": "fluency",
+            "details": "流畅性检查: 通过",
+            "issues": []
+          },
+          "number_preservation": {
+            "score": 10.0,
+            "method": "number_preservation",
+            "details": "原文无数字"
+          },
+          "bleu": {
+            "score": 4.14,
+            "method": "bleu_score",
+            "details": "BLEU: 0.4140",
+            "bleu": 0.4140393356054125,
+            "precision_1gram": 0.6,
+            "precision_2gram": 0.2857142857142857
+          },
+          "semantic_similarity": {
+            "score": 8.22,
+            "method": "semantic_similarity",
+            "details": "语义相似度: 0.6446",
+            "similarity": 0.6445556879043579
+          },
+          "edit_distance": {
+            "score": 0.32,
+            "method": "edit_distance",
+            "details": "编辑距离: 210/217, 相似度: 3.23%",
+            "distance": 210,
+            "similarity": 0.032258064516129004
+          }
+        },
+        "overall_score": 6.66,
+        "unsupervised_avg": 8.27,
+        "supervised_avg": 4.23
+      }
+    },
+    {
+      "chapter_id": 1,
+      "chunk_id": 1,
+      "chunk_file": "output/resnet\\chapter_1\\chunk_001.json",
+      "source_text": "Abstract Deeper neural networks are more difficult to train. We present a residual learning framework to ease the training of networks that are substantially deeper than those used previously. We expl...",
+      "translation": "摘要：更深的神经网络更难以训练。我们提出了一个残差学习框架，以减轻比以往使用的网络要深得多的网络的训练难度。我们明确地将层重新定义为学习相对于层输入的残差函数，而不是学习无参考的函数。我们提供了全面的实证证据，表明这些残差网络更容易优化，并且能够从显著增加的深度中获得准确性。在ImageNet数据集上，我们评估了深度高达152层的残差网络——比VGG网络深8倍，但复杂度更低。这些残差网络的集成在I...",
+      "quality_score": 9.0,
+      "evaluation": {
+        "source_text": "Abstract Deeper neural networks are more difficult to train. We present a residual learning framewor...",
+        "translation": "摘要：更深的神经网络更难以训练。我们提出了一个残差学习框架，以减轻比以往使用的网络要深得多的网络的训练难度。我们明确地将层重新定义为学习相对于层输入的残差函数，而不是学习无参考的函数。我们提供了全面的...",
+        "metrics": {
+          "quality_score": {
+            "score": 9.0,
+            "method": "quality_score",
+            "details": "质量分数: 9.0/10"
+          },
+          "back_translation": {
+            "score": 5.2,
+            "method": "back_translation_consistency",
+            "details": "回译相似度: 51.96%",
+            "similarity": 0.5196190476190476
+          },
+          "terminology": {
+            "score": 7.14,
+            "method": "terminology_consistency",
+            "details": "术语使用: 10/14 正确",
+            "correct_uses": 10,
+            "total_terms": 14,
+            "violations": [
+              {
+                "term": "ImageNet",
+                "expected": "ImageNet",
+                "issue": "术语未翻译，直接使用英文"
+              },
+              {
+                "term": "ILSVRC 2015",
+                "expected": "ILSVRC 2015",
+                "issue": "术语未翻译，直接使用英文"
+              },
+              {
+                "term": "CIFAR-10",
+                "expected": "CIFAR-10",
+                "issue": "术语未翻译，直接使用英文"
+              },
+              {
+                "term": "ILSVRC & COCO 2015",
+                "expected": "ILSVRC & COCO 2015",
+                "issue": "术语未翻译，直接使用英文"
+              }
+            ]
+          },
+          "length_ratio": {
+            "score": 5.83,
+            "method": "length_ratio",
+            "details": "长度比: 2.12 (理想: 1.5)",
+            "ratio": 2.125,
+            "source_length": 200,
+            "translation_length": 425
+          },
+          "fluency": {
+            "score": 10.0,
+            "method": "fluency",
+            "details": "流畅性检查: 通过",
+            "issues": []
+          },
+          "number_preservation": {
+            "score": 8.0,
+            "method": "number_preservation",
+            "details": "数字保留: 8/10",
+            "preserved": 8,
+            "total": 10,
+            "missing": [
+              "40",
+              "1"
+            ]
+          },
+          "bleu": {
+            "score": 2.39,
+            "method": "bleu_score",
+            "details": "BLEU: 0.2394",
+            "bleu": 0.23941112579382565,
+            "precision_1gram": 0.4327485380116959,
+            "precision_2gram": 0.13245033112582782
+          },
+          "semantic_similarity": {
+            "score": 8.5,
+            "method": "semantic_similarity",
+            "details": "语义相似度: 0.7006",
+            "similarity": 0.7005933523178101
+          },
+          "edit_distance": {
+            "score": 1.06,
+            "method": "edit_distance",
+            "details": "编辑距离: 380/425, 相似度: 10.59%",
+            "distance": 380,
+            "similarity": 0.10588235294117643
+          }
+        },
+        "overall_score": 5.93,
+        "unsupervised_avg": 7.23,
+        "supervised_avg": 3.98
+      }
+    },
+    {
+      "chapter_id": 2,
+      "chunk_id": 1,
+      "chunk_file": "output/resnet\\chapter_2\\chunk_001.json",
+      "source_text": "1. Introduction Deep convolutional neural networks [22, 21] have led to a series of breakthroughs for image classification [21, 49, 39]. Deep networks naturally integrate low/mid/high-level features [...",
+      "translation": "摘要：深度卷积神经网络[22, 21]在图像分类[21, 49, 39]领域取得了一系列突破。深度网络自然地将低/中/高层特征[49]和分类器以端到端的多层方式整合在一起，特征的“层级”可以通过堆叠的层数（深度）来丰富。最近的研究[40, 43]显示，网络深度至关重要，ImageNet数据集[35]上的领先结果[40, 43, 12, 16]都采用了“非常深”[40]的模型，深度从十六[40]到三...",
+      "quality_score": 8.0,
+      "evaluation": {
+        "source_text": "1. Introduction Deep convolutional neural networks [22, 21] have led to a series of breakthroughs fo...",
+        "translation": "摘要：深度卷积神经网络[22, 21]在图像分类[21, 49, 39]领域取得了一系列突破。深度网络自然地将低/中/高层特征[49]和分类器以端到端的多层方式整合在一起，特征的“层级”可以通过堆叠的...",
+        "metrics": {
+          "quality_score": {
+            "score": 8.0,
+            "method": "quality_score",
+            "details": "质量分数: 8.0/10"
+          },
+          "back_translation": {
+            "score": 4.62,
+            "method": "back_translation_consistency",
+            "details": "回译相似度: 46.22%",
+            "similarity": 0.46224695385205794
+          },
+          "terminology": {
+            "score": 6.36,
+            "method": "terminology_consistency",
+            "details": "术语使用: 14/22 正确",
+            "correct_uses": 14,
+            "total_terms": 22,
+            "violations": [
+              {
+                "term": "ImageNet",
+                "expected": "ImageNet",
+                "issue": "术语未翻译，直接使用英文"
+              },
+              {
+                "term": "SGD",
+                "expected": "SGD",
+                "issue": "术语未翻译，直接使用英文"
+              },
+              {
+                "term": "CIFAR-10",
+                "expected": "CIFAR-10",
+                "issue": "术语未翻译，直接使用英文"
+              },
+              {
+                "term": "Caffe",
+                "expected": "Caffe",
+                "issue": "术语未翻译，直接使用英文"
+              }
+            ]
+          },
+          "length_ratio": {
+            "score": 7.44,
+            "method": "length_ratio",
+            "details": "长度比: 1.88 (理想: 1.5)",
+            "ratio": 1.883313885647608,
+            "source_length": 857,
+            "translation_length": 1614
+          },
+          "fluency": {
+            "score": 10.0,
+            "method": "fluency",
+            "details": "流畅性检查: 通过",
+            "issues": []
+          },
+          "number_preservation": {
+            "score": 8.89,
+            "method": "number_preservation",
+            "details": "数字保留: 32/36",
+            "preserved": 32,
+            "total": 36,
+            "missing": [
+              "2015",
+              "4.",
+              "5",
+              "3.57"
+            ]
+          },
+          "bleu": {
+            "score": 0.43,
+            "method": "bleu_score",
+            "details": "BLEU: 0.0435",
+            "bleu": 0.04346820695504464,
+            "precision_1gram": 0.10282776349614396,
+            "precision_2gram": 0.0183752417794971
+          },
+          "semantic_similarity": {
+            "score": 6.56,
+            "method": "semantic_similarity",
+            "details": "语义相似度: 0.3118",
+            "similarity": 0.31183746457099915
+          },
+          "edit_distance": {
+            "score": 0.22,
+            "method": "edit_distance",
+            "details": "编辑距离: 1578/1614, 相似度: 2.23%",
+            "distance": 1578,
+            "similarity": 0.022304832713754608
+          }
+        },
+        "overall_score": 5.44,
+        "unsupervised_avg": 7.46,
+        "supervised_avg": 2.4
+      }
+    },
+    {
+      "chapter_id": 3,
+      "chunk_id": 1,
+      "chunk_file": "output/resnet\\chapter_3\\chunk_001.json",
+      "source_text": "2. Related Work Residual Representations. In image recognition, VLAD [18] is a representation that encodes by the residual vectors with respect to a dictionary, and Fisher Vector [30] can be formulate...",
+      "translation": "2. 相关工作 残差表示。在图像识别领域，VLAD[18]是一种通过与字典的残差向量进行编码的表示方法，而费舍尔向量[30]可以被表述为VLAD的概率版本[18]。这两种方法都是图像检索和分类中强大的浅层表示[4, 47]。对于向量量化，编码残差向量[17]被证明比编码原始向量更为有效。在低层次视觉和计算机图形学中，为了求解偏微分方程（PDEs），广泛使用的多网格方法[3]将系统重构为多个尺度上的...",
+      "quality_score": 8.0,
+      "evaluation": {
+        "source_text": "2. Related Work Residual Representations. In image recognition, VLAD [18] is a representation that e...",
+        "translation": "2. 相关工作 残差表示。在图像识别领域，VLAD[18]是一种通过与字典的残差向量进行编码的表示方法，而费舍尔向量[30]可以被表述为VLAD的概率版本[18]。这两种方法都是图像检索和分类中强大的...",
+        "metrics": {
+          "quality_score": {
+            "score": 8.0,
+            "method": "quality_score",
+            "details": "质量分数: 8.0/10"
+          },
+          "back_translation": {
+            "score": 4.95,
+            "method": "back_translation_consistency",
+            "details": "回译相似度: 49.51%",
+            "similarity": 0.4950654582074522
+          },
+          "terminology": {
+            "score": 7.33,
+            "method": "terminology_consistency",
+            "details": "术语使用: 11/15 正确",
+            "correct_uses": 11,
+            "total_terms": 15,
+            "violations": [
+              {
+                "term": "VLAD",
+                "expected": "VLAD",
+                "issue": "术语未翻译，直接使用英文"
+              },
+              {
+                "term": "PDEs",
+                "expected": "偏微分方程",
+                "issue": "术语未翻译，直接使用英文"
+              },
+              {
+                "term": "MLPs",
+                "expected": "多层感知器",
+                "issue": "术语未翻译，直接使用英文"
+              }
+            ]
+          },
+          "length_ratio": {
+            "score": 5.8,
+            "method": "length_ratio",
+            "details": "长度比: 2.13 (理想: 1.5)",
+            "ratio": 2.1298342541436464,
+            "source_length": 362,
+            "translation_length": 771
+          },
+          "fluency": {
+            "score": 10.0,
+            "method": "fluency",
+            "details": "流畅性检查: 通过",
+            "issues": []
+          },
+          "number_preservation": {
+            "score": 10.0,
+            "method": "number_preservation",
+            "details": "数字保留: 22/22",
+            "preserved": 22,
+            "total": 22,
+            "missing": []
+          },
+          "bleu": {
+            "score": 1.0,
+            "method": "bleu_score",
+            "details": "BLEU: 0.0997",
+            "bleu": 0.09966043310152482,
+            "precision_1gram": 0.25089605734767023,
+            "precision_2gram": 0.039586919104991396
+          },
+          "semantic_similarity": {
+            "score": 6.8,
+            "method": "semantic_similarity",
+            "details": "语义相似度: 0.3596",
+            "similarity": 0.35959872603416443
+          },
+          "edit_distance": {
+            "score": 0.52,
+            "method": "edit_distance",
+            "details": "编辑距离: 731/771, 相似度: 5.19%",
+            "distance": 731,
+            "similarity": 0.05188067444876787
+          }
+        },
+        "overall_score": 5.68,
+        "unsupervised_avg": 7.62,
+        "supervised_avg": 2.77
+      }
+    },
+    {
+      "chapter_id": 4,
+      "chunk_id": 0,
+      "chunk_file": "output/resnet\\chapter_4\\chunk_000.json",
+      "source_text": "3. Deep Residual Learning",
+      "translation": "3. 深度残差学习",
+      "quality_score": 10.0,
+      "evaluation": {
+        "source_text": "3. Deep Residual Learning",
+        "translation": "3. 深度残差学习",
+        "metrics": {
+          "quality_score": {
+            "score": 10.0,
+            "method": "quality_score",
+            "details": "质量分数: 10.0/10"
+          },
+          "back_translation": {
+            "score": 0.0,
+            "method": "back_translation_consistency",
+            "details": "回译文不可用"
+          },
+          "terminology": {
+            "score": 10.0,
+            "method": "terminology_consistency",
+            "details": "术语使用: 1/1 正确",
+            "correct_uses": 1,
+            "total_terms": 1,
+            "violations": []
+          },
+          "length_ratio": {
+            "score": 5.0,
+            "method": "length_ratio",
+            "details": "长度比: 2.25 (理想: 1.5)",
+            "ratio": 2.25,
+            "source_length": 4,
+            "translation_length": 9
+          },
+          "fluency": {
+            "score": 10.0,
+            "method": "fluency",
+            "details": "流畅性检查: 通过",
+            "issues": []
+          },
+          "number_preservation": {
+            "score": 10.0,
+            "method": "number_preservation",
+            "details": "数字保留: 1/1",
+            "preserved": 1,
+            "total": 1,
+            "missing": []
+          },
+          "bleu": {
+            "score": 6.97,
+            "method": "bleu_score",
+            "details": "BLEU: 0.6972",
+            "bleu": 0.6972166887783963,
+            "precision_1gram": 0.7777777777777778,
+            "precision_2gram": 0.625
+          },
+          "semantic_similarity": {
+            "score": 8.05,
+            "method": "semantic_similarity",
+            "details": "语义相似度: 0.6091",
+            "similarity": 0.6091451048851013
+          },
+          "edit_distance": {
+            "score": 1.89,
+            "method": "edit_distance",
+            "details": "编辑距离: 30/37, 相似度: 18.92%",
+            "distance": 30,
+            "similarity": 0.18918918918918914
+          }
+        },
+        "overall_score": 6.45,
+        "unsupervised_avg": 7.0,
+        "supervised_avg": 5.64
+      }
+    },
+    {
+      "chapter_id": 5,
+      "chunk_id": 1,
+      "chunk_file": "output/resnet\\chapter_5\\chunk_001.json",
+      "source_text": "3.1. Residual Learning Let us consider $H(x)$ as an underlying mapping to be fit by a few stacked layers (not necessarily the entire net), with $x$ denoting the inputs to the first of these layers. If...",
+      "translation": "3.1. 残差学习 让我们考虑$H(x)$作为一个需要通过几个堆叠层（不一定是整个网络）来拟合的底层映射，其中$x$表示这些层中第一层的输入。如果假设多个非线性层可以渐近地逼近复杂的函数，那么这等同于假设它们可以渐近地逼近残差函数，即$H(x) - x$（假设输入和输出的维度相同）。因此，我们不是期望堆叠层来逼近$H(x)$，而是明确地让这些层逼近一个残差函数$F(x) := H(x) - x$。...",
+      "quality_score": 8.0,
+      "evaluation": {
+        "source_text": "3.1. Residual Learning Let us consider $H(x)$ as an underlying mapping to be fit by a few stacked la...",
+        "translation": "3.1. 残差学习 让我们考虑$H(x)$作为一个需要通过几个堆叠层（不一定是整个网络）来拟合的底层映射，其中$x$表示这些层中第一层的输入。如果假设多个非线性层可以渐近地逼近复杂的函数，那么这等同于...",
+        "metrics": {
+          "quality_score": {
+            "score": 8.0,
+            "method": "quality_score",
+            "details": "质量分数: 8.0/10"
+          },
+          "back_translation": {
+            "score": 4.86,
+            "method": "back_translation_consistency",
+            "details": "回译相似度: 48.55%",
+            "similarity": 0.4855413584398117
+          },
+          "terminology": {
+            "score": 4.29,
+            "method": "terminology_consistency",
+            "details": "术语使用: 3/7 正确",
+            "correct_uses": 3,
+            "total_terms": 7,
+            "violations": [
+              {
+                "term": "H(x)",
+                "expected": "H(x)",
+                "issue": "术语未翻译，直接使用英文"
+              },
+              {
+                "term": "F(x)",
+                "expected": "F(x)",
+                "issue": "术语未翻译，直接使用英文"
+              },
+              {
+                "term": "CIFAR-10",
+                "expected": "CIFAR-10",
+                "issue": "术语未翻译，直接使用英文"
+              },
+              {
+                "term": "BN",
+                "expected": "批归一化",
+                "issue": "术语未翻译，直接使用英文"
+              }
+            ]
+          },
+          "length_ratio": {
+            "score": 7.62,
+            "method": "length_ratio",
+            "details": "长度比: 1.86 (理想: 1.5)",
+            "ratio": 1.8571428571428572,
+            "source_length": 343,
+            "translation_length": 637
+          },
+          "fluency": {
+            "score": 10.0,
+            "method": "fluency",
+            "details": "流畅性检查: 通过",
+            "issues": []
+          },
+          "number_preservation": {
+            "score": 8.33,
+            "method": "number_preservation",
+            "details": "数字保留: 5/6",
+            "preserved": 5,
+            "total": 6,
+            "missing": [
+              "10."
+            ]
+          },
+          "bleu": {
+            "score": 0.56,
+            "method": "bleu_score",
+            "details": "BLEU: 0.0562",
+            "bleu": 0.056158080473648286,
+            "precision_1gram": 0.14601769911504425,
+            "precision_2gram": 0.02159827213822894
+          },
+          "semantic_similarity": {
+            "score": 7.13,
+            "method": "semantic_similarity",
+            "details": "语义相似度: 0.4264",
+            "similarity": 0.4263722896575928
+          },
+          "edit_distance": {
+            "score": 0.42,
+            "method": "edit_distance",
+            "details": "编辑距离: 610/637, 相似度: 4.24%",
+            "distance": 610,
+            "similarity": 0.042386185243328045
+          }
+        },
+        "overall_score": 5.29,
+        "unsupervised_avg": 7.02,
+        "supervised_avg": 2.7
+      }
+    },
+    {
+      "chapter_id": 6,
+      "chunk_id": 1,
+      "chunk_file": "output/resnet\\chapter_6\\chunk_001.json",
+      "source_text": "3.2. Identity Mapping by Shortcuts We adopt residual learning to every few stacked layers. A building block is shown in Fig. 2. Formally, in this paper we consider a building block defined as: $$y = F...",
+      "translation": "3.2. 恒等映射的捷径 我们采用残差学习到每几个堆叠的层中。构建块如图2所示。正式地，本文考虑一个构建块定义为：$$y = F(x, {W_i}) + x \\tag{1}$$ 这里$x$和$y$是考虑的层的输入和输出向量。函数$F(x, {W_i})$表示要学习的残差映射。对于图2中的例子，它有两个层，$F = W_2 \\sigma(W_1x)$，其中$\\sigma$表示ReLU[29]，为了简...",
+      "quality_score": 8.0,
+      "evaluation": {
+        "source_text": "3.2. Identity Mapping by Shortcuts We adopt residual learning to every few stacked layers. A buildin...",
+        "translation": "3.2. 恒等映射的捷径 我们采用残差学习到每几个堆叠的层中。构建块如图2所示。正式地，本文考虑一个构建块定义为：$$y = F(x, {W_i}) + x \\tag{1}$$ 这里$x$和$y$是考...",
+        "metrics": {
+          "quality_score": {
+            "score": 8.0,
+            "method": "quality_score",
+            "details": "质量分数: 8.0/10"
+          },
+          "back_translation": {
+            "score": 5.82,
+            "method": "back_translation_consistency",
+            "details": "回译相似度: 58.20%",
+            "similarity": 0.581970482648584
+          },
+          "terminology": {
+            "score": 4.44,
+            "method": "terminology_consistency",
+            "details": "术语使用: 4/9 正确",
+            "correct_uses": 4,
+            "total_terms": 9,
+            "violations": [
+              {
+                "term": "ReLU",
+                "expected": "ReLU",
+                "issue": "术语未翻译，直接使用英文"
+              },
+              {
+                "term": "ImageNet",
+                "expected": "ImageNet",
+                "issue": "术语未翻译，直接使用英文"
+              },
+              {
+                "term": "ResNet-34",
+                "expected": "ResNet-34",
+                "issue": "术语未翻译，直接使用英文"
+              },
+              {
+                "term": "ResNet-50/101/152",
+                "expected": "ResNet-50/101/152",
+                "issue": "术语未翻译，直接使用英文"
+              }
+            ]
+          },
+          "length_ratio": {
+            "score": 4.41,
+            "method": "length_ratio",
+            "details": "长度比: 2.34 (理想: 1.5)",
+            "ratio": 2.3383084577114426,
+            "source_length": 402,
+            "translation_length": 940
+          },
+          "fluency": {
+            "score": 10.0,
+            "method": "fluency",
+            "details": "流畅性检查: 通过",
+            "issues": []
+          },
+          "number_preservation": {
+            "score": 7.69,
+            "method": "number_preservation",
+            "details": "数字保留: 10/13",
+            "preserved": 10,
+            "total": 13,
+            "missing": [
+              "2.",
+              "152.",
+              "34."
+            ]
+          },
+          "bleu": {
+            "score": 0.16,
+            "method": "bleu_score",
+            "details": "BLEU: 0.0160",
+            "bleu": 0.015963129105530594,
+            "precision_1gram": 0.07364341085271318,
+            "precision_2gram": 0.0034602076124567475
+          },
+          "semantic_similarity": {
+            "score": 6.78,
+            "method": "semantic_similarity",
+            "details": "语义相似度: 0.3560",
+            "similarity": 0.3560224175453186
+          },
+          "edit_distance": {
+            "score": 0.15,
+            "method": "edit_distance",
+            "details": "编辑距离: 926/940, 相似度: 1.49%",
+            "distance": 926,
+            "similarity": 0.014893617021276562
+          }
+        },
+        "overall_score": 4.83,
+        "unsupervised_avg": 6.47,
+        "supervised_avg": 2.36
+      }
+    },
+    {
+      "chapter_id": 7,
+      "chunk_id": 1,
+      "chunk_file": "output/resnet\\chapter_7\\chunk_001.json",
+      "source_text": "3.3. Network Architectures We have tested various plain/residual nets, and have observed consistent phenomena. To provide instances for discussion, we describe two models for ImageNet as follows. Plai...",
+      "translation": "3.3. 网络架构 我们测试了各种纯/残差网络，并观察到了一致的现象。为了提供讨论的实例，我们如下描述了两个用于ImageNet的模型。纯网络。我们的纯基线（图3，中间）主要受到了VGG网络40的启发。卷积层主要采用3×3的滤波器，并遵循两个简单的设计规则：（i）对于相同的输出特征图大小，层具有相同数量的滤波器；（ii）如果特征图大小减半，滤波器数量加倍，以保持每层的时间复杂度。我们直接通过具有步...",
+      "quality_score": 8.0,
+      "evaluation": {
+        "source_text": "3.3. Network Architectures We have tested various plain/residual nets, and have observed consistent ...",
+        "translation": "3.3. 网络架构 我们测试了各种纯/残差网络，并观察到了一致的现象。为了提供讨论的实例，我们如下描述了两个用于ImageNet的模型。纯网络。我们的纯基线（图3，中间）主要受到了VGG网络40的启发...",
+        "metrics": {
+          "quality_score": {
+            "score": 8.0,
+            "method": "quality_score",
+            "details": "质量分数: 8.0/10"
+          },
+          "back_translation": {
+            "score": 6.22,
+            "method": "back_translation_consistency",
+            "details": "回译相似度: 62.18%",
+            "similarity": 0.6218347862183479
+          },
+          "terminology": {
+            "score": 6.67,
+            "method": "terminology_consistency",
+            "details": "术语使用: 4/6 正确",
+            "correct_uses": 4,
+            "total_terms": 6,
+            "violations": [
+              {
+                "term": "ImageNet",
+                "expected": "ImageNet",
+                "issue": "术语未翻译，直接使用英文"
+              },
+              {
+                "term": "VGG-19",
+                "expected": "VGG-19",
+                "issue": "术语未翻译，直接使用英文"
+              }
+            ]
+          },
+          "length_ratio": {
+            "score": 6.17,
+            "method": "length_ratio",
+            "details": "长度比: 2.07 (理想: 1.5)",
+            "ratio": 2.073878627968338,
+            "source_length": 379,
+            "translation_length": 786
+          },
+          "fluency": {
+            "score": 10.0,
+            "method": "fluency",
+            "details": "流畅性检查: 通过",
+            "issues": []
+          },
+          "number_preservation": {
+            "score": 7.65,
+            "method": "number_preservation",
+            "details": "数字保留: 13/17",
+            "preserved": 13,
+            "total": 17,
+            "missing": [
+              "40.",
+              "2.",
+              "19.6",
+              "3.6"
+            ]
+          },
+          "bleu": {
+            "score": 0.2,
+            "method": "bleu_score",
+            "details": "BLEU: 0.0195",
+            "bleu": 0.01953949120910128,
+            "precision_1gram": 0.06477732793522267,
+            "precision_2gram": 0.005893909626719057
+          },
+          "semantic_similarity": {
+            "score": 6.6,
+            "method": "semantic_similarity",
+            "details": "语义相似度: 0.3194",
+            "similarity": 0.31941333413124084
+          },
+          "edit_distance": {
+            "score": 0.14,
+            "method": "edit_distance",
+            "details": "编辑距离: 775/786, 相似度: 1.40%",
+            "distance": 775,
+            "similarity": 0.013994910941475869
+          }
+        },
+        "overall_score": 5.33,
+        "unsupervised_avg": 7.34,
+        "supervised_avg": 2.31
+      }
+    },
+    {
+      "chapter_id": 8,
+      "chunk_id": 0,
+      "chunk_file": "output/resnet\\chapter_8\\chunk_000.json",
+      "source_text": "3.4. Implementation Our implementation for ImageNet follows the practice in [21, 40]. The image is resized with its shorter side randomly sampled in [256, 480] for scale augmentation [40]. A 224×224 c...",
+      "translation": "3.4. 实现 我们在ImageNet上的实现遵循了文献[21, 40]中的实践。图像的短边被随机缩放到[256, 480]区间内进行尺度增强[40]。从图像或其水平翻转中随机采样一个224×224的裁剪区域，并从中减去逐像素均值[21]。我们使用了文献[21]中的标准颜色增强技术。我们遵循文献[16]，在每个卷积层之后和激活层之前采用批量归一化（BN）[16]。我们按照文献[12]初始化权重，并...",
+      "quality_score": 9.0,
+      "evaluation": {
+        "source_text": "3.4. Implementation Our implementation for ImageNet follows the practice in [21, 40]. The image is r...",
+        "translation": "3.4. 实现 我们在ImageNet上的实现遵循了文献[21, 40]中的实践。图像的短边被随机缩放到[256, 480]区间内进行尺度增强[40]。从图像或其水平翻转中随机采样一个224×224的...",
+        "metrics": {
+          "quality_score": {
+            "score": 9.0,
+            "method": "quality_score",
+            "details": "质量分数: 9.0/10"
+          },
+          "back_translation": {
+            "score": 5.75,
+            "method": "back_translation_consistency",
+            "details": "回译相似度: 57.55%",
+            "similarity": 0.5754795663052544
+          },
+          "terminology": {
+            "score": 6.36,
+            "method": "terminology_consistency",
+            "details": "术语使用: 7/11 正确",
+            "correct_uses": 7,
+            "total_terms": 11,
+            "violations": [
+              {
+                "term": "ImageNet",
+                "expected": "ImageNet",
+                "issue": "术语未翻译，直接使用英文"
+              },
+              {
+                "term": "BN",
+                "expected": "批归一化",
+                "issue": "术语未翻译，直接使用英文"
+              },
+              {
+                "term": "SGD",
+                "expected": "SGD",
+                "issue": "术语未翻译，直接使用英文"
+              },
+              {
+                "term": "dropout",
+                "expected": "dropout",
+                "issue": "术语未翻译，直接使用英文"
+              }
+            ]
+          },
+          "length_ratio": {
+            "score": 3.96,
+            "method": "length_ratio",
+            "details": "长度比: 2.41 (理想: 1.5)",
+            "ratio": 2.405263157894737,
+            "source_length": 190,
+            "translation_length": 457
+          },
+          "fluency": {
+            "score": 10.0,
+            "method": "fluency",
+            "details": "流畅性检查: 通过",
+            "issues": []
+          },
+          "number_preservation": {
+            "score": 9.44,
+            "method": "number_preservation",
+            "details": "数字保留: 17/18",
+            "preserved": 17,
+            "total": 18,
+            "missing": [
+              "256."
+            ]
+          },
+          "bleu": {
+            "score": 0.89,
+            "method": "bleu_score",
+            "details": "BLEU: 0.0889",
+            "bleu": 0.08893595740629329,
+            "precision_1gram": 0.1864406779661017,
+            "precision_2gram": 0.04242424242424243
+          },
+          "semantic_similarity": {
+            "score": 6.93,
+            "method": "semantic_similarity",
+            "details": "语义相似度: 0.3869",
+            "similarity": 0.3869330585002899
+          },
+          "edit_distance": {
+            "score": 0.59,
+            "method": "edit_distance",
+            "details": "编辑距离: 430/457, 相似度: 5.91%",
+            "distance": 430,
+            "similarity": 0.05908096280087527
+          }
+        },
+        "overall_score": 5.38,
+        "unsupervised_avg": 7.1,
+        "supervised_avg": 2.8
+      }
+    },
+    {
+      "chapter_id": 9,
+      "chunk_id": 0,
+      "chunk_file": "output/resnet\\chapter_9\\chunk_000.json",
+      "source_text": "4. Experiments",
+      "translation": "4. 实验\n\n本章节详细介绍了我们在不同数据集上进行的实验，以验证所提出方法的有效性。实验结果表明，我们的方法在目标检测任务上取得了显著的性能提升。具体来说，我们在PASCAL VOC和COCO数据集上进行了广泛的实验，以评估模型在不同场景下的表现。在PASCAL VOC数据集上，我们的方法达到了87.7%的平均精度均值(mAP)，相较于快速YOLO模型提高了5.5%。同时，在COCO数据集上，我...",
+      "quality_score": 7.0,
+      "evaluation": {
+        "source_text": "4. Experiments",
+        "translation": "4. 实验\n\n本章节详细介绍了我们在不同数据集上进行的实验，以验证所提出方法的有效性。实验结果表明，我们的方法在目标检测任务上取得了显著的性能提升。具体来说，我们在PASCAL VOC和COCO数据集...",
+        "metrics": {
+          "quality_score": {
+            "score": 7.0,
+            "method": "quality_score",
+            "details": "质量分数: 7.0/10"
+          },
+          "back_translation": {
+            "score": 0.33,
+            "method": "back_translation_consistency",
+            "details": "回译相似度: 3.27%",
+            "similarity": 0.032663316582914576
+          },
+          "length_ratio": {
+            "score": 0,
+            "method": "length_ratio",
+            "details": "长度比: 121.00 (理想: 1.5)",
+            "ratio": 121.0,
+            "source_length": 2,
+            "translation_length": 242
+          },
+          "fluency": {
+            "score": 10.0,
+            "method": "fluency",
+            "details": "流畅性检查: 通过",
+            "issues": []
+          },
+          "number_preservation": {
+            "score": 10.0,
+            "method": "number_preservation",
+            "details": "数字保留: 1/1",
+            "preserved": 1,
+            "total": 1,
+            "missing": []
+          },
+          "bleu": {
+            "score": 2.16,
+            "method": "bleu_score",
+            "details": "BLEU: 0.2163",
+            "bleu": 0.21628220422562985,
+            "precision_1gram": 0.35185185185185186,
+            "precision_2gram": 0.1329479768786127
+          },
+          "semantic_similarity": {
+            "score": 8.54,
+            "method": "semantic_similarity",
+            "details": "语义相似度: 0.7085",
+            "similarity": 0.7084774374961853
+          },
+          "edit_distance": {
+            "score": 1.57,
+            "method": "edit_distance",
+            "details": "编辑距离: 204/242, 相似度: 15.70%",
+            "distance": 204,
+            "similarity": 0.15702479338842978
+          }
+        },
+        "overall_score": 4.69,
+        "unsupervised_avg": 5.08,
+        "supervised_avg": 4.09
+      }
+    },
+    {
+      "chapter_id": 10,
+      "chunk_id": 1,
+      "chunk_file": "output/resnet\\chapter_10\\chunk_001.json",
+      "source_text": "4.1. ImageNet Classification We evaluate our method on the ImageNet 2012 classification dataset [35] that consists of 1000 classes. The models are trained on the 1.28 million training images, and eval...",
+      "translation": "4.1. ImageNet 分类 我们在包含1000个类别的 ImageNet 2012 分类数据集[35]上评估了我们的方法。模型在128万张训练图像上进行训练，并在5万张验证图像上进行评估。我们还在由测试服务器报告的10万张测试图像上获得了最终结果。我们评估了 top-1 和 top-5 的错误率。普通网络。我们首先评估了18层和34层普通网络。34层普通网络如图3（中间）所示。18层普通网络...",
+      "quality_score": 8.0,
+      "evaluation": {
+        "source_text": "4.1. ImageNet Classification We evaluate our method on the ImageNet 2012 classification dataset [35]...",
+        "translation": "4.1. ImageNet 分类 我们在包含1000个类别的 ImageNet 2012 分类数据集[35]上评估了我们的方法。模型在128万张训练图像上进行训练，并在5万张验证图像上进行评估。我们还...",
+        "metrics": {
+          "quality_score": {
+            "score": 8.0,
+            "method": "quality_score",
+            "details": "质量分数: 8.0/10"
+          },
+          "back_translation": {
+            "score": 4.05,
+            "method": "back_translation_consistency",
+            "details": "回译相似度: 40.48%",
+            "similarity": 0.40482081570755846
+          },
+          "terminology": {
+            "score": 2.14,
+            "method": "terminology_consistency",
+            "details": "术语使用: 3/14 正确",
+            "correct_uses": 3,
+            "total_terms": 14,
+            "violations": [
+              {
+                "term": "ImageNet",
+                "expected": "ImageNet",
+                "issue": "术语未翻译，直接使用英文"
+              },
+              {
+                "term": "ImageNet 2012",
+                "expected": "ImageNet 2012",
+                "issue": "术语未翻译，直接使用英文"
+              },
+              {
+                "term": "ResNets",
+                "expected": "ResNets",
+                "issue": "术语未翻译，直接使用英文"
+              },
+              {
+                "term": "VGG-16",
+                "expected": "VGG-16",
+                "issue": "术语未翻译，直接使用英文"
+              },
+              {
+                "term": "ResNet-50",
+                "expected": "ResNet-50",
+                "issue": "术语未翻译，直接使用英文"
+              }
+            ]
+          },
+          "length_ratio": {
+            "score": 9.21,
+            "method": "length_ratio",
+            "details": "长度比: 1.38 (理想: 1.5)",
+            "ratio": 1.3811475409836065,
+            "source_length": 1220,
+            "translation_length": 1685
+          },
+          "fluency": {
+            "score": 10.0,
+            "method": "fluency",
+            "details": "流畅性检查: 通过",
+            "issues": []
+          },
+          "number_preservation": {
+            "score": 6.56,
+            "method": "number_preservation",
+            "details": "数字保留: 21/32",
+            "preserved": 21,
+            "total": 32,
+            "missing": [
+              "19",
+              "15.3",
+              "11.3",
+              "2015.",
+              "19.6"
+            ]
+          }
+        },
+        "overall_score": 6.39,
+        "unsupervised_avg": 6.39
+      }
+    },
+    {
+      "chapter_id": 11,
+      "chunk_id": 1,
+      "chunk_file": "output/resnet\\chapter_11\\chunk_001.json",
+      "source_text": "4.2. CIFAR-10 and Analysis We conducted more studies on the CIFAR-10 dataset [20], which consists of 50k training images and 10k testing images in 10 classes. We present experiments trained on the tra...",
+      "translation": "4.2. CIFAR-10及分析 我们在由10个类别组成的CIFAR-10数据集[20]上进行了更多研究，该数据集包含50k张训练图像和10k张测试图像。我们在训练集上进行训练，并在测试集上进行评估。我们的关注点在于极深网络的行为，而不在于推动最先进的结果，因此我们有意使用以下简单的架构。普通/残差架构遵循图3（中间/右侧）的形式。网络输入为32×32的图像，每个像素的平均值被减去。第一层是3×3...",
+      "quality_score": 8.0,
+      "evaluation": {
+        "source_text": "4.2. CIFAR-10 and Analysis We conducted more studies on the CIFAR-10 dataset [20], which consists of...",
+        "translation": "4.2. CIFAR-10及分析 我们在由10个类别组成的CIFAR-10数据集[20]上进行了更多研究，该数据集包含50k张训练图像和10k张测试图像。我们在训练集上进行训练，并在测试集上进行评估。...",
+        "metrics": {
+          "quality_score": {
+            "score": 8.0,
+            "method": "quality_score",
+            "details": "质量分数: 8.0/10"
+          },
+          "back_translation": {
+            "score": 5.16,
+            "method": "back_translation_consistency",
+            "details": "回译相似度: 51.61%",
+            "similarity": 0.5161423414130996
+          },
+          "terminology": {
+            "score": 5.83,
+            "method": "terminology_consistency",
+            "details": "术语使用: 14/24 正确",
+            "correct_uses": 14,
+            "total_terms": 24,
+            "violations": [
+              {
+                "term": "CIFAR-10",
+                "expected": "CIFAR-10",
+                "issue": "术语未翻译，直接使用英文"
+              },
+              {
+                "term": "dropout",
+                "expected": "dropout",
+                "issue": "术语未翻译，直接使用英文"
+              },
+              {
+                "term": "ImageNet",
+                "expected": "ImageNet",
+                "issue": "术语未翻译，直接使用英文"
+              },
+              {
+                "term": "MNIST",
+                "expected": "MNIST",
+                "issue": "术语未翻译，直接使用英文"
+              },
+              {
+                "term": "FitNet",
+                "expected": "FitNet",
+                "issue": "术语未翻译，直接使用英文"
+              }
+            ]
+          },
+          "length_ratio": {
+            "score": 8.35,
+            "method": "length_ratio",
+            "details": "长度比: 1.75 (理想: 1.5)",
+            "ratio": 1.747228381374723,
+            "source_length": 902,
+            "translation_length": 1576
+          },
+          "fluency": {
+            "score": 10.0,
+            "method": "fluency",
+            "details": "流畅性检查: 通过",
+            "issues": []
+          },
+          "number_preservation": {
+            "score": 8.3,
+            "method": "number_preservation",
+            "details": "数字保留: 39/47",
+            "preserved": 39,
+            "total": 47,
+            "missing": [
+              "25",
+              "7.93",
+              "13",
+              "6.",
+              "7."
+            ]
+          }
+        },
+        "overall_score": 7.53,
+        "unsupervised_avg": 7.53
+      }
+    },
+    {
+      "chapter_id": 12,
+      "chunk_id": 0,
+      "chunk_file": "output/resnet\\chapter_12\\chunk_000.json",
+      "source_text": "4.3. Object Detection on PASCAL and MS COCO Our method has good generalization performance on other recognition tasks. Table 7 and 8 show the object detection baseline results on PASCAL VOC 2007 and 2...",
+      "translation": "4.3. 在PASCAL和MS COCO上的目标检测 我们的方法在其他识别任务上具有良好的泛化性能。表7和表8展示了在PASCAL VOC 2007和2012[5]以及COCO[26]上的目标检测基线结果。我们采用快速R-CNN[32]作为检测方法。在这里，我们关注的是用ResNet-101替换VGG-16[40]所带来的改进。两种模型的检测实现（见附录）是相同的，因此性能的提升只能归因于更好的网...",
+      "quality_score": 8.0,
+      "evaluation": {
+        "source_text": "4.3. Object Detection on PASCAL and MS COCO Our method has good generalization performance on other ...",
+        "translation": "4.3. 在PASCAL和MS COCO上的目标检测 我们的方法在其他识别任务上具有良好的泛化性能。表7和表8展示了在PASCAL VOC 2007和2012[5]以及COCO[26]上的目标检测基线...",
+        "metrics": {
+          "quality_score": {
+            "score": 8.0,
+            "method": "quality_score",
+            "details": "质量分数: 8.0/10"
+          },
+          "back_translation": {
+            "score": 7.05,
+            "method": "back_translation_consistency",
+            "details": "回译相似度: 70.54%",
+            "similarity": 0.705407586763519
+          },
+          "terminology": {
+            "score": 3.57,
+            "method": "terminology_consistency",
+            "details": "术语使用: 5/14 正确",
+            "correct_uses": 5,
+            "total_terms": 14,
+            "violations": [
+              {
+                "term": "PASCAL",
+                "expected": "PASCAL视觉对象识别挑战赛",
+                "issue": "术语未翻译，直接使用英文"
+              },
+              {
+                "term": "MS COCO",
+                "expected": "MS COCO",
+                "issue": "术语未翻译，直接使用英文"
+              },
+              {
+                "term": "VGG-16",
+                "expected": "VGG-16",
+                "issue": "术语未翻译，直接使用英文"
+              },
+              {
+                "term": "ResNet-101",
+                "expected": "ResNet-101",
+                "issue": "术语未翻译，直接使用英文"
+              },
+              {
+                "term": "COCO",
+                "expected": "COCO数据集",
+                "issue": "术语未翻译，直接使用英文"
+              }
+            ]
+          },
+          "length_ratio": {
+            "score": 2.97,
+            "method": "length_ratio",
+            "details": "长度比: 2.55 (理想: 1.5)",
+            "ratio": 2.5544041450777204,
+            "source_length": 193,
+            "translation_length": 493
+          },
+          "fluency": {
+            "score": 10.0,
+            "method": "fluency",
+            "details": "流畅性检查: 通过",
+            "issues": []
+          },
+          "number_preservation": {
+            "score": 8.89,
+            "method": "number_preservation",
+            "details": "数字保留: 16/18",
+            "preserved": 16,
+            "total": 18,
+            "missing": [
+              "101.",
+              "1"
+            ]
+          }
+        },
+        "overall_score": 6.5,
+        "unsupervised_avg": 6.5
+      }
+    }
+  ]
+}

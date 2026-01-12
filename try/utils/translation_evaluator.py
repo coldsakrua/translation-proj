@@ -12,9 +12,9 @@ import difflib
 try:
     from sentence_transformers import SentenceTransformer
     HAS_EMBEDDING = True
-except ImportError:
+except (ImportError, RuntimeError, Exception) as e:
     HAS_EMBEDDING = False
-    print("⚠️  sentence-transformers未安装，语义相似度评估将不可用")
+    print(f"[WARNING] sentence-transformers不可用（可能是版本不兼容），语义相似度评估将不可用: {type(e).__name__}")
 
 
 class TranslationEvaluator:
@@ -23,22 +23,25 @@ class TranslationEvaluator:
     提供多维度的质量评估指标
     """
     
-    def __init__(self, reference_translations: Optional[Dict] = None):
+    def __init__(self, reference_translations: Optional[Dict] = None, enabled_metrics: Optional[List[str]] = None):
         """
         初始化评估器
         
         Args:
             reference_translations: 参考译文字典，格式为 {chapter_id: {chunk_id: translation}}
+            enabled_metrics: 启用的评估指标列表，可选值: ['bleu', 'mqm', 'score']
+                            如果为None，则启用所有可用指标
         """
         self.reference_translations = reference_translations or {}
         self.embedding_model = None
+        self.enabled_metrics = enabled_metrics or ['bleu', 'mqm', 'score']  # 默认启用所有
         
-        # 尝试加载语义相似度模型
-        if HAS_EMBEDDING:
+        # 如果启用了mqm，尝试加载语义相似度模型
+        if 'mqm' in self.enabled_metrics and HAS_EMBEDDING:
             try:
-                self.embedding_model = SentenceTransformer('paraphrase-multilingual-MiniLM-L12-v2')
+                self.embedding_model = SentenceTransformer('./eval_model')
             except Exception as e:
-                print(f"⚠️  加载语义相似度模型失败: {e}")
+                print(f"[WARNING] 加载语义相似度模型失败: {e}")
     
     # ==================== 无监督指标 ====================
     
@@ -364,18 +367,20 @@ class TranslationEvaluator:
             try:
                 import numpy as np
                 similarity = np.dot(embeddings[0], embeddings[1]) / (np.linalg.norm(embeddings[0]) * np.linalg.norm(embeddings[1]))
+                # 确保转换为Python原生float类型
+                similarity = float(similarity)
             except ImportError:
                 # 如果没有numpy，使用简单的点积计算
                 dot_product = sum(a * b for a, b in zip(embeddings[0], embeddings[1]))
                 norm_a = sum(a * a for a in embeddings[0]) ** 0.5
                 norm_b = sum(b * b for b in embeddings[1]) ** 0.5
-                similarity = dot_product / (norm_a * norm_b) if norm_a * norm_b > 0 else 0
+                similarity = float(dot_product / (norm_a * norm_b) if norm_a * norm_b > 0 else 0)
             
             # 转换为0-10分
             score = (similarity + 1) / 2 * 10  # 从[-1,1]映射到[0,10]
             
             return {
-                "score": round(score, 2),
+                "score": round(float(score), 2),
                 "method": "semantic_similarity",
                 "details": f"语义相似度: {similarity:.4f}",
                 "similarity": float(similarity)
@@ -450,7 +455,8 @@ class TranslationEvaluator:
         glossary: Optional[List[Dict]] = None,
         reference: Optional[str] = None,
         chapter_id: Optional[int] = None,
-        chunk_id: Optional[int] = None
+        chunk_id: Optional[int] = None,
+        quality_score: Optional[float] = None
     ) -> Dict:
         """
         综合评估翻译质量
@@ -463,6 +469,7 @@ class TranslationEvaluator:
             reference: 参考译文（可选）
             chapter_id: 章节ID（用于查找参考译文）
             chunk_id: chunk ID（用于查找参考译文）
+            quality_score: 已有的质量分数（可选，来自chunk文件）
         
         Returns:
             包含所有评估指标的字典
@@ -474,7 +481,15 @@ class TranslationEvaluator:
             "overall_score": 0.0
         }
         
-        # 无监督指标
+        # 如果启用了score指标，添加quality_score
+        if 'score' in self.enabled_metrics and quality_score is not None:
+            results["metrics"]["quality_score"] = {
+                "score": quality_score,
+                "method": "quality_score",
+                "details": f"质量分数: {quality_score}/10"
+            }
+        
+        # 无监督指标（基础指标，始终计算）
         unsupervised_scores = []
         
         # 1. 回译一致性
@@ -514,17 +529,21 @@ class TranslationEvaluator:
                     reference = self.reference_translations[chapter_id][chunk_id]
         
         if reference:
-            # 1. BLEU分数
-            bleu_result = self.evaluate_bleu_score(translation, reference)
-            results["metrics"]["bleu"] = bleu_result
-            supervised_scores.append(bleu_result["score"])
+            # 1. BLEU分数（如果启用）
+            if 'bleu' in self.enabled_metrics:
+                bleu_result = self.evaluate_bleu_score(translation, reference)
+                results["metrics"]["bleu"] = bleu_result
+                supervised_scores.append(bleu_result["score"])
             
-            # 2. 语义相似度
-            semantic_result = self.evaluate_semantic_similarity(translation, reference)
-            results["metrics"]["semantic_similarity"] = semantic_result
-            supervised_scores.append(semantic_result["score"])
+            # 2. 语义相似度/MQM（如果启用）
+            if 'mqm' in self.enabled_metrics:
+                semantic_result = self.evaluate_semantic_similarity(translation, reference)
+                results["metrics"]["semantic_similarity"] = semantic_result
+                # 如果模型可用，才加入分数计算
+                if semantic_result["score"] > 0:
+                    supervised_scores.append(semantic_result["score"])
             
-            # 3. 编辑距离
+            # 3. 编辑距离（始终计算，作为基础指标）
             edit_result = self.evaluate_edit_distance(translation, reference)
             results["metrics"]["edit_distance"] = edit_result
             supervised_scores.append(edit_result["score"])

@@ -1,0 +1,960 @@
+{
+  "evaluation_info": {
+    "output_dir": "output/unet",
+    "reference_file": "data/unet_ch.json",
+    "evaluated_at": "2026-01-12T21:03:15.920822",
+    "total_chunks": 9,
+    "valid_chunks": 9,
+    "evaluated_chunks": 9
+  },
+  "overall_statistics": {
+    "quality_score": {
+      "average": 8.78,
+      "min": 8.0,
+      "max": 10.0,
+      "count": 9
+    },
+    "evaluation_score": {
+      "average": 5.53,
+      "min": 4.59,
+      "max": 7.0
+    },
+    "unsupervised_metrics": {
+      "average": 7.02,
+      "count": 9
+    },
+    "supervised_metrics": {
+      "average": 2.84,
+      "count": 8
+    }
+  },
+  "metric_summary": {
+    "quality_score": {
+      "average": 8.78,
+      "min": 8.0,
+      "max": 10.0,
+      "count": 9,
+      "direction": "higher_is_better",
+      "direction_cn": "越高越好"
+    },
+    "back_translation": {
+      "average": 3.76,
+      "min": 0.0,
+      "max": 7.12,
+      "count": 9,
+      "direction": "higher_is_better",
+      "direction_cn": "越高越好"
+    },
+    "terminology": {
+      "average": 6.94,
+      "min": 3.0,
+      "max": 10.0,
+      "count": 9,
+      "direction": "higher_is_better",
+      "direction_cn": "越高越好"
+    },
+    "length_ratio": {
+      "average": 4.75,
+      "min": 0,
+      "max": 8.33,
+      "count": 9,
+      "direction": "closer_to_ideal",
+      "direction_cn": "越接近理想值越好"
+    },
+    "fluency": {
+      "average": 9.94,
+      "min": 9.5,
+      "max": 10.0,
+      "count": 9,
+      "direction": "higher_is_better",
+      "direction_cn": "越高越好"
+    },
+    "number_preservation": {
+      "average": 9.7,
+      "min": 8.33,
+      "max": 10.0,
+      "count": 9,
+      "direction": "higher_is_better",
+      "direction_cn": "越高越好"
+    },
+    "bleu": {
+      "average": 0.87,
+      "min": 0.0,
+      "max": 3.62,
+      "count": 8,
+      "direction": "higher_is_better",
+      "direction_cn": "越高越好"
+    },
+    "semantic_similarity": {
+      "average": 7.28,
+      "min": 5.99,
+      "max": 8.54,
+      "count": 8,
+      "direction": "higher_is_better",
+      "direction_cn": "越高越好"
+    },
+    "edit_distance": {
+      "average": 0.36,
+      "min": 0.15,
+      "max": 0.5,
+      "count": 8,
+      "direction": "lower_is_better",
+      "direction_cn": "越低越好"
+    }
+  },
+  "chapter_statistics": {
+    "0": {
+      "chunk_count": 1,
+      "quality_score_avg": 10.0,
+      "evaluation_score_avg": 4.68
+    },
+    "1": {
+      "chunk_count": 1,
+      "quality_score_avg": 9.0,
+      "evaluation_score_avg": 5.39
+    },
+    "2": {
+      "chunk_count": 1,
+      "quality_score_avg": 8.0,
+      "evaluation_score_avg": 5.91
+    },
+    "3": {
+      "chunk_count": 1,
+      "quality_score_avg": 9.0,
+      "evaluation_score_avg": 5.93
+    },
+    "4": {
+      "chunk_count": 1,
+      "quality_score_avg": 8.0,
+      "evaluation_score_avg": 4.59
+    },
+    "5": {
+      "chunk_count": 1,
+      "quality_score_avg": 9.0,
+      "evaluation_score_avg": 5.76
+    },
+    "6": {
+      "chunk_count": 1,
+      "quality_score_avg": 8.0,
+      "evaluation_score_avg": 5.63
+    },
+    "7": {
+      "chunk_count": 1,
+      "quality_score_avg": 9.0,
+      "evaluation_score_avg": 4.89
+    },
+    "8": {
+      "chunk_count": 1,
+      "quality_score_avg": 9.0,
+      "evaluation_score_avg": 7.0
+    }
+  },
+  "chunk_details": [
+    {
+      "chapter_id": 0,
+      "chunk_id": 0,
+      "chunk_file": "output/unet\\chapter_0\\chunk_000.json",
+      "source_text": "U-Net: Convolutional Networks for Biomedical Image Segmentation",
+      "translation": "U-Net: 卷积网络用于生物医学图像分割",
+      "quality_score": 10.0,
+      "evaluation": {
+        "source_text": "U-Net: Convolutional Networks for Biomedical Image Segmentation",
+        "translation": "U-Net: 卷积网络用于生物医学图像分割",
+        "metrics": {
+          "quality_score": {
+            "score": 10.0,
+            "method": "quality_score",
+            "details": "质量分数: 10.0/10"
+          },
+          "back_translation": {
+            "score": 0.0,
+            "method": "back_translation_consistency",
+            "details": "回译文不可用"
+          },
+          "terminology": {
+            "score": 6.67,
+            "method": "terminology_consistency",
+            "details": "术语使用: 2/3 正确",
+            "correct_uses": 2,
+            "total_terms": 3,
+            "violations": [
+              {
+                "term": "U-Net",
+                "expected": "U-Net: 全卷积网络用于生物医学图像分割",
+                "issue": "术语未翻译，直接使用英文"
+              }
+            ]
+          },
+          "length_ratio": {
+            "score": 0,
+            "method": "length_ratio",
+            "details": "长度比: 3.00 (理想: 1.5)",
+            "ratio": 3.0,
+            "source_length": 7,
+            "translation_length": 21
+          },
+          "fluency": {
+            "score": 9.5,
+            "method": "fluency",
+            "details": "流畅性检查: 可能缺少必要的标点符号",
+            "issues": [
+              "可能缺少必要的标点符号"
+            ]
+          },
+          "number_preservation": {
+            "score": 10.0,
+            "method": "number_preservation",
+            "details": "原文无数字"
+          },
+          "bleu": {
+            "score": 3.62,
+            "method": "bleu_score",
+            "details": "BLEU: 0.3619",
+            "bleu": 0.36187343222787294,
+            "precision_1gram": 0.5238095238095238,
+            "precision_2gram": 0.25
+          },
+          "semantic_similarity": {
+            "score": 7.58,
+            "method": "semantic_similarity",
+            "details": "语义相似度: 0.5160",
+            "similarity": 0.5160232186317444
+          },
+          "edit_distance": {
+            "score": 0.36,
+            "method": "edit_distance",
+            "details": "编辑距离: 190/197, 相似度: 3.55%",
+            "distance": 190,
+            "similarity": 0.035532994923857864
+          }
+        },
+        "overall_score": 4.68,
+        "unsupervised_avg": 5.23,
+        "supervised_avg": 3.85
+      }
+    },
+    {
+      "chapter_id": 1,
+      "chunk_id": 0,
+      "chunk_file": "output/unet\\chapter_1\\chunk_000.json",
+      "source_text": "Abstract There is large consent that successful training of deep networks requires many thousand annotated training samples. In this paper, we present a network and training strategy that relies on th...",
+      "translation": "摘要：普遍认为，成功训练深度网络需要数以千计的标注训练样本。在本文中，我们提出了一种网络和训练策略，该策略依赖于强效的数据增强，以更高效地利用现有的标注样本。该架构包括一个用于捕获上下文的收缩路径和一个用于精确定位的对称扩展路径。我们展示了这样一个网络可以从非常少量的图像中端到端训练，并在ISBI挑战赛中分割电子显微镜切片中的神经元结构方面超越了之前最好的方法（一个滑动窗口卷积网络）。使用相同的网...",
+      "quality_score": 9.0,
+      "evaluation": {
+        "source_text": "Abstract There is large consent that successful training of deep networks requires many thousand ann...",
+        "translation": "摘要：普遍认为，成功训练深度网络需要数以千计的标注训练样本。在本文中，我们提出了一种网络和训练策略，该策略依赖于强效的数据增强，以更高效地利用现有的标注样本。该架构包括一个用于捕获上下文的收缩路径和一...",
+        "metrics": {
+          "quality_score": {
+            "score": 9.0,
+            "method": "quality_score",
+            "details": "质量分数: 9.0/10"
+          },
+          "back_translation": {
+            "score": 2.84,
+            "method": "back_translation_consistency",
+            "details": "回译相似度: 28.43%",
+            "similarity": 0.2842686292548298
+          },
+          "terminology": {
+            "score": 7.86,
+            "method": "terminology_consistency",
+            "details": "术语使用: 11/14 正确",
+            "correct_uses": 11,
+            "total_terms": 14,
+            "violations": [
+              {
+                "term": "DIC",
+                "expected": "微分干涉对比",
+                "issue": "术语未翻译，直接使用英文"
+              },
+              {
+                "term": "Caffe",
+                "expected": "Caffe",
+                "issue": "术语未翻译，直接使用英文"
+              }
+            ]
+          },
+          "length_ratio": {
+            "score": 4.4,
+            "method": "length_ratio",
+            "details": "长度比: 2.34 (理想: 1.5)",
+            "ratio": 2.3395061728395063,
+            "source_length": 162,
+            "translation_length": 379
+          },
+          "fluency": {
+            "score": 10.0,
+            "method": "fluency",
+            "details": "流畅性检查: 通过",
+            "issues": []
+          },
+          "number_preservation": {
+            "score": 10.0,
+            "method": "number_preservation",
+            "details": "数字保留: 2/2",
+            "preserved": 2,
+            "total": 2,
+            "missing": []
+          },
+          "bleu": {
+            "score": 0.42,
+            "method": "bleu_score",
+            "details": "BLEU: 0.0416",
+            "bleu": 0.04161251892882395,
+            "precision_1gram": 0.09523809523809523,
+            "precision_2gram": 0.01818181818181818
+          },
+          "semantic_similarity": {
+            "score": 8.1,
+            "method": "semantic_similarity",
+            "details": "语义相似度: 0.6201",
+            "similarity": 0.6201088428497314
+          },
+          "edit_distance": {
+            "score": 0.34,
+            "method": "edit_distance",
+            "details": "编辑距离: 366/379, 相似度: 3.43%",
+            "distance": 366,
+            "similarity": 0.03430079155672827
+          }
+        },
+        "overall_score": 5.39,
+        "unsupervised_avg": 7.02,
+        "supervised_avg": 2.95
+      }
+    },
+    {
+      "chapter_id": 2,
+      "chunk_id": 1,
+      "chunk_file": "output/unet\\chapter_2\\chunk_001.json",
+      "source_text": "1 Introduction In the last two years, deep convolutional networks have outperformed the state of the art in many visual recognition tasks, e.g. [7,3]. While convolutional networks have already existed...",
+      "translation": "1 引言 在过去两年中，深度卷积网络在许多视觉识别任务中超越了最先进的技术，例如 [7,3]。尽管卷积网络已经存在了很长时间 [8]，但由于可用训练集的大小和所考虑网络的大小，它们的成功受到了限制。克里日夫斯基等人 [7] 的突破是由于在ImageNet数据集上对一个具有8层和数百万参数的大型网络进行监督训练，该数据集包含了100万张训练图像。从那时起，甚至更大更深的网络已经被训练 [12]。卷积...",
+      "quality_score": 8.0,
+      "evaluation": {
+        "source_text": "1 Introduction In the last two years, deep convolutional networks have outperformed the state of the...",
+        "translation": "1 引言 在过去两年中，深度卷积网络在许多视觉识别任务中超越了最先进的技术，例如 [7,3]。尽管卷积网络已经存在了很长时间 [8]，但由于可用训练集的大小和所考虑网络的大小，它们的成功受到了限制。克...",
+        "metrics": {
+          "quality_score": {
+            "score": 8.0,
+            "method": "quality_score",
+            "details": "质量分数: 8.0/10"
+          },
+          "back_translation": {
+            "score": 4.43,
+            "method": "back_translation_consistency",
+            "details": "回译相似度: 44.30%",
+            "similarity": 0.4429778247096093
+          },
+          "terminology": {
+            "score": 8.15,
+            "method": "terminology_consistency",
+            "details": "术语使用: 22/27 正确",
+            "correct_uses": 22,
+            "total_terms": 27,
+            "violations": [
+              {
+                "term": "ISBI 2012",
+                "expected": "ISBI 2012",
+                "issue": "术语未翻译，直接使用英文"
+              },
+              {
+                "term": "DIC",
+                "expected": "微分干涉对比",
+                "issue": "术语未翻译，直接使用英文"
+              }
+            ]
+          },
+          "length_ratio": {
+            "score": 7.76,
+            "method": "length_ratio",
+            "details": "长度比: 1.84 (理想: 1.5)",
+            "ratio": 1.836116910229645,
+            "source_length": 958,
+            "translation_length": 1759
+          },
+          "fluency": {
+            "score": 10.0,
+            "method": "fluency",
+            "details": "流畅性检查: 通过",
+            "issues": []
+          },
+          "number_preservation": {
+            "score": 9.33,
+            "method": "number_preservation",
+            "details": "数字保留: 14/15",
+            "preserved": 14,
+            "total": 15,
+            "missing": [
+              "2015."
+            ]
+          },
+          "bleu": {
+            "score": 0.93,
+            "method": "bleu_score",
+            "details": "BLEU: 0.0928",
+            "bleu": 0.09281160134535935,
+            "precision_1gram": 0.20093457943925233,
+            "precision_2gram": 0.04286964129483815
+          },
+          "semantic_similarity": {
+            "score": 7.26,
+            "method": "semantic_similarity",
+            "details": "语义相似度: 0.4530",
+            "similarity": 0.4529748857021332
+          },
+          "edit_distance": {
+            "score": 0.44,
+            "method": "edit_distance",
+            "details": "编辑距离: 1682/1759, 相似度: 4.38%",
+            "distance": 1682,
+            "similarity": 0.04377487208641273
+          }
+        },
+        "overall_score": 5.91,
+        "unsupervised_avg": 7.93,
+        "supervised_avg": 2.88
+      }
+    },
+    {
+      "chapter_id": 3,
+      "chunk_id": 1,
+      "chunk_file": "output/unet\\chapter_3\\chunk_001.json",
+      "source_text": "2 Network Architecture The network architecture is illustrated in Figure 1. It consists of a contracting path (left side) and an expansive path (right side). The contracting path follows the typical a...",
+      "translation": "2 网络结构 图1展示了网络结构。该网络由收缩路径（左侧）和扩展路径（右侧）组成。收缩路径遵循典型的卷积网络架构。它包括重复应用两个3x3卷积（无填充卷积），每个卷积后都跟一个ReLU（ReLU）和一个2x2最大汇聚操作，步幅2用于下采样。在每个下采样步骤中，特征通道的数量翻倍。扩展路径的每一步包括特征图的上采样，随后是一个2x2卷积（“上卷积”），该操作减半特征通道的数量，与收缩路径中相应裁剪的...",
+      "quality_score": 9.0,
+      "evaluation": {
+        "source_text": "2 Network Architecture The network architecture is illustrated in Figure 1. It consists of a contrac...",
+        "translation": "2 网络结构 图1展示了网络结构。该网络由收缩路径（左侧）和扩展路径（右侧）组成。收缩路径遵循典型的卷积网络架构。它包括重复应用两个3x3卷积（无填充卷积），每个卷积后都跟一个ReLU（ReLU）和一...",
+        "metrics": {
+          "quality_score": {
+            "score": 9.0,
+            "method": "quality_score",
+            "details": "质量分数: 9.0/10"
+          },
+          "back_translation": {
+            "score": 5.72,
+            "method": "back_translation_consistency",
+            "details": "回译相似度: 57.24%",
+            "similarity": 0.5724381625441696
+          },
+          "terminology": {
+            "score": 8.7,
+            "method": "terminology_consistency",
+            "details": "术语使用: 20/23 正确",
+            "correct_uses": 20,
+            "total_terms": 23,
+            "violations": [
+              {
+                "term": "ReLU",
+                "expected": "ReLU",
+                "issue": "术语未翻译，直接使用英文"
+              }
+            ]
+          },
+          "length_ratio": {
+            "score": 8.33,
+            "method": "length_ratio",
+            "details": "长度比: 1.75 (理想: 1.5)",
+            "ratio": 1.75,
+            "source_length": 208,
+            "translation_length": 364
+          },
+          "fluency": {
+            "score": 10.0,
+            "method": "fluency",
+            "details": "流畅性检查: 通过",
+            "issues": []
+          },
+          "number_preservation": {
+            "score": 8.33,
+            "method": "number_preservation",
+            "details": "数字保留: 5/6",
+            "preserved": 5,
+            "total": 6,
+            "missing": [
+              "1."
+            ]
+          },
+          "bleu": {
+            "score": 0.58,
+            "method": "bleu_score",
+            "details": "BLEU: 0.0579",
+            "bleu": 0.057863518810462373,
+            "precision_1gram": 0.11258278145695365,
+            "precision_2gram": 0.02973977695167286
+          },
+          "semantic_similarity": {
+            "score": 6.57,
+            "method": "semantic_similarity",
+            "details": "语义相似度: 0.3133",
+            "similarity": 0.31333112716674805
+          },
+          "edit_distance": {
+            "score": 0.36,
+            "method": "edit_distance",
+            "details": "编辑距离: 351/364, 相似度: 3.57%",
+            "distance": 351,
+            "similarity": 0.0357142857142857
+          }
+        },
+        "overall_score": 5.93,
+        "unsupervised_avg": 8.22,
+        "supervised_avg": 2.5
+      }
+    },
+    {
+      "chapter_id": 4,
+      "chunk_id": 1,
+      "chunk_file": "output/unet\\chapter_4\\chunk_001.json",
+      "source_text": "3 Training The input images and their corresponding segmentation maps are used to train the network with the stochastic gradient descent implementation of Caffe [6]. Due to the unpadded convolutions, ...",
+      "translation": "3 训练 利用输入图像及其对应的分割图来训练网络，采用Caffe [6]实现的随机梯度下降方法。由于无填充卷积的使用，输出图像比输入图像小一个恒定的边框宽度。为了最小化开销并最大限度地利用GPU内存，我们倾向于使用较大的输入瓦片而不是大批量大小，因此将批量减少到单个图像。相应地，我们使用高动量（0.99），使得之前看到的大量训练样本决定了当前优化步骤的更新。能量函数是通过像素级softmax对最终...",
+      "quality_score": 8.0,
+      "evaluation": {
+        "source_text": "3 Training The input images and their corresponding segmentation maps are used to train the network ...",
+        "translation": "3 训练 利用输入图像及其对应的分割图来训练网络，采用Caffe [6]实现的随机梯度下降方法。由于无填充卷积的使用，输出图像比输入图像小一个恒定的边框宽度。为了最小化开销并最大限度地利用GPU内存，...",
+        "metrics": {
+          "quality_score": {
+            "score": 8.0,
+            "method": "quality_score",
+            "details": "质量分数: 8.0/10"
+          },
+          "back_translation": {
+            "score": 5.06,
+            "method": "back_translation_consistency",
+            "details": "回译相似度: 50.61%",
+            "similarity": 0.5061071093015972
+          },
+          "terminology": {
+            "score": 3.0,
+            "method": "terminology_consistency",
+            "details": "术语使用: 6/20 正确",
+            "correct_uses": 6,
+            "total_terms": 20,
+            "violations": [
+              {
+                "term": "Caffe",
+                "expected": "Caffe",
+                "issue": "术语未翻译，直接使用英文"
+              },
+              {
+                "term": "GPU",
+                "expected": "GPU",
+                "issue": "术语未翻译，直接使用英文"
+              },
+              {
+                "term": "K",
+                "expected": "类别数",
+                "issue": "术语未翻译，直接使用英文"
+              },
+              {
+                "term": "p_k(\\mathbf {x})",
+                "expected": "p_k(\\mathbf {x})",
+                "issue": "术语未翻译，直接使用英文"
+              },
+              {
+                "term": "a_k(\\mathbf {x})",
+                "expected": "a_k(\\mathbf {x})",
+                "issue": "术语未翻译，直接使用英文"
+              }
+            ]
+          },
+          "length_ratio": {
+            "score": 0.16,
+            "method": "length_ratio",
+            "details": "长度比: 2.98 (理想: 1.5)",
+            "ratio": 2.976645435244161,
+            "source_length": 471,
+            "translation_length": 1402
+          },
+          "fluency": {
+            "score": 10.0,
+            "method": "fluency",
+            "details": "流畅性检查: 通过",
+            "issues": []
+          },
+          "number_preservation": {
+            "score": 10.0,
+            "method": "number_preservation",
+            "details": "数字保留: 11/11",
+            "preserved": 11,
+            "total": 11,
+            "missing": []
+          },
+          "bleu": {
+            "score": 0.33,
+            "method": "bleu_score",
+            "details": "BLEU: 0.0326",
+            "bleu": 0.03262271426580123,
+            "precision_1gram": 0.07236842105263158,
+            "precision_2gram": 0.014705882352941176
+          },
+          "semantic_similarity": {
+            "score": 8.54,
+            "method": "semantic_similarity",
+            "details": "语义相似度: 0.7079",
+            "similarity": 0.707926869392395
+          },
+          "edit_distance": {
+            "score": 0.15,
+            "method": "edit_distance",
+            "details": "编辑距离: 1381/1402, 相似度: 1.50%",
+            "distance": 1381,
+            "similarity": 0.014978601997146956
+          }
+        },
+        "overall_score": 4.59,
+        "unsupervised_avg": 5.64,
+        "supervised_avg": 3.01
+      }
+    },
+    {
+      "chapter_id": 5,
+      "chunk_id": 0,
+      "chunk_file": "output/unet\\chapter_5\\chunk_000.json",
+      "source_text": "3.1 Data Augmentation Data augmentation is essential to teach the network the desired invariance and robustness properties, when only few training samples are available. In case of microscopical image...",
+      "translation": "3.1 数据增强 数据增强对于教会网络所需的不变性和鲁棒性特性至关重要，特别是在训练样本数量有限的情况下。对于显微图像，我们主要需要平移和旋转不变性，以及对形变和灰度值变化的鲁棒性。尤其是对训练样本进行随机弹性形变似乎是用非常少的标注图像训练分割网络的关键概念。我们通过在粗略的3乘3网格上使用随机位移向量来生成平滑形变。位移向量从标准差为10像素的高斯分布中采样。然后使用双三次插值计算每个像素的位...",
+      "quality_score": 9.0,
+      "evaluation": {
+        "source_text": "3.1 Data Augmentation Data augmentation is essential to teach the network the desired invariance and...",
+        "translation": "3.1 数据增强 数据增强对于教会网络所需的不变性和鲁棒性特性至关重要，特别是在训练样本数量有限的情况下。对于显微图像，我们主要需要平移和旋转不变性，以及对形变和灰度值变化的鲁棒性。尤其是对训练样本进...",
+        "metrics": {
+          "quality_score": {
+            "score": 9.0,
+            "method": "quality_score",
+            "details": "质量分数: 9.0/10"
+          },
+          "back_translation": {
+            "score": 1.97,
+            "method": "back_translation_consistency",
+            "details": "回译相似度: 19.72%",
+            "similarity": 0.19716646989374262
+          },
+          "terminology": {
+            "score": 10.0,
+            "method": "terminology_consistency",
+            "details": "术语使用: 10/10 正确",
+            "correct_uses": 10,
+            "total_terms": 10,
+            "violations": []
+          },
+          "length_ratio": {
+            "score": 7.28,
+            "method": "length_ratio",
+            "details": "长度比: 1.91 (理想: 1.5)",
+            "ratio": 1.9083333333333334,
+            "source_length": 120,
+            "translation_length": 229
+          },
+          "fluency": {
+            "score": 10.0,
+            "method": "fluency",
+            "details": "流畅性检查: 通过",
+            "issues": []
+          },
+          "number_preservation": {
+            "score": 10.0,
+            "method": "number_preservation",
+            "details": "数字保留: 3/3",
+            "preserved": 3,
+            "total": 3,
+            "missing": []
+          },
+          "bleu": {
+            "score": 0.52,
+            "method": "bleu_score",
+            "details": "BLEU: 0.0520",
+            "bleu": 0.05196217375829789,
+            "precision_1gram": 0.13432835820895522,
+            "precision_2gram": 0.020100502512562814
+          },
+          "semantic_similarity": {
+            "score": 6.91,
+            "method": "semantic_similarity",
+            "details": "语义相似度: 0.3819",
+            "similarity": 0.3819410800933838
+          },
+          "edit_distance": {
+            "score": 0.48,
+            "method": "edit_distance",
+            "details": "编辑距离: 218/229, 相似度: 4.80%",
+            "distance": 218,
+            "similarity": 0.048034934497816595
+          }
+        },
+        "overall_score": 5.76,
+        "unsupervised_avg": 7.85,
+        "supervised_avg": 2.64
+      }
+    },
+    {
+      "chapter_id": 6,
+      "chunk_id": 1,
+      "chunk_file": "output/unet\\chapter_6\\chunk_001.json",
+      "source_text": "4 Experiments We demonstrate the application of the u-net to three different segmentation tasks. The first task is the segmentation of neuronal structures in electron microscopic recordings. An exampl...",
+      "translation": "4 实验 我们展示了U-Net：全卷积网络用于生物医学图像分割在三个不同的分割任务中的应用。第一个任务是电子显微镜记录中的神经元结构分割。图2显示了数据集和我们获得的分割结果的例子。完整的结果作为补充材料提供。数据集由ISBI 2012开始的电镜分割挑战赛[14]提供，并且仍然对新的贡献开放。训练数据是一组来自黑腹果蝇一龄幼虫腹神经索（VNC）的连续切片透射电子显微镜的30幅图像（512x512像...",
+      "quality_score": 8.0,
+      "evaluation": {
+        "source_text": "4 Experiments We demonstrate the application of the u-net to three different segmentation tasks. The...",
+        "translation": "4 实验 我们展示了U-Net：全卷积网络用于生物医学图像分割在三个不同的分割任务中的应用。第一个任务是电子显微镜记录中的神经元结构分割。图2显示了数据集和我们获得的分割结果的例子。完整的结果作为补充...",
+        "metrics": {
+          "quality_score": {
+            "score": 8.0,
+            "method": "quality_score",
+            "details": "质量分数: 8.0/10"
+          },
+          "back_translation": {
+            "score": 5.04,
+            "method": "back_translation_consistency",
+            "details": "回译相似度: 50.39%",
+            "similarity": 0.5038935756002596
+          },
+          "terminology": {
+            "score": 7.39,
+            "method": "terminology_consistency",
+            "details": "术语使用: 17/23 正确",
+            "correct_uses": 17,
+            "total_terms": 23,
+            "violations": [
+              {
+                "term": "u-net",
+                "expected": "U-Net：全卷积网络用于生物医学图像分割",
+                "issue": "术语未翻译，直接使用英文"
+              },
+              {
+                "term": "ISBI 2012",
+                "expected": "ISBI 2012",
+                "issue": "术语未翻译，直接使用英文"
+              },
+              {
+                "term": "DIC-HeLa",
+                "expected": "DIC-HeLa数据集",
+                "issue": "术语未翻译，直接使用英文"
+              },
+              {
+                "term": "PhC-U373",
+                "expected": "PhC-U373胶质母细胞瘤星形细胞瘤U373细胞数据集",
+                "issue": "术语未翻译，直接使用英文"
+              },
+              {
+                "term": "IOU",
+                "expected": "交并比",
+                "issue": "术语未翻译，直接使用英文"
+              }
+            ]
+          },
+          "length_ratio": {
+            "score": 5.77,
+            "method": "length_ratio",
+            "details": "长度比: 2.13 (理想: 1.5)",
+            "ratio": 2.134020618556701,
+            "source_length": 485,
+            "translation_length": 1035
+          },
+          "fluency": {
+            "score": 10.0,
+            "method": "fluency",
+            "details": "流畅性检查: 通过",
+            "issues": []
+          },
+          "number_preservation": {
+            "score": 9.66,
+            "method": "number_preservation",
+            "details": "数字保留: 28/29",
+            "preserved": 28,
+            "total": 29,
+            "missing": [
+              "2015."
+            ]
+          },
+          "bleu": {
+            "score": 0.59,
+            "method": "bleu_score",
+            "details": "BLEU: 0.0586",
+            "bleu": 0.0585767276185837,
+            "precision_1gram": 0.13220338983050847,
+            "precision_2gram": 0.025954198473282442
+          },
+          "semantic_similarity": {
+            "score": 7.29,
+            "method": "semantic_similarity",
+            "details": "语义相似度: 0.4571",
+            "similarity": 0.457114040851593
+          },
+          "edit_distance": {
+            "score": 0.26,
+            "method": "edit_distance",
+            "details": "编辑距离: 1008/1035, 相似度: 2.61%",
+            "distance": 1008,
+            "similarity": 0.02608695652173909
+          }
+        },
+        "overall_score": 5.63,
+        "unsupervised_avg": 7.57,
+        "supervised_avg": 2.71
+      }
+    },
+    {
+      "chapter_id": 7,
+      "chunk_id": 0,
+      "chunk_file": "output/unet\\chapter_7\\chunk_000.json",
+      "source_text": "5 Conclusion The u-net architecture achieves very good performance on very different biomedical segmentation applications. Thanks to data augmentation with elastic deformations, it only needs very few...",
+      "translation": "5 结论 U-Net架构在多种不同的生物医学图像分割应用中表现出了极佳的性能。得益于弹性形变的数据增强，它只需要非常少的标注图像，并且在NVIDIA Titan GPU（6 GB）上的训练时间非常合理，仅为10小时。我们提供了完整的基于Caffe[6]的实现和训练好的网络。我们确信U-Net架构可以轻松应用于更多任务。",
+      "quality_score": 9.0,
+      "evaluation": {
+        "source_text": "5 Conclusion The u-net architecture achieves very good performance on very different biomedical segm...",
+        "translation": "5 结论 U-Net架构在多种不同的生物医学图像分割应用中表现出了极佳的性能。得益于弹性形变的数据增强，它只需要非常少的标注图像，并且在NVIDIA Titan GPU（6 GB）上的训练时间非常合理...",
+        "metrics": {
+          "quality_score": {
+            "score": 9.0,
+            "method": "quality_score",
+            "details": "质量分数: 9.0/10"
+          },
+          "back_translation": {
+            "score": 1.7,
+            "method": "back_translation_consistency",
+            "details": "回译相似度: 17.00%",
+            "similarity": 0.17003188097768332
+          },
+          "terminology": {
+            "score": 6.67,
+            "method": "terminology_consistency",
+            "details": "术语使用: 4/6 正确",
+            "correct_uses": 4,
+            "total_terms": 6,
+            "violations": [
+              {
+                "term": "NVidia Titan GPU",
+                "expected": "NVIDIA Titan GPU",
+                "issue": "术语未翻译，直接使用英文"
+              },
+              {
+                "term": "Caffe",
+                "expected": "Caffe",
+                "issue": "术语未翻译，直接使用英文"
+              }
+            ]
+          },
+          "length_ratio": {
+            "score": 5.19,
+            "method": "length_ratio",
+            "details": "长度比: 2.22 (理想: 1.5)",
+            "ratio": 2.2222222222222223,
+            "source_length": 72,
+            "translation_length": 160
+          },
+          "fluency": {
+            "score": 10.0,
+            "method": "fluency",
+            "details": "流畅性检查: 通过",
+            "issues": []
+          },
+          "number_preservation": {
+            "score": 10.0,
+            "method": "number_preservation",
+            "details": "数字保留: 3/3",
+            "preserved": 3,
+            "total": 3,
+            "missing": []
+          },
+          "bleu": {
+            "score": 0.0,
+            "method": "bleu_score",
+            "details": "BLEU: 0.0000",
+            "bleu": 0.0,
+            "precision_1gram": 0.10909090909090909,
+            "precision_2gram": 0.0
+          },
+          "semantic_similarity": {
+            "score": 5.99,
+            "method": "semantic_similarity",
+            "details": "语义相似度: 0.1988",
+            "similarity": 0.1988334208726883
+          },
+          "edit_distance": {
+            "score": 0.5,
+            "method": "edit_distance",
+            "details": "编辑距离: 152/160, 相似度: 5.00%",
+            "distance": 152,
+            "similarity": 0.050000000000000044
+          }
+        },
+        "overall_score": 4.89,
+        "unsupervised_avg": 6.71,
+        "supervised_avg": 2.16
+      }
+    },
+    {
+      "chapter_id": 8,
+      "chunk_id": 0,
+      "chunk_file": "output/unet\\chapter_8\\chunk_000.json",
+      "source_text": "Acknowlegements This study was supported by the Excellence Initiative of the German Federal and State governments (EXC 294) and by the BMBF (Fkz 0316185B).",
+      "translation": "致谢 本研究得到了德国联邦和州政府卓越计划（EXC 294）的支持，以及BMBF（Fkz 0316185B）的资助。",
+      "quality_score": 9.0,
+      "evaluation": {
+        "source_text": "Acknowlegements This study was supported by the Excellence Initiative of the German Federal and Stat...",
+        "translation": "致谢 本研究得到了德国联邦和州政府卓越计划（EXC 294）的支持，以及BMBF（Fkz 0316185B）的资助。",
+        "metrics": {
+          "quality_score": {
+            "score": 9.0,
+            "method": "quality_score",
+            "details": "质量分数: 9.0/10"
+          },
+          "back_translation": {
+            "score": 7.12,
+            "method": "back_translation_consistency",
+            "details": "回译相似度: 71.17%",
+            "similarity": 0.7116564417177914
+          },
+          "terminology": {
+            "score": 4.0,
+            "method": "terminology_consistency",
+            "details": "术语使用: 2/5 正确",
+            "correct_uses": 2,
+            "total_terms": 5,
+            "violations": [
+              {
+                "term": "EXC 294",
+                "expected": "EXC 294",
+                "issue": "术语未翻译，直接使用英文"
+              },
+              {
+                "term": "BMBF",
+                "expected": "BMBF",
+                "issue": "术语未翻译，直接使用英文"
+              },
+              {
+                "term": "Fkz 0316185B",
+                "expected": "Fkz 0316185B",
+                "issue": "术语未翻译，直接使用英文"
+              }
+            ]
+          },
+          "length_ratio": {
+            "score": 3.89,
+            "method": "length_ratio",
+            "details": "长度比: 2.42 (理想: 1.5)",
+            "ratio": 2.4166666666666665,
+            "source_length": 24,
+            "translation_length": 58
+          },
+          "fluency": {
+            "score": 10.0,
+            "method": "fluency",
+            "details": "流畅性检查: 通过",
+            "issues": []
+          },
+          "number_preservation": {
+            "score": 10.0,
+            "method": "number_preservation",
+            "details": "数字保留: 2/2",
+            "preserved": 2,
+            "total": 2,
+            "missing": []
+          }
+        },
+        "overall_score": 7.0,
+        "unsupervised_avg": 7.0
+      }
+    }
+  ]
+}

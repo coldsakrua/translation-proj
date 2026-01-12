@@ -58,7 +58,7 @@ def translate_with_style(
                 if glossary_terms:
                     glossary_text = "\n".join(glossary_terms[:30])  # 限制数量
         except Exception as e:
-            print(f"  ⚠️  加载术语表失败: {e}")
+            print(f"  [WARNING] 加载术语表失败: {e}")
     
     # 从RAG检索相关翻译记忆
     rag_context = ""
@@ -72,7 +72,7 @@ def translate_with_style(
                     rag_context += f"\n相关翻译记忆（关键词: {keyword}）:\n{search_result[:300]}...\n"
                     break  # 只取第一个有效结果
     except Exception as e:
-        print(f"  ⚠️  RAG检索失败: {e}")
+        print(f"  [WARNING] RAG检索失败: {e}")
     
     # 根据风格设置不同的提示词
     if translation_style == "rigorous":
@@ -143,7 +143,7 @@ def translate_with_style(
             "translated_at": datetime.now().isoformat()
         }
     except Exception as e:
-        print(f"  ❌ 翻译失败: {e}")
+        print(f"  × 翻译失败: {e}")
         return {
             "source_text": source_text,
             "translation": f"[翻译失败: {str(e)}]",
@@ -202,7 +202,7 @@ def save_translation_result(
             json.dump(data_to_save, f, ensure_ascii=False, indent=2)
         return filepath
     except Exception as e:
-        print(f"  ❌ 保存文件失败: {e}")
+        print(f"  × 保存文件失败: {e}")
         return ""
 
 
@@ -250,7 +250,7 @@ def interactive_translate_loop():
                 break
             
             if user_input.lower() == 'help':
-                print("\n📖 帮助信息：")
+                print("\n帮助信息：")
                 print("  - 直接输入英文文本即可翻译")
                 print("  - 'style:rigorous' - 切换到严谨风格（保持专业术语）")
                 print("  - 'style:popular' - 切换到通俗风格（减少专业术语）")
@@ -261,28 +261,28 @@ def interactive_translate_loop():
             
             if user_input.lower() == 'clear':
                 current_requirements = None
-                print("  ✅ 已清除额外要求")
+                print("  √ 已清除额外要求")
                 continue
             
             if user_input.startswith('style:'):
                 style_value = user_input[6:].strip().lower()
                 if style_value in ['rigorous', '严谨', 'r']:
                     current_style = "rigorous"
-                    print("  ✅ 已切换到严谨风格（保持专业术语）")
+                    print("  √ 已切换到严谨风格（保持专业术语）")
                 elif style_value in ['popular', '通俗', 'p']:
                     current_style = "popular"
-                    print("  ✅ 已切换到通俗风格（减少专业术语）")
+                    print("  √ 已切换到通俗风格（减少专业术语）")
                 else:
-                    print("  ⚠️  无效的风格，请使用 'rigorous' 或 'popular'")
+                    print("  [WARNING] 无效的风格，请使用 'rigorous' 或 'popular'")
                 continue
             
             if user_input.startswith('req:'):
                 current_requirements = user_input[4:].strip()
-                print(f"  ✅ 已设置额外要求: {current_requirements}")
+                print(f"  √ 已设置额外要求: {current_requirements}")
                 continue
             
             # 执行翻译
-            print(f"\n  🔄 正在翻译（风格: {style_display}）...")
+            print(f"\n  正在翻译（风格: {style_display}）...")
             result = translate_with_style(
                 source_text=user_input,
                 translation_style=current_style,
@@ -290,7 +290,7 @@ def interactive_translate_loop():
             )
             
             if "error" not in result:
-                print(f"\n  ✅ 翻译完成！")
+                print(f"\n  √ 翻译完成！")
                 print(f"\n【原文】")
                 print(result["source_text"])
                 print(f"\n【译文】")
@@ -299,21 +299,21 @@ def interactive_translate_loop():
                 # 保存结果
                 saved_path = save_translation_result(result)
                 if saved_path:
-                    print(f"\n  💾 已保存至: {saved_path}")
+                    print(f"\n  已保存至: {saved_path}")
                     translation_count += 1
             else:
-                print(f"\n  ❌ 翻译失败: {result.get('error')}")
+                print(f"\n  × 翻译失败: {result.get('error')}")
         
         except KeyboardInterrupt:
             print("\n\n👋 再见！")
             break
         except Exception as e:
-            print(f"\n  ❌ 发生错误: {e}")
+            print(f"\n  × 发生错误: {e}")
             import traceback
             traceback.print_exc()
     
     if translation_count > 0:
-        print(f"\n📊 本次会话共完成 {translation_count} 次翻译")
+        print(f"\n本次会话共完成 {translation_count} 次翻译")
 
 
 if __name__ == "__main__":

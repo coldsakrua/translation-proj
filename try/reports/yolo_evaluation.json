@@ -1,0 +1,1845 @@
+{
+  "evaluation_info": {
+    "output_dir": "output/yolo",
+    "reference_file": "data/yolo_ch.json",
+    "evaluated_at": "2026-01-12T20:45:47.268504",
+    "total_chunks": 17,
+    "valid_chunks": 17,
+    "evaluated_chunks": 17
+  },
+  "overall_statistics": {
+    "quality_score": {
+      "average": 8.24,
+      "min": 8.0,
+      "max": 9.0,
+      "count": 17
+    },
+    "evaluation_score": {
+      "average": 5.52,
+      "min": 4.46,
+      "max": 6.64
+    },
+    "unsupervised_metrics": {
+      "average": 6.95,
+      "count": 17
+    },
+    "supervised_metrics": {
+      "average": 3.2,
+      "count": 16
+    }
+  },
+  "metric_summary": {
+    "quality_score": {
+      "average": 8.24,
+      "min": 8.0,
+      "max": 9.0,
+      "count": 17,
+      "direction": "higher_is_better",
+      "direction_cn": "越高越好"
+    },
+    "back_translation": {
+      "average": 4.57,
+      "min": 1.82,
+      "max": 8.67,
+      "count": 17,
+      "direction": "higher_is_better",
+      "direction_cn": "越高越好"
+    },
+    "terminology": {
+      "average": 5.71,
+      "min": 1.48,
+      "max": 8.18,
+      "count": 17,
+      "direction": "higher_is_better",
+      "direction_cn": "越高越好"
+    },
+    "length_ratio": {
+      "average": 5.46,
+      "min": 2.97,
+      "max": 8.61,
+      "count": 17,
+      "direction": "closer_to_ideal",
+      "direction_cn": "越接近理想值越好"
+    },
+    "fluency": {
+      "average": 10.0,
+      "min": 10.0,
+      "max": 10.0,
+      "count": 17,
+      "direction": "higher_is_better",
+      "direction_cn": "越高越好"
+    },
+    "number_preservation": {
+      "average": 9.0,
+      "min": 5.86,
+      "max": 10.0,
+      "count": 17,
+      "direction": "higher_is_better",
+      "direction_cn": "越高越好"
+    },
+    "bleu": {
+      "average": 1.21,
+      "min": 0.26,
+      "max": 3.54,
+      "count": 16,
+      "direction": "higher_is_better",
+      "direction_cn": "越高越好"
+    },
+    "semantic_similarity": {
+      "average": 7.8,
+      "min": 6.69,
+      "max": 9.03,
+      "count": 16,
+      "direction": "higher_is_better",
+      "direction_cn": "越高越好"
+    },
+    "edit_distance": {
+      "average": 0.58,
+      "min": 0.14,
+      "max": 1.48,
+      "count": 16,
+      "direction": "lower_is_better",
+      "direction_cn": "越低越好"
+    }
+  },
+  "chapter_statistics": {
+    "0": {
+      "chunk_count": 1,
+      "quality_score_avg": 8.0,
+      "evaluation_score_avg": 6.64
+    },
+    "1": {
+      "chunk_count": 1,
+      "quality_score_avg": 9.0,
+      "evaluation_score_avg": 5.44
+    },
+    "2": {
+      "chunk_count": 1,
+      "quality_score_avg": 8.0,
+      "evaluation_score_avg": 5.38
+    },
+    "3": {
+      "chunk_count": 1,
+      "quality_score_avg": 8.0,
+      "evaluation_score_avg": 5.02
+    },
+    "4": {
+      "chunk_count": 1,
+      "quality_score_avg": 8.0,
+      "evaluation_score_avg": 6.12
+    },
+    "5": {
+      "chunk_count": 1,
+      "quality_score_avg": 8.0,
+      "evaluation_score_avg": 4.46
+    },
+    "6": {
+      "chunk_count": 1,
+      "quality_score_avg": 8.0,
+      "evaluation_score_avg": 5.67
+    },
+    "7": {
+      "chunk_count": 1,
+      "quality_score_avg": 9.0,
+      "evaluation_score_avg": 5.79
+    },
+    "8": {
+      "chunk_count": 1,
+      "quality_score_avg": 8.0,
+      "evaluation_score_avg": 5.54
+    },
+    "9": {
+      "chunk_count": 1,
+      "quality_score_avg": 8.0,
+      "evaluation_score_avg": 4.88
+    },
+    "10": {
+      "chunk_count": 1,
+      "quality_score_avg": 8.0,
+      "evaluation_score_avg": 5.41
+    },
+    "11": {
+      "chunk_count": 1,
+      "quality_score_avg": 8.0,
+      "evaluation_score_avg": 6.01
+    },
+    "12": {
+      "chunk_count": 1,
+      "quality_score_avg": 8.0,
+      "evaluation_score_avg": 5.08
+    },
+    "13": {
+      "chunk_count": 1,
+      "quality_score_avg": 8.0,
+      "evaluation_score_avg": 4.93
+    },
+    "14": {
+      "chunk_count": 1,
+      "quality_score_avg": 8.0,
+      "evaluation_score_avg": 4.89
+    },
+    "15": {
+      "chunk_count": 1,
+      "quality_score_avg": 9.0,
+      "evaluation_score_avg": 6.22
+    },
+    "16": {
+      "chunk_count": 1,
+      "quality_score_avg": 9.0,
+      "evaluation_score_avg": 6.42
+    }
+  },
+  "chunk_details": [
+    {
+      "chapter_id": 0,
+      "chunk_id": 0,
+      "chunk_file": "output/yolo\\chapter_0\\chunk_000.json",
+      "source_text": "You Only Look Once: Unified, Real-Time Object Detection",
+      "translation": "你只需看一次：统一的、实时目标检测",
+      "quality_score": 8.0,
+      "evaluation": {
+        "source_text": "You Only Look Once: Unified, Real-Time Object Detection",
+        "translation": "你只需看一次：统一的、实时目标检测",
+        "metrics": {
+          "quality_score": {
+            "score": 8.0,
+            "method": "quality_score",
+            "details": "质量分数: 8.0/10"
+          },
+          "back_translation": {
+            "score": 8.67,
+            "method": "back_translation_consistency",
+            "details": "回译相似度: 86.67%",
+            "similarity": 0.8666666666666667
+          },
+          "terminology": {
+            "score": 7.5,
+            "method": "terminology_consistency",
+            "details": "术语使用: 3/4 正确",
+            "correct_uses": 3,
+            "total_terms": 4,
+            "violations": []
+          },
+          "length_ratio": {
+            "score": 5.83,
+            "method": "length_ratio",
+            "details": "长度比: 2.12 (理想: 1.5)",
+            "ratio": 2.125,
+            "source_length": 8,
+            "translation_length": 17
+          },
+          "fluency": {
+            "score": 10.0,
+            "method": "fluency",
+            "details": "流畅性检查: 通过",
+            "issues": []
+          },
+          "number_preservation": {
+            "score": 10.0,
+            "method": "number_preservation",
+            "details": "原文无数字"
+          },
+          "bleu": {
+            "score": 3.54,
+            "method": "bleu_score",
+            "details": "BLEU: 0.3536",
+            "bleu": 0.3535533905932738,
+            "precision_1gram": 0.5,
+            "precision_2gram": 0.25
+          },
+          "semantic_similarity": {
+            "score": 7.92,
+            "method": "semantic_similarity",
+            "details": "语义相似度: 0.5831",
+            "similarity": 0.5831387042999268
+          },
+          "edit_distance": {
+            "score": 0.53,
+            "method": "edit_distance",
+            "details": "编辑距离: 107/113, 相似度: 5.31%",
+            "distance": 107,
+            "similarity": 0.053097345132743334
+          }
+        },
+        "overall_score": 6.64,
+        "unsupervised_avg": 8.4,
+        "supervised_avg": 4.0
+      }
+    },
+    {
+      "chapter_id": 1,
+      "chunk_id": 0,
+      "chunk_file": "output/yolo\\chapter_1\\chunk_000.json",
+      "source_text": "Abstract We present YOLO, a new approach to object detection. Prior work on object detection repurposes classifiers to perform detection. Instead, we frame object detection as a regression problem to ...",
+      "translation": "摘要：我们提出了YOLO，一种新的目标检测方法。先前的目标检测工作将分类器重新用于执行检测任务。相反，我们将目标检测框架为回归问题，以空间上分离的边界框和相关的类别概率。一个单一的神经网络直接从完整图像中预测边界框和类别概率，仅需要一次评估。由于整个检测流程是一个单一网络，它可以直接针对检测性能进行端到端优化。我们的统一架构非常快速。我们的基准YOLO模型以实时速度处理图像，每秒45帧。网络的较小...",
+      "quality_score": 9.0,
+      "evaluation": {
+        "source_text": "Abstract We present YOLO, a new approach to object detection. Prior work on object detection repurpo...",
+        "translation": "摘要：我们提出了YOLO，一种新的目标检测方法。先前的目标检测工作将分类器重新用于执行检测任务。相反，我们将目标检测框架为回归问题，以空间上分离的边界框和相关的类别概率。一个单一的神经网络直接从完整图...",
+        "metrics": {
+          "quality_score": {
+            "score": 9.0,
+            "method": "quality_score",
+            "details": "质量分数: 9.0/10"
+          },
+          "back_translation": {
+            "score": 3.77,
+            "method": "back_translation_consistency",
+            "details": "回译相似度: 37.73%",
+            "similarity": 0.37730984099699183
+          },
+          "terminology": {
+            "score": 8.0,
+            "method": "terminology_consistency",
+            "details": "术语使用: 8/10 正确",
+            "correct_uses": 8,
+            "total_terms": 10,
+            "violations": [
+              {
+                "term": "YOLO",
+                "expected": "YOLO（你只活一次）",
+                "issue": "术语未翻译，直接使用英文"
+              },
+              {
+                "term": "R-CNN",
+                "expected": "R-CNN",
+                "issue": "术语未翻译，直接使用英文"
+              }
+            ]
+          },
+          "length_ratio": {
+            "score": 5.28,
+            "method": "length_ratio",
+            "details": "长度比: 2.21 (理想: 1.5)",
+            "ratio": 2.207317073170732,
+            "source_length": 164,
+            "translation_length": 362
+          },
+          "fluency": {
+            "score": 10.0,
+            "method": "fluency",
+            "details": "流畅性检查: 通过",
+            "issues": []
+          },
+          "number_preservation": {
+            "score": 10.0,
+            "method": "number_preservation",
+            "details": "数字保留: 2/2",
+            "preserved": 2,
+            "total": 2,
+            "missing": []
+          },
+          "bleu": {
+            "score": 0.37,
+            "method": "bleu_score",
+            "details": "BLEU: 0.0372",
+            "bleu": 0.03721901037042322,
+            "precision_1gram": 0.10112359550561797,
+            "precision_2gram": 0.0136986301369863
+          },
+          "semantic_similarity": {
+            "score": 6.69,
+            "method": "semantic_similarity",
+            "details": "语义相似度: 0.3386",
+            "similarity": 0.33858874440193176
+          },
+          "edit_distance": {
+            "score": 0.36,
+            "method": "edit_distance",
+            "details": "编辑距离: 349/362, 相似度: 3.59%",
+            "distance": 349,
+            "similarity": 0.035911602209944715
+          }
+        },
+        "overall_score": 5.44,
+        "unsupervised_avg": 7.41,
+        "supervised_avg": 2.47
+      }
+    },
+    {
+      "chapter_id": 2,
+      "chunk_id": 1,
+      "chunk_file": "output/yolo\\chapter_2\\chunk_001.json",
+      "source_text": "1. Introduction Humans glance at an image and instantly know what objects are in the image, where they are, and how they interact. The human visual system is fast and accurate, allowing us to perform ...",
+      "translation": "摘要：人类只需一瞥就能立刻知道图片中有什么物体、它们的位置以及它们之间的互动。人类视觉系统快速而准确，使我们能够像驾驶这样的复杂任务几乎不需要有意识的思考。快速、准确的目标检测算法将使计算机能够在没有特殊传感器的情况下驾驶汽车，使辅助设备能够向人类用户传达实时场景信息，并为通用、响应式机器人系统的发展提供可能。当前的目标检测系统将分类器重新用于执行检测任务。为了检测一个物体，这些系统需要一个针对该...",
+      "quality_score": 8.0,
+      "evaluation": {
+        "source_text": "1. Introduction Humans glance at an image and instantly know what objects are in the image, where th...",
+        "translation": "摘要：人类只需一瞥就能立刻知道图片中有什么物体、它们的位置以及它们之间的互动。人类视觉系统快速而准确，使我们能够像驾驶这样的复杂任务几乎不需要有意识的思考。快速、准确的目标检测算法将使计算机能够在没有...",
+        "metrics": {
+          "quality_score": {
+            "score": 8.0,
+            "method": "quality_score",
+            "details": "质量分数: 8.0/10"
+          },
+          "back_translation": {
+            "score": 4.26,
+            "method": "back_translation_consistency",
+            "details": "回译相似度: 42.62%",
+            "similarity": 0.4261761761761762
+          },
+          "terminology": {
+            "score": 6.67,
+            "method": "terminology_consistency",
+            "details": "术语使用: 12/18 正确",
+            "correct_uses": 12,
+            "total_terms": 18,
+            "violations": [
+              {
+                "term": "DPM",
+                "expected": "可变形部件模型",
+                "issue": "术语未翻译，直接使用英文"
+              },
+              {
+                "term": "R-CNN",
+                "expected": "R-CNN",
+                "issue": "术语未翻译，直接使用英文"
+              },
+              {
+                "term": "YOLO",
+                "expected": "YOLO",
+                "issue": "术语未翻译，直接使用英文"
+              },
+              {
+                "term": "DPM",
+                "expected": "可变形部件模型",
+                "issue": "术语未翻译，直接使用英文"
+              },
+              {
+                "term": "R-CNN",
+                "expected": "R-CNN",
+                "issue": "术语未翻译，直接使用英文"
+              }
+            ]
+          },
+          "length_ratio": {
+            "score": 6.57,
+            "method": "length_ratio",
+            "details": "长度比: 2.01 (理想: 1.5)",
+            "ratio": 2.0144,
+            "source_length": 625,
+            "translation_length": 1259
+          },
+          "fluency": {
+            "score": 10.0,
+            "method": "fluency",
+            "details": "流畅性检查: 通过",
+            "issues": []
+          },
+          "number_preservation": {
+            "score": 9.09,
+            "method": "number_preservation",
+            "details": "数字保留: 10/11",
+            "preserved": 10,
+            "total": 11,
+            "missing": [
+              "1."
+            ]
+          },
+          "bleu": {
+            "score": 0.26,
+            "method": "bleu_score",
+            "details": "BLEU: 0.0262",
+            "bleu": 0.026162909533834267,
+            "precision_1gram": 0.05167958656330749,
+            "precision_2gram": 0.013245033112582781
+          },
+          "semantic_similarity": {
+            "score": 7.04,
+            "method": "semantic_similarity",
+            "details": "语义相似度: 0.4076",
+            "similarity": 0.407644122838974
+          },
+          "edit_distance": {
+            "score": 0.14,
+            "method": "edit_distance",
+            "details": "编辑距离: 1241/1259, 相似度: 1.43%",
+            "distance": 1241,
+            "similarity": 0.01429706115965057
+          }
+        },
+        "overall_score": 5.38,
+        "unsupervised_avg": 7.32,
+        "supervised_avg": 2.48
+      }
+    },
+    {
+      "chapter_id": 3,
+      "chunk_id": 1,
+      "chunk_file": "output/yolo\\chapter_3\\chunk_001.json",
+      "source_text": "2. Unified Detection We unify the separate components of object detection into a single neural network. Our network uses features from the entire image to predict each bounding box. It also predicts a...",
+      "translation": "2. 统一检测 我们将目标检测的不同组件统一到单个神经网络中。我们的网络使用整个图像的特征来预测每个边界框。它还同时为图像中的所有类别预测所有边界框。这意味着我们的网络对整个图像以及图像中的所有物体进行全局推理。YOLO的设计支持端到端训练和实时速度，同时保持高平均精度。我们的系统将输入图像划分为一个$S\\times S$网格。如果一个物体的中心落在某个网格单元内，那么该网格单元负责检测该物体。每...",
+      "quality_score": 8.0,
+      "evaluation": {
+        "source_text": "2. Unified Detection We unify the separate components of object detection into a single neural netwo...",
+        "translation": "2. 统一检测 我们将目标检测的不同组件统一到单个神经网络中。我们的网络使用整个图像的特征来预测每个边界框。它还同时为图像中的所有类别预测所有边界框。这意味着我们的网络对整个图像以及图像中的所有物体进...",
+        "metrics": {
+          "quality_score": {
+            "score": 8.0,
+            "method": "quality_score",
+            "details": "质量分数: 8.0/10"
+          },
+          "back_translation": {
+            "score": 6.27,
+            "method": "back_translation_consistency",
+            "details": "回译相似度: 62.75%",
+            "similarity": 0.6274580552047627
+          },
+          "terminology": {
+            "score": 3.64,
+            "method": "terminology_consistency",
+            "details": "术语使用: 4/11 正确",
+            "correct_uses": 4,
+            "total_terms": 11,
+            "violations": [
+              {
+                "term": "YOLO",
+                "expected": "YOLO",
+                "issue": "术语未翻译，直接使用英文"
+              },
+              {
+                "term": "S",
+                "expected": "S乘S网格",
+                "issue": "术语未翻译，直接使用英文"
+              },
+              {
+                "term": "B",
+                "expected": "边界框数量",
+                "issue": "术语未翻译，直接使用英文"
+              },
+              {
+                "term": "IOU",
+                "expected": "交并比",
+                "issue": "术语未翻译，直接使用英文"
+              },
+              {
+                "term": "Pascal VOC",
+                "expected": "Pascal VOC",
+                "issue": "术语未翻译，直接使用英文"
+              }
+            ]
+          },
+          "length_ratio": {
+            "score": 2.97,
+            "method": "length_ratio",
+            "details": "长度比: 2.56 (理想: 1.5)",
+            "ratio": 2.555023923444976,
+            "source_length": 418,
+            "translation_length": 1068
+          },
+          "fluency": {
+            "score": 10.0,
+            "method": "fluency",
+            "details": "流畅性检查: 通过",
+            "issues": []
+          },
+          "number_preservation": {
+            "score": 10.0,
+            "method": "number_preservation",
+            "details": "数字保留: 6/6",
+            "preserved": 6,
+            "total": 6,
+            "missing": []
+          },
+          "bleu": {
+            "score": 0.3,
+            "method": "bleu_score",
+            "details": "BLEU: 0.0297",
+            "bleu": 0.029735051672502632,
+            "precision_1gram": 0.07692307692307693,
+            "precision_2gram": 0.011494252873563218
+          },
+          "semantic_similarity": {
+            "score": 7.63,
+            "method": "semantic_similarity",
+            "details": "语义相似度: 0.5267",
+            "similarity": 0.526678740978241
+          },
+          "edit_distance": {
+            "score": 0.16,
+            "method": "edit_distance",
+            "details": "编辑距离: 1051/1068, 相似度: 1.59%",
+            "distance": 1051,
+            "similarity": 0.015917602996254665
+          }
+        },
+        "overall_score": 5.02,
+        "unsupervised_avg": 6.58,
+        "supervised_avg": 2.7
+      }
+    },
+    {
+      "chapter_id": 4,
+      "chunk_id": 1,
+      "chunk_file": "output/yolo\\chapter_4\\chunk_001.json",
+      "source_text": "2.1. Network Design We implement this model as a convolutional neural network and evaluate it on the Pascal VOC detection dataset [9]. The initial convolutional layers of the network extract features ...",
+      "translation": "2.1. 网络设计 我们将此模型实现为一个卷积神经网络，并在Pascal VOC检测数据集[9]上对其进行评估。网络的初始卷积层从图像中提取特征，而全连接层预测输出概率和坐标。我们的网络架构受到谷歌网络图像分类模型[34]的启发。我们的网络包含24个卷积层，后面跟着2个全连接层。与谷歌网络使用的初始层模块不同，我们简单地使用$1 \\times 1$降维层，然后是$3 \\times 3$卷积层，类似...",
+      "quality_score": 8.0,
+      "evaluation": {
+        "source_text": "2.1. Network Design We implement this model as a convolutional neural network and evaluate it on the...",
+        "translation": "2.1. 网络设计 我们将此模型实现为一个卷积神经网络，并在Pascal VOC检测数据集[9]上对其进行评估。网络的初始卷积层从图像中提取特征，而全连接层预测输出概率和坐标。我们的网络架构受到谷歌网...",
+        "metrics": {
+          "quality_score": {
+            "score": 8.0,
+            "method": "quality_score",
+            "details": "质量分数: 8.0/10"
+          },
+          "back_translation": {
+            "score": 5.05,
+            "method": "back_translation_consistency",
+            "details": "回译相似度: 50.49%",
+            "similarity": 0.5048946900029665
+          },
+          "terminology": {
+            "score": 8.18,
+            "method": "terminology_consistency",
+            "details": "术语使用: 9/11 正确",
+            "correct_uses": 9,
+            "total_terms": 11,
+            "violations": [
+              {
+                "term": "ImageNet",
+                "expected": "ImageNet",
+                "issue": "术语未翻译，直接使用英文"
+              },
+              {
+                "term": "YOLO",
+                "expected": "YOLO（优洛）",
+                "issue": "术语未翻译，直接使用英文"
+              }
+            ]
+          },
+          "length_ratio": {
+            "score": 8.61,
+            "method": "length_ratio",
+            "details": "长度比: 1.71 (理想: 1.5)",
+            "ratio": 1.7089041095890412,
+            "source_length": 292,
+            "translation_length": 499
+          },
+          "fluency": {
+            "score": 10.0,
+            "method": "fluency",
+            "details": "流畅性检查: 通过",
+            "issues": []
+          },
+          "number_preservation": {
+            "score": 9.17,
+            "method": "number_preservation",
+            "details": "数字保留: 11/12",
+            "preserved": 11,
+            "total": 12,
+            "missing": [
+              "3."
+            ]
+          },
+          "bleu": {
+            "score": 0.8,
+            "method": "bleu_score",
+            "details": "BLEU: 0.0803",
+            "bleu": 0.08028494374120558,
+            "precision_1gram": 0.15469613259668508,
+            "precision_2gram": 0.041666666666666664
+          },
+          "semantic_similarity": {
+            "score": 7.74,
+            "method": "semantic_similarity",
+            "details": "语义相似度: 0.5475",
+            "similarity": 0.5474976897239685
+          },
+          "edit_distance": {
+            "score": 0.42,
+            "method": "edit_distance",
+            "details": "编辑距离: 478/499, 相似度: 4.21%",
+            "distance": 478,
+            "similarity": 0.04208416833667339
+          }
+        },
+        "overall_score": 6.12,
+        "unsupervised_avg": 8.2,
+        "supervised_avg": 2.99
+      }
+    },
+    {
+      "chapter_id": 5,
+      "chunk_id": 1,
+      "chunk_file": "output/yolo\\chapter_5\\chunk_001.json",
+      "source_text": "2.2. Training We pretrain our convolutional layers on the ImageNet 1000-class competition dataset [30]. For pretraining we use the first 20 convolutional layers from Figure 3 followed by a average-poo...",
+      "translation": "2.2. 训练 我们在ImageNet 1000类竞赛数据集[30]上预训练我们的卷积层。预训练时，我们使用图3中的前20个卷积层，接着是一个平均池化层和一个全连接层。我们训练这个网络大约一周，在ImageNet 2012验证集上实现了单裁剪top-5准确率为$88\\%$，与Caffe模型库中的GoogLeNet模型[24]相当。我们使用Darknet框架进行所有训练和推理[26]。然后我们将模型...",
+      "quality_score": 8.0,
+      "evaluation": {
+        "source_text": "2.2. Training We pretrain our convolutional layers on the ImageNet 1000-class competition dataset [3...",
+        "translation": "2.2. 训练 我们在ImageNet 1000类竞赛数据集[30]上预训练我们的卷积层。预训练时，我们使用图3中的前20个卷积层，接着是一个平均池化层和一个全连接层。我们训练这个网络大约一周，在Im...",
+        "metrics": {
+          "quality_score": {
+            "score": 8.0,
+            "method": "quality_score",
+            "details": "质量分数: 8.0/10"
+          },
+          "back_translation": {
+            "score": 4.98,
+            "method": "back_translation_consistency",
+            "details": "回译相似度: 49.79%",
+            "similarity": 0.49785227867993714
+          },
+          "terminology": {
+            "score": 1.48,
+            "method": "terminology_consistency",
+            "details": "术语使用: 4/27 正确",
+            "correct_uses": 4,
+            "total_terms": 27,
+            "violations": [
+              {
+                "term": "ImageNet",
+                "expected": "ImageNet",
+                "issue": "术语未翻译，直接使用英文"
+              },
+              {
+                "term": "GoogLeNet",
+                "expected": "GoogLeNet",
+                "issue": "术语未翻译，直接使用英文"
+              },
+              {
+                "term": "Darknet",
+                "expected": "Darknet",
+                "issue": "术语未翻译，直接使用英文"
+              },
+              {
+                "term": "S^2",
+                "expected": "S乘S网格",
+                "issue": "术语未翻译，直接使用英文"
+              },
+              {
+                "term": "B",
+                "expected": "边界框数量",
+                "issue": "术语未翻译，直接使用英文"
+              }
+            ]
+          },
+          "length_ratio": {
+            "score": 5.47,
+            "method": "length_ratio",
+            "details": "长度比: 2.18 (理想: 1.5)",
+            "ratio": 2.1794258373205744,
+            "source_length": 836,
+            "translation_length": 1822
+          },
+          "fluency": {
+            "score": 10.0,
+            "method": "fluency",
+            "details": "流畅性检查: 通过",
+            "issues": []
+          },
+          "number_preservation": {
+            "score": 5.86,
+            "method": "number_preservation",
+            "details": "数字保留: 17/29",
+            "preserved": 17,
+            "total": 29,
+            "missing": [
+              "10",
+              "0.9",
+              "2007",
+              "1.5",
+              "18"
+            ]
+          },
+          "bleu": {
+            "score": 0.43,
+            "method": "bleu_score",
+            "details": "BLEU: 0.0427",
+            "bleu": 0.042746357649492014,
+            "precision_1gram": 0.09627329192546584,
+            "precision_2gram": 0.018979833926453145
+          },
+          "semantic_similarity": {
+            "score": 7.83,
+            "method": "semantic_similarity",
+            "details": "语义相似度: 0.5665",
+            "similarity": 0.5664639472961426
+          },
+          "edit_distance": {
+            "score": 0.15,
+            "method": "edit_distance",
+            "details": "编辑距离: 1795/1822, 相似度: 1.48%",
+            "distance": 1795,
+            "similarity": 0.014818880351262331
+          }
+        },
+        "overall_score": 4.46,
+        "unsupervised_avg": 5.56,
+        "supervised_avg": 2.8
+      }
+    },
+    {
+      "chapter_id": 6,
+      "chunk_id": 0,
+      "chunk_file": "output/yolo\\chapter_6\\chunk_000.json",
+      "source_text": "2.3. Inference Just like in training, predicting detections for a test image only requires one network evaluation. On Pascal VOC the network predicts 98 bounding boxes per image and class probabilitie...",
+      "translation": "2.3. 推理 与训练时相似，预测测试图像的检测结果仅需要一次网络评估。在Pascal VOC数据集上，网络每张图像预测98个边界框，并为每个框预测类别概率。由于YOLO在测试时仅需要单一网络评估，与基于分类器的方法不同，它的速度极快。网格设计加强了边界框预测的空间多样性。通常很明显物体落在哪个网格单元内，网络只为每个物体预测一个框。然而，一些大物体或靠近多个单元边界的物体可以被多个单元很好地定位...",
+      "quality_score": 8.0,
+      "evaluation": {
+        "source_text": "2.3. Inference Just like in training, predicting detections for a test image only requires one netwo...",
+        "translation": "2.3. 推理 与训练时相似，预测测试图像的检测结果仅需要一次网络评估。在Pascal VOC数据集上，网络每张图像预测98个边界框，并为每个框预测类别概率。由于YOLO在测试时仅需要单一网络评估，与...",
+        "metrics": {
+          "quality_score": {
+            "score": 8.0,
+            "method": "quality_score",
+            "details": "质量分数: 8.0/10"
+          },
+          "back_translation": {
+            "score": 1.82,
+            "method": "back_translation_consistency",
+            "details": "回译相似度: 18.18%",
+            "similarity": 0.18181818181818182
+          },
+          "terminology": {
+            "score": 6.36,
+            "method": "terminology_consistency",
+            "details": "术语使用: 7/11 正确",
+            "correct_uses": 7,
+            "total_terms": 11,
+            "violations": [
+              {
+                "term": "Pascal VOC",
+                "expected": "Pascal VOC",
+                "issue": "术语未翻译，直接使用英文"
+              },
+              {
+                "term": "YOLO",
+                "expected": "YOLO",
+                "issue": "术语未翻译，直接使用英文"
+              },
+              {
+                "term": "R-CNN",
+                "expected": "R-CNN",
+                "issue": "术语未翻译，直接使用英文"
+              },
+              {
+                "term": "DPM",
+                "expected": "可变形部件模型",
+                "issue": "术语未翻译，直接使用英文"
+              }
+            ]
+          },
+          "length_ratio": {
+            "score": 6.21,
+            "method": "length_ratio",
+            "details": "长度比: 2.07 (理想: 1.5)",
+            "ratio": 2.0681818181818183,
+            "source_length": 132,
+            "translation_length": 273
+          },
+          "fluency": {
+            "score": 10.0,
+            "method": "fluency",
+            "details": "流畅性检查: 通过",
+            "issues": []
+          },
+          "number_preservation": {
+            "score": 10.0,
+            "method": "number_preservation",
+            "details": "数字保留: 4/4",
+            "preserved": 4,
+            "total": 4,
+            "missing": []
+          },
+          "bleu": {
+            "score": 2.18,
+            "method": "bleu_score",
+            "details": "BLEU: 0.2183",
+            "bleu": 0.21828392682102224,
+            "precision_1gram": 0.3877551020408163,
+            "precision_2gram": 0.1228813559322034
+          },
+          "semantic_similarity": {
+            "score": 8.44,
+            "method": "semantic_similarity",
+            "details": "语义相似度: 0.6871",
+            "similarity": 0.6871495842933655
+          },
+          "edit_distance": {
+            "score": 0.99,
+            "method": "edit_distance",
+            "details": "编辑距离: 246/273, 相似度: 9.89%",
+            "distance": 246,
+            "similarity": 0.09890109890109888
+          }
+        },
+        "overall_score": 5.67,
+        "unsupervised_avg": 6.88,
+        "supervised_avg": 3.87
+      }
+    },
+    {
+      "chapter_id": 7,
+      "chunk_id": 0,
+      "chunk_file": "output/yolo\\chapter_7\\chunk_000.json",
+      "source_text": "2.4. Limitations of YOLO YOLO imposes strong spatial constraints on bounding box predictions since each grid cell only predicts two boxes and can only have one class. This spatial constraint limits th...",
+      "translation": "2.4. YOLO的局限性 YOLO在边界框预测上施加了强烈的空间约束，因为每个网格单元仅预测两个框，并且只能有一个类别。这种空间约束限制了模型能够预测的附近物体的数量。模型在处理小物体成群出现的情况时表现不佳，例如鸟群。由于模型是从数据中学习预测边界框的，因此它在泛化到新或不寻常的长宽比或配置中的对象时存在困难。模型还使用相对粗糙的特征来预测边界框，因为我们的架构从输入图像开始有多个下采样层。最...",
+      "quality_score": 9.0,
+      "evaluation": {
+        "source_text": "2.4. Limitations of YOLO YOLO imposes strong spatial constraints on bounding box predictions since e...",
+        "translation": "2.4. YOLO的局限性 YOLO在边界框预测上施加了强烈的空间约束，因为每个网格单元仅预测两个框，并且只能有一个类别。这种空间约束限制了模型能够预测的附近物体的数量。模型在处理小物体成群出现的情况...",
+        "metrics": {
+          "quality_score": {
+            "score": 9.0,
+            "method": "quality_score",
+            "details": "质量分数: 9.0/10"
+          },
+          "back_translation": {
+            "score": 3.46,
+            "method": "back_translation_consistency",
+            "details": "回译相似度: 34.60%",
+            "similarity": 0.3460410557184751
+          },
+          "terminology": {
+            "score": 8.0,
+            "method": "terminology_consistency",
+            "details": "术语使用: 4/5 正确",
+            "correct_uses": 4,
+            "total_terms": 5,
+            "violations": [
+              {
+                "term": "YOLO",
+                "expected": "YOLO",
+                "issue": "术语未翻译，直接使用英文"
+              }
+            ]
+          },
+          "length_ratio": {
+            "score": 7.53,
+            "method": "length_ratio",
+            "details": "长度比: 1.87 (理想: 1.5)",
+            "ratio": 1.8703703703703705,
+            "source_length": 162,
+            "translation_length": 303
+          },
+          "fluency": {
+            "score": 10.0,
+            "method": "fluency",
+            "details": "流畅性检查: 通过",
+            "issues": []
+          },
+          "number_preservation": {
+            "score": 10.0,
+            "method": "number_preservation",
+            "details": "数字保留: 1/1",
+            "preserved": 1,
+            "total": 1,
+            "missing": []
+          },
+          "bleu": {
+            "score": 0.84,
+            "method": "bleu_score",
+            "details": "BLEU: 0.0837",
+            "bleu": 0.08366600265340755,
+            "precision_1gram": 0.175,
+            "precision_2gram": 0.04
+          },
+          "semantic_similarity": {
+            "score": 6.83,
+            "method": "semantic_similarity",
+            "details": "语义相似度: 0.3663",
+            "similarity": 0.36631786823272705
+          },
+          "edit_distance": {
+            "score": 0.63,
+            "method": "edit_distance",
+            "details": "编辑距离: 284/303, 相似度: 6.27%",
+            "distance": 284,
+            "similarity": 0.06270627062706269
+          }
+        },
+        "overall_score": 5.79,
+        "unsupervised_avg": 7.8,
+        "supervised_avg": 2.77
+      }
+    },
+    {
+      "chapter_id": 8,
+      "chunk_id": 1,
+      "chunk_file": "output/yolo\\chapter_8\\chunk_001.json",
+      "source_text": "3. Comparison to Other Detection Systems Object detection is a core problem in computer vision. Detection pipelines generally start by extracting a set of robust features from input images (Haar [25],...",
+      "translation": "3. 与其他检测系统的比较 目标检测是计算机视觉领域的核心问题。检测流程通常从输入图像中提取一系列鲁棒特征开始（哈尔特征[25]、尺度不变特征变换[23]、方向梯度直方图[4]、卷积特征[6]）。然后，分类器[36, 21, 13, 10]或定位器[1, 32]被用来在特征空间中识别物体。这些分类器或定位器要么在整个图像上以滑动窗口的方式运行，要么在图像的某些区域子集上运行[35, 15, 39]...",
+      "quality_score": 8.0,
+      "evaluation": {
+        "source_text": "3. Comparison to Other Detection Systems Object detection is a core problem in computer vision. Dete...",
+        "translation": "3. 与其他检测系统的比较 目标检测是计算机视觉领域的核心问题。检测流程通常从输入图像中提取一系列鲁棒特征开始（哈尔特征[25]、尺度不变特征变换[23]、方向梯度直方图[4]、卷积特征[6]）。然后...",
+        "metrics": {
+          "quality_score": {
+            "score": 8.0,
+            "method": "quality_score",
+            "details": "质量分数: 8.0/10"
+          },
+          "back_translation": {
+            "score": 5.5,
+            "method": "back_translation_consistency",
+            "details": "回译相似度: 54.96%",
+            "similarity": 0.5495634309193631
+          },
+          "terminology": {
+            "score": 5.77,
+            "method": "terminology_consistency",
+            "details": "术语使用: 15/26 正确",
+            "correct_uses": 15,
+            "total_terms": 26,
+            "violations": [
+              {
+                "term": "HOG",
+                "expected": "HOG",
+                "issue": "术语未翻译，直接使用英文"
+              },
+              {
+                "term": "DPM",
+                "expected": "可变形部件模型",
+                "issue": "术语未翻译，直接使用英文"
+              },
+              {
+                "term": "R-CNN",
+                "expected": "R-CNN",
+                "issue": "术语未翻译，直接使用英文"
+              },
+              {
+                "term": "OverFeat",
+                "expected": "OverFeat",
+                "issue": "术语未翻译，直接使用英文"
+              },
+              {
+                "term": "Redmon",
+                "expected": "Redmon",
+                "issue": "术语未翻译，直接使用英文"
+              }
+            ]
+          },
+          "length_ratio": {
+            "score": 5.85,
+            "method": "length_ratio",
+            "details": "长度比: 2.12 (理想: 1.5)",
+            "ratio": 2.122615803814714,
+            "source_length": 734,
+            "translation_length": 1558
+          },
+          "fluency": {
+            "score": 10.0,
+            "method": "fluency",
+            "details": "流畅性检查: 通过",
+            "issues": []
+          },
+          "number_preservation": {
+            "score": 10.0,
+            "method": "number_preservation",
+            "details": "数字保留: 26/26",
+            "preserved": 26,
+            "total": 26,
+            "missing": []
+          },
+          "bleu": {
+            "score": 0.34,
+            "method": "bleu_score",
+            "details": "BLEU: 0.0339",
+            "bleu": 0.03388934459850456,
+            "precision_1gram": 0.08595988538681948,
+            "precision_2gram": 0.013360739979445015
+          },
+          "semantic_similarity": {
+            "score": 7.66,
+            "method": "semantic_similarity",
+            "details": "语义相似度: 0.5329",
+            "similarity": 0.5328847169876099
+          },
+          "edit_distance": {
+            "score": 0.16,
+            "method": "edit_distance",
+            "details": "编辑距离: 1533/1558, 相似度: 1.60%",
+            "distance": 1533,
+            "similarity": 0.016046213093709905
+          }
+        },
+        "overall_score": 5.54,
+        "unsupervised_avg": 7.42,
+        "supervised_avg": 2.72
+      }
+    },
+    {
+      "chapter_id": 9,
+      "chunk_id": 0,
+      "chunk_file": "output/yolo\\chapter_9\\chunk_000.json",
+      "source_text": "4. Experiments First we compare YOLO with other real-time detection systems on PASCAL VOC 2007. To understand the differences between YOLO and R-CNN variants we explore the errors on VOC 2007 made by ...",
+      "translation": "4. 实验 首先，我们比较了YOLO与其他实时检测系统在PASCAL VOC 2007数据集上的性能。为了理解YOLO与R-CNN变体之间的差异，我们探究了YOLO和快速R-CNN（R-CNN中性能最高的版本之一[14]）在VOC 2007上的错误。基于不同的错误特征，我们展示了YOLO可以用来重新评分快速R-CNN检测结果，并减少背景假阳性错误，从而显著提升性能。我们还展示了VOC 2012的结...",
+      "quality_score": 8.0,
+      "evaluation": {
+        "source_text": "4. Experiments First we compare YOLO with other real-time detection systems on PASCAL VOC 2007. To u...",
+        "translation": "4. 实验 首先，我们比较了YOLO与其他实时检测系统在PASCAL VOC 2007数据集上的性能。为了理解YOLO与R-CNN变体之间的差异，我们探究了YOLO和快速R-CNN（R-CNN中性能最...",
+        "metrics": {
+          "quality_score": {
+            "score": 8.0,
+            "method": "quality_score",
+            "details": "质量分数: 8.0/10"
+          },
+          "back_translation": {
+            "score": 2.51,
+            "method": "back_translation_consistency",
+            "details": "回译相似度: 25.11%",
+            "similarity": 0.25105189340813466
+          },
+          "terminology": {
+            "score": 3.75,
+            "method": "terminology_consistency",
+            "details": "术语使用: 3/8 正确",
+            "correct_uses": 3,
+            "total_terms": 8,
+            "violations": [
+              {
+                "term": "YOLO",
+                "expected": "YOLO",
+                "issue": "术语未翻译，直接使用英文"
+              },
+              {
+                "term": "PASCAL VOC 2007",
+                "expected": "PASCAL VOC 2007",
+                "issue": "术语未翻译，直接使用英文"
+              },
+              {
+                "term": "R-CNN",
+                "expected": "R-CNN",
+                "issue": "术语未翻译，直接使用英文"
+              },
+              {
+                "term": "VOC 2007",
+                "expected": "VOC 2007",
+                "issue": "术语未翻译，直接使用英文"
+              },
+              {
+                "term": "VOC 2012",
+                "expected": "VOC 2012",
+                "issue": "术语未翻译，直接使用英文"
+              }
+            ]
+          },
+          "length_ratio": {
+            "score": 3.55,
+            "method": "length_ratio",
+            "details": "长度比: 2.47 (理想: 1.5)",
+            "ratio": 2.467289719626168,
+            "source_length": 107,
+            "translation_length": 264
+          },
+          "fluency": {
+            "score": 10.0,
+            "method": "fluency",
+            "details": "流畅性检查: 通过",
+            "issues": []
+          },
+          "number_preservation": {
+            "score": 8.0,
+            "method": "number_preservation",
+            "details": "数字保留: 4/5",
+            "preserved": 4,
+            "total": 5,
+            "missing": [
+              "2007."
+            ]
+          },
+          "bleu": {
+            "score": 2.44,
+            "method": "bleu_score",
+            "details": "BLEU: 0.2436",
+            "bleu": 0.24359938288234503,
+            "precision_1gram": 0.42857142857142855,
+            "precision_2gram": 0.13846153846153847
+          },
+          "semantic_similarity": {
+            "score": 8.14,
+            "method": "semantic_similarity",
+            "details": "语义相似度: 0.6277",
+            "similarity": 0.627652108669281
+          },
+          "edit_distance": {
+            "score": 0.98,
+            "method": "edit_distance",
+            "details": "编辑距离: 238/264, 相似度: 9.85%",
+            "distance": 238,
+            "similarity": 0.09848484848484851
+          }
+        },
+        "overall_score": 4.88,
+        "unsupervised_avg": 5.56,
+        "supervised_avg": 3.85
+      }
+    },
+    {
+      "chapter_id": 10,
+      "chunk_id": 1,
+      "chunk_file": "output/yolo\\chapter_10\\chunk_001.json",
+      "source_text": "4.1. Comparison to Other Real-Time Systems Many research efforts in object detection focus on making standard detection pipelines fast [5] [38] [31] [14] [17] [28]. However, only Sadeghi et al. actual...",
+      "translation": "4.1. 与其他实时系统的比较 许多目标检测的研究工作专注于使标准检测流程加速[5][38][31][14][17][28]。然而，只有Sadeghi等人实际开发了一个实时运行（每秒30帧或更好）的检测系统[31]。我们将YOLO与他们基于GPU的DPM实现进行比较，该实现的运行速度为30Hz或100Hz。尽管其他工作未能达到实时的里程碑，我们也对比了它们的相对mAP和速度，以检验目标检测系统中的...",
+      "quality_score": 8.0,
+      "evaluation": {
+        "source_text": "4.1. Comparison to Other Real-Time Systems Many research efforts in object detection focus on making...",
+        "translation": "4.1. 与其他实时系统的比较 许多目标检测的研究工作专注于使标准检测流程加速[5][38][31][14][17][28]。然而，只有Sadeghi等人实际开发了一个实时运行（每秒30帧或更好）的检...",
+        "metrics": {
+          "quality_score": {
+            "score": 8.0,
+            "method": "quality_score",
+            "details": "质量分数: 8.0/10"
+          },
+          "back_translation": {
+            "score": 5.87,
+            "method": "back_translation_consistency",
+            "details": "回译相似度: 58.70%",
+            "similarity": 0.5869899923017706
+          },
+          "terminology": {
+            "score": 5.33,
+            "method": "terminology_consistency",
+            "details": "术语使用: 8/15 正确",
+            "correct_uses": 8,
+            "total_terms": 15,
+            "violations": [
+              {
+                "term": "GPU",
+                "expected": "GPU",
+                "issue": "术语未翻译，直接使用英文"
+              },
+              {
+                "term": "DPM",
+                "expected": "可变形部件模型",
+                "issue": "术语未翻译，直接使用英文"
+              },
+              {
+                "term": "mAP",
+                "expected": "平均精度均值",
+                "issue": "术语未翻译，直接使用英文"
+              },
+              {
+                "term": "PASCAL",
+                "expected": "PASCAL视觉对象识别挑战赛",
+                "issue": "术语未翻译，直接使用英文"
+              },
+              {
+                "term": "VGG-16",
+                "expected": "VGG-16",
+                "issue": "术语未翻译，直接使用英文"
+              }
+            ]
+          },
+          "length_ratio": {
+            "score": 5.6,
+            "method": "length_ratio",
+            "details": "长度比: 2.16 (理想: 1.5)",
+            "ratio": 2.1597222222222223,
+            "source_length": 432,
+            "translation_length": 933
+          },
+          "fluency": {
+            "score": 10.0,
+            "method": "fluency",
+            "details": "流畅性检查: 通过",
+            "issues": []
+          },
+          "number_preservation": {
+            "score": 9.17,
+            "method": "number_preservation",
+            "details": "数字保留: 22/24",
+            "preserved": 22,
+            "total": 24,
+            "missing": [
+              "16.",
+              "2007."
+            ]
+          },
+          "bleu": {
+            "score": 0.35,
+            "method": "bleu_score",
+            "details": "BLEU: 0.0352",
+            "bleu": 0.035198109223177294,
+            "precision_1gram": 0.07569721115537849,
+            "precision_2gram": 0.016366612111292964
+          },
+          "semantic_similarity": {
+            "score": 7.63,
+            "method": "semantic_similarity",
+            "details": "语义相似度: 0.5268",
+            "similarity": 0.5268393754959106
+          },
+          "edit_distance": {
+            "score": 0.21,
+            "method": "edit_distance",
+            "details": "编辑距离: 913/933, 相似度: 2.14%",
+            "distance": 913,
+            "similarity": 0.02143622722400862
+          }
+        },
+        "overall_score": 5.41,
+        "unsupervised_avg": 7.19,
+        "supervised_avg": 2.73
+      }
+    },
+    {
+      "chapter_id": 11,
+      "chunk_id": 0,
+      "chunk_file": "output/yolo\\chapter_11\\chunk_000.json",
+      "source_text": "4.2. VOC 2007 Error Analysis To further examine the differences between YOLO and state-of-the-art detectors, we look at a detailed breakdown of results on VOC 2007. We compare YOLO to Fast R-CNN since...",
+      "translation": "4.2. VOC 2007错误分析 为了进一步检验YOLO与最先进的检测器之间的差异，我们对VOC 2007上的详细结果进行了分析。我们将YOLO与快速R-CNN进行比较，因为快速R-CNN是PASCAL上表现最好的检测器之一，其检测结果公开可用。我们采用了Hoiem等人[19]的方法和工具。在测试时，我们对每个类别的前N个预测进行了观察。每个预测要么正确，要么根据错误类型进行分类：图4显示了所有...",
+      "quality_score": 8.0,
+      "evaluation": {
+        "source_text": "4.2. VOC 2007 Error Analysis To further examine the differences between YOLO and state-of-the-art de...",
+        "translation": "4.2. VOC 2007错误分析 为了进一步检验YOLO与最先进的检测器之间的差异，我们对VOC 2007上的详细结果进行了分析。我们将YOLO与快速R-CNN进行比较，因为快速R-CNN是PASC...",
+        "metrics": {
+          "quality_score": {
+            "score": 8.0,
+            "method": "quality_score",
+            "details": "质量分数: 8.0/10"
+          },
+          "back_translation": {
+            "score": 4.92,
+            "method": "back_translation_consistency",
+            "details": "回译相似度: 49.17%",
+            "similarity": 0.49168053244592347
+          },
+          "terminology": {
+            "score": 6.0,
+            "method": "terminology_consistency",
+            "details": "术语使用: 6/10 正确",
+            "correct_uses": 6,
+            "total_terms": 10,
+            "violations": [
+              {
+                "term": "VOC 2007",
+                "expected": "VOC 2007",
+                "issue": "术语未翻译，直接使用英文"
+              },
+              {
+                "term": "YOLO",
+                "expected": "YOLO",
+                "issue": "术语未翻译，直接使用英文"
+              },
+              {
+                "term": "PASCAL",
+                "expected": "PASCAL视觉对象识别挑战赛",
+                "issue": "术语未翻译，直接使用英文"
+              },
+              {
+                "term": "N",
+                "expected": "前N个预测",
+                "issue": "术语未翻译，直接使用英文"
+              }
+            ]
+          },
+          "length_ratio": {
+            "score": 5.95,
+            "method": "length_ratio",
+            "details": "长度比: 2.11 (理想: 1.5)",
+            "ratio": 2.107142857142857,
+            "source_length": 196,
+            "translation_length": 413
+          },
+          "fluency": {
+            "score": 10.0,
+            "method": "fluency",
+            "details": "流畅性检查: 通过",
+            "issues": []
+          },
+          "number_preservation": {
+            "score": 8.75,
+            "method": "number_preservation",
+            "details": "数字保留: 7/8",
+            "preserved": 7,
+            "total": 8,
+            "missing": [
+              "2007."
+            ]
+          },
+          "bleu": {
+            "score": 2.52,
+            "method": "bleu_score",
+            "details": "BLEU: 0.2517",
+            "bleu": 0.25171205064660185,
+            "precision_1gram": 0.4276729559748428,
+            "precision_2gram": 0.14814814814814814
+          },
+          "semantic_similarity": {
+            "score": 9.03,
+            "method": "semantic_similarity",
+            "details": "语义相似度: 0.8060",
+            "similarity": 0.8060493469238281
+          },
+          "edit_distance": {
+            "score": 1.48,
+            "method": "edit_distance",
+            "details": "编辑距离: 352/413, 相似度: 14.77%",
+            "distance": 352,
+            "similarity": 0.14769975786924938
+          }
+        },
+        "overall_score": 6.01,
+        "unsupervised_avg": 7.12,
+        "supervised_avg": 4.34
+      }
+    },
+    {
+      "chapter_id": 12,
+      "chunk_id": 1,
+      "chunk_file": "output/yolo\\chapter_12\\chunk_001.json",
+      "source_text": "4.3. Combining Fast R-CNN and YOLO YOLO makes far fewer background mistakes than Fast R-CNN. By using YOLO to eliminate background detections from Fast R-CNN we get a significant boost in performance....",
+      "translation": "4.3. 结合快速R-CNN和YOLO 相比于快速R-CNN，YOLO在背景错误上要少得多。通过使用YOLO排除快速R-CNN的背景检测结果，我们得到了显著的性能提升。对于R-CNN预测的每个边界框，我们检查YOLO是否预测了一个相似的框。如果预测了，我们就根据YOLO预测的概率和两个框之间的重叠程度给这个预测增加分数。最好的快速R-CNN模型在VOC 2007测试集上达到了71.8%的平均精度均...",
+      "quality_score": 8.0,
+      "evaluation": {
+        "source_text": "4.3. Combining Fast R-CNN and YOLO YOLO makes far fewer background mistakes than Fast R-CNN. By usin...",
+        "translation": "4.3. 结合快速R-CNN和YOLO 相比于快速R-CNN，YOLO在背景错误上要少得多。通过使用YOLO排除快速R-CNN的背景检测结果，我们得到了显著的性能提升。对于R-CNN预测的每个边界框，...",
+        "metrics": {
+          "quality_score": {
+            "score": 8.0,
+            "method": "quality_score",
+            "details": "质量分数: 8.0/10"
+          },
+          "back_translation": {
+            "score": 2.95,
+            "method": "back_translation_consistency",
+            "details": "回译相似度: 29.55%",
+            "similarity": 0.29546165884194053
+          },
+          "terminology": {
+            "score": 6.0,
+            "method": "terminology_consistency",
+            "details": "术语使用: 3/5 正确",
+            "correct_uses": 3,
+            "total_terms": 5,
+            "violations": [
+              {
+                "term": "YOLO",
+                "expected": "YOLO（优看一次）",
+                "issue": "术语未翻译，直接使用英文"
+              },
+              {
+                "term": "VOC 2007",
+                "expected": "VOC 2007",
+                "issue": "术语未翻译，直接使用英文"
+              }
+            ]
+          },
+          "length_ratio": {
+            "score": 5.03,
+            "method": "length_ratio",
+            "details": "长度比: 2.25 (理想: 1.5)",
+            "ratio": 2.245136186770428,
+            "source_length": 257,
+            "translation_length": 577
+          },
+          "fluency": {
+            "score": 10.0,
+            "method": "fluency",
+            "details": "流畅性检查: 通过",
+            "issues": []
+          },
+          "number_preservation": {
+            "score": 6.67,
+            "method": "number_preservation",
+            "details": "数字保留: 6/9",
+            "preserved": 6,
+            "total": 9,
+            "missing": [
+              "6",
+              "2007.",
+              "3"
+            ]
+          },
+          "bleu": {
+            "score": 1.31,
+            "method": "bleu_score",
+            "details": "BLEU: 0.1311",
+            "bleu": 0.1310836293690522,
+            "precision_1gram": 0.2556818181818182,
+            "precision_2gram": 0.06720430107526881
+          },
+          "semantic_similarity": {
+            "score": 8.5,
+            "method": "semantic_similarity",
+            "details": "语义相似度: 0.7008",
+            "similarity": 0.700843095779419
+          },
+          "edit_distance": {
+            "score": 0.68,
+            "method": "edit_distance",
+            "details": "编辑距离: 538/577, 相似度: 6.76%",
+            "distance": 538,
+            "similarity": 0.06759098786828421
+          }
+        },
+        "overall_score": 5.08,
+        "unsupervised_avg": 6.13,
+        "supervised_avg": 3.5
+      }
+    },
+    {
+      "chapter_id": 13,
+      "chunk_id": 0,
+      "chunk_file": "output/yolo\\chapter_13\\chunk_000.json",
+      "source_text": "4.4. VOC 2012 Results On the VOC 2012 test set, YOLO scores $57.9\\%$ mAP. This is lower than the current state of the art, closer to the original R-CNN using VGG-16, see Table 3. Our system struggles ...",
+      "translation": "4.4. VOC 2012结果 在VOC 2012测试集上，YOLO的得分为57.9%的平均精度均值。这低于当前最先进水平，更接近于使用VGG-16的原始R-CNN，详见表3。与最接近的竞争对手相比，我们的系统在处理小目标时存在困难。在瓶子、羊和电视/显示器等类别上，YOLO的得分比R-CNN或特征编辑低8-10%。然而，在猫和火车等其他类别上，YOLO实现了更高的性能。表3：PASCAL VOC...",
+      "quality_score": 8.0,
+      "evaluation": {
+        "source_text": "4.4. VOC 2012 Results On the VOC 2012 test set, YOLO scores $57.9\\%$ mAP. This is lower than the cur...",
+        "translation": "4.4. VOC 2012结果 在VOC 2012测试集上，YOLO的得分为57.9%的平均精度均值。这低于当前最先进水平，更接近于使用VGG-16的原始R-CNN，详见表3。与最接近的竞争对手相比，...",
+        "metrics": {
+          "quality_score": {
+            "score": 8.0,
+            "method": "quality_score",
+            "details": "质量分数: 8.0/10"
+          },
+          "back_translation": {
+            "score": 3.88,
+            "method": "back_translation_consistency",
+            "details": "回译相似度: 38.75%",
+            "similarity": 0.38750610053684725
+          },
+          "terminology": {
+            "score": 2.86,
+            "method": "terminology_consistency",
+            "details": "术语使用: 2/7 正确",
+            "correct_uses": 2,
+            "total_terms": 7,
+            "violations": [
+              {
+                "term": "VOC 2012",
+                "expected": "VOC 2012",
+                "issue": "术语未翻译，直接使用英文"
+              },
+              {
+                "term": "YOLO",
+                "expected": "YOLO",
+                "issue": "术语未翻译，直接使用英文"
+              },
+              {
+                "term": "R-CNN",
+                "expected": "R-CNN",
+                "issue": "术语未翻译，直接使用英文"
+              },
+              {
+                "term": "VGG-16",
+                "expected": "VGG-16",
+                "issue": "术语未翻译，直接使用英文"
+              }
+            ]
+          },
+          "length_ratio": {
+            "score": 4.09,
+            "method": "length_ratio",
+            "details": "长度比: 2.39 (理想: 1.5)",
+            "ratio": 2.386904761904762,
+            "source_length": 168,
+            "translation_length": 401
+          },
+          "fluency": {
+            "score": 10.0,
+            "method": "fluency",
+            "details": "流畅性检查: 通过",
+            "issues": []
+          },
+          "number_preservation": {
+            "score": 8.46,
+            "method": "number_preservation",
+            "details": "数字保留: 11/13",
+            "preserved": 11,
+            "total": 13,
+            "missing": [
+              "3.",
+              "2015."
+            ]
+          },
+          "bleu": {
+            "score": 1.84,
+            "method": "bleu_score",
+            "details": "BLEU: 0.1838",
+            "bleu": 0.18376150619134146,
+            "precision_1gram": 0.3614457831325301,
+            "precision_2gram": 0.09342560553633218
+          },
+          "semantic_similarity": {
+            "score": 7.72,
+            "method": "semantic_similarity",
+            "details": "语义相似度: 0.5433",
+            "similarity": 0.5432828068733215
+          },
+          "edit_distance": {
+            "score": 1.02,
+            "method": "edit_distance",
+            "details": "编辑距离: 360/401, 相似度: 10.22%",
+            "distance": 360,
+            "similarity": 0.10224438902743138
+          }
+        },
+        "overall_score": 4.93,
+        "unsupervised_avg": 5.86,
+        "supervised_avg": 3.53
+      }
+    },
+    {
+      "chapter_id": 14,
+      "chunk_id": 1,
+      "chunk_file": "output/yolo\\chapter_14\\chunk_001.json",
+      "source_text": "4.5. Generalizability: Person Detection in Artwork Academic datasets for object detection draw the training and testing data from the same distribution. In real-world applications it is hard to predic...",
+      "translation": "4.5. 泛化能力：在艺术作品学术数据集中进行人物检测的目标检测训练和测试数据来源于同一分布。在现实世界的应用中，很难预测所有可能的用例，测试数据可能与系统以前见过的数据有所不同[3]。我们在毕加索数据集[12]和人物艺术数据库[3]上比较YOLO与其他检测系统的性能，这两个数据集用于测试艺术作品中的人物检测。图5显示了YOLO与其他检测方法之间的比较性能。作为参考，我们给出了在VOC 2007数...",
+      "quality_score": 8.0,
+      "evaluation": {
+        "source_text": "4.5. Generalizability: Person Detection in Artwork Academic datasets for object detection draw the t...",
+        "translation": "4.5. 泛化能力：在艺术作品学术数据集中进行人物检测的目标检测训练和测试数据来源于同一分布。在现实世界的应用中，很难预测所有可能的用例，测试数据可能与系统以前见过的数据有所不同[3]。我们在毕加索数...",
+        "metrics": {
+          "quality_score": {
+            "score": 8.0,
+            "method": "quality_score",
+            "details": "质量分数: 8.0/10"
+          },
+          "back_translation": {
+            "score": 3.55,
+            "method": "back_translation_consistency",
+            "details": "回译相似度: 35.48%",
+            "similarity": 0.3548309757851834
+          },
+          "terminology": {
+            "score": 5.56,
+            "method": "terminology_consistency",
+            "details": "术语使用: 10/18 正确",
+            "correct_uses": 10,
+            "total_terms": 18,
+            "violations": [
+              {
+                "term": "YOLO",
+                "expected": "YOLO",
+                "issue": "术语未翻译，直接使用英文"
+              },
+              {
+                "term": "VOC 2007",
+                "expected": "VOC 2007",
+                "issue": "术语未翻译，直接使用英文"
+              },
+              {
+                "term": "R-CNN",
+                "expected": "R-CNN",
+                "issue": "术语未翻译，直接使用英文"
+              },
+              {
+                "term": "DPM",
+                "expected": "可变形部件模型",
+                "issue": "术语未翻译，直接使用英文"
+              },
+              {
+                "term": "AP",
+                "expected": "平均精度（AP）",
+                "issue": "术语未翻译，直接使用英文"
+              }
+            ]
+          },
+          "length_ratio": {
+            "score": 4.42,
+            "method": "length_ratio",
+            "details": "长度比: 2.34 (理想: 1.5)",
+            "ratio": 2.3375394321766563,
+            "source_length": 317,
+            "translation_length": 741
+          },
+          "fluency": {
+            "score": 10.0,
+            "method": "fluency",
+            "details": "流畅性检查: 通过",
+            "issues": []
+          },
+          "number_preservation": {
+            "score": 7.78,
+            "method": "number_preservation",
+            "details": "数字保留: 7/9",
+            "preserved": 7,
+            "total": 9,
+            "missing": [
+              "2007.",
+              "2010."
+            ]
+          },
+          "bleu": {
+            "score": 0.62,
+            "method": "bleu_score",
+            "details": "BLEU: 0.0615",
+            "bleu": 0.0615167007756894,
+            "precision_1gram": 0.16203703703703703,
+            "precision_2gram": 0.02335456475583864
+          },
+          "semantic_similarity": {
+            "score": 7.48,
+            "method": "semantic_similarity",
+            "details": "语义相似度: 0.4969",
+            "similarity": 0.49686476588249207
+          },
+          "edit_distance": {
+            "score": 0.36,
+            "method": "edit_distance",
+            "details": "编辑距离: 714/741, 相似度: 3.64%",
+            "distance": 714,
+            "similarity": 0.036437246963562764
+          }
+        },
+        "overall_score": 4.89,
+        "unsupervised_avg": 6.26,
+        "supervised_avg": 2.82
+      }
+    },
+    {
+      "chapter_id": 15,
+      "chunk_id": 0,
+      "chunk_file": "output/yolo\\chapter_15\\chunk_000.json",
+      "source_text": "5. Real-Time Detection In The Wild YOLO is a fast, accurate object detector, making it ideal for computer vision applications. We connect YOLO to a webcam and verify that it maintains real-time perfor...",
+      "translation": "5. 实时检测野外YOLO是一个快速、准确的目标检测器，使其成为计算机视觉应用的理想选择。我们将YOLO连接到网络摄像头，并验证它保持实时性能，包括从摄像头获取图像和显示检测结果的时间。得到的系统是互动且引人入胜的。虽然YOLO单独处理图像，但当连接到网络摄像头时，它就像一个跟踪系统一样工作，检测移动和外观变化的物体。系统的演示和源代码可以在我们项目网站上找到：http://pjreddie.co...",
+      "quality_score": 9.0,
+      "evaluation": {
+        "source_text": "5. Real-Time Detection In The Wild YOLO is a fast, accurate object detector, making it ideal for com...",
+        "translation": "5. 实时检测野外YOLO是一个快速、准确的目标检测器，使其成为计算机视觉应用的理想选择。我们将YOLO连接到网络摄像头，并验证它保持实时性能，包括从摄像头获取图像和显示检测结果的时间。得到的系统是互...",
+        "metrics": {
+          "quality_score": {
+            "score": 9.0,
+            "method": "quality_score",
+            "details": "质量分数: 9.0/10"
+          },
+          "back_translation": {
+            "score": 6.42,
+            "method": "back_translation_consistency",
+            "details": "回译相似度: 64.19%",
+            "similarity": 0.6418755052546483
+          },
+          "terminology": {
+            "score": 8.0,
+            "method": "terminology_consistency",
+            "details": "术语使用: 4/5 正确",
+            "correct_uses": 4,
+            "total_terms": 5,
+            "violations": [
+              {
+                "term": "http://pjreddie.com/yolo/",
+                "expected": "http://pjreddie.com/yolo/",
+                "issue": "术语未翻译，直接使用英文"
+              }
+            ]
+          },
+          "length_ratio": {
+            "score": 5.56,
+            "method": "length_ratio",
+            "details": "长度比: 2.17 (理想: 1.5)",
+            "ratio": 2.1666666666666665,
+            "source_length": 96,
+            "translation_length": 208
+          },
+          "fluency": {
+            "score": 10.0,
+            "method": "fluency",
+            "details": "流畅性检查: 通过",
+            "issues": []
+          },
+          "number_preservation": {
+            "score": 10.0,
+            "method": "number_preservation",
+            "details": "数字保留: 1/1",
+            "preserved": 1,
+            "total": 1,
+            "missing": []
+          },
+          "bleu": {
+            "score": 1.18,
+            "method": "bleu_score",
+            "details": "BLEU: 0.1178",
+            "bleu": 0.11779074017063207,
+            "precision_1gram": 0.1953125,
+            "precision_2gram": 0.07103825136612021
+          },
+          "semantic_similarity": {
+            "score": 8.53,
+            "method": "semantic_similarity",
+            "details": "语义相似度: 0.7058",
+            "similarity": 0.705765962600708
+          },
+          "edit_distance": {
+            "score": 0.96,
+            "method": "edit_distance",
+            "details": "编辑距离: 188/208, 相似度: 9.62%",
+            "distance": 188,
+            "similarity": 0.09615384615384615
+          }
+        },
+        "overall_score": 6.22,
+        "unsupervised_avg": 8.0,
+        "supervised_avg": 3.56
+      }
+    },
+    {
+      "chapter_id": 16,
+      "chunk_id": 0,
+      "chunk_file": "output/yolo\\chapter_16\\chunk_000.json",
+      "source_text": "6. Conclusion We introduce YOLO, a unified model for object detection. Our model is simple to construct and can be trained directly on full images. Unlike classifier-based approaches, YOLO is trained ...",
+      "translation": "6. 结论 我们介绍了YOLO，一个统一的目标检测模型。我们的模型构建简单，并且可以直接在完整图像上进行训练。与基于分类器的方法不同，YOLO的训练是基于一个直接对应于检测性能的损失函数，整个模型是联合训练的。快速YOLO是文献中最快的通用目标检测器，而YOLO推动了实时目标检测的最先进技术。YOLO还能很好地泛化到新领域，使其成为依赖于快速、稳健目标检测的应用的理想选择。致谢：本工作部分由ONR...",
+      "quality_score": 9.0,
+      "evaluation": {
+        "source_text": "6. Conclusion We introduce YOLO, a unified model for object detection. Our model is simple to constr...",
+        "translation": "6. 结论 我们介绍了YOLO，一个统一的目标检测模型。我们的模型构建简单，并且可以直接在完整图像上进行训练。与基于分类器的方法不同，YOLO的训练是基于一个直接对应于检测性能的损失函数，整个模型是联...",
+        "metrics": {
+          "quality_score": {
+            "score": 9.0,
+            "method": "quality_score",
+            "details": "质量分数: 9.0/10"
+          },
+          "back_translation": {
+            "score": 3.83,
+            "method": "back_translation_consistency",
+            "details": "回译相似度: 38.30%",
+            "similarity": 0.383008356545961
+          },
+          "terminology": {
+            "score": 4.0,
+            "method": "terminology_consistency",
+            "details": "术语使用: 2/5 正确",
+            "correct_uses": 2,
+            "total_terms": 5,
+            "violations": [
+              {
+                "term": "YOLO",
+                "expected": "YOLO（你只活一次）",
+                "issue": "术语未翻译，直接使用英文"
+              },
+              {
+                "term": "ONR N00014-13-1-0720",
+                "expected": "ONR N00014-13-1-0720",
+                "issue": "术语未翻译，直接使用英文"
+              },
+              {
+                "term": "NSF IIS-1338054",
+                "expected": "NSF IIS-1338054",
+                "issue": "术语未翻译，直接使用英文"
+              }
+            ]
+          },
+          "length_ratio": {
+            "score": 4.29,
+            "method": "length_ratio",
+            "details": "长度比: 2.36 (理想: 1.5)",
+            "ratio": 2.355769230769231,
+            "source_length": 104,
+            "translation_length": 245
+          },
+          "fluency": {
+            "score": 10.0,
+            "method": "fluency",
+            "details": "流畅性检查: 通过",
+            "issues": []
+          },
+          "number_preservation": {
+            "score": 10.0,
+            "method": "number_preservation",
+            "details": "数字保留: 6/6",
+            "preserved": 6,
+            "total": 6,
+            "missing": []
+          }
+        },
+        "overall_score": 6.42,
+        "unsupervised_avg": 6.42
+      }
+    }
+  ]
+}

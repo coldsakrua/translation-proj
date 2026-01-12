@@ -1,0 +1,1919 @@
+{
+  "evaluation_info": {
+    "output_dir": "output/vgg_nohuman",
+    "reference_file": "data/vgg_ch.json",
+    "evaluated_at": "2026-01-12T16:13:56.126348",
+    "total_chunks": 19,
+    "valid_chunks": 19,
+    "evaluated_chunks": 19
+  },
+  "overall_statistics": {
+    "quality_score": {
+      "average": 8.74,
+      "min": 8.0,
+      "max": 9.0,
+      "count": 19
+    },
+    "evaluation_score": {
+      "average": 5.66,
+      "min": 4.47,
+      "max": 7.63
+    },
+    "unsupervised_metrics": {
+      "average": 6.96,
+      "count": 19
+    },
+    "supervised_metrics": {
+      "average": 3.29,
+      "count": 16
+    }
+  },
+  "metric_summary": {
+    "quality_score": {
+      "average": 8.74,
+      "min": 8.0,
+      "max": 9.0,
+      "count": 19,
+      "direction": "higher_is_better",
+      "direction_cn": "越高越好"
+    },
+    "back_translation": {
+      "average": 4.88,
+      "min": 1.66,
+      "max": 8.4,
+      "count": 19,
+      "direction": "higher_is_better",
+      "direction_cn": "越高越好"
+    },
+    "terminology": {
+      "average": 5.82,
+      "min": 0.0,
+      "max": 10.0,
+      "count": 19,
+      "direction": "higher_is_better",
+      "direction_cn": "越高越好"
+    },
+    "length_ratio": {
+      "average": 5.16,
+      "min": 2.3,
+      "max": 7.77,
+      "count": 19,
+      "direction": "closer_to_ideal",
+      "direction_cn": "越接近理想值越好"
+    },
+    "fluency": {
+      "average": 9.89,
+      "min": 9.0,
+      "max": 10.0,
+      "count": 19,
+      "direction": "higher_is_better",
+      "direction_cn": "越高越好"
+    },
+    "number_preservation": {
+      "average": 9.04,
+      "min": 0.0,
+      "max": 10.0,
+      "count": 19,
+      "direction": "higher_is_better",
+      "direction_cn": "越高越好"
+    },
+    "bleu": {
+      "average": 1.34,
+      "min": 0.19,
+      "max": 6.49,
+      "count": 16,
+      "direction": "higher_is_better",
+      "direction_cn": "越高越好"
+    },
+    "semantic_similarity": {
+      "average": 7.78,
+      "min": 6.24,
+      "max": 9.09,
+      "count": 16,
+      "direction": "higher_is_better",
+      "direction_cn": "越高越好"
+    },
+    "edit_distance": {
+      "average": 0.74,
+      "min": 0.14,
+      "max": 3.17,
+      "count": 16,
+      "direction": "lower_is_better",
+      "direction_cn": "越低越好"
+    }
+  },
+  "chapter_statistics": {
+    "0": {
+      "chunk_count": 1,
+      "quality_score_avg": 8.0,
+      "evaluation_score_avg": 7.51
+    },
+    "1": {
+      "chunk_count": 1,
+      "quality_score_avg": 9.0,
+      "evaluation_score_avg": 6.4
+    },
+    "2": {
+      "chunk_count": 1,
+      "quality_score_avg": 9.0,
+      "evaluation_score_avg": 4.94
+    },
+    "3": {
+      "chunk_count": 1,
+      "quality_score_avg": 8.0,
+      "evaluation_score_avg": 5.42
+    },
+    "4": {
+      "chunk_count": 1,
+      "quality_score_avg": 9.0,
+      "evaluation_score_avg": 5.58
+    },
+    "5": {
+      "chunk_count": 1,
+      "quality_score_avg": 8.0,
+      "evaluation_score_avg": 6.09
+    },
+    "6": {
+      "chunk_count": 1,
+      "quality_score_avg": 9.0,
+      "evaluation_score_avg": 5.78
+    },
+    "7": {
+      "chunk_count": 1,
+      "quality_score_avg": 8.0,
+      "evaluation_score_avg": 5.22
+    },
+    "8": {
+      "chunk_count": 1,
+      "quality_score_avg": 9.0,
+      "evaluation_score_avg": 5.6
+    },
+    "9": {
+      "chunk_count": 1,
+      "quality_score_avg": 9.0,
+      "evaluation_score_avg": 5.91
+    },
+    "10": {
+      "chunk_count": 1,
+      "quality_score_avg": 9.0,
+      "evaluation_score_avg": 4.6
+    },
+    "11": {
+      "chunk_count": 1,
+      "quality_score_avg": 9.0,
+      "evaluation_score_avg": 4.47
+    },
+    "12": {
+      "chunk_count": 1,
+      "quality_score_avg": 9.0,
+      "evaluation_score_avg": 5.79
+    },
+    "13": {
+      "chunk_count": 1,
+      "quality_score_avg": 9.0,
+      "evaluation_score_avg": 5.12
+    },
+    "14": {
+      "chunk_count": 1,
+      "quality_score_avg": 8.0,
+      "evaluation_score_avg": 5.63
+    },
+    "15": {
+      "chunk_count": 1,
+      "quality_score_avg": 9.0,
+      "evaluation_score_avg": 5.42
+    },
+    "16": {
+      "chunk_count": 1,
+      "quality_score_avg": 9.0,
+      "evaluation_score_avg": 5.8
+    },
+    "17": {
+      "chunk_count": 1,
+      "quality_score_avg": 9.0,
+      "evaluation_score_avg": 7.63
+    },
+    "18": {
+      "chunk_count": 1,
+      "quality_score_avg": 9.0,
+      "evaluation_score_avg": 4.7
+    }
+  },
+  "chunk_details": [
+    {
+      "chapter_id": 0,
+      "chunk_id": 0,
+      "chunk_file": "output/vgg_nohuman\\chapter_0\\chunk_000.json",
+      "source_text": "Very Deep Convolutional Networks for Large-Scale Image Recognition",
+      "translation": "非常深度卷积网络在大规模图像识别中的应用",
+      "quality_score": 8.0,
+      "evaluation": {
+        "source_text": "Very Deep Convolutional Networks for Large-Scale Image Recognition",
+        "translation": "非常深度卷积网络在大规模图像识别中的应用",
+        "metrics": {
+          "quality_score": {
+            "score": 8.0,
+            "method": "quality_score",
+            "details": "质量分数: 8.0/10"
+          },
+          "back_translation": {
+            "score": 8.4,
+            "method": "back_translation_consistency",
+            "details": "回译相似度: 84.00%",
+            "similarity": 0.84
+          },
+          "terminology": {
+            "score": 10.0,
+            "method": "terminology_consistency",
+            "details": "术语使用: 2/2 正确",
+            "correct_uses": 2,
+            "total_terms": 2,
+            "violations": []
+          },
+          "length_ratio": {
+            "score": 3.33,
+            "method": "length_ratio",
+            "details": "长度比: 2.50 (理想: 1.5)",
+            "ratio": 2.5,
+            "source_length": 8,
+            "translation_length": 20
+          },
+          "fluency": {
+            "score": 10.0,
+            "method": "fluency",
+            "details": "流畅性检查: 通过",
+            "issues": []
+          },
+          "number_preservation": {
+            "score": 10.0,
+            "method": "number_preservation",
+            "details": "原文无数字"
+          },
+          "bleu": {
+            "score": 6.49,
+            "method": "bleu_score",
+            "details": "BLEU: 0.6489",
+            "bleu": 0.6488856845230502,
+            "precision_1gram": 0.8,
+            "precision_2gram": 0.5263157894736842
+          },
+          "semantic_similarity": {
+            "score": 9.09,
+            "method": "semantic_similarity",
+            "details": "语义相似度: 0.8172",
+            "similarity": 0.8171946406364441
+          },
+          "edit_distance": {
+            "score": 3.17,
+            "method": "edit_distance",
+            "details": "编辑距离: 28/41, 相似度: 31.71%",
+            "distance": 28,
+            "similarity": 0.31707317073170727
+          }
+        },
+        "overall_score": 7.51,
+        "unsupervised_avg": 8.35,
+        "supervised_avg": 6.25
+      }
+    },
+    {
+      "chapter_id": 1,
+      "chunk_id": 0,
+      "chunk_file": "output/vgg_nohuman\\chapter_1\\chunk_000.json",
+      "source_text": "ABSTRACT In this work we investigate the effect of the convolutional network depth on its accuracy in the large-scale image recognition setting. Our main contribution is a thorough evaluation of netwo...",
+      "translation": "摘要 在本项工作中，我们研究了卷积网络深度对其在大规模图像识别场景中的准确率的影响。我们的主要贡献是对使用非常小的（3 × 3）卷积滤波器的架构进行了深入评估，结果显示通过将深度扩展到16-19个权重层，可以在先前艺术配置的基础上实现显著的性能提升。这些发现是我们ImageNet挑战赛2014提交的基础，我们的团队在定位和分类赛道中分别获得了第一名和第二名。我们还展示了我们的表示能够很好地泛化到其...",
+      "quality_score": 9.0,
+      "evaluation": {
+        "source_text": "ABSTRACT In this work we investigate the effect of the convolutional network depth on its accuracy i...",
+        "translation": "摘要 在本项工作中，我们研究了卷积网络深度对其在大规模图像识别场景中的准确率的影响。我们的主要贡献是对使用非常小的（3 × 3）卷积滤波器的架构进行了深入评估，结果显示通过将深度扩展到16-19个权重...",
+        "metrics": {
+          "quality_score": {
+            "score": 9.0,
+            "method": "quality_score",
+            "details": "质量分数: 9.0/10"
+          },
+          "back_translation": {
+            "score": 4.74,
+            "method": "back_translation_consistency",
+            "details": "回译相似度: 47.44%",
+            "similarity": 0.47444444444444445
+          },
+          "terminology": {
+            "score": 10.0,
+            "method": "terminology_consistency",
+            "details": "术语使用: 10/10 正确",
+            "correct_uses": 10,
+            "total_terms": 10,
+            "violations": []
+          },
+          "length_ratio": {
+            "score": 6.52,
+            "method": "length_ratio",
+            "details": "长度比: 2.02 (理想: 1.5)",
+            "ratio": 2.0223880597014925,
+            "source_length": 134,
+            "translation_length": 271
+          },
+          "fluency": {
+            "score": 10.0,
+            "method": "fluency",
+            "details": "流畅性检查: 通过",
+            "issues": []
+          },
+          "number_preservation": {
+            "score": 10.0,
+            "method": "number_preservation",
+            "details": "数字保留: 4/4",
+            "preserved": 4,
+            "total": 4,
+            "missing": []
+          },
+          "bleu": {
+            "score": 1.69,
+            "method": "bleu_score",
+            "details": "BLEU: 0.1687",
+            "bleu": 0.16869066930787033,
+            "precision_1gram": 0.3018867924528302,
+            "precision_2gram": 0.0942622950819672
+          },
+          "semantic_similarity": {
+            "score": 8.31,
+            "method": "semantic_similarity",
+            "details": "语义相似度: 0.6615",
+            "similarity": 0.6614828109741211
+          },
+          "edit_distance": {
+            "score": 0.85,
+            "method": "edit_distance",
+            "details": "编辑距离: 248/271, 相似度: 8.49%",
+            "distance": 248,
+            "similarity": 0.08487084870848705
+          }
+        },
+        "overall_score": 6.4,
+        "unsupervised_avg": 8.25,
+        "supervised_avg": 3.62
+      }
+    },
+    {
+      "chapter_id": 2,
+      "chunk_id": 1,
+      "chunk_file": "output/vgg_nohuman\\chapter_2\\chunk_001.json",
+      "source_text": "1 INTRODUCTION Convolutional networks (ConvNets) have recently enjoyed a great success in large-scale image and video recognition (Krizhevsky et al., 2012; Zeiler & Fergus, 2013; Sermanet et al., 2014...",
+      "translation": "1 引言 卷积网络（ConvNets）最近在大规模图像和视频识别领域取得了巨大成功（Krizhevsky等人，2012；Zeiler和Fergus，2013；Sermanet等人，2014；西蒙扬 & 齐斯曼，2014），这得益于像ImageNet（Deng等人，2009）这样的大型公共图像库以及像图形处理单元（GPUs）或大规模分布式集群（Dean等人，2012）这样的高性能计算系统。特别是，I...",
+      "quality_score": 9.0,
+      "evaluation": {
+        "source_text": "1 INTRODUCTION Convolutional networks (ConvNets) have recently enjoyed a great success in large-scal...",
+        "translation": "1 引言 卷积网络（ConvNets）最近在大规模图像和视频识别领域取得了巨大成功（Krizhevsky等人，2012；Zeiler和Fergus，2013；Sermanet等人，2014；西蒙扬 &...",
+        "metrics": {
+          "quality_score": {
+            "score": 9.0,
+            "method": "quality_score",
+            "details": "质量分数: 9.0/10"
+          },
+          "back_translation": {
+            "score": 4.67,
+            "method": "back_translation_consistency",
+            "details": "回译相似度: 46.70%",
+            "similarity": 0.4669926650366748
+          },
+          "terminology": {
+            "score": 5.93,
+            "method": "terminology_consistency",
+            "details": "术语使用: 16/27 正确",
+            "correct_uses": 16,
+            "total_terms": 27,
+            "violations": [
+              {
+                "term": "ConvNets",
+                "expected": "卷积神经网络",
+                "issue": "术语未翻译，直接使用英文"
+              },
+              {
+                "term": "ImageNet",
+                "expected": "ImageNet",
+                "issue": "术语未翻译，直接使用英文"
+              },
+              {
+                "term": "GPUs",
+                "expected": "图形处理单元",
+                "issue": "术语未翻译，直接使用英文"
+              },
+              {
+                "term": "ILSVRC",
+                "expected": "ILSVRC",
+                "issue": "术语未翻译，直接使用英文"
+              },
+              {
+                "term": "ILSVRC-2011",
+                "expected": "ILSVRC-2011",
+                "issue": "术语未翻译，直接使用英文"
+              }
+            ]
+          },
+          "length_ratio": {
+            "score": 4.74,
+            "method": "length_ratio",
+            "details": "长度比: 2.29 (理想: 1.5)",
+            "ratio": 2.2886363636363636,
+            "source_length": 440,
+            "translation_length": 1007
+          },
+          "fluency": {
+            "score": 9.0,
+            "method": "fluency",
+            "details": "流畅性检查: 可能存在过多未翻译英文",
+            "issues": [
+              "可能存在过多未翻译英文"
+            ]
+          },
+          "number_preservation": {
+            "score": 9.09,
+            "method": "number_preservation",
+            "details": "数字保留: 10/11",
+            "preserved": 10,
+            "total": 11,
+            "missing": [
+              "4."
+            ]
+          },
+          "bleu": {
+            "score": 0.34,
+            "method": "bleu_score",
+            "details": "BLEU: 0.0339",
+            "bleu": 0.033927882636075206,
+            "precision_1gram": 0.07643312101910828,
+            "precision_2gram": 0.015060240963855422
+          },
+          "semantic_similarity": {
+            "score": 6.46,
+            "method": "semantic_similarity",
+            "details": "语义相似度: 0.2919",
+            "similarity": 0.2918725907802582
+          },
+          "edit_distance": {
+            "score": 0.15,
+            "method": "edit_distance",
+            "details": "编辑距离: 992/1007, 相似度: 1.49%",
+            "distance": 992,
+            "similarity": 0.014895729890764597
+          }
+        },
+        "overall_score": 4.94,
+        "unsupervised_avg": 6.69,
+        "supervised_avg": 2.32
+      }
+    },
+    {
+      "chapter_id": 3,
+      "chunk_id": 0,
+      "chunk_file": "output/vgg_nohuman\\chapter_3\\chunk_000.json",
+      "source_text": "2 CONVNET CONFIGURATIONS To measure the improvement brought by the increased ConvNet depth in a fair setting, all our ConvNet layer configurations are designed using the same principles, inspired by C...",
+      "translation": "2 卷积神经网络配置 为了在公平的设置中衡量增加卷积神经网络（ConvNet）深度所带来的改进，我们所有的卷积神经网络层配置都是根据Ciresan等人（2011年）和Krizhevsky等人（2012年）的启发，使用相同的原则设计的。在本节中，我们首先描述我们的卷积神经网络配置的通用布局（第2.1节），然后详细说明在评估中使用的具体配置（第2.2节）。我们的设计选择随后在第2.3节中讨论，并与先前...",
+      "quality_score": 8.0,
+      "evaluation": {
+        "source_text": "2 CONVNET CONFIGURATIONS To measure the improvement brought by the increased ConvNet depth in a fair...",
+        "translation": "2 卷积神经网络配置 为了在公平的设置中衡量增加卷积神经网络（ConvNet）深度所带来的改进，我们所有的卷积神经网络层配置都是根据Ciresan等人（2011年）和Krizhevsky等人（2012...",
+        "metrics": {
+          "quality_score": {
+            "score": 8.0,
+            "method": "quality_score",
+            "details": "质量分数: 8.0/10"
+          },
+          "back_translation": {
+            "score": 5.1,
+            "method": "back_translation_consistency",
+            "details": "回译相似度: 50.98%",
+            "similarity": 0.5098389982110912
+          },
+          "terminology": {
+            "score": 6.67,
+            "method": "terminology_consistency",
+            "details": "术语使用: 2/3 正确",
+            "correct_uses": 2,
+            "total_terms": 3,
+            "violations": [
+              {
+                "term": "ConvNet",
+                "expected": "卷积神经网络",
+                "issue": "术语未翻译，直接使用英文"
+              }
+            ]
+          },
+          "length_ratio": {
+            "score": 2.5,
+            "method": "length_ratio",
+            "details": "长度比: 2.62 (理想: 1.5)",
+            "ratio": 2.625,
+            "source_length": 80,
+            "translation_length": 210
+          },
+          "fluency": {
+            "score": 10.0,
+            "method": "fluency",
+            "details": "流畅性检查: 通过",
+            "issues": []
+          },
+          "number_preservation": {
+            "score": 10.0,
+            "method": "number_preservation",
+            "details": "数字保留: 6/6",
+            "preserved": 6,
+            "total": 6,
+            "missing": []
+          },
+          "bleu": {
+            "score": 1.17,
+            "method": "bleu_score",
+            "details": "BLEU: 0.1173",
+            "bleu": 0.11730928305086626,
+            "precision_1gram": 0.1926605504587156,
+            "precision_2gram": 0.07142857142857142
+          },
+          "semantic_similarity": {
+            "score": 7.74,
+            "method": "semantic_similarity",
+            "details": "语义相似度: 0.5484",
+            "similarity": 0.5483555197715759
+          },
+          "edit_distance": {
+            "score": 0.9,
+            "method": "edit_distance",
+            "details": "编辑距离: 191/210, 相似度: 9.05%",
+            "distance": 191,
+            "similarity": 0.09047619047619049
+          }
+        },
+        "overall_score": 5.42,
+        "unsupervised_avg": 6.85,
+        "supervised_avg": 3.27
+      }
+    },
+    {
+      "chapter_id": 4,
+      "chunk_id": 1,
+      "chunk_file": "output/vgg_nohuman\\chapter_4\\chunk_001.json",
+      "source_text": "2.1 ARCHITECTURE During training, the input to our ConvNets is a fixed-size 224 × 224 RGB image. The only preprocessing we do is subtracting the mean RGB value, computed on the training set, from each...",
+      "translation": "2.1 架构 在训练过程中，我们卷积神经网络（ConvNets）的输入是一个固定大小的224 × 224 RGB图像。我们唯一的预处理步骤是从每个像素中减去在训练集上计算出的平均RGB值。图像通过一系列卷积层（conv. layers）传递，其中我们使用的滤波器具有非常小的感受野：3 × 3（这是能够捕捉左/右、上/下、中心概念的最小尺寸）。在一种配置中，我们还使用了1 × 1卷积滤波器，可以将其...",
+      "quality_score": 9.0,
+      "evaluation": {
+        "source_text": "2.1 ARCHITECTURE During training, the input to our ConvNets is a fixed-size 224 × 224 RGB image. The...",
+        "translation": "2.1 架构 在训练过程中，我们卷积神经网络（ConvNets）的输入是一个固定大小的224 × 224 RGB图像。我们唯一的预处理步骤是从每个像素中减去在训练集上计算出的平均RGB值。图像通过一系...",
+        "metrics": {
+          "quality_score": {
+            "score": 9.0,
+            "method": "quality_score",
+            "details": "质量分数: 9.0/10"
+          },
+          "back_translation": {
+            "score": 4.59,
+            "method": "back_translation_consistency",
+            "details": "回译相似度: 45.93%",
+            "similarity": 0.45929945732609767
+          },
+          "terminology": {
+            "score": 5.62,
+            "method": "terminology_consistency",
+            "details": "术语使用: 9/16 正确",
+            "correct_uses": 9,
+            "total_terms": 16,
+            "violations": [
+              {
+                "term": "ConvNets",
+                "expected": "卷积神经网络",
+                "issue": "术语未翻译，直接使用英文"
+              },
+              {
+                "term": "RGB",
+                "expected": "RGB",
+                "issue": "术语未翻译，直接使用英文"
+              },
+              {
+                "term": "conv. layer",
+                "expected": "卷积层",
+                "issue": "术语未翻译，直接使用英文"
+              },
+              {
+                "term": "Fully-Connected",
+                "expected": "全连接",
+                "issue": "术语未翻译，直接使用英文"
+              },
+              {
+                "term": "ReLU",
+                "expected": "修正线性单元",
+                "issue": "术语未翻译，直接使用英文"
+              }
+            ]
+          },
+          "length_ratio": {
+            "score": 5.24,
+            "method": "length_ratio",
+            "details": "长度比: 2.21 (理想: 1.5)",
+            "ratio": 2.213375796178344,
+            "source_length": 314,
+            "translation_length": 695
+          },
+          "fluency": {
+            "score": 10.0,
+            "method": "fluency",
+            "details": "流畅性检查: 通过",
+            "issues": []
+          },
+          "number_preservation": {
+            "score": 9.0,
+            "method": "number_preservation",
+            "details": "数字保留: 9/10",
+            "preserved": 9,
+            "total": 10,
+            "missing": [
+              "2."
+            ]
+          },
+          "bleu": {
+            "score": 1.55,
+            "method": "bleu_score",
+            "details": "BLEU: 0.1545",
+            "bleu": 0.15450104812127932,
+            "precision_1gram": 0.2698412698412698,
+            "precision_2gram": 0.08846153846153847
+          },
+          "semantic_similarity": {
+            "score": 8.51,
+            "method": "semantic_similarity",
+            "details": "语义相似度: 0.7014",
+            "similarity": 0.7014415264129639
+          },
+          "edit_distance": {
+            "score": 0.78,
+            "method": "edit_distance",
+            "details": "编辑距离: 641/695, 相似度: 7.77%",
+            "distance": 641,
+            "similarity": 0.07769784172661875
+          }
+        },
+        "overall_score": 5.58,
+        "unsupervised_avg": 6.89,
+        "supervised_avg": 3.61
+      }
+    },
+    {
+      "chapter_id": 5,
+      "chunk_id": 1,
+      "chunk_file": "output/vgg_nohuman\\chapter_5\\chunk_001.json",
+      "source_text": "2.2 CONFIGURATIONS The ConvNet configurations, evaluated in this paper, are outlined in Table 1, one per column. In the following we will refer to the nets by their names (A–E). All configurations fol...",
+      "translation": "2.2 配置 本文中评估的卷积神经网络（ConvNet）配置在表1中概述，每列一个。以下我们将按名称（A至E）来指代这些网络。所有配置均遵循第2.1节介绍的通用设计，并仅在深度上有所不同：从网络A的11个权重层（8个卷积层和3个全连接层）到网络E的19个权重层（16个卷积层和3个全连接层）。卷积层的宽度（通道数）相对较小，从第一层的64开始，每经过一个最大汇聚层后增加一倍，直到达到512。表1：卷...",
+      "quality_score": 8.0,
+      "evaluation": {
+        "source_text": "2.2 CONFIGURATIONS The ConvNet configurations, evaluated in this paper, are outlined in Table 1, one...",
+        "translation": "2.2 配置 本文中评估的卷积神经网络（ConvNet）配置在表1中概述，每列一个。以下我们将按名称（A至E）来指代这些网络。所有配置均遵循第2.1节介绍的通用设计，并仅在深度上有所不同：从网络A的1...",
+        "metrics": {
+          "quality_score": {
+            "score": 8.0,
+            "method": "quality_score",
+            "details": "质量分数: 8.0/10"
+          },
+          "back_translation": {
+            "score": 5.25,
+            "method": "back_translation_consistency",
+            "details": "回译相似度: 52.54%",
+            "similarity": 0.5254491017964071
+          },
+          "terminology": {
+            "score": 8.33,
+            "method": "terminology_consistency",
+            "details": "术语使用: 10/12 正确",
+            "correct_uses": 10,
+            "total_terms": 12,
+            "violations": [
+              {
+                "term": "ConvNet",
+                "expected": "卷积神经网络",
+                "issue": "术语未翻译，直接使用英文"
+              },
+              {
+                "term": "ReLU",
+                "expected": "修正线性单元",
+                "issue": "术语未翻译，直接使用英文"
+              }
+            ]
+          },
+          "length_ratio": {
+            "score": 7.77,
+            "method": "length_ratio",
+            "details": "长度比: 1.83 (理想: 1.5)",
+            "ratio": 1.8340807174887892,
+            "source_length": 223,
+            "translation_length": 409
+          },
+          "fluency": {
+            "score": 10.0,
+            "method": "fluency",
+            "details": "流畅性检查: 通过",
+            "issues": []
+          },
+          "number_preservation": {
+            "score": 9.23,
+            "method": "number_preservation",
+            "details": "数字保留: 12/13",
+            "preserved": 12,
+            "total": 13,
+            "missing": [
+              "512."
+            ]
+          },
+          "bleu": {
+            "score": 0.74,
+            "method": "bleu_score",
+            "details": "BLEU: 0.0737",
+            "bleu": 0.07372237901769436,
+            "precision_1gram": 0.13253012048192772,
+            "precision_2gram": 0.04100946372239748
+          },
+          "semantic_similarity": {
+            "score": 8.04,
+            "method": "semantic_similarity",
+            "details": "语义相似度: 0.6087",
+            "similarity": 0.6087344288825989
+          },
+          "edit_distance": {
+            "score": 0.37,
+            "method": "edit_distance",
+            "details": "编辑距离: 394/409, 相似度: 3.67%",
+            "distance": 394,
+            "similarity": 0.03667481662591687
+          }
+        },
+        "overall_score": 6.09,
+        "unsupervised_avg": 8.12,
+        "supervised_avg": 3.05
+      }
+    },
+    {
+      "chapter_id": 6,
+      "chunk_id": 1,
+      "chunk_file": "output/vgg_nohuman\\chapter_6\\chunk_001.json",
+      "source_text": "2.3 DISCUSSION Our ConvNet configurations are quite different from the ones used in the top-performing entries of the ILSVRC-2012 (Krizhevsky et al., 2012) and ILSVRC-2013 competitions (Zeiler & Fergu...",
+      "translation": "2.3 讨论 我们的卷积神经网络（ConvNet）配置与ILSVRC-2012（Krizhevsky等人，2012）和ILSVRC-2013竞赛（Zeiler和Fergus，2013；Sermanet等人，2014）中表现最好的参赛作品有很大的不同。我们并没有在第一层卷积层中使用相对较大的接受域（例如，在Krizhevsky等人，2012中使用11×11的接受域，步幅为4；或者在Zeiler和Fe...",
+      "quality_score": 9.0,
+      "evaluation": {
+        "source_text": "2.3 DISCUSSION Our ConvNet configurations are quite different from the ones used in the top-performi...",
+        "translation": "2.3 讨论 我们的卷积神经网络（ConvNet）配置与ILSVRC-2012（Krizhevsky等人，2012）和ILSVRC-2013竞赛（Zeiler和Fergus，2013；Sermanet...",
+        "metrics": {
+          "quality_score": {
+            "score": 9.0,
+            "method": "quality_score",
+            "details": "质量分数: 9.0/10"
+          },
+          "back_translation": {
+            "score": 4.74,
+            "method": "back_translation_consistency",
+            "details": "回译相似度: 47.38%",
+            "similarity": 0.4737597702982932
+          },
+          "terminology": {
+            "score": 7.73,
+            "method": "terminology_consistency",
+            "details": "术语使用: 17/22 正确",
+            "correct_uses": 17,
+            "total_terms": 22,
+            "violations": [
+              {
+                "term": "ConvNet",
+                "expected": "卷积神经网络",
+                "issue": "术语未翻译，直接使用英文"
+              },
+              {
+                "term": "ILSVRC-2012",
+                "expected": "ILSVRC-2012",
+                "issue": "术语未翻译，直接使用英文"
+              },
+              {
+                "term": "ILSVRC-2013",
+                "expected": "ILSVRC-2013",
+                "issue": "术语未翻译，直接使用英文"
+              },
+              {
+                "term": "C",
+                "expected": "类别数",
+                "issue": "术语未翻译，直接使用英文"
+              }
+            ]
+          },
+          "length_ratio": {
+            "score": 6.47,
+            "method": "length_ratio",
+            "details": "长度比: 2.03 (理想: 1.5)",
+            "ratio": 2.030131826741996,
+            "source_length": 531,
+            "translation_length": 1078
+          },
+          "fluency": {
+            "score": 10.0,
+            "method": "fluency",
+            "details": "流畅性检查: 通过",
+            "issues": []
+          },
+          "number_preservation": {
+            "score": 10.0,
+            "method": "number_preservation",
+            "details": "数字保留: 17/17",
+            "preserved": 17,
+            "total": 17,
+            "missing": []
+          },
+          "bleu": {
+            "score": 0.95,
+            "method": "bleu_score",
+            "details": "BLEU: 0.0952",
+            "bleu": 0.09517337345336013,
+            "precision_1gram": 0.25,
+            "precision_2gram": 0.036231884057971016
+          },
+          "semantic_similarity": {
+            "score": 6.87,
+            "method": "semantic_similarity",
+            "details": "语义相似度: 0.3742",
+            "similarity": 0.3742471933364868
+          },
+          "edit_distance": {
+            "score": 0.46,
+            "method": "edit_distance",
+            "details": "编辑距离: 1028/1078, 相似度: 4.64%",
+            "distance": 1028,
+            "similarity": 0.04638218923933213
+          }
+        },
+        "overall_score": 5.78,
+        "unsupervised_avg": 7.79,
+        "supervised_avg": 2.76
+      }
+    },
+    {
+      "chapter_id": 7,
+      "chunk_id": 0,
+      "chunk_file": "output/vgg_nohuman\\chapter_7\\chunk_000.json",
+      "source_text": "3 CLASSIFICATION FRAMEWORK In the previous section we presented the details of our network configurations. In this section, we describe the details of classification ConvNet training and evaluation.",
+      "translation": "3 分类框架 在上一节中，我们介绍了我们的网络配置细节。在本节中，我们将描述分类卷积神经网络（ConvNet）训练和评估的细节。",
+      "quality_score": 8.0,
+      "evaluation": {
+        "source_text": "3 CLASSIFICATION FRAMEWORK In the previous section we presented the details of our network configura...",
+        "translation": "3 分类框架 在上一节中，我们介绍了我们的网络配置细节。在本节中，我们将描述分类卷积神经网络（ConvNet）训练和评估的细节。",
+        "metrics": {
+          "quality_score": {
+            "score": 8.0,
+            "method": "quality_score",
+            "details": "质量分数: 8.0/10"
+          },
+          "back_translation": {
+            "score": 5.24,
+            "method": "back_translation_consistency",
+            "details": "回译相似度: 52.39%",
+            "similarity": 0.5239179954441914
+          },
+          "terminology": {
+            "score": 0.0,
+            "method": "terminology_consistency",
+            "details": "术语使用: 0/1 正确",
+            "correct_uses": 0,
+            "total_terms": 1,
+            "violations": [
+              {
+                "term": "ConvNet",
+                "expected": "卷积神经网络",
+                "issue": "术语未翻译，直接使用英文"
+              }
+            ]
+          },
+          "length_ratio": {
+            "score": 4.76,
+            "method": "length_ratio",
+            "details": "长度比: 2.29 (理想: 1.5)",
+            "ratio": 2.2857142857142856,
+            "source_length": 28,
+            "translation_length": 64
+          },
+          "fluency": {
+            "score": 10.0,
+            "method": "fluency",
+            "details": "流畅性检查: 通过",
+            "issues": []
+          },
+          "number_preservation": {
+            "score": 10.0,
+            "method": "number_preservation",
+            "details": "数字保留: 1/1",
+            "preserved": 1,
+            "total": 1,
+            "missing": []
+          },
+          "bleu": {
+            "score": 2.55,
+            "method": "bleu_score",
+            "details": "BLEU: 0.2554",
+            "bleu": 0.2553769592276246,
+            "precision_1gram": 0.391304347826087,
+            "precision_2gram": 0.16666666666666666
+          },
+          "semantic_similarity": {
+            "score": 8.35,
+            "method": "semantic_similarity",
+            "details": "语义相似度: 0.6694",
+            "similarity": 0.6693902611732483
+          },
+          "edit_distance": {
+            "score": 1.25,
+            "method": "edit_distance",
+            "details": "编辑距离: 56/64, 相似度: 12.50%",
+            "distance": 56,
+            "similarity": 0.125
+          }
+        },
+        "overall_score": 5.22,
+        "unsupervised_avg": 6.0,
+        "supervised_avg": 4.05
+      }
+    },
+    {
+      "chapter_id": 8,
+      "chunk_id": 1,
+      "chunk_file": "output/vgg_nohuman\\chapter_8\\chunk_001.json",
+      "source_text": "3.1 TRAINING The ConvNet training procedure generally follows Krizhevsky et al. (2012) (except for sampling the input crops from multi-scale training images, as explained later). Namely, the training ...",
+      "translation": "3.1 训练 卷积神经网络（ConvNet）的训练过程大致遵循了Krizhevsky等人（2012年）的方法（除了从多尺度训练图像中采样输入块，稍后解释）。具体而言，训练是通过优化多项式逻辑回归目标，使用基于反向传播（LeCun等人，1989年）的小批量梯度下降（back-propagation）进行的，并且带有动量。批量大小设置为256，动量为0.9。训练通过权重衰减（L2惩罚乘数设置为$5·1...",
+      "quality_score": 9.0,
+      "evaluation": {
+        "source_text": "3.1 TRAINING The ConvNet training procedure generally follows Krizhevsky et al. (2012) (except for s...",
+        "translation": "3.1 训练 卷积神经网络（ConvNet）的训练过程大致遵循了Krizhevsky等人（2012年）的方法（除了从多尺度训练图像中采样输入块，稍后解释）。具体而言，训练是通过优化多项式逻辑回归目标，...",
+        "metrics": {
+          "quality_score": {
+            "score": 9.0,
+            "method": "quality_score",
+            "details": "质量分数: 9.0/10"
+          },
+          "back_translation": {
+            "score": 6.29,
+            "method": "back_translation_consistency",
+            "details": "回译相似度: 62.95%",
+            "similarity": 0.6294939317609343
+          },
+          "terminology": {
+            "score": 6.92,
+            "method": "terminology_consistency",
+            "details": "术语使用: 9/13 正确",
+            "correct_uses": 9,
+            "total_terms": 13,
+            "violations": [
+              {
+                "term": "ConvNet",
+                "expected": "卷积神经网络",
+                "issue": "术语未翻译，直接使用英文"
+              },
+              {
+                "term": "back-propagation",
+                "expected": "反向传播",
+                "issue": "术语未翻译，直接使用英文"
+              },
+              {
+                "term": "SGD",
+                "expected": "随机梯度下降",
+                "issue": "术语未翻译，直接使用英文"
+              }
+            ]
+          },
+          "length_ratio": {
+            "score": 5.36,
+            "method": "length_ratio",
+            "details": "长度比: 2.20 (理想: 1.5)",
+            "ratio": 2.1954022988505746,
+            "source_length": 696,
+            "translation_length": 1528
+          },
+          "fluency": {
+            "score": 9.0,
+            "method": "fluency",
+            "details": "流畅性检查: 可能存在过多未翻译英文",
+            "issues": [
+              "可能存在过多未翻译英文"
+            ]
+          },
+          "number_preservation": {
+            "score": 10.0,
+            "method": "number_preservation",
+            "details": "数字保留: 20/20",
+            "preserved": 20,
+            "total": 20,
+            "missing": []
+          },
+          "bleu": {
+            "score": 0.19,
+            "method": "bleu_score",
+            "details": "BLEU: 0.0188",
+            "bleu": 0.01884995838034766,
+            "precision_1gram": 0.056910569105691054,
+            "precision_2gram": 0.006243496357960458
+          },
+          "semantic_similarity": {
+            "score": 7.83,
+            "method": "semantic_similarity",
+            "details": "语义相似度: 0.5651",
+            "similarity": 0.5651082396507263
+          },
+          "edit_distance": {
+            "score": 0.14,
+            "method": "edit_distance",
+            "details": "编辑距离: 1506/1528, 相似度: 1.44%",
+            "distance": 1506,
+            "similarity": 0.014397905759162333
+          }
+        },
+        "overall_score": 5.6,
+        "unsupervised_avg": 7.51,
+        "supervised_avg": 2.72
+      }
+    },
+    {
+      "chapter_id": 9,
+      "chunk_id": 1,
+      "chunk_file": "output/vgg_nohuman\\chapter_9\\chunk_001.json",
+      "source_text": "3.2 TESTING At test time, given a trained ConvNet and an input image, it is classified in the following way. First, it is isotropically rescaled to a pre-defined smallest image side, denoted as Q (we ...",
+      "translation": "3.2 测试 在测试阶段，给定一个训练好的卷积神经网络（ConvNet）和一个输入图像，其分类过程如下。首先，图像被等比例缩放到一个预定义的最小图像边长，记作Q（我们也称之为测试尺度）。我们指出Q不一定等于训练尺度S（正如我们在第4节中将展示的，对每个S使用多个Q值可以提高性能）。接着，网络在缩放后的测试图像上密集地应用，类似于（Sermanet等人，2014）。具体来说，首先将全连接层转换为卷积...",
+      "quality_score": 9.0,
+      "evaluation": {
+        "source_text": "3.2 TESTING At test time, given a trained ConvNet and an input image, it is classified in the follow...",
+        "translation": "3.2 测试 在测试阶段，给定一个训练好的卷积神经网络（ConvNet）和一个输入图像，其分类过程如下。首先，图像被等比例缩放到一个预定义的最小图像边长，记作Q（我们也称之为测试尺度）。我们指出Q不一...",
+        "metrics": {
+          "quality_score": {
+            "score": 9.0,
+            "method": "quality_score",
+            "details": "质量分数: 9.0/10"
+          },
+          "back_translation": {
+            "score": 3.73,
+            "method": "back_translation_consistency",
+            "details": "回译相似度: 37.34%",
+            "similarity": 0.37338551859099806
+          },
+          "terminology": {
+            "score": 8.33,
+            "method": "terminology_consistency",
+            "details": "术语使用: 15/18 正确",
+            "correct_uses": 15,
+            "total_terms": 18,
+            "violations": [
+              {
+                "term": "ConvNet",
+                "expected": "卷积神经网络",
+                "issue": "术语未翻译，直接使用英文"
+              },
+              {
+                "term": "Q",
+                "expected": "最小图像边长",
+                "issue": "术语未翻译，直接使用英文"
+              },
+              {
+                "term": "S",
+                "expected": "训练尺度",
+                "issue": "术语未翻译，直接使用英文"
+              }
+            ]
+          },
+          "length_ratio": {
+            "score": 7.73,
+            "method": "length_ratio",
+            "details": "长度比: 1.84 (理想: 1.5)",
+            "ratio": 1.8402777777777777,
+            "source_length": 432,
+            "translation_length": 795
+          },
+          "fluency": {
+            "score": 10.0,
+            "method": "fluency",
+            "details": "流畅性检查: 通过",
+            "issues": []
+          },
+          "number_preservation": {
+            "score": 10.0,
+            "method": "number_preservation",
+            "details": "数字保留: 12/12",
+            "preserved": 12,
+            "total": 12,
+            "missing": []
+          },
+          "bleu": {
+            "score": 0.49,
+            "method": "bleu_score",
+            "details": "BLEU: 0.0489",
+            "bleu": 0.048900351397306925,
+            "precision_1gram": 0.10687022900763359,
+            "precision_2gram": 0.022375215146299483
+          },
+          "semantic_similarity": {
+            "score": 7.71,
+            "method": "semantic_similarity",
+            "details": "语义相似度: 0.5425",
+            "similarity": 0.5424908995628357
+          },
+          "edit_distance": {
+            "score": 0.35,
+            "method": "edit_distance",
+            "details": "编辑距离: 767/795, 相似度: 3.52%",
+            "distance": 767,
+            "similarity": 0.035220125786163514
+          }
+        },
+        "overall_score": 5.91,
+        "unsupervised_avg": 7.96,
+        "supervised_avg": 2.85
+      }
+    },
+    {
+      "chapter_id": 10,
+      "chunk_id": 1,
+      "chunk_file": "output/vgg_nohuman\\chapter_10\\chunk_001.json",
+      "source_text": "3.3 IMPLEMENTATION DETAILS Our implementation is derived from the publicly available C++ Caffe toolbox (Jia, 2013) (branched out in December 2013), but contains a number of significant modifications, ...",
+      "translation": "3.3 实现细节 我们的实现是基于公开可用的C++ Caffe工具箱（Jia，2013年）（2013年12月分支出来的版本），但包含了许多重大的修改，使我们能够在单个系统中安装的多个GPU上进行训练和评估，以及在多个尺度上训练和评估全尺寸（未裁剪）图像（如上所述）。多GPU训练利用数据并行性，通过将每批训练图像分割成几个GPU批次来并行处理每个GPU。在计算出GPU批次梯度后，将它们平均化以获得完...",
+      "quality_score": 9.0,
+      "evaluation": {
+        "source_text": "3.3 IMPLEMENTATION DETAILS Our implementation is derived from the publicly available C++ Caffe toolb...",
+        "translation": "3.3 实现细节 我们的实现是基于公开可用的C++ Caffe工具箱（Jia，2013年）（2013年12月分支出来的版本），但包含了许多重大的修改，使我们能够在单个系统中安装的多个GPU上进行训练和...",
+        "metrics": {
+          "quality_score": {
+            "score": 9.0,
+            "method": "quality_score",
+            "details": "质量分数: 9.0/10"
+          },
+          "back_translation": {
+            "score": 2.91,
+            "method": "back_translation_consistency",
+            "details": "回译相似度: 29.11%",
+            "similarity": 0.2911392405063291
+          },
+          "terminology": {
+            "score": 2.0,
+            "method": "terminology_consistency",
+            "details": "术语使用: 1/5 正确",
+            "correct_uses": 1,
+            "total_terms": 5,
+            "violations": [
+              {
+                "term": "C++",
+                "expected": "C++",
+                "issue": "术语未翻译，直接使用英文"
+              },
+              {
+                "term": "Caffe",
+                "expected": "Caffe",
+                "issue": "术语未翻译，直接使用英文"
+              },
+              {
+                "term": "ConvNet",
+                "expected": "卷积神经网络",
+                "issue": "术语未翻译，直接使用英文"
+              }
+            ]
+          },
+          "length_ratio": {
+            "score": 5.97,
+            "method": "length_ratio",
+            "details": "长度比: 2.10 (理想: 1.5)",
+            "ratio": 2.105,
+            "source_length": 200,
+            "translation_length": 421
+          },
+          "fluency": {
+            "score": 10.0,
+            "method": "fluency",
+            "details": "流畅性检查: 通过",
+            "issues": []
+          },
+          "number_preservation": {
+            "score": 10.0,
+            "method": "number_preservation",
+            "details": "数字保留: 7/7",
+            "preserved": 7,
+            "total": 7,
+            "missing": []
+          },
+          "bleu": {
+            "score": 0.22,
+            "method": "bleu_score",
+            "details": "BLEU: 0.0218",
+            "bleu": 0.02178551004751495,
+            "precision_1gram": 0.08163265306122448,
+            "precision_2gram": 0.005813953488372093
+          },
+          "semantic_similarity": {
+            "score": 6.24,
+            "method": "semantic_similarity",
+            "details": "语义相似度: 0.2487",
+            "similarity": 0.24872319400310516
+          },
+          "edit_distance": {
+            "score": 0.26,
+            "method": "edit_distance",
+            "details": "编辑距离: 410/421, 相似度: 2.61%",
+            "distance": 410,
+            "similarity": 0.026128266033254133
+          }
+        },
+        "overall_score": 4.6,
+        "unsupervised_avg": 6.18,
+        "supervised_avg": 2.24
+      }
+    },
+    {
+      "chapter_id": 11,
+      "chunk_id": 0,
+      "chunk_file": "output/vgg_nohuman\\chapter_11\\chunk_000.json",
+      "source_text": "4 CLASSIFICATION EXPERIMENTS Dataset. In this section, we present the image classification results achieved by the described ConvNet architectures on the ILSVRC-2012 dataset (which was used for ILSVRC...",
+      "translation": "4 分类实验 数据集。在本节中，我们展示了所描述的卷积神经网络（ConvNet）架构在ILSVRC-2012数据集上实现的图像分类结果（该数据集用于2012-2014年的ILSVRC挑战）。数据集包含1000个类别的图像，并分为三组：训练集（130万张图像）、验证集（5万张图像）和测试集（10万张图像，类别标签不公开）。分类性能使用两个度量来评估：top-1错误和前五错误。前者是多类别分类错误，即...",
+      "quality_score": 9.0,
+      "evaluation": {
+        "source_text": "4 CLASSIFICATION EXPERIMENTS Dataset. In this section, we present the image classification results a...",
+        "translation": "4 分类实验 数据集。在本节中，我们展示了所描述的卷积神经网络（ConvNet）架构在ILSVRC-2012数据集上实现的图像分类结果（该数据集用于2012-2014年的ILSVRC挑战）。数据集包含...",
+        "metrics": {
+          "quality_score": {
+            "score": 9.0,
+            "method": "quality_score",
+            "details": "质量分数: 9.0/10"
+          },
+          "back_translation": {
+            "score": 1.66,
+            "method": "back_translation_consistency",
+            "details": "回译相似度: 16.60%",
+            "similarity": 0.16597890875745072
+          },
+          "terminology": {
+            "score": 2.86,
+            "method": "terminology_consistency",
+            "details": "术语使用: 2/7 正确",
+            "correct_uses": 2,
+            "total_terms": 7,
+            "violations": [
+              {
+                "term": "ConvNet",
+                "expected": "卷积神经网络",
+                "issue": "术语未翻译，直接使用英文"
+              },
+              {
+                "term": "ILSVRC-2012",
+                "expected": "ILSVRC-2012",
+                "issue": "术语未翻译，直接使用英文"
+              },
+              {
+                "term": "ILSVRC",
+                "expected": "ILSVRC",
+                "issue": "术语未翻译，直接使用英文"
+              },
+              {
+                "term": "top-1",
+                "expected": "top-1错误",
+                "issue": "术语未翻译，直接使用英文"
+              },
+              {
+                "term": "VGG",
+                "expected": "VGG",
+                "issue": "术语未翻译，直接使用英文"
+              }
+            ]
+          },
+          "length_ratio": {
+            "score": 4.93,
+            "method": "length_ratio",
+            "details": "长度比: 2.26 (理想: 1.5)",
+            "ratio": 2.261146496815287,
+            "source_length": 157,
+            "translation_length": 355
+          },
+          "fluency": {
+            "score": 10.0,
+            "method": "fluency",
+            "details": "流畅性检查: 通过",
+            "issues": []
+          },
+          "number_preservation": {
+            "score": 6.67,
+            "method": "number_preservation",
+            "details": "数字保留: 6/9",
+            "preserved": 6,
+            "total": 9,
+            "missing": [
+              "50",
+              "1.3",
+              "100"
+            ]
+          },
+          "bleu": {
+            "score": 1.23,
+            "method": "bleu_score",
+            "details": "BLEU: 0.1228",
+            "bleu": 0.1228452947932242,
+            "precision_1gram": 0.27702702702702703,
+            "precision_2gram": 0.054474708171206226
+          },
+          "semantic_similarity": {
+            "score": 8.02,
+            "method": "semantic_similarity",
+            "details": "语义相似度: 0.6043",
+            "similarity": 0.6042976379394531
+          },
+          "edit_distance": {
+            "score": 0.79,
+            "method": "edit_distance",
+            "details": "编辑距离: 327/355, 相似度: 7.89%",
+            "distance": 327,
+            "similarity": 0.07887323943661972
+          }
+        },
+        "overall_score": 4.47,
+        "unsupervised_avg": 5.22,
+        "supervised_avg": 3.35
+      }
+    },
+    {
+      "chapter_id": 12,
+      "chunk_id": 1,
+      "chunk_file": "output/vgg_nohuman\\chapter_12\\chunk_001.json",
+      "source_text": "4.1 SINGLE SCALE EVALUATION We begin with evaluating the performance of individual ConvNet models at a single scale with the layer configurations described in Sect. 2.2. The test image size was set as...",
+      "translation": "4.1 单尺度评估 我们首先评估单个卷积神经网络模型在单尺度下的性能，使用的层配置在第2.2节中描述。测试图像大小设置如下：对于固定的S，$Q = S$；对于抖动的$S ∈ [S_{min}, S_{max}]$，$Q = 0.5(S_{min} + S_{max})$。结果如表3所示。表3：单测试尺度下的卷积神经网络性能。首先，我们注意到使用局部响应归一化（A-LRN网络）并不比没有任何归一化层...",
+      "quality_score": 9.0,
+      "evaluation": {
+        "source_text": "4.1 SINGLE SCALE EVALUATION We begin with evaluating the performance of individual ConvNet models at...",
+        "translation": "4.1 单尺度评估 我们首先评估单个卷积神经网络模型在单尺度下的性能，使用的层配置在第2.2节中描述。测试图像大小设置如下：对于固定的S，$Q = S$；对于抖动的$S ∈ [S_{min}, S_{...",
+        "metrics": {
+          "quality_score": {
+            "score": 9.0,
+            "method": "quality_score",
+            "details": "质量分数: 9.0/10"
+          },
+          "back_translation": {
+            "score": 3.88,
+            "method": "back_translation_consistency",
+            "details": "回译相似度: 38.76%",
+            "similarity": 0.3876337693222354
+          },
+          "terminology": {
+            "score": 8.18,
+            "method": "terminology_consistency",
+            "details": "术语使用: 9/11 正确",
+            "correct_uses": 9,
+            "total_terms": 11,
+            "violations": []
+          },
+          "length_ratio": {
+            "score": 7.2,
+            "method": "length_ratio",
+            "details": "长度比: 1.92 (理想: 1.5)",
+            "ratio": 1.919667590027701,
+            "source_length": 361,
+            "translation_length": 693
+          },
+          "fluency": {
+            "score": 10.0,
+            "method": "fluency",
+            "details": "流畅性检查: 通过",
+            "issues": []
+          },
+          "number_preservation": {
+            "score": 9.29,
+            "method": "number_preservation",
+            "details": "数字保留: 13/14",
+            "preserved": 13,
+            "total": 14,
+            "missing": [
+              "3."
+            ]
+          },
+          "bleu": {
+            "score": 0.71,
+            "method": "bleu_score",
+            "details": "BLEU: 0.0708",
+            "bleu": 0.07081444673052029,
+            "precision_1gram": 0.18518518518518517,
+            "precision_2gram": 0.027079303675048357
+          },
+          "semantic_similarity": {
+            "score": 7.66,
+            "method": "semantic_similarity",
+            "details": "语义相似度: 0.5316",
+            "similarity": 0.5315630435943604
+          },
+          "edit_distance": {
+            "score": 0.35,
+            "method": "edit_distance",
+            "details": "编辑距离: 669/693, 相似度: 3.46%",
+            "distance": 669,
+            "similarity": 0.03463203463203468
+          }
+        },
+        "overall_score": 5.79,
+        "unsupervised_avg": 7.71,
+        "supervised_avg": 2.91
+      }
+    },
+    {
+      "chapter_id": 13,
+      "chunk_id": 1,
+      "chunk_file": "output/vgg_nohuman\\chapter_13\\chunk_001.json",
+      "source_text": "4.2 MULTI-SCALE EVALUATION Having evaluated the ConvNet models at a single scale, we now assess the effect of scale jittering at test time. It consists of running a model over several rescaled version...",
+      "translation": "4.2 多尺度评估 在单尺度评估了卷积神经网络（ConvNet）模型后，我们现在评估测试时尺度抖动的效果。这包括对测试图像的几个缩放版本运行模型（对应于不同的Q值），然后平均得到的类别后验概率。考虑到训练和测试尺度之间的大差异会导致性能下降，我们评估了固定S训练的模型在接近训练尺寸的三个测试图像尺寸上的性能：$Q = {S − 32, S, S + 32}$。同时，训练时的尺度抖动允许网络在更广泛...",
+      "quality_score": 9.0,
+      "evaluation": {
+        "source_text": "4.2 MULTI-SCALE EVALUATION Having evaluated the ConvNet models at a single scale, we now assess the ...",
+        "translation": "4.2 多尺度评估 在单尺度评估了卷积神经网络（ConvNet）模型后，我们现在评估测试时尺度抖动的效果。这包括对测试图像的几个缩放版本运行模型（对应于不同的Q值），然后平均得到的类别后验概率。考虑到...",
+        "metrics": {
+          "quality_score": {
+            "score": 9.0,
+            "method": "quality_score",
+            "details": "质量分数: 9.0/10"
+          },
+          "back_translation": {
+            "score": 5.13,
+            "method": "back_translation_consistency",
+            "details": "回译相似度: 51.27%",
+            "similarity": 0.5127118644067796
+          },
+          "terminology": {
+            "score": 0.0,
+            "method": "terminology_consistency",
+            "details": "术语使用: 0/9 正确",
+            "correct_uses": 0,
+            "total_terms": 9,
+            "violations": [
+              {
+                "term": "ConvNet",
+                "expected": "卷积神经网络",
+                "issue": "术语未翻译，直接使用英文"
+              },
+              {
+                "term": "Q",
+                "expected": "缩放尺寸",
+                "issue": "术语未翻译，直接使用英文"
+              },
+              {
+                "term": "S",
+                "expected": "尺寸S",
+                "issue": "术语未翻译，直接使用英文"
+              },
+              {
+                "term": "S_{min}",
+                "expected": "S_min",
+                "issue": "术语未翻译，直接使用英文"
+              },
+              {
+                "term": "S_{max}",
+                "expected": "最大尺寸",
+                "issue": "术语未翻译，直接使用英文"
+              }
+            ]
+          },
+          "length_ratio": {
+            "score": 5.93,
+            "method": "length_ratio",
+            "details": "长度比: 2.11 (理想: 1.5)",
+            "ratio": 2.1106382978723404,
+            "source_length": 235,
+            "translation_length": 496
+          },
+          "fluency": {
+            "score": 10.0,
+            "method": "fluency",
+            "details": "流畅性检查: 通过",
+            "issues": []
+          },
+          "number_preservation": {
+            "score": 10.0,
+            "method": "number_preservation",
+            "details": "数字保留: 10/10",
+            "preserved": 10,
+            "total": 10,
+            "missing": []
+          },
+          "bleu": {
+            "score": 1.58,
+            "method": "bleu_score",
+            "details": "BLEU: 0.1580",
+            "bleu": 0.15802970926920304,
+            "precision_1gram": 0.3446327683615819,
+            "precision_2gram": 0.07246376811594203
+          },
+          "semantic_similarity": {
+            "score": 8.05,
+            "method": "semantic_similarity",
+            "details": "语义相似度: 0.6092",
+            "similarity": 0.6092115640640259
+          },
+          "edit_distance": {
+            "score": 0.83,
+            "method": "edit_distance",
+            "details": "编辑距离: 455/496, 相似度: 8.27%",
+            "distance": 455,
+            "similarity": 0.08266129032258063
+          }
+        },
+        "overall_score": 5.12,
+        "unsupervised_avg": 6.21,
+        "supervised_avg": 3.49
+      }
+    },
+    {
+      "chapter_id": 14,
+      "chunk_id": 0,
+      "chunk_file": "output/vgg_nohuman\\chapter_14\\chunk_000.json",
+      "source_text": "4.3 MULTI-CROP EVALUATION In Table 5 we compare dense ConvNet evaluation with mult-crop evaluation (see Sect. 3.2 for details). We also assess the complementarity of the two evaluation techniques by a...",
+      "translation": "4.3 多作物评估 在表5中，我们比较了密集卷积神经网络（ConvNet）评估与多作物评估（参见第3.2节了解详情）。我们还通过平均它们的softmax输出来评估这两种评估技术的互补性。可以看出，使用多个作物的表现略优于密集评估，这两种方法确实是互补的，因为它们的结合超过了它们各自的表现。正如上述所指出的，我们假设这是由于对卷积边界条件的不同处理。表5：卷积神经网络评估技术比较。在所有实验中，训练...",
+      "quality_score": 8.0,
+      "evaluation": {
+        "source_text": "4.3 MULTI-CROP EVALUATION In Table 5 we compare dense ConvNet evaluation with mult-crop evaluation (...",
+        "translation": "4.3 多作物评估 在表5中，我们比较了密集卷积神经网络（ConvNet）评估与多作物评估（参见第3.2节了解详情）。我们还通过平均它们的softmax输出来评估这两种评估技术的互补性。可以看出，使用...",
+        "metrics": {
+          "quality_score": {
+            "score": 8.0,
+            "method": "quality_score",
+            "details": "质量分数: 8.0/10"
+          },
+          "back_translation": {
+            "score": 4.67,
+            "method": "back_translation_consistency",
+            "details": "回译相似度: 46.73%",
+            "similarity": 0.46734006734006733
+          },
+          "terminology": {
+            "score": 7.5,
+            "method": "terminology_consistency",
+            "details": "术语使用: 3/4 正确",
+            "correct_uses": 3,
+            "total_terms": 4,
+            "violations": [
+              {
+                "term": "ConvNet",
+                "expected": "卷积神经网络",
+                "issue": "术语未翻译，直接使用英文"
+              }
+            ]
+          },
+          "length_ratio": {
+            "score": 4.47,
+            "method": "length_ratio",
+            "details": "长度比: 2.33 (理想: 1.5)",
+            "ratio": 2.330188679245283,
+            "source_length": 106,
+            "translation_length": 247
+          },
+          "fluency": {
+            "score": 10.0,
+            "method": "fluency",
+            "details": "流畅性检查: 通过",
+            "issues": []
+          },
+          "number_preservation": {
+            "score": 10.0,
+            "method": "number_preservation",
+            "details": "数字保留: 6/6",
+            "preserved": 6,
+            "total": 6,
+            "missing": []
+          },
+          "bleu": {
+            "score": 0.77,
+            "method": "bleu_score",
+            "details": "BLEU: 0.0767",
+            "bleu": 0.07669649888473705,
+            "precision_1gram": 0.13333333333333333,
+            "precision_2gram": 0.04411764705882353
+          },
+          "semantic_similarity": {
+            "score": 7.81,
+            "method": "semantic_similarity",
+            "details": "语义相似度: 0.5621",
+            "similarity": 0.5621312856674194
+          },
+          "edit_distance": {
+            "score": 0.65,
+            "method": "edit_distance",
+            "details": "编辑距离: 231/247, 相似度: 6.48%",
+            "distance": 231,
+            "similarity": 0.06477732793522262
+          }
+        },
+        "overall_score": 5.63,
+        "unsupervised_avg": 7.33,
+        "supervised_avg": 3.08
+      }
+    },
+    {
+      "chapter_id": 15,
+      "chunk_id": 0,
+      "chunk_file": "output/vgg_nohuman\\chapter_15\\chunk_000.json",
+      "source_text": "4.4 CONVNET FUSION Up until now, we evaluated the performance of individual ConvNet models. In this part of the experiments, we combine the outputs of several models by averaging their soft-max class ...",
+      "translation": "4.4 卷积神经网络融合 到目前为止，我们已经评估了单个卷积神经网络（ConvNet）模型的性能。在这部分实验中，我们通过平均他们的软最大化类别后验概率来组合几个模型的输出。这提高了性能，因为模型的互补性，这在2012年（Krizhevsky等人，2012年）和2013年（Zeiler和Fergus，2013年；Sermanet等人，2014年）的顶级ILSVRC提交中被使用。结果如表6所示。在I...",
+      "quality_score": 9.0,
+      "evaluation": {
+        "source_text": "4.4 CONVNET FUSION Up until now, we evaluated the performance of individual ConvNet models. In this ...",
+        "translation": "4.4 卷积神经网络融合 到目前为止，我们已经评估了单个卷积神经网络（ConvNet）模型的性能。在这部分实验中，我们通过平均他们的软最大化类别后验概率来组合几个模型的输出。这提高了性能，因为模型的互...",
+        "metrics": {
+          "quality_score": {
+            "score": 9.0,
+            "method": "quality_score",
+            "details": "质量分数: 9.0/10"
+          },
+          "back_translation": {
+            "score": 5.7,
+            "method": "back_translation_consistency",
+            "details": "回译相似度: 56.99%",
+            "similarity": 0.5699067909454061
+          },
+          "terminology": {
+            "score": 6.0,
+            "method": "terminology_consistency",
+            "details": "术语使用: 3/5 正确",
+            "correct_uses": 3,
+            "total_terms": 5,
+            "violations": [
+              {
+                "term": "ConvNet",
+                "expected": "卷积神经网络",
+                "issue": "术语未翻译，直接使用英文"
+              },
+              {
+                "term": "ILSVRC",
+                "expected": "ILSVRC",
+                "issue": "术语未翻译，直接使用英文"
+              }
+            ]
+          },
+          "length_ratio": {
+            "score": 4.22,
+            "method": "length_ratio",
+            "details": "长度比: 2.37 (理想: 1.5)",
+            "ratio": 2.366863905325444,
+            "source_length": 169,
+            "translation_length": 400
+          },
+          "fluency": {
+            "score": 10.0,
+            "method": "fluency",
+            "details": "流畅性检查: 通过",
+            "issues": []
+          },
+          "number_preservation": {
+            "score": 9.17,
+            "method": "number_preservation",
+            "details": "数字保留: 11/12",
+            "preserved": 11,
+            "total": 12,
+            "missing": [
+              "6."
+            ]
+          },
+          "bleu": {
+            "score": 0.81,
+            "method": "bleu_score",
+            "details": "BLEU: 0.0808",
+            "bleu": 0.08076030290359243,
+            "precision_1gram": 0.19631901840490798,
+            "precision_2gram": 0.03322259136212625
+          },
+          "semantic_similarity": {
+            "score": 7.82,
+            "method": "semantic_similarity",
+            "details": "语义相似度: 0.5643",
+            "similarity": 0.5642840266227722
+          },
+          "edit_distance": {
+            "score": 0.47,
+            "method": "edit_distance",
+            "details": "编辑距离: 381/400, 相似度: 4.75%",
+            "distance": 381,
+            "similarity": 0.04749999999999999
+          }
+        },
+        "overall_score": 5.42,
+        "unsupervised_avg": 7.02,
+        "supervised_avg": 3.03
+      }
+    },
+    {
+      "chapter_id": 16,
+      "chunk_id": 1,
+      "chunk_file": "output/vgg_nohuman\\chapter_16\\chunk_001.json",
+      "source_text": "4.5 COMPARISON WITH THE STATE OF THE ART Finally, we compare our results with the state of the art in Table 7. In the classification task of ILSVRC-2014 challenge (Russakovsky et al., 2014), our “VGG”...",
+      "translation": "4.5 与最先进技术的比较 最后，我们在表7中将我们的结果与最先进技术进行了比较。在ILSVRC-2014挑战赛（Russakovsky等人，2014）的分类任务中，我们的“VGG”团队使用7个模型的集成，以7.3%的测试误差获得了第二名。提交后，我们通过使用2个模型的集成将误差率降低到6.8%。表7：与ILSVRC分类中最先进技术的比较。我们的方法被称为“VGG”。只报告了没有使用外部训练数据获...",
+      "quality_score": 9.0,
+      "evaluation": {
+        "source_text": "4.5 COMPARISON WITH THE STATE OF THE ART Finally, we compare our results with the state of the art i...",
+        "translation": "4.5 与最先进技术的比较 最后，我们在表7中将我们的结果与最先进技术进行了比较。在ILSVRC-2014挑战赛（Russakovsky等人，2014）的分类任务中，我们的“VGG”团队使用7个模型的...",
+        "metrics": {
+          "quality_score": {
+            "score": 9.0,
+            "method": "quality_score",
+            "details": "质量分数: 9.0/10"
+          },
+          "back_translation": {
+            "score": 4.9,
+            "method": "back_translation_consistency",
+            "details": "回译相似度: 48.96%",
+            "similarity": 0.48964595858383436
+          },
+          "terminology": {
+            "score": 1.25,
+            "method": "terminology_consistency",
+            "details": "术语使用: 1/8 正确",
+            "correct_uses": 1,
+            "total_terms": 8,
+            "violations": [
+              {
+                "term": "ILSVRC-2014",
+                "expected": "ILSVRC-2014",
+                "issue": "术语未翻译，直接使用英文"
+              },
+              {
+                "term": "VGG",
+                "expected": "VGG",
+                "issue": "术语未翻译，直接使用英文"
+              },
+              {
+                "term": "ConvNets",
+                "expected": "卷积神经网络",
+                "issue": "术语未翻译，直接使用英文"
+              },
+              {
+                "term": "ILSVRC-2012",
+                "expected": "ILSVRC-2012",
+                "issue": "术语未翻译，直接使用英文"
+              },
+              {
+                "term": "ILSVRC-2013",
+                "expected": "ILSVRC-2013",
+                "issue": "术语未翻译，直接使用英文"
+              }
+            ]
+          },
+          "length_ratio": {
+            "score": 3.5,
+            "method": "length_ratio",
+            "details": "长度比: 2.48 (理想: 1.5)",
+            "ratio": 2.4755555555555557,
+            "source_length": 225,
+            "translation_length": 557
+          },
+          "fluency": {
+            "score": 10.0,
+            "method": "fluency",
+            "details": "流畅性检查: 通过",
+            "issues": []
+          },
+          "number_preservation": {
+            "score": 9.33,
+            "method": "number_preservation",
+            "details": "数字保留: 14/15",
+            "preserved": 14,
+            "total": 15,
+            "missing": [
+              "7."
+            ]
+          }
+        },
+        "overall_score": 5.8,
+        "unsupervised_avg": 5.8
+      }
+    },
+    {
+      "chapter_id": 17,
+      "chunk_id": 0,
+      "chunk_file": "output/vgg_nohuman\\chapter_17\\chunk_000.json",
+      "source_text": "5 CONCLUSION In this work we evaluated very deep convolutional networks (up to 19 weight layers) for large-scale image classification. It was demonstrated that the representation depth is beneficial f...",
+      "translation": "5 结论 在本项工作中，我们针对大规模图像分类任务评估了非常深的卷积网络（多达19个权重层）。我们证明了表示深度对于分类准确率是有益的，并且可以在ImageNet挑战赛数据集上实现最先进的性能，使用的是传统的卷积神经网络（LeCun等人，1989；Krizhevsky等人，2012）架构，但深度显著增加。在附录中，我们还展示了我们的模型能够很好地泛化到广泛的任务和数据集，匹配或超越了围绕较浅图像表...",
+      "quality_score": 9.0,
+      "evaluation": {
+        "source_text": "5 CONCLUSION In this work we evaluated very deep convolutional networks (up to 19 weight layers) for...",
+        "translation": "5 结论 在本项工作中，我们针对大规模图像分类任务评估了非常深的卷积网络（多达19个权重层）。我们证明了表示深度对于分类准确率是有益的，并且可以在ImageNet挑战赛数据集上实现最先进的性能，使用的...",
+        "metrics": {
+          "quality_score": {
+            "score": 9.0,
+            "method": "quality_score",
+            "details": "质量分数: 9.0/10"
+          },
+          "back_translation": {
+            "score": 7.43,
+            "method": "back_translation_consistency",
+            "details": "回译相似度: 74.26%",
+            "similarity": 0.7425876010781671
+          },
+          "terminology": {
+            "score": 5.71,
+            "method": "terminology_consistency",
+            "details": "术语使用: 4/7 正确",
+            "correct_uses": 4,
+            "total_terms": 7,
+            "violations": [
+              {
+                "term": "ImageNet",
+                "expected": "ImageNet",
+                "issue": "术语未翻译，直接使用英文"
+              },
+              {
+                "term": "LeCun",
+                "expected": "LeCun",
+                "issue": "术语未翻译，直接使用英文"
+              },
+              {
+                "term": "Krizhevsky",
+                "expected": "Krizhevsky",
+                "issue": "术语未翻译，直接使用英文"
+              }
+            ]
+          },
+          "length_ratio": {
+            "score": 5.03,
+            "method": "length_ratio",
+            "details": "长度比: 2.25 (理想: 1.5)",
+            "ratio": 2.2452830188679247,
+            "source_length": 106,
+            "translation_length": 238
+          },
+          "fluency": {
+            "score": 10.0,
+            "method": "fluency",
+            "details": "流畅性检查: 通过",
+            "issues": []
+          },
+          "number_preservation": {
+            "score": 10.0,
+            "method": "number_preservation",
+            "details": "数字保留: 4/4",
+            "preserved": 4,
+            "total": 4,
+            "missing": []
+          }
+        },
+        "overall_score": 7.63,
+        "unsupervised_avg": 7.63
+      }
+    },
+    {
+      "chapter_id": 18,
+      "chunk_id": 0,
+      "chunk_file": "output/vgg_nohuman\\chapter_18\\chunk_000.json",
+      "source_text": "ACKNOWLEDGEMENTS This work was supported by ERC grant VisRec no. 228180. We gratefully acknowledge the support of NVIDIA Corporation with the donation of the GPUs used for this research.",
+      "translation": "致谢 本研究工作得到了欧洲研究委员会VisRec项目（编号228180）的资助。我们衷心感谢英伟达公司捐赠的图形处理单元，这些图形处理单元被用于本项研究。",
+      "quality_score": 9.0,
+      "evaluation": {
+        "source_text": "ACKNOWLEDGEMENTS This work was supported by ERC grant VisRec no. 228180. We gratefully acknowledge t...",
+        "translation": "致谢 本研究工作得到了欧洲研究委员会VisRec项目（编号228180）的资助。我们衷心感谢英伟达公司捐赠的图形处理单元，这些图形处理单元被用于本项研究。",
+        "metrics": {
+          "quality_score": {
+            "score": 9.0,
+            "method": "quality_score",
+            "details": "质量分数: 9.0/10"
+          },
+          "back_translation": {
+            "score": 3.71,
+            "method": "back_translation_consistency",
+            "details": "回译相似度: 37.07%",
+            "similarity": 0.37073170731707317
+          },
+          "terminology": {
+            "score": 7.5,
+            "method": "terminology_consistency",
+            "details": "术语使用: 3/4 正确",
+            "correct_uses": 3,
+            "total_terms": 4,
+            "violations": [
+              {
+                "term": "VisRec",
+                "expected": "VisRec",
+                "issue": "术语未翻译，直接使用英文"
+              }
+            ]
+          },
+          "length_ratio": {
+            "score": 2.3,
+            "method": "length_ratio",
+            "details": "长度比: 2.66 (理想: 1.5)",
+            "ratio": 2.6551724137931036,
+            "source_length": 29,
+            "translation_length": 77
+          },
+          "fluency": {
+            "score": 10.0,
+            "method": "fluency",
+            "details": "流畅性检查: 通过",
+            "issues": []
+          },
+          "number_preservation": {
+            "score": 0.0,
+            "method": "number_preservation",
+            "details": "数字保留: 0/1",
+            "preserved": 0,
+            "total": 1,
+            "missing": [
+              "228180."
+            ]
+          }
+        },
+        "overall_score": 4.7,
+        "unsupervised_avg": 4.7
+      }
+    }
+  ]
+}
