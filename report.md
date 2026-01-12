@@ -18,7 +18,7 @@
 - **工作流化翻译范式**：使用 LangGraph 将翻译拆解为“风格分析→术语挖掘→RAG查证→翻译→评估→修正→持久化”的可控节点，并显式建模状态 `TranslationState`。
 - **全局一致性机制**：通过章节级术语汇总与全局术语表注入，在 Prompt 层强制统一译名，并在输出侧持久化/回写。
 - **TEaR式可验证闭环**：引入回译（Back-translation）与结构化质量评估（QualityReview），以条件路由 `quality_gate` 驱动迭代修正。
-- **可运行与可复现工程实现**：落盘 `chunk_*.json`、记录 `refinement_history`，并加入自动模式下的速率限制（避免 API 触发限流）。
+- **可运行与可复现工程实现**：落盘 `chunk_*.json`、记录 `refinement_history`，并加入自动模式下的速率限制。
 
 ## 2. 项目范围与数据构建（Data Construction）
 
@@ -135,14 +135,13 @@
 章节级策略的动机是：减少中断成本，并在“术语首次出现后”尽快形成可复用的全局约束。
 
 ### 3.7 工程鲁棒性：自动模式的速率限制
-在 `--no-human-review` 自动模式下，系统通过 `RateLimiter` 控制 LLM 调用速率，避免触发“每分钟 20 次”限制：
-- 滑动窗口统计 + 最小间隔约束
-- 在每次 `llm.invoke(...)` 前 `wait_if_needed(...)`
+在 `--no-human-review` 自动模式下，系统通过 `RateLimiter` 控制 LLM 调用速率，避免触发 API 限流。
 
 ## 4. 实现细节（Implementation Details）
 
 ### 4.1 基础框架与模块划分
 - **工作流**：LangGraph（`StateGraph` + `MemorySaver`）
+- **LLM模型**：Moonshot AI `moonshot-v1-8k`（通过 LangChain `ChatOpenAI` 接口调用）
 - **LLM接口**：LangChain（`llm.invoke` + `with_structured_output`）
 - **RAG/术语库**：Elasticsearch（`try/rag/es_retriever.py`）
 - **持久化**：`output/{book_id}/chapter_{chapter_id}/chunk_{chunk_id:03d}.json`
@@ -167,9 +166,11 @@
 ## 5. 实验（Experiments）【结果占位】
 
 ### 5.1 数据与评测设置（Datasets & Protocol）
-实验数据：CVPR/ICCV风格学术论文（AlexNet/VGG/ResNet），按章节切分，顺序翻译，模拟“书籍式连续章节”场景。
+**模型配置**：本实验使用 Moonshot AI `moonshot-v1-8k` 作为基础 LLM，通过 LangChain 接口调用。
 
-评测协议：
+**实验数据**：CVPR/ICCV风格学术论文（AlexNet/VGG/ResNet），按章节切分，顺序翻译，模拟"书籍式连续章节"场景。
+
+**评测协议**：
 - chunk 级别评估（由 `QualityReview` 产出）
 - chapter 级别审查（人工/自动）
 - 全局术语一致性统计（基于 `reviewed_glossary` 与 chunk 输出）
