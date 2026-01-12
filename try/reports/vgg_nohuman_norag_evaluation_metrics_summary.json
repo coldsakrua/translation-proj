@@ -1,0 +1,89 @@
+{
+  "evaluation_info": {
+    "output_dir": "output/vgg_nohuman_norag",
+    "reference_file": "data/vgg_ch.json",
+    "evaluated_at": "2026-01-12T22:56:32.081812",
+    "total_chunks": 19,
+    "valid_chunks": 19,
+    "evaluated_chunks": 19
+  },
+  "metrics_summary": {
+    "terminology": {
+      "average": 6.08,
+      "min": 1.11,
+      "max": 10.0,
+      "count": 19,
+      "direction": "higher_is_better",
+      "direction_cn": "越高越好"
+    },
+    "length_ratio": {
+      "average": 5.49,
+      "min": 2.92,
+      "max": 8.1,
+      "count": 19,
+      "direction": "closer_to_ideal",
+      "direction_cn": "越接近理想值越好"
+    },
+    "fluency": {
+      "average": 9.95,
+      "min": 9.0,
+      "max": 10.0,
+      "count": 19,
+      "direction": "higher_is_better",
+      "direction_cn": "越高越好"
+    },
+    "number_preservation": {
+      "average": 9.0,
+      "min": 0.0,
+      "max": 10.0,
+      "count": 19,
+      "direction": "higher_is_better",
+      "direction_cn": "越高越好"
+    },
+    "bleu": {
+      "average": 1.23,
+      "min": 0.18,
+      "max": 6.12,
+      "count": 16,
+      "direction": "higher_is_better",
+      "direction_cn": "越高越好"
+    },
+    "semantic_similarity": {
+      "average": 7.7,
+      "min": 6.35,
+      "max": 9.15,
+      "count": 16,
+      "direction": "higher_is_better",
+      "direction_cn": "越高越好"
+    },
+    "edit_distance": {
+      "average": 0.73,
+      "min": 0.14,
+      "max": 3.17,
+      "count": 16,
+      "direction": "lower_is_better",
+      "direction_cn": "越低越好"
+    }
+  },
+  "overall_statistics": {
+    "quality_score": {
+      "average": 0.0,
+      "min": null,
+      "max": null,
+      "count": 0
+    },
+    "evaluation_score": {
+      "average": 6.07,
+      "min": 4.73,
+      "max": 8.25
+    },
+    "unsupervised_metrics": {
+      "average": 7.63,
+      "count": 19
+    },
+    "supervised_metrics": {
+      "average": 3.22,
+      "count": 16
+    }
+  }
+}

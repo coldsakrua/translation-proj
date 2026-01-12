@@ -5245,5 +5245,15 @@
     "human_reviewed": true,
     "human_modified": false,
     "reviewed_at": "2026-01-12T21:02:24.713017"
+  },
+  "Very Deep Convolutional Networks for Large-Scale Image Recognition": {
+    "src": "Very Deep Convolutional Networks for Large-Scale Image Recognition",
+    "type": "Terminology",
+    "context_meaning": "在大规模图像识别中使用的深度非常大的卷积网络技术",
+    "suggested_trans": "非常深度卷积网络用于大规模图像识别",
+    "rationale": "根据提供的翻译记忆，'Very Deep Convolutional Networks'翻译为'非常深度卷积网络'，结合上下文，即大规模图像识别的应用场景，完整的翻译应为'非常深度卷积网络用于大规模图像识别'。",
+    "human_reviewed": true,
+    "human_modified": false,
+    "reviewed_at": "2026-01-12T22:14:11.244518"
   }
 }

@@ -28,7 +28,27 @@ def build_translation_agent():
     # 新逻辑：完整执行所有chunk，chapter完成后统一审查术语表
     workflow.add_edge("search_terms", "translate")
 
-    workflow.add_edge("translate", "evaluate")
+    # --- 根据 use_rag 决定是否跳过 TEaR 环节 ---
+    def translate_gate(state: TranslationState):
+        """
+        翻译后门控：决定是否跳过 TEaR 环节
+        - 如果 use_rag=False，直接保存，跳过评估和优化
+        - 如果 use_rag=True，进入评估环节
+        """
+        if not state.use_rag:
+            print(f"   >>> [Gate] RAG disabled, skipping TEaR loop. Directly saving translation.")
+            return "persistence"
+        else:
+            return "evaluate"
+
+    workflow.add_conditional_edges(
+        "translate",
+        translate_gate,
+        {
+            "persistence": "persistence",
+            "evaluate": "evaluate"
+        }
+    )
 
     # --- TEaR循环逻辑 (Router) ---
     def quality_gate(state: TranslationState):

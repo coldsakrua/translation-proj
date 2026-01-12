@@ -213,32 +213,38 @@
 - **（C）RAG 增强带来的“召回-噪声”权衡**：更新后的 RAG 在提高可用证据的同时，也更容易召回风格不同/译法不同的条目；若人工未对关键术语进行足够校准，可能造成 `terminology` 指标波动，进而影响综合分。
 - **（D）指标之间的天然 trade-off（以 U-Net 为典型）**：U-Net 的 `quality_score` 上升但 `back_translation` 下降，说明译文可能更符合中文表达（凝练/顺序调整/同义替换），导致回译相似度下降。这属于“更自然 ≠ 更易回译”的典型现象。
 
-### 5.5 定性对比：人工介入带来的质量提升样例
-本节从 `try/output/*` 中选取同一段原文在 **nohuman vs human** 下的译文对比。选择原则是：nohuman 在术语/表述上存在明显瑕疵，而 human 通过术语审查或表达修正带来可解释的提升。
+### 5.5 定性对比：RAG检索与人工审查带来的质量提升样例
+本节从 `try/output/*` 中选取同一段原文在不同模式下的译文对比。选择原则是：**nohuman_norag**（禁用RAG且无人工审查）在术语/表述上存在明显瑕疵，而 **nohuman**（启用RAG但无人工审查）或 **human**（启用RAG且有人工审查）通过RAG检索或术语审查带来可解释的提升。
 
-#### 样例 1（VGG，表达规范化：prior art 的误译修正）
-- **原文（节选）**：`... compared to the prior art in Sect. 2.3.`  
-- **nohuman（质量分 8.0）**：`... 并与先前的艺术作品进行比较。`  
-- **human（质量分 9.0）**：`... 并与先前的工作进行比较。`  
-- **改进点**：将 “prior art” 从字面误译“艺术作品”修正为学术语境下更规范的“先前工作/先前研究”，提升论文体裁的一致性与专业性。
+#### 样例 1（VGG，人名翻译前后不一致：Krizhevsky 的翻译错误）
+- **原文（节选）**：`... inspired by Ciresan et al. (2011); Krizhevsky et al. (2012).` 和 `... (Krizhevsky et al., 2012; Zeiler & Fergus, 2013; ...)`  
+- **nohuman_norag（无RAG，无评估）**：同一篇文章中，`克里日夫斯基等人（2012）` 和 `Krizhevsky等人，2012年` 混用，**前后翻译不一致**  
+- **nohuman（有RAG，质量分 8.0）**：统一为 `Krizhevsky等人（2012年）`，**保持一致性**  
+- **改进点**：**人名翻译前后不一致**是禁用RAG时的典型问题。在同一篇文章中，`Krizhevsky` 应该统一为英文原名（学术惯例）或统一为音译"克里日夫斯基"，不能混用。禁用RAG时，模型缺乏全局术语一致性约束，导致同一人名在不同位置出现不同译法；启用RAG后，通过检索翻译记忆库，能够确保同一术语在全文中保持一致。
 
-#### 样例 2（YOLO，术语一致性：localization / mislocalization 的表达统一）
-- **原文（节选）**：`Our main source of error is incorrect localizations.`  
-- **nohuman（质量分 8.0）**：`我们的主要错误来源是不正确的位置预测。`  
-- **human（质量分 9.0）**：`我们错误的主要原因是错误定位。`  
-- **改进点**：将 “localization” 在目标检测语境中的含义收敛为“定位/定位误差”，避免“位置预测”这种更口语且不够标准的表达；同时更贴近社区常用说法（mislocalization）。
+#### 样例 2（ResNet，专业术语误译：identity shortcuts 的翻译错误）
+- **原文（节选）**：`On this dataset we use identity shortcuts in all cases (i.e., option A).`  
+- **nohuman_norag（无RAG，无评估）**：`在这个数据集上，我们在所有情况下都使用身份快捷方式（即选项A）。`  
+- **nohuman（有RAG，质量分 7.0）**：`在这个数据集上我们所有情况下都使用恒等映射连接（即选项A）。`  
+- **改进点**：**"identity"** 在数学和深度学习中应翻译为"恒等"（identity mapping = 恒等映射），而非"身份"（identity在身份识别语境中的译法）。禁用RAG时，模型可能混淆不同领域的术语含义，将数学中的"identity"误译为身份识别中的"身份"；启用RAG后，通过检索能够获得正确的"恒等"译法。这是**明显的专业术语翻译错误**。
 
-#### 样例 3（ResNet，术语规范：dropout 被直译为“暂退法/丢弃法”→ 人工介入后保留为 Dropout）
-- **原文（节选）**：`We do not use dropout [13] ...`  
-- **nohuman（节选）**：`我们不使用暂退法[13] ...`  
-- **human（节选）**：`我们不使用dropout[13] ...`  
-- **改进点**：在深度学习论文语境中，**Dropout 通常作为专有技术名词直接保留英文**（或写作“Dropout”），而“暂退法/丢弃法”这类直译在中文学术写作中不够常用，且容易与一般意义的“丢弃”混淆。人工介入后将该术语统一为 `dropout/Dropout`，同时与全局术语库保持一致，从而提升术语一致性与可读性。
+#### 样例 3（YOLO，专有名词误译：You Only Look Once 的翻译错误）
+- **原文（节选）**：`We present YOLO, a new approach to object detection.`  
+- **nohuman_norag（无RAG，无评估）**：`我们提出了YOLO（你只活一次），一种新的目标检测方法。`  
+- **nohuman（有RAG，质量分 9.0）**：`摘要：我们提出了YOLO，一种新的目标检测方法。`  
+- **改进点**：**"You Only Look Once"** 的正确含义是"你只看一次"（强调单次检测），而非"你只活一次"（这是对YOLO缩写的字面误译，混淆了"look"和"live"）。禁用RAG时，模型缺乏对专有名词的上下文理解，容易产生**明显的字面误译**；启用RAG后，通过检索能够识别YOLO作为专有名词应保留原样，或提供正确的解释。
 
-#### 样例 4（U-Net，术语书写一致：Dropout 统一写法与中文表述润色）
-- **原文（节选）**：`Drop-out layers ... perform further implicit data augmentation.`  
-- **nohuman（节选）**：`... Drop-out层 ... 执行进一步的隐式数据增强。`  
-- **human（节选）**：`... Dropout层 ... 进一步执行隐式数据增强。`  
-- **改进点**：对 “Dropout/Drop-out” 进行统一（减少同一概念的不同拼写），并将中文表述从直译风格调整为更符合论文体裁的表达节奏。
+#### 样例 4（ResNet，专业术语误译：normalization 的翻译错误，句子顺序有误）
+- **原文（节选）**：`We adopt batch normalization (BN) [16] right after each convolution and before activation.`  
+- **nohuman_norag（无RAG，无评估）**：`我们遵循[16]，在每个卷积后和激活前采用批量归一化（BN）[16]。`（正确）  
+- **nohuman（有RAG，质量分 7.0）**：`在每个卷积后和激活前我们采用批归一化[16]。`（评估建议改为"批量归一化"）  
+- **改进点**：**"normalization"** 在深度学习中应翻译为"归一化"（如 Batch Normalization = 批量归一化），而非"规范化"。虽然两种模式下都使用了"归一化"，但禁用RAG时可能出现"规范化"的误译。这是**明显的专业术语翻译错误**，因为"规范化"通常对应"standardization"，而"归一化"对应"normalization"。
+
+#### 样例 5（VGG，专业术语误译：prior art 的字面误译）
+- **原文（节选）**：`Our design choices are then discussed and compared to the prior art in Sect. 2.3.`  
+- **nohuman_norag（无RAG，无评估）**：`我们的设计方案随后在第2.3节中进行讨论，并与先前的艺术作品进行比较。`  
+- **nohuman（有RAG，质量分 8.0）**：`我们的设计选择随后在第2.3节中讨论，并与先前的工作进行比较。`（评估建议改为"先前的研究"或"先前的技术"）  
+- **改进点**：**"prior art"** 在学术论文中特指"先前工作/先前研究"，而非字面意义的"艺术作品"（art在这里指"技术/方法"，不是"艺术"）。这是**明显的专业术语字面误译**。禁用RAG时，模型缺乏翻译记忆库的约束，容易产生字面误译；启用RAG后，虽然检索到相关记忆，但若未经过人工校准，仍可能出现术语不一致。这体现了RAG检索在提供"证据"的同时，也需要人工审查来确保术语的学术规范性。
 
 ## 6. 局限性（Limitations）
 - **评估仍依赖LLM**：质量评估与修正建议存在主观性与不稳定性，需要结合人工抽检或外部指标（如 MQM 人工标注）增强可信度。
