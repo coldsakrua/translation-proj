@@ -24,11 +24,12 @@
 
 ### 2.1 领域与源文本
 本项目选择**计算机视觉（CV）**领域经典论文作为“领域书籍”实例：
-- **AlexNet**: *ImageNet Classification with Deep Convolutional Neural Networks* (2012)
+- **U-Net**: *Convolutional Networks for Biomedical Image Segmentation*
 - **VGG**: *Very Deep Convolutional Networks for Large-Scale Image Recognition* (2014)
 - **ResNet**: *Deep Residual Learning for Image Recognition* (2016)
+- **YOLO**：*You Only Look Once: Unified, Real-Time Object Detection*
 
-其特点是：术语密度高、论证结构严谨，适合作为长文本领域翻译系统的验证基准。
+其特点是：术语密度高、论证结构严谨，适合作为长文本领域翻译系统的验证基准。总计超过2w单词。
 
 ### 2.2 结构化清洗与切分策略
 系统将源文本预处理为 JSON（保留章节结构，如 Abstract/Introduction/Method）。随后执行两级切分：
@@ -53,8 +54,6 @@
 具体而言：
 - **前向流水线（一次性）**：风格/语域识别 → 术语候选挖掘 → 基于外部记忆的术语查证与规范化 → 约束条件下注入式翻译生成。
 - **质量闭环（可迭代）**：回译一致性检查 + 多维质量评估 → 质量门控（通过/修正/强制停止） → 针对性修正 → 重新评估。
-
-> **图 1（占位）**：系统工作流示意图（节点与状态流转）。
 
 ### 3.2 统一状态表示（TranslationState）
 系统在节点间传递的是一个“可追溯的统一状态”（state），它同时承载：
@@ -137,6 +136,31 @@
 ### 3.7 工程鲁棒性：自动模式的速率限制
 在 `--no-human-review` 自动模式下，系统通过 `RateLimiter` 控制 LLM 调用速率，避免触发 API 限流。
 
+```mermaid
+stateDiagram-v2
+    [*] --> Idle
+
+    state "Idle (空闲)" as Idle
+    state "Preprocessing (预处理)" as Prep
+    state "Retrieving (RAG检索)" as RAG
+    state "Generating (LLM生成)" as Gen
+    state "Postprocessing (后处理)" as Post
+    state "Error (错误)" as Err
+
+    Idle --> Prep : 接收翻译请求
+    Prep --> RAG : 文本分块/清洗完成
+    RAG --> Gen : 获取到上下文 (Context Found)
+    RAG --> Gen : 无相关上下文 (Context Missing)
+    Gen --> Post : 模型返回结果
+    Post --> Idle : 结果整合/格式化完成
+    
+    RAG --> Err : ES连接超时
+    Gen --> Err : API限流/网络错误
+    Err --> Idle : 重置/记录日志
+```
+
+
+
 ## 4. 实现细节（Implementation Details）
 
 ### 4.1 基础框架与模块划分
@@ -163,7 +187,7 @@
 
 这使得后续报告可以对：术语一致性、修正次数、错误类型分布等进行统计（本报告结果部分先占位）。
 
-## 5. 实验（Experiments）【结果占位】
+## 5. 实验（Experiments）
 
 ### 5.1 数据与评测设置（Datasets & Protocol）
 **模型配置**：本实验使用 Moonshot AI `moonshot-v1-8k` 作为基础 LLM，通过 LangChain 接口调用。
